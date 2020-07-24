@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 function checkIfErr() {
     ret=$?

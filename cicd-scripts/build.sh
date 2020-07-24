@@ -1,9 +1,9 @@
-#!/bash/bin
+#!/bin/bash
 
 echo "SHELL=[$SHELL]"
 echo "pwd=[$(pwd)]"
 
-function checkIfErr {
+function checkIfErr() {
     ret=$?
     echo "ret=[${ret}]"
     if [ ! $ret = '0' ]; then
