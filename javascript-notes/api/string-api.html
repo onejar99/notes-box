@@ -1,0 +1,1114 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>String API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="object-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../notes/introduction.html">
+            
+                <a href="../notes/introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../notes/version.html">
+            
+                <a href="../notes/version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../notes/script-location.html">
+            
+                <a href="../notes/script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../notes/output.html">
+            
+                <a href="../notes/output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../notes/syntax.html">
+            
+                <a href="../notes/syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../notes/variables.html">
+            
+                <a href="../notes/variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../notes/functions.html">
+            
+                <a href="../notes/functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../notes/data-types.html">
+            
+                <a href="../notes/data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../notes/operators.html">
+            
+                <a href="../notes/operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../notes/conditional-statements.html">
+            
+                <a href="../notes/conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../notes/loop.html">
+            
+                <a href="../notes/loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../notes/scope.html">
+            
+                <a href="../notes/scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../notes/this.html">
+            
+                <a href="../notes/this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../notes/closures.html">
+            
+                <a href="../notes/closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../notes/errors.html">
+            
+                <a href="../notes/errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../notes/hoisting.html">
+            
+                <a href="../notes/hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../notes/events.html">
+            
+                <a href="../notes/events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../notes/regular-expressions.html">
+            
+                <a href="../notes/regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../notes/strict-mode.html">
+            
+                <a href="../notes/strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../notes/oop.html">
+            
+                <a href="../notes/oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../notes/json.html">
+            
+                <a href="../notes/json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../notes/ajax.html">
+            
+                <a href="../notes/ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../notes/others.html">
+            
+                <a href="../notes/others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../notes/bom.html">
+            
+                <a href="../notes/bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../notes/dom.html">
+            
+                <a href="../notes/dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../notes/magic-js.html">
+            
+                <a href="../notes/magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../notes/best-practices.html">
+            
+                <a href="../notes/best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../notes/performance.html">
+            
+                <a href="../notes/performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../notes/coding-conventions.html">
+            
+                <a href="../notes/coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="ajax-api.html">
+            
+                <a href="ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="array-api.html">
+            
+                <a href="array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="base64-api.html">
+            
+                <a href="base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="boolean-api.html">
+            
+                <a href="boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="date-api.html">
+            
+                <a href="date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="encode-uri-api.html">
+            
+                <a href="encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="file-api.html">
+            
+                <a href="file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+            
+                <a href="function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="html-api.html">
+            
+                <a href="html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="json-api.html">
+            
+                <a href="json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="math-api.html">
+            
+                <a href="math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="number-api.html">
+            
+                <a href="number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="object-api.html">
+            
+                <a href="object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.15" data-path="string-api.html">
+            
+                <a href="string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >String API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#string-api"><b></b>String API</a></li><ul><li><span class="title-icon "></span><a href="#basic"><b></b>Basic</a></li><li><span class="title-icon "></span><a href="#search-string-position"><b></b>Search string position</a></li><li><span class="title-icon "></span><a href="#extract-string"><b></b>Extract string</a></li><li><span class="title-icon "></span><a href="#extract-characters"><b></b>Extract characters</a></li><li><span class="title-icon "></span><a href="#replace-string"><b></b>Replace string</a></li><li><span class="title-icon "></span><a href="#upper-and-lower-case"><b></b>Upper and Lower Case</a></li><li><span class="title-icon "></span><a href="#concat-string"><b></b>Concat string</a></li><li><span class="title-icon "></span><a href="#string-to-array"><b></b>String to Array</a></li><li><span class="title-icon "></span><a href="#format-string"><b></b>Format String</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="string-api"><a name="string-api" class="anchor-navigation-ex-anchor" href="#string-api"><i class="fa fa-link" aria-hidden="true"></i></a>String API</h2>
+<p>[TOC]</p>
+<hr>
+<p><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank">Complete JavaScript String Reference</a></p>
+<blockquote>
+<p>Note:
+&#x57FA;&#x672C;&#x4E0A; method &#x7684;&#x56DE;&#x50B3;&#x7D50;&#x679C;&#x90FD;&#x662F;&#x4E00;&#x500B;&#x65B0;&#x7684;&#x5B57;&#x4E32;&#xFF0C;&#x4E0D;&#x6703;&#x5F71;&#x97FF;&#x5230;&#x539F;&#x5B57;&#x4E32; (&#x5373;&#x4F7F;&#x662F; <code>replace()</code> )</p>
+<p>All string methods return a new string. They don&apos;t modify the original string.
+Formally said: Strings are immutable: Strings cannot be changed, only replaced.</p>
+</blockquote>
+<hr>
+<h3 id="basic"><a name="basic" class="anchor-navigation-ex-anchor" href="#basic"><i class="fa fa-link" aria-hidden="true"></i></a>Basic</h3>
+<h4 id="length"><a name="length" class="anchor-navigation-ex-anchor" href="#length"><i class="fa fa-link" aria-hidden="true"></i></a>length</h4>
+<pre><code>var txt = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;
+console.log(txt.length); //26
+</code></pre><hr>
+<h4 id="string-global"><a name="string-global" class="anchor-navigation-ex-anchor" href="#string-global"><i class="fa fa-link" aria-hidden="true"></i></a>String() (Global)</h4>
+<p>convert to string</p>
+<h4 id="trim"><a name="trim" class="anchor-navigation-ex-anchor" href="#trim"><i class="fa fa-link" aria-hidden="true"></i></a>trim()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;   Hello  World &quot;</span>;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`str=[<span class="hljs-subst">${str}</span>]`</span>);  <span class="hljs-comment">// &quot;str=[   Hello  World ]&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`str=[<span class="hljs-subst">${str.trim()}</span>]`</span>); <span class="hljs-comment">// &quot;str=[Hello  World]&quot;</span>
+</code></pre>
+<hr>
+<h3 id="search-string-position"><a name="search-string-position" class="anchor-navigation-ex-anchor" href="#search-string-position"><i class="fa fa-link" aria-hidden="true"></i></a>Search string position</h3>
+<h4 id="indexof"><a name="indexof" class="anchor-navigation-ex-anchor" href="#indexof"><i class="fa fa-link" aria-hidden="true"></i></a>indexOf()</h4>
+<h4 id="lastindexof"><a name="lastindexof" class="anchor-navigation-ex-anchor" href="#lastindexof"><i class="fa fa-link" aria-hidden="true"></i></a>lastIndexOf()</h4>
+<p>&#x200B;````js
+var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;
+console.log( str.indexOf(&quot;locate&quot;) ); //7
+console.log( str.lastIndexOf(&quot;locate&quot;) ); //21</p>
+<p>//return -1 if the text is not found.
+console.log( str.indexOf(&quot;abc&quot;) ); //-1
+console.log( str.lastIndexOf(&quot;abc&quot;) ); //-1</p>
+<p>//Both methods accept a second parameter as the starting position for the search:
+console.log( str.indexOf(&quot;locate&quot;, 10) ); //21 (start at [10] and forward)
+console.log( str.lastIndexOf(&quot;locate&quot;, 10) ); //7 (start at [10] and backward)</p>
+<pre><code>
+
+
+#### search()
+
+&gt; search() &#x548C; indexOf() &#x5F88;&#x50CF;&#xFF0C;&#x5DEE;&#x5225;&#x5728;&#x65BC; search() &#x4E0D;&#x80FD;&#x8A2D;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x53C3;&#x6578;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x652F;&#x63F4;&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F;
+
+&#x200B;````js
+console.log( str.search(&quot;locate&quot;) ); //7
+</code></pre><hr>
+<h3 id="extract-string"><a name="extract-string" class="anchor-navigation-ex-anchor" href="#extract-string"><i class="fa fa-link" aria-hidden="true"></i></a>Extract string</h3>
+<h4 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>slice()</h4>
+<p><code>slice(startIndex, endIndex)</code></p>
+<blockquote>
+<ol>
+<li>The character at <code>endIndex</code> is <strong>NOT</strong> included.</li>
+<li>No matter positive or negative, <code>endIndex</code> must be greater then <code>startIndex</code></li>
+<li>Positive and negative cannot be used in the same time</li>
+</ol>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Apple,Banana,Kiwi&quot;</span>;
+
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">0</span>) ); <span class="hljs-comment">//&quot;Apple,Banana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">7</span>) ); <span class="hljs-comment">//&quot;anana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">6</span>, <span class="hljs-number">12</span>) ); <span class="hljs-comment">//&quot;Banana&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">6</span>, <span class="hljs-number">6</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
+
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-10</span>) ); <span class="hljs-comment">//&quot;anana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>) ); <span class="hljs-comment">//&quot;w&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-12</span>, <span class="hljs-number">-6</span>) ); <span class="hljs-comment">//&quot;,Banan&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-2</span>, <span class="hljs-number">-1</span>) ); <span class="hljs-comment">//&quot;w&quot;</span>
+
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">12</span>, <span class="hljs-number">1</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-1</span>, <span class="hljs-number">-10</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-1</span>, <span class="hljs-number">1</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
+</code></pre>
+<h4 id="substring"><a name="substring" class="anchor-navigation-ex-anchor" href="#substring"><i class="fa fa-link" aria-hidden="true"></i></a>substring()</h4>
+<p><code>substring(startIndex, endIndex)</code></p>
+<p>endIndex &#x4E0D;&#x542B;</p>
+<blockquote>
+<p>substring() &#x548C; slice() &#x5F88;&#x50CF;&#xFF0C;&#x5DEE;&#x5225;&#x5728;&#xFF1A;</p>
+<ol>
+<li>substring() &#x4E0D;&#x63A5;&#x53D7;&#x8CA0;&#x6578;&#x7684;&#x53C3;&#x6578; (&#x4E0D;&#x6703; exception&#xFF0C;&#x4F46;&#x64F7;&#x53D6;&#x5B57;&#x4E32;&#x7684;&#x529F;&#x80FD;&#x4E0D;&#x6703;&#x6B63;&#x5E38;&#x904B;&#x4F5C;)</li>
+<li>substring() &#x80FD;&#x8655;&#x7406; <code>endIndex</code> &#x5C0F;&#x65BC; <code>startIndex</code> &#x7684;&#x60C5;&#x6CC1;</li>
+</ol>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Apple,Banana,Kiwi&quot;</span>;
+
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">0</span>) ); <span class="hljs-comment">//&quot;Apple,Banana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">7</span>) ); <span class="hljs-comment">//&quot;anana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">6</span>, <span class="hljs-number">12</span>) ); <span class="hljs-comment">//&quot;Banana&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">6</span>, <span class="hljs-number">6</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
+
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">-10</span>) ); <span class="hljs-comment">//&quot;Apple,Banana,Kiwi&quot; (extracting not work)</span>
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">-12</span>, <span class="hljs-number">-6</span>) ); <span class="hljs-comment">//&quot;&quot; (extracting not work)</span>
+
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">12</span>, <span class="hljs-number">1</span>) ); <span class="hljs-comment">//&quot;pple,Banana&quot;</span>
+</code></pre>
+<h4 id="substr"><a name="substr" class="anchor-navigation-ex-anchor" href="#substr"><i class="fa fa-link" aria-hidden="true"></i></a>substr()</h4>
+<p><code>substr(startIndex, length)</code></p>
+<blockquote>
+<p>length &#x4E0D;&#x80FD;&#x8655;&#x7406;&#x8CA0;&#x6578;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-comment">//substr(startIndex, length)</span>
+
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Apple,Banana,Kiwi&quot;</span>;
+
+<span class="hljs-built_in">console</span>.log( str.substr(<span class="hljs-number">0</span>) ); <span class="hljs-comment">//&quot;Apple,Banana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substr(<span class="hljs-number">7</span>) ); <span class="hljs-comment">//&quot;anana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substr(<span class="hljs-number">6</span>, <span class="hljs-number">1</span>) ); <span class="hljs-comment">//&quot;B&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substr(<span class="hljs-number">6</span>, <span class="hljs-number">12</span>) ); <span class="hljs-comment">//&quot;Banana,Kiwi&quot;</span>
+
+<span class="hljs-built_in">console</span>.log( str.substr(<span class="hljs-number">-10</span>) ); <span class="hljs-comment">//&quot;anana,Kiwi&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">6</span>, <span class="hljs-number">-3</span>) ); <span class="hljs-comment">//&quot;Apple,&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">7</span>, <span class="hljs-number">-3</span>) ); <span class="hljs-comment">//&quot;Apple,B&quot;</span>
+</code></pre>
+<hr>
+<h3 id="extract-characters"><a name="extract-characters" class="anchor-navigation-ex-anchor" href="#extract-characters"><i class="fa fa-link" aria-hidden="true"></i></a>Extract characters</h3>
+<ul>
+<li><strong>Safe</strong> methods for extracting string characters: <code>charAt()</code>, <code>charCodeAt()</code></li>
+<li>Accessing a String as an Array is <strong>Unsafe</strong> and <strong>Unpredictable</strong><ul>
+<li><ol>
+<li>It does not work in all browsers (not in IE5, IE6, IE7)</li>
+</ol>
+</li>
+<li><ol>
+<li>It makes strings look like arrays (but they are not)</li>
+</ol>
+</li>
+<li><ol>
+<li>str[0] = &quot;H&quot; does not give an error (but does not work)</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>If you want to read a string as an array, convert it to an array first.</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;HELLO WORLD&quot;</span>;
+<span class="hljs-built_in">console</span>.log( str[<span class="hljs-number">0</span>] );  <span class="hljs-comment">//&quot;H&quot;</span>
+str[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;C&quot;</span>; <span class="hljs-comment">// not work</span>
+<span class="hljs-built_in">console</span>.log( str ); <span class="hljs-comment">//&quot;HELLO WORLD&quot;</span>
+</code></pre>
+<h4 id="charat"><a name="charat" class="anchor-navigation-ex-anchor" href="#charat"><i class="fa fa-link" aria-hidden="true"></i></a>charAt()</h4>
+<h4 id="charcodeat"><a name="charcodeat" class="anchor-navigation-ex-anchor" href="#charcodeat"><i class="fa fa-link" aria-hidden="true"></i></a>charCodeAt()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;HELLO WORLD&quot;</span>;
+<span class="hljs-built_in">console</span>.log( str.charAt(<span class="hljs-number">0</span>) ); <span class="hljs-comment">// &quot;H&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.charAt(<span class="hljs-number">-1</span>) );  <span class="hljs-comment">// &quot;&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.charAt(<span class="hljs-number">100</span>) );  <span class="hljs-comment">// &quot;&quot;</span>
+
+<span class="hljs-built_in">console</span>.log( str.charCodeAt(<span class="hljs-number">0</span>) );  <span class="hljs-comment">//72</span>
+<span class="hljs-built_in">console</span>.log( str.charCodeAt(<span class="hljs-number">-1</span>) );  <span class="hljs-comment">//NaN</span>
+<span class="hljs-built_in">console</span>.log( str.charCodeAt(<span class="hljs-number">100</span>) );  <span class="hljs-comment">//NaN</span>
+</code></pre>
+<hr>
+<h3 id="replace-string"><a name="replace-string" class="anchor-navigation-ex-anchor" href="#replace-string"><i class="fa fa-link" aria-hidden="true"></i></a>Replace string</h3>
+<h4 id="replace"><a name="replace" class="anchor-navigation-ex-anchor" href="#replace"><i class="fa fa-link" aria-hidden="true"></i></a>replace()</h4>
+<p><code>replace(searchStr, newStr)</code></p>
+<blockquote>
+<p>By default:</p>
+<ol>
+<li>Replaces only the first match</li>
+<li>Case sensitive</li>
+</ol>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-comment">//By default</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;I&apos;m Bond. James Bond.&quot;</span>;
+<span class="hljs-keyword">var</span> n = str.replace(<span class="hljs-string">&quot;Bond&quot;</span>, <span class="hljs-string">&quot;Hunt&quot;</span>);
+<span class="hljs-built_in">console</span>.log( str ); <span class="hljs-comment">//&quot;I&apos;m Bond. James Bond.&quot;</span>
+<span class="hljs-built_in">console</span>.log( n ); <span class="hljs-comment">//&quot;I&apos;m Hunt. James Bond.&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.replace(<span class="hljs-string">&quot;bOnD&quot;</span>, <span class="hljs-string">&quot;Hunt&quot;</span>) ); <span class="hljs-comment">//&quot;I&apos;m Bond. James Bond.&quot;</span>
+
+<span class="hljs-comment">//To replace all matches, use a regular expression with a /g flag (global match):</span>
+<span class="hljs-built_in">console</span>.log( str.replace(<span class="hljs-regexp">/Bond/g</span>, <span class="hljs-string">&quot;Hunt&quot;</span>) ); <span class="hljs-comment">//&quot;I&apos;m Hunt. James Hunt.&quot;</span>
+
+<span class="hljs-comment">//To replace case insensitive, use a regular expression with an /i flag (insensitive):</span>
+<span class="hljs-built_in">console</span>.log( str.replace(<span class="hljs-regexp">/bOnD/i</span>, <span class="hljs-string">&quot;Hunt&quot;</span>) ); <span class="hljs-comment">//&quot;I&apos;m Hunt. James Bond.&quot;</span>
+<span class="hljs-built_in">console</span>.log( str.replace(<span class="hljs-regexp">/bOnD/ig</span>, <span class="hljs-string">&quot;Hunt&quot;</span>) ); <span class="hljs-comment">//&quot;I&apos;m Hunt. James Hunt.&quot;</span>
+</code></pre>
+<hr>
+<h3 id="upper-and-lower-case"><a name="upper-and-lower-case" class="anchor-navigation-ex-anchor" href="#upper-and-lower-case"><i class="fa fa-link" aria-hidden="true"></i></a>Upper and Lower Case</h3>
+<h4 id="touppercase"><a name="touppercase" class="anchor-navigation-ex-anchor" href="#touppercase"><i class="fa fa-link" aria-hidden="true"></i></a>toUpperCase()</h4>
+<h4 id="tolowercase"><a name="tolowercase" class="anchor-navigation-ex-anchor" href="#tolowercase"><i class="fa fa-link" aria-hidden="true"></i></a>toLowerCase()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> txt = <span class="hljs-string">&quot;Hello World!&quot;</span>;
+<span class="hljs-built_in">console</span>.log( txt.toUpperCase() ); <span class="hljs-comment">//&quot;HELLO WORLD!&quot;</span>
+<span class="hljs-built_in">console</span>.log( txt.toLowerCase() ); <span class="hljs-comment">//&quot;hello world!&quot;</span>
+</code></pre>
+<hr>
+<h3 id="concat-string"><a name="concat-string" class="anchor-navigation-ex-anchor" href="#concat-string"><i class="fa fa-link" aria-hidden="true"></i></a>Concat string</h3>
+<h4 id="concat"><a name="concat" class="anchor-navigation-ex-anchor" href="#concat"><i class="fa fa-link" aria-hidden="true"></i></a>concat()</h4>
+<blockquote>
+<p>The same function as plus the operator(+).</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Hello&quot;</span> + <span class="hljs-string">&quot; &quot;</span> + <span class="hljs-string">&quot;World!&quot;</span> ); <span class="hljs-comment">//&quot;Hello World!&quot;</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Hello&quot;</span>.concat(<span class="hljs-string">&quot; &quot;</span>, <span class="hljs-string">&quot;World!&quot;</span>) ); <span class="hljs-comment">//&quot;Hello World!&quot;</span>
+</code></pre>
+<hr>
+<h3 id="string-to-array"><a name="string-to-array" class="anchor-navigation-ex-anchor" href="#string-to-array"><i class="fa fa-link" aria-hidden="true"></i></a>String to Array</h3>
+<h4 id="split"><a name="split" class="anchor-navigation-ex-anchor" href="#split"><i class="fa fa-link" aria-hidden="true"></i></a>split()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> txt = <span class="hljs-string">&quot;a,b,c,d,e&quot;</span>;
+<span class="hljs-built_in">console</span>.log( txt.split(<span class="hljs-string">&quot;,&quot;</span>) ); <span class="hljs-comment">// =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;] (Array, length=5)</span>
+<span class="hljs-built_in">console</span>.log( txt.split(<span class="hljs-string">&quot; &quot;</span>) ); <span class="hljs-comment">// =&gt; [&quot;a,b,c,d,e&quot;] (Array, length=1)</span>
+<span class="hljs-built_in">console</span>.log( txt.split(<span class="hljs-string">&quot;&quot;</span>) );  <span class="hljs-comment">// =&gt; [&quot;a&quot;, &quot;,&quot;, &quot;b&quot;, &quot;,&quot;, &quot;c&quot;, &quot;,&quot;, &quot;d&quot;, &quot;,&quot;, &quot;e&quot;] (Array, length=9)</span>
+</code></pre>
+<hr>
+<h3 id="format-string"><a name="format-string" class="anchor-navigation-ex-anchor" href="#format-string"><i class="fa fa-link" aria-hidden="true"></i></a>Format String</h3>
+<p>Ref: <a href="https://dotblogs.com.tw/aquarius6913/2011/05/10/24655" target="_blank"> [JavaScript] &#x66FF;&#x6578;&#x5B57;&#x3001;&#x6587;&#x5B57;&#x5728;&#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x4E2D;&#x88DC;0 </a></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">paddingLeft</span>(<span class="hljs-params">str,lenght</span>)</span>{
+  str = <span class="hljs-string">&apos;&apos;</span> + str; <span class="hljs-comment">//&#x6539;&#x826F;&#xFF0C;&#x4EE5;&#x9632;&#x4E1F;&#x9032;&#x4F86;&#x7684;&#x662F;&#x6578;&#x5B57;&#x4E0D;&#x662F;&#x5B57;&#x4E32; (&#x5982;&#x679C;&#x662F;&#x6578;&#x5B57;: str.length= undefined)</span>
+  <span class="hljs-keyword">if</span>(str.length &gt;= lenght)
+  <span class="hljs-keyword">return</span> str;
+  <span class="hljs-keyword">else</span>
+  <span class="hljs-keyword">return</span> paddingLeft(<span class="hljs-string">&quot;0&quot;</span> +str,lenght);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">paddingRight</span>(<span class="hljs-params">str,lenght</span>)</span>{
+  str = <span class="hljs-string">&apos;&apos;</span> + str; <span class="hljs-comment">//&#x6539;&#x826F;&#xFF0C;&#x4EE5;&#x9632;&#x4E1F;&#x9032;&#x4F86;&#x7684;&#x662F;&#x6578;&#x5B57;&#x4E0D;&#x662F;&#x5B57;&#x4E32; (&#x5982;&#x679C;&#x662F;&#x6578;&#x5B57;: str.length= undefined)</span>
+  <span class="hljs-keyword">if</span>(str.length &gt;= lenght)
+  <span class="hljs-keyword">return</span> str;
+  <span class="hljs-keyword">else</span>
+  <span class="hljs-keyword">return</span> paddingRight(str+<span class="hljs-string">&quot;0&quot;</span>,lenght);
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="object-api.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Object API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"String API","level":"6.15","depth":1,"previous":{"title":"Object API","level":"6.14","depth":1,"path":"api/object-api.md","ref":"./api/object-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/string-api.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

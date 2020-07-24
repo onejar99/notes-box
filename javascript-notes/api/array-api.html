@@ -1,0 +1,1452 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Array API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="base64-api.html" />
+    
+    
+    <link rel="prev" href="ajax-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../notes/introduction.html">
+            
+                <a href="../notes/introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../notes/version.html">
+            
+                <a href="../notes/version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../notes/script-location.html">
+            
+                <a href="../notes/script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../notes/output.html">
+            
+                <a href="../notes/output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../notes/syntax.html">
+            
+                <a href="../notes/syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../notes/variables.html">
+            
+                <a href="../notes/variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../notes/functions.html">
+            
+                <a href="../notes/functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../notes/data-types.html">
+            
+                <a href="../notes/data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../notes/operators.html">
+            
+                <a href="../notes/operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../notes/conditional-statements.html">
+            
+                <a href="../notes/conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../notes/loop.html">
+            
+                <a href="../notes/loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../notes/scope.html">
+            
+                <a href="../notes/scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../notes/this.html">
+            
+                <a href="../notes/this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../notes/closures.html">
+            
+                <a href="../notes/closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../notes/errors.html">
+            
+                <a href="../notes/errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../notes/hoisting.html">
+            
+                <a href="../notes/hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../notes/events.html">
+            
+                <a href="../notes/events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../notes/regular-expressions.html">
+            
+                <a href="../notes/regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../notes/strict-mode.html">
+            
+                <a href="../notes/strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../notes/oop.html">
+            
+                <a href="../notes/oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../notes/json.html">
+            
+                <a href="../notes/json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../notes/ajax.html">
+            
+                <a href="../notes/ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../notes/others.html">
+            
+                <a href="../notes/others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../notes/bom.html">
+            
+                <a href="../notes/bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../notes/dom.html">
+            
+                <a href="../notes/dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../notes/magic-js.html">
+            
+                <a href="../notes/magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../notes/best-practices.html">
+            
+                <a href="../notes/best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../notes/performance.html">
+            
+                <a href="../notes/performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../notes/coding-conventions.html">
+            
+                <a href="../notes/coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="ajax-api.html">
+            
+                <a href="ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.3" data-path="array-api.html">
+            
+                <a href="array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="base64-api.html">
+            
+                <a href="base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="boolean-api.html">
+            
+                <a href="boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="date-api.html">
+            
+                <a href="date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="encode-uri-api.html">
+            
+                <a href="encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="file-api.html">
+            
+                <a href="file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+            
+                <a href="function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="html-api.html">
+            
+                <a href="html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="json-api.html">
+            
+                <a href="json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="math-api.html">
+            
+                <a href="math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="number-api.html">
+            
+                <a href="number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="object-api.html">
+            
+                <a href="object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="string-api.html">
+            
+                <a href="string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Array API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#array-api"><b></b>Array API</a></li><ul><li><span class="title-icon "></span><a href="#array-properties"><b></b>Array Properties</a></li><li><span class="title-icon "></span><a href="#is-array"><b></b>Is Array</a></li><li><span class="title-icon "></span><a href="#to-string"><b></b>To String</a></li><li><span class="title-icon "></span><a href="#add-elements"><b></b>Add Elements</a></li><li><span class="title-icon "></span><a href="#remove-elements"><b></b>Remove Elements</a></li><li><span class="title-icon "></span><a href="#splice-add--remove-elements-once"><b></b>Splice (Add &amp; Remove Elements Once)</a></li><li><span class="title-icon "></span><a href="#merge-arrays"><b></b>Merge Arrays</a></li><li><span class="title-icon "></span><a href="#fetch-sub-array"><b></b>Fetch Sub-Array</a></li><li><span class="title-icon "></span><a href="#find-max-and-min"><b></b>Find Max and Min</a></li><li><span class="title-icon "></span><a href="#search"><b></b>Search</a></li><li><span class="title-icon "></span><a href="#sort"><b></b>Sort</a></li><li><span class="title-icon "></span><a href="#each-process"><b></b>Each Process</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="array-api"><a name="array-api" class="anchor-navigation-ex-anchor" href="#array-api"><i class="fa fa-link" aria-hidden="true"></i></a>Array API</h2>
+<h3 id="array-properties"><a name="array-properties" class="anchor-navigation-ex-anchor" href="#array-properties"><i class="fa fa-link" aria-hidden="true"></i></a>Array Properties</h3>
+<h4 id="length"><a name="length" class="anchor-navigation-ex-anchor" href="#length"><i class="fa fa-link" aria-hidden="true"></i></a>length</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits.length); <span class="hljs-comment">//4</span>
+</code></pre>
+<hr>
+<h3 id="is-array"><a name="is-array" class="anchor-navigation-ex-anchor" href="#is-array"><i class="fa fa-link" aria-hidden="true"></i></a>Is Array</h3>
+<blockquote>
+<p>There are 3 solutions:</p>
+</blockquote>
+<h4 id="built-in-isarray"><a name="built-in-isarray" class="anchor-navigation-ex-anchor" href="#built-in-isarray"><i class="fa fa-link" aria-hidden="true"></i></a>Built-in isArray()</h4>
+<blockquote>
+<p>NOTE: Supported with ECMAScript 5 or newer</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Array</span>.isArray(x) );  <span class="hljs-comment">// false</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Array</span>.isArray(ary) );  <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="self-defined-isarray-via-constructor"><a name="self-defined-isarray-via-constructor" class="anchor-navigation-ex-anchor" href="#self-defined-isarray-via-constructor"><i class="fa fa-link" aria-hidden="true"></i></a>Self-Defined isArray() via constructor</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-built_in">console</span>.log( x.constructor ); <span class="hljs-comment">// &#x192; Number() { [native code] }</span>
+<span class="hljs-built_in">console</span>.log( isArray(x) );    <span class="hljs-comment">// false</span>
+
+<span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
+<span class="hljs-built_in">console</span>.log( ary.constructor ); <span class="hljs-comment">// &#x192; Array() { [native code] }</span>
+<span class="hljs-built_in">console</span>.log( isArray(ary) );  <span class="hljs-comment">// true</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isArray</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-keyword">return</span> x.constructor.toString().indexOf(<span class="hljs-string">&quot;Array&quot;</span>) &gt; <span class="hljs-number">-1</span>;
+}
+</code></pre>
+<p>Anthor simpler solution:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isArray</span>(<span class="hljs-params">myArray</span>) </span>{
+    <span class="hljs-keyword">return</span> myArray.constructor === <span class="hljs-built_in">Array</span>;
+}
+</code></pre>
+<h4 id="instanceof-array"><a name="instanceof-array" class="anchor-navigation-ex-anchor" href="#instanceof-array"><i class="fa fa-link" aria-hidden="true"></i></a>instanceof Array</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
+<span class="hljs-built_in">console</span>.log( ary <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span> );  <span class="hljs-comment">// true</span>
+</code></pre>
+<hr>
+<h3 id="to-string"><a name="to-string" class="anchor-navigation-ex-anchor" href="#to-string"><i class="fa fa-link" aria-hidden="true"></i></a>To String</h3>
+<h4 id="tostring"><a name="tostring" class="anchor-navigation-ex-anchor" href="#tostring"><i class="fa fa-link" aria-hidden="true"></i></a>toString()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
+<span class="hljs-built_in">console</span>.log( ary );         <span class="hljs-comment">// [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Cake&quot;]</span>
+<span class="hljs-built_in">console</span>.log( ary.toString() );    <span class="hljs-comment">// &quot;Apple,Banana,Cake&quot;</span>
+</code></pre>
+<h4 id="join"><a name="join" class="anchor-navigation-ex-anchor" href="#join"><i class="fa fa-link" aria-hidden="true"></i></a>join()</h4>
+<p><code>join(sign)</code></p>
+<blockquote>
+<p>&#x985E;&#x4F3C; toString() &#xFF0C;&#x53EF;&#x6307;&#x5B9A;&#x4E32;&#x806F;&#x7B26;&#x865F;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
+<span class="hljs-built_in">console</span>.log( ary.join(<span class="hljs-string">&apos;-*-&apos;</span>) );   <span class="hljs-comment">// &quot;Apple-*-Banana-*-Cake&quot;</span>
+</code></pre>
+<hr>
+<h3 id="add-elements"><a name="add-elements" class="anchor-navigation-ex-anchor" href="#add-elements"><i class="fa fa-link" aria-hidden="true"></i></a>Add Elements</h3>
+<h4 id="push"><a name="push" class="anchor-navigation-ex-anchor" href="#push"><i class="fa fa-link" aria-hidden="true"></i></a>push()</h4>
+<p><code>push(item)</code></p>
+<blockquote>
+<p>Add an element into an array <strong>at the end</strong>, and return the new array length.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-keyword">var</span> x = fruits.push(<span class="hljs-string">&quot;Lemon&quot;</span>);
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;, &quot;Lemon&quot;]</span>
+<span class="hljs-built_in">console</span>.log(x);            <span class="hljs-comment">//5</span>
+</code></pre>
+<h4 id="unshift"><a name="unshift" class="anchor-navigation-ex-anchor" href="#unshift"><i class="fa fa-link" aria-hidden="true"></i></a>unshift()</h4>
+<p><code>unshift(item)</code></p>
+<blockquote>
+<p>Add an element into an array <strong>at the beginning</strong>, and return the new array length.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-keyword">var</span> x = fruits.unshift(<span class="hljs-string">&quot;Lemon&quot;</span>);
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">//[&quot;Lemon&quot;, &quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-built_in">console</span>.log(x);            <span class="hljs-comment">//5</span>
+</code></pre>
+<h4 id="directly-assignappend-via-index"><a name="directly-assignappend-via-index" class="anchor-navigation-ex-anchor" href="#directly-assignappend-via-index"><i class="fa fa-link" aria-hidden="true"></i></a>directly assign/append via index</h4>
+<blockquote>
+<p>WARNING: &#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684; index &#x6709;&#x8DF3;&#x865F;&#xFF0C;&#x6703;&#x9020;&#x6210;&#x4E2D;&#x9593;&#x51FA;&#x73FE; undefined
+(Adding elements with high indexes can create undefined &quot;holes&quot; in an array)</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits);        <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-built_in">console</span>.log(fruits.length); <span class="hljs-comment">//4</span>
+
+fruits[<span class="hljs-number">4</span>] =<span class="hljs-string">&quot;Lemon&quot;</span>;
+<span class="hljs-built_in">console</span>.log(fruits);        <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;, &quot;Lemon&quot;]</span>
+<span class="hljs-built_in">console</span>.log(fruits.length);    <span class="hljs-comment">//5</span>
+
+fruits[<span class="hljs-number">10</span>] =<span class="hljs-string">&quot;Lemon&quot;</span>;
+<span class="hljs-built_in">console</span>.log(fruits);        <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;, empty &#xD7; 5, &quot;Lemon&quot;]</span>
+<span class="hljs-built_in">console</span>.log(fruits.length);    <span class="hljs-comment">//11</span>
+<span class="hljs-built_in">console</span>.log(fruits[<span class="hljs-number">8</span>]);        <span class="hljs-comment">//undefined</span>
+</code></pre>
+<hr>
+<h3 id="remove-elements"><a name="remove-elements" class="anchor-navigation-ex-anchor" href="#remove-elements"><i class="fa fa-link" aria-hidden="true"></i></a>Remove Elements</h3>
+<h4 id="pop"><a name="pop" class="anchor-navigation-ex-anchor" href="#pop"><i class="fa fa-link" aria-hidden="true"></i></a>pop()</h4>
+<blockquote>
+<p>Remove <strong>the last</strong> element, and return the removed element.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-keyword">var</span> item = fruits.pop();
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;]</span>
+<span class="hljs-built_in">console</span>.log(item);        <span class="hljs-comment">// &quot;Mango&quot;</span>
+</code></pre>
+<h4 id="shift"><a name="shift" class="anchor-navigation-ex-anchor" href="#shift"><i class="fa fa-link" aria-hidden="true"></i></a>shift()</h4>
+<blockquote>
+<p>Remove <strong>the first</strong> element, and return the removed element.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-keyword">var</span> item = fruits.shift();
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-built_in">console</span>.log(item);        <span class="hljs-comment">// &quot;Banana&quot;</span>
+</code></pre>
+<h4 id="using-delete"><a name="using-delete" class="anchor-navigation-ex-anchor" href="#using-delete"><i class="fa fa-link" aria-hidden="true"></i></a>using delete</h4>
+<blockquote>
+<p>Using delete may leave undefined holes in the array.
+Use pop() or shift() instead.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
+<span class="hljs-keyword">delete</span> fruits[<span class="hljs-number">2</span>];
+<span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Banana&quot;, &quot;Orange&quot;, empty, &quot;Mango&quot;]</span>
+<span class="hljs-built_in">console</span>.log(fruits[<span class="hljs-number">2</span>]);    <span class="hljs-comment">// undefined</span>
+</code></pre>
+<hr>
+<h3 id="splice-add--remove-elements-once"><a name="splice-add--remove-elements-once" class="anchor-navigation-ex-anchor" href="#splice-add--remove-elements-once"><i class="fa fa-link" aria-hidden="true"></i></a>Splice (Add &amp; Remove Elements Once)</h3>
+<h4 id="splice"><a name="splice" class="anchor-navigation-ex-anchor" href="#splice"><i class="fa fa-link" aria-hidden="true"></i></a>splice()</h4>
+<p><code>splice(insertPosition, removedCount, [addedItem1, addedItem2, ...])</code></p>
+<pre><code class="lang-js"><span class="hljs-comment">// demo 1: add</span>
+<span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Item0&quot;</span>, <span class="hljs-string">&quot;Item1&quot;</span>, <span class="hljs-string">&quot;Item2&quot;</span>, <span class="hljs-string">&quot;Item3&quot;</span>];
+<span class="hljs-keyword">var</span> x = fruits.splice(<span class="hljs-number">2</span>, <span class="hljs-number">0</span>, <span class="hljs-string">&quot;New1&quot;</span>, <span class="hljs-string">&quot;New2&quot;</span>);
+<span class="hljs-built_in">console</span>.log(fruits);  <span class="hljs-comment">// [&quot;Item0&quot;, &quot;Item1&quot;, &quot;New1&quot;, &quot;New2&quot;, &quot;Item2&quot;, &quot;Item3&quot;]</span>
+<span class="hljs-built_in">console</span>.log(x);     <span class="hljs-comment">// []</span>
+
+<span class="hljs-comment">// demo 2: remove</span>
+<span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Item0&quot;</span>, <span class="hljs-string">&quot;Item1&quot;</span>, <span class="hljs-string">&quot;Item2&quot;</span>, <span class="hljs-string">&quot;Item3&quot;</span>];
+<span class="hljs-keyword">var</span> x = fruits.splice(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>);
+<span class="hljs-built_in">console</span>.log(fruits);  <span class="hljs-comment">// [&quot;Item0&quot;]</span>
+<span class="hljs-built_in">console</span>.log(x);     <span class="hljs-comment">// [&quot;Item1&quot;, &quot;Item2&quot;, &quot;Item3&quot;]</span>
+
+<span class="hljs-comment">// demo 3: add + remove</span>
+<span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Item0&quot;</span>, <span class="hljs-string">&quot;Item1&quot;</span>, <span class="hljs-string">&quot;Item2&quot;</span>, <span class="hljs-string">&quot;Item3&quot;</span>];
+<span class="hljs-keyword">var</span> x = fruits.splice(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;New1&quot;</span>);
+<span class="hljs-built_in">console</span>.log(fruits);  <span class="hljs-comment">// [&quot;Item0&quot;, &quot;New1&quot;, &quot;Item3&quot;]</span>
+<span class="hljs-built_in">console</span>.log(x);     <span class="hljs-comment">// [&quot;Item1&quot;, &quot;Item2&quot;]</span>
+
+<span class="hljs-comment">// demo 4: negative-position example</span>
+<span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Item0&quot;</span>, <span class="hljs-string">&quot;Item1&quot;</span>, <span class="hljs-string">&quot;Item2&quot;</span>, <span class="hljs-string">&quot;Item3&quot;</span>];
+<span class="hljs-keyword">var</span> x = fruits.splice(<span class="hljs-number">-1</span>, <span class="hljs-number">5</span>);
+<span class="hljs-built_in">console</span>.log(fruits);  <span class="hljs-comment">// [&quot;Item0&quot;, &quot;Item1&quot;, &quot;Item2&quot;]</span>
+<span class="hljs-built_in">console</span>.log(x);     <span class="hljs-comment">// [&quot;Item3&quot;]</span>
+</code></pre>
+<hr>
+<h3 id="merge-arrays"><a name="merge-arrays" class="anchor-navigation-ex-anchor" href="#merge-arrays"><i class="fa fa-link" aria-hidden="true"></i></a>Merge Arrays</h3>
+<h4 id="concat"><a name="concat" class="anchor-navigation-ex-anchor" href="#concat"><i class="fa fa-link" aria-hidden="true"></i></a>concat()</h4>
+<blockquote>
+<p><code>concat()</code> <strong>does not change the existing arrays</strong>. It always <strong>returns a new array</strong>.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ary1 = [<span class="hljs-string">&quot;Cecilie&quot;</span>, <span class="hljs-string">&quot;Lone&quot;</span>];
+<span class="hljs-keyword">var</span> ary2 = [<span class="hljs-string">&quot;Emil&quot;</span>, <span class="hljs-string">&quot;Tobias&quot;</span>, <span class="hljs-string">&quot;Linus&quot;</span>];
+<span class="hljs-keyword">var</span> ary3 = [<span class="hljs-string">&quot;Robin&quot;</span>, <span class="hljs-string">&quot;Morgan&quot;</span>];
+<span class="hljs-keyword">var</span> aryFinal = ary1.concat(ary2, ary3);
+<span class="hljs-built_in">console</span>.log(aryFinal);  <span class="hljs-comment">//[&quot;Cecilie&quot;, &quot;Lone&quot;, &quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;, &quot;Robin&quot;, &quot;Morgan&quot;]</span>
+<span class="hljs-built_in">console</span>.log(ary1);    <span class="hljs-comment">//[&quot;Cecilie&quot;, &quot;Lone&quot;]</span>
+<span class="hljs-built_in">console</span>.log(ary2);    <span class="hljs-comment">//[&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;]</span>
+<span class="hljs-built_in">console</span>.log(ary3);    <span class="hljs-comment">//[&quot;Robin&quot;, &quot;Morgan&quot;]</span>
+</code></pre>
+<hr>
+<h3 id="fetch-sub-array"><a name="fetch-sub-array" class="anchor-navigation-ex-anchor" href="#fetch-sub-array"><i class="fa fa-link" aria-hidden="true"></i></a>Fetch Sub-Array</h3>
+<h4 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>slice()</h4>
+<p><code>slice(startIndex, [endIndexExcluded])</code></p>
+<blockquote>
+<ul>
+<li><code>slice()</code> creates a <strong>new array</strong>. It does not remove any elements from the source array.</li>
+<li>The element of <code>endIndex</code> <strong>not included</strong>.</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Item0&quot;</span>, <span class="hljs-string">&quot;Item1&quot;</span>, <span class="hljs-string">&quot;Item2&quot;</span>, <span class="hljs-string">&quot;Item3&quot;</span>, <span class="hljs-string">&quot;Item4&quot;</span>];
+<span class="hljs-built_in">console</span>.log( fruits.slice(<span class="hljs-number">2</span>) );   <span class="hljs-comment">//[&quot;Item2&quot;, &quot;Item3&quot;, &quot;Item4&quot;]</span>
+<span class="hljs-built_in">console</span>.log( fruits.slice(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>) );  <span class="hljs-comment">//[&quot;Item1&quot;, &quot;Item2&quot;]</span>
+<span class="hljs-built_in">console</span>.log( fruits );        <span class="hljs-comment">//[&quot;Item0&quot;, &quot;Item1&quot;, &quot;Item2&quot;, &quot;Item3&quot;, &quot;Item4&quot;]</span>
+</code></pre>
+<hr>
+<h3 id="find-max-and-min"><a name="find-max-and-min" class="anchor-navigation-ex-anchor" href="#find-max-and-min"><i class="fa fa-link" aria-hidden="true"></i></a>Find Max and Min</h3>
+<blockquote>
+<ul>
+<li>There are <strong>no built-in functions</strong> for finding the highest or lowest value in a JavaScript array.</li>
+<li>&#x4F46;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x4ED6;&#x6280;&#x5DE7;&#x505A;&#x5230;</li>
+</ul>
+</blockquote>
+<h4 id="1-using-sort"><a name="1-using-sort" class="anchor-navigation-ex-anchor" href="#1-using-sort"><i class="fa fa-link" aria-hidden="true"></i></a>1. using sort()</h4>
+<blockquote>
+<ul>
+<li>Cons: inefficient<ul>
+<li>Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> points = [<span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>];
+points.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> a - b});
+<span class="hljs-built_in">console</span>.log(points[<span class="hljs-number">0</span>]); <span class="hljs-comment">// 1 (the lowest value)</span>
+<span class="hljs-built_in">console</span>.log(points[points.length<span class="hljs-number">-1</span>]); <span class="hljs-comment">//100 (the highest value)</span>
+</code></pre>
+<h4 id="2-using-mathmaxapply"><a name="2-using-mathmaxapply" class="anchor-navigation-ex-anchor" href="#2-using-mathmaxapply"><i class="fa fa-link" aria-hidden="true"></i></a>2. using Math.max().apply()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> points = [<span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>];
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.max.apply(<span class="hljs-literal">null</span>, points) ); <span class="hljs-comment">//100</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.min.apply(<span class="hljs-literal">null</span>, points) ); <span class="hljs-comment">//1</span>
+</code></pre>
+<h4 id="3-using-arrayprototypereduce"><a name="3-using-arrayprototypereduce" class="anchor-navigation-ex-anchor" href="#3-using-arrayprototypereduce"><i class="fa fa-link" aria-hidden="true"></i></a>3. using Array.prototype.reduce()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> maxCbk = ( max, cur ) =&gt; <span class="hljs-built_in">Math</span>.max( max, cur );
+<span class="hljs-keyword">var</span> minCbk = ( max, cur ) =&gt; <span class="hljs-built_in">Math</span>.min( max, cur );
+
+<span class="hljs-keyword">var</span> points = [<span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>];
+<span class="hljs-built_in">console</span>.log( points.reduce(maxCbk) ); <span class="hljs-comment">//100</span>
+<span class="hljs-built_in">console</span>.log( points.reduce(minCbk) ); <span class="hljs-comment">//1</span>
+</code></pre>
+<h4 id="4-using-home-made-method"><a name="4-using-home-made-method" class="anchor-navigation-ex-anchor" href="#4-using-home-made-method"><i class="fa fa-link" aria-hidden="true"></i></a>4. using &quot;home made&quot; method</h4>
+<blockquote>
+<p>The fastest solution?</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myArrayMax</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">var</span> len = arr.length
+    <span class="hljs-keyword">var</span> max = -<span class="hljs-literal">Infinity</span>;
+    <span class="hljs-keyword">while</span> (len--) {
+        <span class="hljs-keyword">if</span> (arr[len] &gt; max) {
+            max = arr[len];
+        }
+    }
+    <span class="hljs-keyword">return</span> max;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myArrayMin</span>(<span class="hljs-params">arr</span>) </span>{
+    <span class="hljs-keyword">var</span> len = arr.length
+    <span class="hljs-keyword">var</span> min = <span class="hljs-literal">Infinity</span>;
+    <span class="hljs-keyword">while</span> (len--) {
+        <span class="hljs-keyword">if</span> (arr[len] &lt; min) {
+            min = arr[len];
+        }
+    }
+    <span class="hljs-keyword">return</span> min;
+}
+</code></pre>
+<hr>
+<h3 id="search"><a name="search" class="anchor-navigation-ex-anchor" href="#search"><i class="fa fa-link" aria-hidden="true"></i></a>Search</h3>
+<h4 id="indexof"><a name="indexof" class="anchor-navigation-ex-anchor" href="#indexof"><i class="fa fa-link" aria-hidden="true"></i></a>indexOf()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>];
+<span class="hljs-built_in">console</span>.log( fruits.indexOf(<span class="hljs-string">&quot;Apple&quot;</span>) ); <span class="hljs-comment">//2</span>
+<span class="hljs-built_in">console</span>.log( fruits.indexOf(<span class="hljs-string">&quot;Car&quot;</span>) ); <span class="hljs-comment">//-1</span>
+</code></pre>
+<h4 id="lastindexof"><a name="lastindexof" class="anchor-navigation-ex-anchor" href="#lastindexof"><i class="fa fa-link" aria-hidden="true"></i></a>lastIndexOf()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>];
+<span class="hljs-built_in">console</span>.log( fruits.lastIndexOf(<span class="hljs-string">&quot;Apple&quot;</span>) ); <span class="hljs-comment">//4</span>
+<span class="hljs-built_in">console</span>.log( fruits.lastIndexOf(<span class="hljs-string">&quot;Car&quot;</span>) ); <span class="hljs-comment">//-1</span>
+</code></pre>
+<h4 id="includes"><a name="includes" class="anchor-navigation-ex-anchor" href="#includes"><i class="fa fa-link" aria-hidden="true"></i></a>includes()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+<span class="hljs-built_in">console</span>.log(a.includes(<span class="hljs-number">2</span>)); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(a.includes(<span class="hljs-number">4</span>)) <span class="hljs-comment">// false</span>
+</code></pre>
+<hr>
+<h3 id="sort"><a name="sort" class="anchor-navigation-ex-anchor" href="#sort"><i class="fa fa-link" aria-hidden="true"></i></a>Sort</h3>
+<h4 id="reverse"><a name="reverse" class="anchor-navigation-ex-anchor" href="#reverse"><i class="fa fa-link" aria-hidden="true"></i></a>reverse()</h4>
+<blockquote>
+<ul>
+<li>&#x7D14;&#x53CD;&#x8F49;&#xFF0C;&#x4E0D;&#x91DD;&#x5C0D;&#x5167;&#x5BB9;&#x6392;&#x5E8F;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+fruits.reverse();
+<span class="hljs-built_in">console</span>.log( fruits );  <span class="hljs-comment">// [&quot;Mango&quot;, &quot;Apple&quot;, &quot;Orange&quot;, &quot;Banana&quot;]</span>
+</code></pre>
+<h4 id="sort-for-strings-ascent"><a name="sort-for-strings-ascent" class="anchor-navigation-ex-anchor" href="#sort-for-strings-ascent"><i class="fa fa-link" aria-hidden="true"></i></a>sort() for strings (ascent)</h4>
+<blockquote>
+<ul>
+<li>&#x91DD;&#x5C0D;&#x5167;&#x5BB9;&#x6392;&#x5E8F;</li>
+<li>numerically vs. alphabetically sorting: sort() sorts values as <strong>strings</strong>. (alphabetically)</li>
+<li>sort() will <strong>change the array</strong>, and <strong>return sorted result</strong> too.</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+<span class="hljs-keyword">var</span> x = fruits.sort();
+<span class="hljs-built_in">console</span>.log( fruits );  <span class="hljs-comment">// [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Mango&quot;, &quot;Orange&quot;]</span>
+<span class="hljs-built_in">console</span>.log( x );       <span class="hljs-comment">// [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Mango&quot;, &quot;Orange&quot;]</span>
+</code></pre>
+<h4 id="sorting-strings-descend"><a name="sorting-strings-descend" class="anchor-navigation-ex-anchor" href="#sorting-strings-descend"><i class="fa fa-link" aria-hidden="true"></i></a>sorting strings (descend)</h4>
+<blockquote>
+<p><code>sort()</code> + <code>reverse()</code></p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
+fruits.sort();
+fruits.reverse();
+<span class="hljs-built_in">console</span>.log( fruits );  <span class="hljs-comment">// [&quot;Orange&quot;, &quot;Mango&quot;, &quot;Banana&quot;, &quot;Apple&quot;]</span>
+</code></pre>
+<h4 id="sorting-numbers"><a name="sorting-numbers" class="anchor-navigation-ex-anchor" href="#sorting-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>sorting numbers</h4>
+<blockquote>
+<p>sort numbers using default sort() will get incorrect result</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> numAry = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">11</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>];
+numAry.sort();
+<span class="hljs-built_in">console</span>.log(numAry); <span class="hljs-comment">//  [11, 3, 4, 5, 9]</span>
+</code></pre>
+<blockquote>
+<p>Numeric Sort Solution: providing a <strong>compare function</strong></p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-comment">// ascend</span>
+<span class="hljs-keyword">var</span> numAry = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">11</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>];
+numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> a - b});
+<span class="hljs-built_in">console</span>.log(numAry); <span class="hljs-comment">//  [3, 4, 5, 9, 11]</span>
+
+<span class="hljs-comment">//descend</span>
+<span class="hljs-keyword">var</span> numAry = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">11</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>];
+numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> b - a});
+<span class="hljs-built_in">console</span>.log(numAry); <span class="hljs-comment">//   [11, 9, 5, 4, 3]</span>
+
+<span class="hljs-comment">// random</span>
+<span class="hljs-keyword">var</span> numAry = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">11</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>];
+numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-number">0.5</span> - <span class="hljs-built_in">Math</span>.random()});
+</code></pre>
+<h4 id="sorting-object-arrays"><a name="sorting-object-arrays" class="anchor-navigation-ex-anchor" href="#sorting-object-arrays"><i class="fa fa-link" aria-hidden="true"></i></a>sorting Object Arrays</h4>
+<blockquote>
+<p> using <strong>compare function</strong></p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cars = [
+{type:<span class="hljs-string">&quot;Volvo&quot;</span>, year:<span class="hljs-number">2016</span>},
+{type:<span class="hljs-string">&quot;Saab&quot;</span>, year:<span class="hljs-number">2001</span>},
+{type:<span class="hljs-string">&quot;BMW&quot;</span>, year:<span class="hljs-number">2010</span>}];
+
+<span class="hljs-comment">// sort by number property</span>
+cars.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> a.year - b.year});
+<span class="hljs-built_in">console</span>.log(cars);  <span class="hljs-comment">//[0]Saab 2001, [1]BMW 2010, [2]Volvo 2016</span>
+
+<span class="hljs-comment">// sort by string property</span>
+cars.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{
+    <span class="hljs-keyword">var</span> x = a.type.toLowerCase();
+    <span class="hljs-keyword">var</span> y = b.type.toLowerCase();
+    <span class="hljs-keyword">if</span> (x &lt; y) {<span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;}
+    <span class="hljs-keyword">if</span> (x &gt; y) {<span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;}
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+});
+<span class="hljs-built_in">console</span>.log(cars);  <span class="hljs-comment">//[0]BMW 2010, [1] Saab 2001, [2]Volvo 2016</span>
+</code></pre>
+<h4 id="compare-function"><a name="compare-function" class="anchor-navigation-ex-anchor" href="#compare-function"><i class="fa fa-link" aria-hidden="true"></i></a>Compare Function</h4>
+<blockquote>
+<ul>
+<li><strong>Purpose</strong>: define an alternative sort order</li>
+<li><strong>Return</strong>: should return a <strong>negative</strong>, <strong>zero</strong>, or <strong>positive</strong> value, depending on the arguments</li>
+</ul>
+</blockquote>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// ascend</span>
+<span class="hljs-keyword">var</span> numAry = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">11</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>];
+numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> a - b}); <span class="hljs-comment">// The Compare Function</span>
+<span class="hljs-built_in">console</span>.log(numAry); <span class="hljs-comment">//  [3, 4, 5, 9, 11]</span>
+</code></pre>
+<blockquote>
+<p> When comparing 40 and 100</p>
+<ol>
+<li>the sort() method calls the compare function(40,100).</li>
+<li>The function calculates 40-100, and returns -60 (a negative value).</li>
+<li>The sort function will sort 40 as a value lower than 100.</li>
+</ol>
+</blockquote>
+<hr>
+<h3 id="each-process"><a name="each-process" class="anchor-navigation-ex-anchor" href="#each-process"><i class="fa fa-link" aria-hidden="true"></i></a>Each Process</h3>
+<h4 id="arrayprototypeforeach"><a name="arrayprototypeforeach" class="anchor-navigation-ex-anchor" href="#arrayprototypeforeach"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.forEach()</h4>
+<p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</a></p>
+<p><code>var newArray = oldAry.forEach(callback[, thisArg])</code></p>
+<ul>
+<li>callback: &#x6709;3&#x500B;&#x53C3;&#x6578;:<ul>
+<li>currentValue: &#x76EE;&#x524D;&#x8655;&#x7406;&#x7684;&#x5143;&#x7D20;&#x503C;</li>
+<li>index: &#x76EE;&#x524D;&#x8655;&#x7406;&#x5143;&#x7D20;&#x7684;&#x9663;&#x5217;&#x7D22;&#x5F15;</li>
+<li>array: &#x547C;&#x53EB;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x9663;&#x5217;</li>
+</ul>
+</li>
+<li>thisArg (optional): &#x57F7;&#x884C; callback &#x7684; this &#x503C;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> array1 = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>];
+array1.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">el</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(el);
+});
+</code></pre>
+<h4 id="arrayprototypemap"><a name="arrayprototypemap" class="anchor-navigation-ex-anchor" href="#arrayprototypemap"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.map()</h4>
+<p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map</a></p>
+<blockquote>
+<p>&#x5DE1;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x9010;&#x4E00;&#x52A0;&#x5DE5;&#x5F8C;&#x56DE;&#x50B3;</p>
+</blockquote>
+<p><code>var newArray = oldAry.map(callback[, thisArg])</code></p>
+<ul>
+<li>callback: &#x6709;3&#x500B;&#x53C3;&#x6578;:<ul>
+<li>currentValue: &#x76EE;&#x524D;&#x8655;&#x7406;&#x7684;&#x5143;&#x7D20;&#x503C;</li>
+<li>index: &#x76EE;&#x524D;&#x8655;&#x7406;&#x5143;&#x7D20;&#x7684;&#x9663;&#x5217;&#x7D22;&#x5F15;</li>
+<li>array: &#x547C;&#x53EB;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x9663;&#x5217;</li>
+</ul>
+</li>
+<li>thisArg (optional): &#x57F7;&#x884C; callback &#x7684; this &#x503C;</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> origAry = [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>, <span class="hljs-number">15</span>];
+<span class="hljs-keyword">var</span> newAry = origAry.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">currentValue, index, array</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`currentValue=[<span class="hljs-subst">${currentValue}</span>] index=[<span class="hljs-subst">${index}</span>], array=[<span class="hljs-subst">${array}</span>]`</span>);
+    <span class="hljs-keyword">return</span> currentValue * <span class="hljs-number">2</span>;
+});
+
+<span class="hljs-built_in">console</span>.log(origAry); <span class="hljs-comment">// [1, 5, 10, 15]</span>
+<span class="hljs-built_in">console</span>.log(newAry);  <span class="hljs-comment">// [2, 10, 20, 30]</span>
+
+<span class="hljs-comment">// ***** result *****</span>
+<span class="hljs-comment">// currentValue=[1] index=[0], array=[1,5,10,15]</span>
+<span class="hljs-comment">// currentValue=[5] index=[1], array=[1,5,10,15]</span>
+<span class="hljs-comment">// currentValue=[10] index=[2], array=[1,5,10,15]</span>
+<span class="hljs-comment">// currentValue=[15] index=[3], array=[1,5,10,15]</span>
+<span class="hljs-comment">// (4) [1, 5, 10, 15]</span>
+<span class="hljs-comment">// (4) [2, 10, 20, 30]</span>
+</code></pre>
+<p>Using ES6 Arrow Function Syntax, it&apos;ll be more concise:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> origAry = [<span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>, <span class="hljs-number">15</span>];
+<span class="hljs-keyword">var</span> newAry = origAry.map((x) =&gt; x * <span class="hljs-number">2</span>);
+
+<span class="hljs-built_in">console</span>.log(origAry); <span class="hljs-comment">// [1, 5, 10, 15]</span>
+<span class="hljs-built_in">console</span>.log(newAry);  <span class="hljs-comment">// [2, 10, 20, 30]</span>
+</code></pre>
+<h4 id="arrayprototypefilter"><a name="arrayprototypefilter" class="anchor-navigation-ex-anchor" href="#arrayprototypefilter"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.filter()</h4>
+<p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a></p>
+<blockquote>
+<p>&#x904E;&#x6FFE;&#xFF0C;&#x5DE1;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x9010;&#x4E00;&#x5224;&#x65B7;&#x662F;&#x5426;&#x4FDD;&#x7559;&#xFF0C;&#x56DE;&#x50B3;&#x5E03;&#x6797;</p>
+</blockquote>
+<p><code>var newArray = oldAry.filter(callback[, thisArg])</code></p>
+<ul>
+<li>callback: &#x6709;3&#x500B;&#x53C3;&#x6578;:<ul>
+<li>currentValue: &#x76EE;&#x524D;&#x8655;&#x7406;&#x7684;&#x5143;&#x7D20;&#x503C;</li>
+<li>index: &#x76EE;&#x524D;&#x8655;&#x7406;&#x5143;&#x7D20;&#x7684;&#x9663;&#x5217;&#x7D22;&#x5F15;</li>
+<li>array: &#x547C;&#x53EB;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x9663;&#x5217;</li>
+</ul>
+</li>
+<li>thisArg (optional): &#x57F7;&#x884C; callback &#x7684; this &#x503C;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> origAry = [<span class="hljs-string">&apos;12345&apos;</span>, <span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;1234&apos;</span>, <span class="hljs-string">&apos;123&apos;</span>, <span class="hljs-string">&apos;12&apos;</span>];
+<span class="hljs-keyword">var</span> newAry = origAry.filter(x =&gt; x.length &gt; <span class="hljs-number">3</span>);
+
+<span class="hljs-built_in">console</span>.log(origAry); <span class="hljs-comment">// [&quot;12345&quot;, &quot;1&quot;, &quot;1234&quot;, &quot;123&quot;, &quot;12&quot;]</span>
+<span class="hljs-built_in">console</span>.log(newAry);  <span class="hljs-comment">//[&quot;12345&quot;, &quot;1234&quot;]</span>
+</code></pre>
+<h4 id="arrayprototypereduce"><a name="arrayprototypereduce" class="anchor-navigation-ex-anchor" href="#arrayprototypereduce"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.reduce()</h4>
+<p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a></p>
+<blockquote>
+<p>&#x5229;&#x7528;&#x4E00;&#x500B;&#x7D2F;&#x52A0;&#x5668;&#x53CA;&#x9663;&#x5217;&#x4E2D;&#x6BCF;&#x9805;&#x5143;&#x7D20;&#xFF0C;&#x5C07;&#x9663;&#x5217;&#x5316;&#x70BA;&#x55AE;&#x4E00;&#x503C;</p>
+</blockquote>
+<p><code>var newArray = oldAry.reduce(callback[accumlator, currentValue, currentIndex, array], initialValue)</code></p>
+<ul>
+<li>callback: &#x6709;4&#x500B;&#x53C3;&#x6578;:<ul>
+<li>accumulator: &#x7528;&#x4F86;&#x7D2F;&#x7A4D;&#x56DE;&#x547C;&#x51FD;&#x5F0F;&#x56DE;&#x50B3;&#x503C;&#x7684;&#x7D2F;&#x52A0;&#x5668;&#x6216; initialValue&#xFF08;&#x82E5;&#x6709;&#x7684;&#x8A71;&#xFF09;&#x3002;&#x7D2F;&#x52A0;&#x5668;&#x662F;&#x4E0A;&#x4E00;&#x6B21;&#x547C;&#x53EB;&#x5F8C;&#xFF0C;&#x6240;&#x56DE;&#x50B3;&#x7684;&#x7D2F;&#x52A0;&#x6578;&#x503C;&#x3002;</li>
+<li>currentValue: &#x76EE;&#x524D;&#x8655;&#x7406;&#x7684;&#x5143;&#x7D20;&#x503C;</li>
+<li>index: &#x76EE;&#x524D;&#x8655;&#x7406;&#x5143;&#x7D20;&#x7684;&#x9663;&#x5217;&#x7D22;&#x5F15;</li>
+<li>array: &#x547C;&#x53EB;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x9663;&#x5217;</li>
+</ul>
+</li>
+<li>initialValue (optional): &#x7D2F;&#x52A0;&#x5668;&#x521D;&#x59CB;&#x503C;&#x3002;&#x5EFA;&#x8B70;&#x63D0;&#x4F9B;&#x6BD4;&#x8F03;&#x4FDD;&#x96AA;<ul>
+<li>&#x82E5;&#x6C92;&#x6709;&#x63D0;&#x4F9B;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5247;&#x6703;&#x7528;&#x539F;&#x9663;&#x5217;&#x7684;&#x7B2C;&#x4E00;&#x500B;&#x5143;&#x7D20;&#x7576;&#x4F5C;&#x521D;&#x59CB;&#x503C;&#xFF0C;<strong>&#x4E26;&#x4E14;&#x8DF3;&#x904E;&#x7B2C;&#x4E00;&#x500B;&#x5143;&#x7D20;(index=0)&#x7684;&#x8655;&#x7406;</strong></li>
+<li>&#x5047;&#x5982;&#x65BC;&#x4E00;&#x500B;&#x7A7A;&#x9663;&#x5217;&#x547C;&#x53EB; reduce() &#x65B9;&#x6CD5;&#xFF0C;&#x4E14;&#x6C92;&#x6709;&#x63D0;&#x4F9B;&#x7D2F;&#x52A0;&#x5668;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x5C07;&#x6703;&#x767C;&#x751F;&#x932F;&#x8AA4;</li>
+</ul>
+</li>
+</ul>
+<p>Example 1: &#x9663;&#x5217;&#x503C;&#x52A0;&#x7E3D;</p>
+<p>&#x7121; initialValue:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rlt = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(
+  (accumulator, currentValue, currentIndex, array) =&gt; {
+    <span class="hljs-keyword">return</span> accumulator + currentValue;
+  }
+);
+<span class="hljs-built_in">console</span>.log(rlt); <span class="hljs-comment">//15</span>
+</code></pre>
+<p>&#x6709; initialValue:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rlt = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(
+  (accumulator, currentValue, currentIndex, array) =&gt; {
+    <span class="hljs-keyword">return</span> accumulator + currentValue;
+  },<span class="hljs-number">10</span>
+);
+<span class="hljs-built_in">console</span>.log(rlt); <span class="hljs-comment">//25</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x5BEB;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cbk = (accumulator, currentValue, currentIndex, array) =&gt; {
+    <span class="hljs-keyword">return</span> accumulator + currentValue;
+};
+<span class="hljs-built_in">console</span>.log( [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(cbk) );     <span class="hljs-comment">// 15</span>
+<span class="hljs-built_in">console</span>.log( [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(cbk, <span class="hljs-number">10</span>) ); <span class="hljs-comment">// 25</span>
+</code></pre>
+<p>ES6 &#x8A9E;&#x6CD5;&#x7C21;&#x5BEB;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cbk = (accumulator, currentValue) =&gt; accumulator + currentValue;
+<span class="hljs-built_in">console</span>.log( [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(cbk) );
+<span class="hljs-built_in">console</span>.log( [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(cbk, <span class="hljs-number">10</span>) );
+</code></pre>
+<p>Example 2: &#x6BD4;&#x8F03;&#x7269;&#x4EF6;&#x5C6C;&#x6027;&#x5927;&#x5C0F;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> maxCallback = ( acc, curEl, curIdx, ary ) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`curIdx=[<span class="hljs-subst">${curIdx}</span>]`</span>);
+    <span class="hljs-keyword">return</span> (acc.x &gt; curEl.x) ? acc : curEl;
+};
+
+<span class="hljs-built_in">console</span>.log( [ { x: <span class="hljs-number">22</span> }, { x: <span class="hljs-number">42</span> } ].reduce( maxCallback) ); <span class="hljs-comment">// { x: 42 }</span>
+<span class="hljs-built_in">console</span>.log( [ { x: <span class="hljs-number">22</span> }, { x: <span class="hljs-number">42</span> } ].reduce( maxCallback, { x: <span class="hljs-number">50</span> } ) ); <span class="hljs-comment">// { x: 50 }</span>
+<span class="hljs-built_in">console</span>.log( [ { x: <span class="hljs-number">22</span> }            ].reduce( maxCallback) ); <span class="hljs-comment">// { x: 22 }</span>
+<span class="hljs-built_in">console</span>.log( [                      ].reduce( maxCallback) ); <span class="hljs-comment">// TypeError</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x7D14;&#x7CB9;&#x6BD4;&#x8F03;&#x5927;&#x5C0F;&#x60F3;&#x53D6;&#x6700;&#x7D42;&#x503C;&#xFF0C;&#x4EE5;&#x4E0B;&#x5BEB;&#x6CD5;&#x6BD4;&#x8F03;&#x597D;:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// map/reduce; better solution, also works for empty or larger arrays</span>
+<span class="hljs-keyword">var</span> maxCallback2 = ( max, cur ) =&gt; <span class="hljs-built_in">Math</span>.max( max, cur );
+<span class="hljs-keyword">var</span> rlt = [ { x: <span class="hljs-number">22</span> }, { x: <span class="hljs-number">42</span> } ].map( el =&gt; el.x )
+                        .reduce( maxCallback2, -<span class="hljs-literal">Infinity</span> );
+<span class="hljs-built_in">console</span>.log(rlt); <span class="hljs-comment">//42</span>
+</code></pre>
+<h4 id="arrayprototypeevery"><a name="arrayprototypeevery" class="anchor-navigation-ex-anchor" href="#arrayprototypeevery"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.every()</h4>
+<p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/every" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a></p>
+<blockquote>
+<p>&#x5DE1;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x6E2C;&#x8A66;&#x662F;&#x5426;&#x6BCF;&#x4E00;&#x500B;&#x5143;&#x7D20;&#x90FD;&#x901A;&#x904E;&#x689D;&#x4EF6;(&#x53EA;&#x8981;&#x9047;&#x5230;&#x4E0D;&#x5408;&#x683C;&#x7684;&#x5C31;&#x6703;&#x505C;&#x4E0B;&#x4F86;&#x4E26;&#x56DE;&#x50B3; false)</p>
+</blockquote>
+<p><code>var bool = arr.every(callback[, thisArg])</code></p>
+<ul>
+<li>callback: &#x6709;3&#x500B;&#x53C3;&#x6578;:<ul>
+<li>currentValue: &#x76EE;&#x524D;&#x8655;&#x7406;&#x7684;&#x5143;&#x7D20;&#x503C;</li>
+<li>index: &#x76EE;&#x524D;&#x8655;&#x7406;&#x5143;&#x7D20;&#x7684;&#x9663;&#x5217;&#x7D22;&#x5F15;</li>
+<li>array: &#x547C;&#x53EB;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x9663;&#x5217;</li>
+</ul>
+</li>
+<li>thisArg (optional): &#x57F7;&#x884C; callback &#x7684; this &#x503C;</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> numbers = [<span class="hljs-number">24</span>, <span class="hljs-number">19</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>, <span class="hljs-number">29</span>];
+<span class="hljs-keyword">var</span> allPass = numbers.every(myFunction);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params">value, index, array</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`index=[<span class="hljs-subst">${index}</span>] value=[<span class="hljs-subst">${value}</span>]`</span>);
+    <span class="hljs-keyword">return</span> value &gt; <span class="hljs-number">18</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`allPass=[<span class="hljs-subst">${allPass}</span>]`</span>);
+
+<span class="hljs-comment">// ======== result:</span>
+<span class="hljs-comment">// index=[0] value=[24]</span>
+<span class="hljs-comment">// index=[1] value=[19]</span>
+<span class="hljs-comment">// index=[2] value=[16]</span>
+<span class="hljs-comment">// allPass=[false]</span>
+</code></pre>
+<p>ES6 syntax:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> allPass = [<span class="hljs-number">24</span>, <span class="hljs-number">19</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>, <span class="hljs-number">29</span>].every(val =&gt; val &gt; <span class="hljs-number">18</span>);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ajax-api.html" class="navigation navigation-prev " aria-label="Previous page: Ajax API (XMLHttpRequest)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="base64-api.html" class="navigation navigation-next " aria-label="Next page: Base64 API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Array API","level":"6.3","depth":1,"next":{"title":"Base64 API","level":"6.4","depth":1,"path":"api/base64-api.md","ref":"./api/base64-api.md","articles":[]},"previous":{"title":"Ajax API (XMLHttpRequest)","level":"6.2","depth":1,"path":"api/ajax-api.md","ref":"./api/ajax-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/array-api.md","mtime":"2020-07-24T05:04:28.812Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

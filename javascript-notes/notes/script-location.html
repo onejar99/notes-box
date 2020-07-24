@@ -1,0 +1,953 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS 語法的放置位置 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="output.html" />
+    
+    
+    <link rel="prev" href="version.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="script-location.html">
+            
+                <a href="script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="output.html">
+            
+                <a href="output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="syntax.html">
+            
+                <a href="syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="operators.html">
+            
+                <a href="operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="conditional-statements.html">
+            
+                <a href="conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="this.html">
+            
+                <a href="this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="closures.html">
+            
+                <a href="closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="regular-expressions.html">
+            
+                <a href="regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="strict-mode.html">
+            
+                <a href="strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="bom.html">
+            
+                <a href="bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="dom.html">
+            
+                <a href="dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="magic-js.html">
+            
+                <a href="magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="best-practices.html">
+            
+                <a href="best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="coding-conventions.html">
+            
+                <a href="coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../api/intro.html">
+            
+                <a href="../api/intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../api/ajax-api.html">
+            
+                <a href="../api/ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../api/array-api.html">
+            
+                <a href="../api/array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../api/base64-api.html">
+            
+                <a href="../api/base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../api/boolean-api.html">
+            
+                <a href="../api/boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../api/date-api.html">
+            
+                <a href="../api/date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../api/encode-uri-api.html">
+            
+                <a href="../api/encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../api/file-api.html">
+            
+                <a href="../api/file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+            
+                <a href="../api/function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../api/html-api.html">
+            
+                <a href="../api/html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../api/json-api.html">
+            
+                <a href="../api/json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../api/math-api.html">
+            
+                <a href="../api/math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../api/number-api.html">
+            
+                <a href="../api/number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../api/object-api.html">
+            
+                <a href="../api/object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../api/string-api.html">
+            
+                <a href="../api/string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JS 語法的放置位置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-&#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;"><b></b>JS &#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b></b>Intro</a></li><li><span class="title-icon "></span><a href="#in-html"><b></b>In HTML</a></li><li><span class="title-icon "></span><a href="#external-javascript-&#x5916;&#x90E8;&#x7684;-js-&#x6A94;"><b></b>External JavaScript (&#x5916;&#x90E8;&#x7684; JS &#x6A94;)</a></li></ul></ul></div><a href="#js-&#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-&#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;"><a name="js-&#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#js-&#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>JS &#x8A9E;&#x6CD5;&#x7684;&#x653E;&#x7F6E;&#x4F4D;&#x7F6E;</h1>
+<p>[TOC]</p>
+<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>Intro</h2>
+<p>In HTML, JavaScript statements are &quot;instructions&quot; to be &quot;executed&quot; by the web browser.</p>
+<h2 id="in-html"><a name="in-html" class="anchor-navigation-ex-anchor" href="#in-html"><i class="fa fa-link" aria-hidden="true"></i></a>In HTML</h2>
+<ul>
+<li>Must be inserted between <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> tags.</li>
+<li><code>&lt;script type=&quot;text/javascript&quot;&gt;</code>: This type attribute is not required.<ul>
+<li>(JavaScript is the default scripting language in HTML).</li>
+<li>EX:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc</span><span class="hljs-params">()</span> </span>{
+    alert(<span class="hljs-string">&apos;Hi&apos;</span>);
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;myFunc()&quot;</span>&gt;</span>Try it<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p>JavaScript &#x653E;&#x5728; HTML &#x4E2D;&#x7684; <code>&lt;body&gt;</code> &#x6216; <code>&lt;head&gt;</code> sections &#x88E1;&#x90FD;&#x884C;&#xFF0C;&#x6C92;&#x6709;&#x500B;&#x6578;&#x9650;&#x5236;</p>
+<ul>
+<li>&#x5373;&#x4F7F;&#x653E;&#x5728; <code>&lt;html&gt;</code> &#x4E4B;&#x5916;&#x4E5F;&#x80FD; work (on Chrome)</li>
+</ul>
+</li>
+<li><p>Keeping all code in one place, is always a good habit.</p>
+<ul>
+<li>It is a good idea to <strong>place scripts at the bottom of the <code>&lt;body&gt;</code> element. This can improve page load</strong>, because script compilation can slow down the display.</li>
+<li>You can place <strong>an external script reference in <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code></strong> as you like. The script will behave as if it was located exactly where the <code>&lt;script&gt;</code> tag is located.</li>
+</ul>
+</li>
+</ul>
+<h2 id="external-javascript-&#x5916;&#x90E8;&#x7684;-js-&#x6A94;"><a name="external-javascript-&#x5916;&#x90E8;&#x7684;-js-&#x6A94;" class="anchor-navigation-ex-anchor" href="#external-javascript-&#x5916;&#x90E8;&#x7684;-js-&#x6A94;"><i class="fa fa-link" aria-hidden="true"></i></a>External JavaScript (&#x5916;&#x90E8;&#x7684; JS &#x6A94;)</h2>
+<ul>
+<li>&#x5F15;&#x7528;&#x8A9E;&#x6CD5;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;myScript.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ul>
+<li>External scripts (e.g. &quot;myScript.js&quot;) &#x88E1;&#x76F4;&#x63A5;&#x5C31;&#x662F;JS&#x8A9E;&#x6CD5;&#xFF0C;&#x4E0D;&#x7528;&#x4E5F;&#x4E0D;&#x80FD;&#x518D;&#x6709;<code>&lt;script&gt;</code>&#x6A19;&#x7C64;(&#x56E0;&#x70BA;&#x9019;&#x662F;HTML&#x6A19;&#x7C64;)</li>
+<li>&#x5916;&#x90E8;JS&#x6A94;&#x7684;&#x512A;&#x9EDE;<ol>
+<li>It separates HTML and code</li>
+<li>It makes HTML and JavaScript easier to read and maintain</li>
+<li>Cached JavaScript files can speed up page loads</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>&#x7C21;&#x55AE;&#x4F86;&#x8AAA;&#x5C31;&#x662F;&#xFF1A;&#x66F4;&#x6613;&#x7DAD;&#x8B77;+&#x6709;&#x52A9;&#x65BC;JS&#x5FEB;&#x53D6;&#x4F86;&#x52A0;&#x5F37;&#x9801;&#x9762;&#x8B80;&#x53D6;&#x901F;&#x5EA6;</p>
+</blockquote>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="version.html" class="navigation navigation-prev " aria-label="Previous page: JS Version">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="output.html" class="navigation navigation-next " aria-label="Next page: JS Output">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS 語法的放置位置","level":"1.4","depth":1,"next":{"title":"JS Output","level":"1.5","depth":1,"path":"notes/output.md","ref":"./notes/output.md","articles":[]},"previous":{"title":"JS Version","level":"1.3","depth":1,"path":"notes/version.md","ref":"./notes/version.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/script-location.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

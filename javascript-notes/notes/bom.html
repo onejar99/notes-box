@@ -1,0 +1,1018 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS BOM (Browser Object Model) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dom.html" />
+    
+    
+    <link rel="prev" href="others.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="script-location.html">
+            
+                <a href="script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="output.html">
+            
+                <a href="output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="syntax.html">
+            
+                <a href="syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="operators.html">
+            
+                <a href="operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="conditional-statements.html">
+            
+                <a href="conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="this.html">
+            
+                <a href="this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="closures.html">
+            
+                <a href="closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="regular-expressions.html">
+            
+                <a href="regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="strict-mode.html">
+            
+                <a href="strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="bom.html">
+            
+                <a href="bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="dom.html">
+            
+                <a href="dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="magic-js.html">
+            
+                <a href="magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="best-practices.html">
+            
+                <a href="best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="coding-conventions.html">
+            
+                <a href="coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../api/intro.html">
+            
+                <a href="../api/intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../api/ajax-api.html">
+            
+                <a href="../api/ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../api/array-api.html">
+            
+                <a href="../api/array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../api/base64-api.html">
+            
+                <a href="../api/base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../api/boolean-api.html">
+            
+                <a href="../api/boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../api/date-api.html">
+            
+                <a href="../api/date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../api/encode-uri-api.html">
+            
+                <a href="../api/encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../api/file-api.html">
+            
+                <a href="../api/file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+            
+                <a href="../api/function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../api/html-api.html">
+            
+                <a href="../api/html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../api/json-api.html">
+            
+                <a href="../api/json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../api/math-api.html">
+            
+                <a href="../api/math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../api/number-api.html">
+            
+                <a href="../api/number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../api/object-api.html">
+            
+                <a href="../api/object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../api/string-api.html">
+            
+                <a href="../api/string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JS BOM (Browser Object Model)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#javascript-browser-bom"><b></b>JavaScript Browser BOM</a></li><ul><li><span class="title-icon "></span><a href="#bom-intro"><b></b>BOM Intro</a></li><li><span class="title-icon "></span><a href="#window-object"><b></b>Window Object</a></li><li><span class="title-icon "></span><a href="#window-properties"><b></b>Window Properties</a></li><ul><li><span class="title-icon "></span><a href="#window-size"><b></b>Window Size</a></li><li><span class="title-icon "></span><a href="#window-screen"><b></b>Window Screen</a></li><li><span class="title-icon "></span><a href="#windowlocation"><b></b>window.location</a></li></ul><li><span class="title-icon "></span><a href="#window-methods"><b></b>Window Methods</a></li><ul><li><span class="title-icon "></span><a href="#windowopen"><b></b>window.open()</a></li><li><span class="title-icon "></span><a href="#windowclose"><b></b>window.close()</a></li><li><span class="title-icon "></span><a href="#windowmoveto"><b></b>window.moveTo()</a></li><li><span class="title-icon "></span><a href="#windowmoveby"><b></b>window.moveBy()</a></li><li><span class="title-icon "></span><a href="#windowresizeto"><b></b>window.resizeTo()</a></li></ul></ul></ul></div><a href="#javascript-browser-bom" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="javascript-browser-bom"><a name="javascript-browser-bom" class="anchor-navigation-ex-anchor" href="#javascript-browser-bom"><i class="fa fa-link" aria-hidden="true"></i></a>JavaScript Browser BOM</h1>
+<p>[TOC]</p>
+<h2 id="bom-intro"><a name="bom-intro" class="anchor-navigation-ex-anchor" href="#bom-intro"><i class="fa fa-link" aria-hidden="true"></i></a>BOM Intro</h2>
+<blockquote>
+<p>Browser Object Model (BOM)</p>
+</blockquote>
+<p>BOM allows JavaScript to &quot;talk to&quot; the browser.</p>
+<h2 id="window-object"><a name="window-object" class="anchor-navigation-ex-anchor" href="#window-object"><i class="fa fa-link" aria-hidden="true"></i></a>Window Object</h2>
+<ul>
+<li>represents the browser&apos;s window</li>
+<li>All global JavaScript objects, functions, and variables automatically become members of the window object.<ul>
+<li>Global variables: properties of the window object.</li>
+<li>Global functions: methods of the window object.</li>
+<li>Even the document object (of the HTML DOM) is a property of the window object:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">window</span>.document.getElementById(<span class="hljs-string">&quot;header&quot;</span>);
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;header&quot;</span>);  <span class="hljs-comment">// the same as above</span>
+</code></pre>
+<h2 id="window-properties"><a name="window-properties" class="anchor-navigation-ex-anchor" href="#window-properties"><i class="fa fa-link" aria-hidden="true"></i></a>Window Properties</h2>
+<h3 id="window-size"><a name="window-size" class="anchor-navigation-ex-anchor" href="#window-size"><i class="fa fa-link" aria-hidden="true"></i></a>Window Size</h3>
+<p>&#x8996;&#x7A97;&#x5927;&#x5C0F;&#xFF0C;&#x6703;&#x96A8;&#x8996;&#x7A97;&#x5927;&#x5C0F;&#x8ABF;&#x6574;&#x800C;&#x8B8A;&#x5316;</p>
+<ul>
+<li>size of the browser window</li>
+<li>The browser window (the browser viewport) is <strong>NOT</strong> including toolbars and scrollbars.</li>
+</ul>
+<ul>
+<li>window.innerHeight: the <strong>inner</strong> height of the browser window (in pixels)</li>
+<li>window.innerWidth: the <strong>inner</strong> width of the browser window (in pixels)</li>
+</ul>
+<p>A practical JavaScript solution (covering all browsers):</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> w = <span class="hljs-built_in">window</span>.innerWidth
+|| <span class="hljs-built_in">document</span>.documentElement.clientWidth
+|| <span class="hljs-built_in">document</span>.body.clientWidth;
+
+<span class="hljs-keyword">var</span> h = <span class="hljs-built_in">window</span>.innerHeight
+|| <span class="hljs-built_in">document</span>.documentElement.clientHeight
+|| <span class="hljs-built_in">document</span>.body.clientHeight;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Browser inner window width: <span class="hljs-subst">${w}</span>, height: <span class="hljs-subst">${h}</span>.`</span>);
+</code></pre>
+<h3 id="window-screen"><a name="window-screen" class="anchor-navigation-ex-anchor" href="#window-screen"><i class="fa fa-link" aria-hidden="true"></i></a>Window Screen</h3>
+<p>&#x4F7F;&#x7528;&#x8005;&#x87A2;&#x5E55;&#x89E3;&#x6790;&#x5EA6;&#x5927;&#x5C0F;&#xFF0C;&#x548C;&#x8996;&#x7A97;&#x5927;&#x5C0F;&#x7121;&#x95DC;</p>
+<p>The <code>window.screen</code> object contains information about the user&apos;s screen.</p>
+<p>The <code>window.screen</code> object can be written without the <code>window</code> prefix.</p>
+<ul>
+<li>screen.width</li>
+<li>screen.height</li>
+<li>screen.availWidth</li>
+<li>screen.availHeight</li>
+</ul>
+<ul>
+<li>height vs. availHeight
+1080 vs 1040</li>
+</ul>
+<p>&#x6574;&#x500B;&#x87A2;&#x5E55;&#x89E3;&#x6790;&#x5EA6;&#x5927;&#x5C0F; vs. &#x53EF;&#x7528;&#x7684;&#x5340;&#x57DF;&#x5927;&#x5C0F;(&#x4F8B;&#x5982;&#x6263;&#x6389;Windows&#x7684;&#x5DE5;&#x5177;&#x5217;)</p>
+<p>screen.colorDepth
+screen.pixelDepth</p>
+<p>colorDepth: 16, 24, 32 bit &#x8272;&#x5F69;</p>
+<p>For modern computers, Color Depth and Pixel Depth are equal.</p>
+<h3 id="windowlocation"><a name="windowlocation" class="anchor-navigation-ex-anchor" href="#windowlocation"><i class="fa fa-link" aria-hidden="true"></i></a>window.location</h3>
+<p>&#x5207;&#x63DB;&#x7576;&#x524D;&#x9801;&#x7DB2;&#x5740;</p>
+<pre><code class="lang-js">&lt;script&gt;
+<span class="hljs-built_in">window</span>.location = <span class="hljs-string">&quot;demo_json.php&quot;</span>;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<hr>
+<h2 id="window-methods"><a name="window-methods" class="anchor-navigation-ex-anchor" href="#window-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Window Methods</h2>
+<h3 id="windowopen"><a name="windowopen" class="anchor-navigation-ex-anchor" href="#windowopen"><i class="fa fa-link" aria-hidden="true"></i></a>window.open()</h3>
+<p><code>window.open([URL, name, specs, replace])</code></p>
+<p>open a new window</p>
+<h3 id="windowclose"><a name="windowclose" class="anchor-navigation-ex-anchor" href="#windowclose"><i class="fa fa-link" aria-hidden="true"></i></a>window.close()</h3>
+<p>close the current window</p>
+<h3 id="windowmoveto"><a name="windowmoveto" class="anchor-navigation-ex-anchor" href="#windowmoveto"><i class="fa fa-link" aria-hidden="true"></i></a>window.moveTo()</h3>
+<h3 id="windowmoveby"><a name="windowmoveby" class="anchor-navigation-ex-anchor" href="#windowmoveby"><i class="fa fa-link" aria-hidden="true"></i></a>window.moveBy()</h3>
+<p>move the current window</p>
+<h3 id="windowresizeto"><a name="windowresizeto" class="anchor-navigation-ex-anchor" href="#windowresizeto"><i class="fa fa-link" aria-hidden="true"></i></a>window.resizeTo()</h3>
+<p>resize the current window</p>
+<pre><code class="lang-js">&lt;button onclick=&quot;openWinAtTab()&quot;&gt;Create new window&lt;/button&gt;
+&lt;button onclick=&quot;openWinAsSimpleWindow()&quot;&gt;Create new window 2&lt;/button&gt;
+&lt;button onclick=&quot;moveWinTo()&quot;&gt;Move new window&lt;/button&gt;
+&lt;button onclick=&quot;moveWinBy()&quot;&gt;Move the new window by 75 * 50px&lt;/button&gt;
+&lt;button onclick=&quot;resizeWin()&quot;&gt;Resize the new window&lt;/button&gt;
+&lt;button onclick=&quot;closeWin()&quot;&gt;Close new window&lt;/button&gt;
+
+&lt;script&gt;
+var myWindow;
+
+function openWinAsSimpleWindow() {
+    myWindow = window.open(&quot;&quot;, &quot;&quot;, &quot;width=250, height=250&quot;);
+}
+
+function openWinAtTab() {
+    myWindow = window.open(&quot;&quot;);
+}
+
+function moveWinTo() {
+    myWindow.moveTo(150, 150);
+    myWindow.focus();
+}
+
+function moveWinBy() {
+    myWindow.moveBy(75, 50);
+    myWindow.focus();
+}
+
+function resizeWin(){
+  myWindow.resizeTo(500, 500);
+    myWindow.focus();
+}
+
+function closeWin(){
+  myWindow.close();
+}
+&lt;/script&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="others.html" class="navigation navigation-prev " aria-label="Previous page: JS Others">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dom.html" class="navigation navigation-next " aria-label="Next page: JS DOM (Document Object Model)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS BOM (Browser Object Model)","level":"3.4","depth":1,"next":{"title":"JS DOM (Document Object Model)","level":"3.5","depth":1,"path":"notes/dom.md","ref":"./notes/dom.md","articles":[]},"previous":{"title":"JS Others","level":"3.3","depth":1,"path":"notes/others.md","ref":"./notes/others.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/bom.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

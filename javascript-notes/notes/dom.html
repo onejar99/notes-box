@@ -1,0 +1,1081 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS DOM (Document Object Model) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="magic-js.html" />
+    
+    
+    <link rel="prev" href="bom.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="script-location.html">
+            
+                <a href="script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="output.html">
+            
+                <a href="output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="syntax.html">
+            
+                <a href="syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="operators.html">
+            
+                <a href="operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="conditional-statements.html">
+            
+                <a href="conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="this.html">
+            
+                <a href="this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="closures.html">
+            
+                <a href="closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="regular-expressions.html">
+            
+                <a href="regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="strict-mode.html">
+            
+                <a href="strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="bom.html">
+            
+                <a href="bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="dom.html">
+            
+                <a href="dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="magic-js.html">
+            
+                <a href="magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="best-practices.html">
+            
+                <a href="best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="coding-conventions.html">
+            
+                <a href="coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../api/intro.html">
+            
+                <a href="../api/intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../api/ajax-api.html">
+            
+                <a href="../api/ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../api/array-api.html">
+            
+                <a href="../api/array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../api/base64-api.html">
+            
+                <a href="../api/base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../api/boolean-api.html">
+            
+                <a href="../api/boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../api/date-api.html">
+            
+                <a href="../api/date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../api/encode-uri-api.html">
+            
+                <a href="../api/encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../api/file-api.html">
+            
+                <a href="../api/file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+            
+                <a href="../api/function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../api/html-api.html">
+            
+                <a href="../api/html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../api/json-api.html">
+            
+                <a href="../api/json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../api/math-api.html">
+            
+                <a href="../api/math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../api/number-api.html">
+            
+                <a href="../api/number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../api/object-api.html">
+            
+                <a href="../api/object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../api/string-api.html">
+            
+                <a href="../api/string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JS DOM (Document Object Model)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dom"><b></b>DOM</a></li><ul><li><span class="title-icon "></span><a href="#what-is-the-dom"><b></b>What is the DOM?</a></li><li><span class="title-icon "></span><a href="#xml-dom"><b></b>XML DOM</a></li><ul><li><span class="title-icon "></span><a href="#dom-parser-support"><b></b>DOM Parser Support</a></li></ul><li><span class="title-icon "></span><a href="#xml-dom-example"><b></b>XML DOM Example</a></li><ul><li><span class="title-icon "></span><a href="#example-1-xml-text-to-xml-dom-object"><b></b>Example 1: XML Text to XML DOM Object:</a></li><li><span class="title-icon "></span><a href="#example-2-generating-xml-dom-document-and-converting-to-string"><b></b>Example 2: Generating XML DOM Document and converting to string:</a></li><li><span class="title-icon "></span><a href="#example-3-creating-xml-dom"><b></b>Example 3: Creating XML DOM</a></li></ul><li><span class="title-icon "></span><a href="#xml-cdata"><b></b>XML CDATA</a></li></ul></ul></div><a href="#dom" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dom"><a name="dom" class="anchor-navigation-ex-anchor" href="#dom"><i class="fa fa-link" aria-hidden="true"></i></a>DOM</h1>
+<blockquote>
+<p>Document Object Model (DOM)</p>
+</blockquote>
+<p>[TOC]</p>
+<h2 id="what-is-the-dom"><a name="what-is-the-dom" class="anchor-navigation-ex-anchor" href="#what-is-the-dom"><i class="fa fa-link" aria-hidden="true"></i></a>What is the DOM?</h2>
+<p>DOM &#x5B9A;&#x7FA9;&#x4E86;&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x6A94;&#x7684;&#x6A19;&#x6E96;
+(The DOM defines a standard for accessing and manipulating documents)</p>
+<ul>
+<li><strong>HTML DOM</strong> &#x5B9A;&#x7FA9;&#x4E86;&#x64CD;&#x4F5C;HTML&#x6587;&#x6A94;&#x7684;&#x6A19;&#x6E96;&#x65B9;&#x6CD5;&#x3002; &#x5B83;&#x5C07;HTML&#x6587;&#x6A94;&#x5448;&#x73FE;&#x70BA;&#x6A39;&#x72C0;&#x7D50;&#x69CB;&#x3002;</li>
+<li><strong>XML DOM</strong> &#x5B9A;&#x7FA9;&#x4E86;&#x64CD;&#x4F5C;XML&#x6587;&#x6A94;&#x7684;&#x6A19;&#x6E96;&#x65B9;&#x5F0F;&#x3002; &#x5B83;&#x5C07;XML&#x6587;&#x6A94;&#x5448;&#x73FE;&#x70BA;&#x6A39;&#x5F62;&#x7D50;&#x69CB;&#x3002;</li>
+</ul>
+<h2 id="xml-dom"><a name="xml-dom" class="anchor-navigation-ex-anchor" href="#xml-dom"><i class="fa fa-link" aria-hidden="true"></i></a>XML DOM</h2>
+<blockquote>
+<p>mynote: XML DOM &#x5728;&#x64CD;&#x4F5C;&#x6642;&#xFF0C;&#x6BCF;&#x500B;&#x6771;&#x897F;&#x8996;&#x70BA;&#x4E00;&#x500B; node&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;element&#xFF0C;element&#x88E1;&#x7684;&#x6587;&#x5B57;&#xFF0C;element&#x4E0A;&#x7684;attribute&#xFF0C;&#x90FD;&#x662F;&#x7528;&#x4E00;&#x500B;&#x500B;node&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<p><a href="https://www.w3schools.com/xml/nodetree.gif" target="_blank">!</a>
+(source: W3Schools)</p>
+<h3 id="dom-parser-support"><a name="dom-parser-support" class="anchor-navigation-ex-anchor" href="#dom-parser-support"><i class="fa fa-link" aria-hidden="true"></i></a>DOM Parser Support</h3>
+<p>All modern browsers have a built-in XML parser that can convert text into an <strong>XML DOM object</strong>.
+(Old versions of Internet Explorer (IE5, IE6, IE7, IE8) do not support the DOMParser object. They use ActiveXObject)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.DOMParser) {
+  <span class="hljs-comment">// code for modern browsers</span>
+  parser = <span class="hljs-keyword">new</span> DOMParser();
+  xmlDoc = parser.parseFromString(text,<span class="hljs-string">&quot;text/xml&quot;</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-comment">// code for old IE browsers</span>
+xmlDoc = <span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-string">&quot;Microsoft.XMLDOM&quot;</span>);
+  xmlDoc.async = <span class="hljs-literal">false</span>;
+  xmlDoc.loadXML(text);
+}
+</code></pre>
+<h2 id="xml-dom-example"><a name="xml-dom-example" class="anchor-navigation-ex-anchor" href="#xml-dom-example"><i class="fa fa-link" aria-hidden="true"></i></a>XML DOM Example</h2>
+<h3 id="example-1-xml-text-to-xml-dom-object"><a name="example-1-xml-text-to-xml-dom-object" class="anchor-navigation-ex-anchor" href="#example-1-xml-text-to-xml-dom-object"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1: XML Text to XML DOM Object:</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> parser = <span class="hljs-keyword">new</span> DOMParser();
+<span class="hljs-keyword">var</span> xmlDoc = parser.parseFromString(text,<span class="hljs-string">&quot;text/xml&quot;</span>);
+
+print(xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;title&quot;</span>)); <span class="hljs-comment">// type=HTMLCollection, value= HTMLCollection(3) [title, title, title]</span>
+print(xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;title&quot;</span>)[<span class="hljs-number">0</span>]); <span class="hljs-comment">// type=Element, value= &lt;title&gt;The Little Prince&lt;/title&gt;</span>
+print(xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;title&quot;</span>)[<span class="hljs-number">0</span>].childNodes); <span class="hljs-comment">// type=NodeList, value= NodeList [text]</span>
+print(xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;title&quot;</span>)[<span class="hljs-number">0</span>].childNodes[<span class="hljs-number">0</span>]); <span class="hljs-comment">// type=Text, value= &quot;The Little Prince&quot;</span>
+print(xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;title&quot;</span>)[<span class="hljs-number">0</span>].childNodes[<span class="hljs-number">0</span>].nodeValue); <span class="hljs-comment">//type=String, value= The Little Prince</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">print</span>(<span class="hljs-params">x</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;type=&apos;</span> + getType(x) + <span class="hljs-string">&apos;, value=&apos;</span>, x);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getType</span>(<span class="hljs-params">x</span>)</span>{
+  <span class="hljs-keyword">var</span> cstr = x.constructor.toString();
+  <span class="hljs-keyword">var</span> endPos = cstr.indexOf(<span class="hljs-string">&quot;(&quot;</span>);
+    <span class="hljs-keyword">return</span> cstr.substring(<span class="hljs-string">&quot;function &quot;</span>.length, endPos);
+}
+</code></pre>
+<h3 id="example-2-generating-xml-dom-document-and-converting-to-string"><a name="example-2-generating-xml-dom-document-and-converting-to-string" class="anchor-navigation-ex-anchor" href="#example-2-generating-xml-dom-document-and-converting-to-string"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: Generating XML DOM Document and converting to string:</h3>
+<p>(including CDATA, Attribute)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xmlDoc = <span class="hljs-built_in">document</span>.implementation.createDocument(<span class="hljs-literal">null</span>, <span class="hljs-string">&quot;books&quot;</span>);
+<span class="hljs-keyword">var</span> rootElement = xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;books&quot;</span>)[<span class="hljs-number">0</span>];
+rootElement.appendChild(genBookNode(xmlDoc, <span class="hljs-string">&quot;Harry Potter&quot;</span>, <span class="hljs-number">399</span>));
+rootElement.appendChild(genBookNode(xmlDoc, <span class="hljs-string">&quot;The Little Prince&quot;</span>, <span class="hljs-number">299</span>));
+rootElement.appendChild(genBookNode(xmlDoc, <span class="hljs-string">&quot;Test&lt;GoGo&gt;!@#$%^&amp;*&quot;</span>, <span class="hljs-number">99</span>));
+<span class="hljs-keyword">var</span> text = convertXmlDom2String(xmlDoc);
+<span class="hljs-built_in">console</span>.log(text);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genBookNode</span>(<span class="hljs-params">xmlDoc, title, price</span>)</span>{
+  <span class="hljs-keyword">var</span> bookNnode = xmlDoc.createElement(<span class="hljs-string">&quot;book&quot;</span>);
+    <span class="hljs-keyword">var</span> titleNode = genNodeWithTextValue(xmlDoc, <span class="hljs-string">&quot;title&quot;</span>, title);
+    <span class="hljs-keyword">var</span> priceNode = genNodeWithTextValue(xmlDoc, <span class="hljs-string">&quot;price&quot;</span>, price);
+    <span class="hljs-keyword">var</span> aliasNode = genNodeWithCdataTextValue(xmlDoc, <span class="hljs-string">&quot;alias&quot;</span>, title)
+    addAttrToNode(xmlDoc, priceNode, <span class="hljs-string">&quot;currency&quot;</span>, <span class="hljs-string">&quot;NT&quot;</span>)
+    bookNnode.appendChild(titleNode);
+    bookNnode.appendChild(priceNode);
+    bookNnode.appendChild(aliasNode);
+    <span class="hljs-keyword">return</span> bookNnode;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genNodeWithTextValue</span>(<span class="hljs-params">xmlDoc, tagName, value</span>)</span>{
+  <span class="hljs-keyword">var</span> node = xmlDoc.createElement(tagName);
+    <span class="hljs-keyword">var</span> textNode = xmlDoc.createTextNode(value);
+  node.appendChild(textNode);
+    <span class="hljs-keyword">return</span> node;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addAttrToNode</span>(<span class="hljs-params">xmlDoc, node, attrName, attrValue</span>)</span>{
+  <span class="hljs-keyword">var</span> newAtt = xmlDoc.createAttribute(attrName);
+  newAtt.nodeValue = attrValue;
+  node.setAttributeNode(newAtt);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">genNodeWithCdataTextValue</span>(<span class="hljs-params">xmlDoc, tagName, value</span>)</span>{
+  <span class="hljs-keyword">var</span> node = xmlDoc.createElement(tagName);
+    <span class="hljs-keyword">var</span> textNode = xmlDoc.createCDATASection(value);
+  node.appendChild(textNode);
+    <span class="hljs-keyword">return</span> node;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convertXmlDom2String</span>(<span class="hljs-params">xmlDoc</span>)</span>{
+  <span class="hljs-keyword">var</span> serializer = <span class="hljs-keyword">new</span> XMLSerializer();
+  <span class="hljs-keyword">var</span> xmlString = serializer.serializeToString(xmlDoc);
+    <span class="hljs-keyword">return</span> xmlString;
+}
+
+<span class="hljs-comment">// ****** result *******</span>
+<span class="hljs-comment">// &lt;books&gt;</span>
+<span class="hljs-comment">//   &lt;book&gt;</span>
+<span class="hljs-comment">//     &lt;title&gt;Harry Potter&lt;/title&gt;</span>
+<span class="hljs-comment">//     &lt;price currency=&quot;NT&quot;&gt;399&lt;/price&gt;</span>
+<span class="hljs-comment">//     &lt;alias&gt;</span>
+<span class="hljs-comment">//       &lt;![CDATA[Harry Potter]]&gt;</span>
+<span class="hljs-comment">//     &lt;/alias&gt;</span>
+<span class="hljs-comment">//   &lt;/book&gt;</span>
+<span class="hljs-comment">//   &lt;book&gt;</span>
+<span class="hljs-comment">//     &lt;title&gt;The Little Prince&lt;/title&gt;</span>
+<span class="hljs-comment">//     &lt;price currency=&quot;NT&quot;&gt;299&lt;/price&gt;</span>
+<span class="hljs-comment">//     &lt;alias&gt;</span>
+<span class="hljs-comment">//       &lt;![CDATA[The Little Prince]]&gt;</span>
+<span class="hljs-comment">//     &lt;/alias&gt;</span>
+<span class="hljs-comment">//   &lt;/book&gt;</span>
+<span class="hljs-comment">//   &lt;book&gt;</span>
+<span class="hljs-comment">//     &lt;title&gt;Test&amp;lt;GoGo&amp;gt;!@#$%^&amp;amp;*&lt;/title&gt;</span>
+<span class="hljs-comment">//     &lt;price currency=&quot;NT&quot;&gt;99&lt;/price&gt;</span>
+<span class="hljs-comment">//     &lt;alias&gt;</span>
+<span class="hljs-comment">//       &lt;![CDATA[Test&lt;GoGo&gt;!@#$%^&amp;*]]&gt;</span>
+<span class="hljs-comment">//     &lt;/alias&gt;</span>
+<span class="hljs-comment">//   &lt;/book&gt;</span>
+<span class="hljs-comment">// &lt;/books&gt;</span>
+</code></pre>
+<h3 id="example-3-creating-xml-dom"><a name="example-3-creating-xml-dom" class="anchor-navigation-ex-anchor" href="#example-3-creating-xml-dom"><i class="fa fa-link" aria-hidden="true"></i></a>Example 3: Creating XML DOM</h3>
+<p>ref: <a href="https://stackoverflow.com/questions/14340894/create-xml-in-javascript" target="_blank">Create XML in Javascript</a></p>
+<p>JavaScript handles XML with &apos;XML DOM objects&apos;. You can obtain such an object in three ways:</p>
+<ol>
+<li>Creating a new XML DOM object</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xmlDoc = <span class="hljs-built_in">document</span>.implementation.createDocument(<span class="hljs-literal">null</span>, <span class="hljs-string">&quot;books&quot;</span>);
+</code></pre>
+<ol>
+<li>Fetching an XML file with XMLHttpRequest</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xhttp = <span class="hljs-keyword">new</span> XMLHttpRequest();
+xhttp.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-keyword">if</span> (xhttp.readyState == <span class="hljs-number">4</span> &amp;&amp; xhttp.status == <span class="hljs-number">200</span>) {
+
+    <span class="hljs-keyword">var</span> xmlDoc = xhttp.responseXML; <span class="hljs-comment">//important to use responseXML here</span>
+}
+xhttp.open(<span class="hljs-string">&quot;GET&quot;</span>, <span class="hljs-string">&quot;books.xml&quot;</span>, <span class="hljs-literal">true</span>);
+xhttp.send();
+</code></pre>
+<ol>
+<li>Parsing a string containing serialized XML</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xmlString = <span class="hljs-string">&quot;&lt;root&gt;&lt;/root&gt;&quot;</span>;
+<span class="hljs-keyword">var</span> parser = <span class="hljs-keyword">new</span> DOMParser();
+<span class="hljs-keyword">var</span> xmlDoc = parser.parseFromString(xmlString, <span class="hljs-string">&quot;text/xml&quot;</span>); <span class="hljs-comment">//important to use &quot;text/xml&quot;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> node = xmlDoc.createElement(<span class="hljs-string">&quot;heyHo&quot;</span>);
+<span class="hljs-keyword">var</span> elements = xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;root&quot;</span>);
+elements[<span class="hljs-number">0</span>].appendChild(node);
+</code></pre>
+<p>can serialize XML DOM objects like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> serializer = <span class="hljs-keyword">new</span> XMLSerializer();
+<span class="hljs-keyword">var</span> xmlString = serializer.serializeToString(xmlDoc);
+</code></pre>
+<h2 id="xml-cdata"><a name="xml-cdata" class="anchor-navigation-ex-anchor" href="#xml-cdata"><i class="fa fa-link" aria-hidden="true"></i></a>XML CDATA</h2>
+<p>ref: <a href="http://www.w3school.com.cn/xml/xml_cdata.asp" target="_blank">http://www.w3school.com.cn/xml/xml_cdata.asp</a>
+ref: <a href="https://docs.microsoft.com/zh-tw/sql/relational-databases/xml/example-specifying-the-cdata-directive" target="_blank">https://docs.microsoft.com/zh-tw/sql/relational-databases/xml/example-specifying-the-cdata-directive</a></p>
+<p>&#x6240;&#x6709; XML &#x6587;&#x6A94;&#x4E2D;&#x7684;&#x6587;&#x672C;&#x5747;&#x6703;&#x88AB;&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x3002;</p>
+<p>&#x53EA;&#x6709; CDATA &#x5340;&#x6BB5;&#xFF08;CDATA section&#xFF09;&#x4E2D;&#x7684;&#x6587;&#x672C;&#x6703;&#x88AB;&#x89E3;&#x6790;&#x5668;&#x5FFD;&#x7565;&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x65BC;&#x7A0B;&#x5F0F;&#x78BC;&#x6216;SQL&#x8A9E;&#x6CD5;&#x5834;&#x5408;&#xFF0C;&#x4F8B;&#x5982;ORM&#x5B9A;&#x7FA9;&#x6587;&#x4EF6;</p>
+<p>CDATA &#x90E8;&#x5206;&#x7531; &quot;&lt;![CDATA[&quot; &#x5F00;&#x59CB;&#xFF0C;&#x7531; &quot;]]&gt;&quot; &#x7ED3;&#x675F;&#xFF1A;</p>
+<p>EX:</p>
+<pre><code class="lang-xml">&lt;![CDATA[&lt;Summary&gt;This is summary description&lt;/Summary&gt;]]&gt;
+
+&lt;![CDATA[
+function matchwo(a,b)
+{
+  if (a &lt; b &amp;&amp; a &lt; 0) then
+    { return 1; }
+  else  {  return 0; }
+}
+]]&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bom.html" class="navigation navigation-prev " aria-label="Previous page: JS BOM (Browser Object Model)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="magic-js.html" class="navigation navigation-next " aria-label="Next page: JS Magic JavaScript">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS DOM (Document Object Model)","level":"3.5","depth":1,"next":{"title":"JS Magic JavaScript","level":"3.6","depth":1,"path":"notes/magic-js.md","ref":"./notes/magic-js.md","articles":[]},"previous":{"title":"JS BOM (Browser Object Model)","level":"3.4","depth":1,"path":"notes/bom.md","ref":"./notes/bom.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/dom.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,948 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Function.prototype API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="html-api.html" />
+    
+    
+    <link rel="prev" href="file-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../notes/introduction.html">
+            
+                <a href="../notes/introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../notes/version.html">
+            
+                <a href="../notes/version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../notes/script-location.html">
+            
+                <a href="../notes/script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../notes/output.html">
+            
+                <a href="../notes/output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../notes/syntax.html">
+            
+                <a href="../notes/syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../notes/variables.html">
+            
+                <a href="../notes/variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../notes/functions.html">
+            
+                <a href="../notes/functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../notes/data-types.html">
+            
+                <a href="../notes/data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../notes/operators.html">
+            
+                <a href="../notes/operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../notes/conditional-statements.html">
+            
+                <a href="../notes/conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../notes/loop.html">
+            
+                <a href="../notes/loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../notes/scope.html">
+            
+                <a href="../notes/scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../notes/this.html">
+            
+                <a href="../notes/this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../notes/closures.html">
+            
+                <a href="../notes/closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../notes/errors.html">
+            
+                <a href="../notes/errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../notes/hoisting.html">
+            
+                <a href="../notes/hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../notes/events.html">
+            
+                <a href="../notes/events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../notes/regular-expressions.html">
+            
+                <a href="../notes/regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../notes/strict-mode.html">
+            
+                <a href="../notes/strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../notes/oop.html">
+            
+                <a href="../notes/oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../notes/json.html">
+            
+                <a href="../notes/json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../notes/ajax.html">
+            
+                <a href="../notes/ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../notes/others.html">
+            
+                <a href="../notes/others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../notes/bom.html">
+            
+                <a href="../notes/bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../notes/dom.html">
+            
+                <a href="../notes/dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../notes/magic-js.html">
+            
+                <a href="../notes/magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../notes/best-practices.html">
+            
+                <a href="../notes/best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../notes/performance.html">
+            
+                <a href="../notes/performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../notes/coding-conventions.html">
+            
+                <a href="../notes/coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="ajax-api.html">
+            
+                <a href="ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="array-api.html">
+            
+                <a href="array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="base64-api.html">
+            
+                <a href="base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="boolean-api.html">
+            
+                <a href="boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="date-api.html">
+            
+                <a href="date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="encode-uri-api.html">
+            
+                <a href="encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="file-api.html">
+            
+                <a href="file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.9" data-path="function-prototype-api.html">
+            
+                <a href="function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="html-api.html">
+            
+                <a href="html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="json-api.html">
+            
+                <a href="json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="math-api.html">
+            
+                <a href="math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="number-api.html">
+            
+                <a href="number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="object-api.html">
+            
+                <a href="object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="string-api.html">
+            
+                <a href="string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Function.prototype API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#functionprototype-api"><b></b>Function.prototype API</a></li><ul><li><span class="title-icon "></span><a href="#functionprototypeapply--call"><b></b>Function.prototype.apply() &amp; call()</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="functionprototype-api"><a name="functionprototype-api" class="anchor-navigation-ex-anchor" href="#functionprototype-api"><i class="fa fa-link" aria-hidden="true"></i></a>Function.prototype API</h2>
+<h3 id="functionprototypeapply--call"><a name="functionprototypeapply--call" class="anchor-navigation-ex-anchor" href="#functionprototypeapply--call"><i class="fa fa-link" aria-hidden="true"></i></a>Function.prototype.apply() &amp; call()</h3>
+<p>Reference:</p>
+<ul>
+<li><a href="http://www.jstips.co/zh_tw/javascript/calculate-the-max-min-value-from-an-array/" target="_blank">&#x5F9E;&#x9663;&#x5217;&#x8A08;&#x7B97;&#x6700;&#x5927;&#x548C;&#x6700;&#x5C0F;&#x503C;</a></li>
+<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank">Function.prototype.apply() - JavaScript | MDN</a></li>
+</ul>
+<h4 id="&#x4E3B;&#x52D5;&#x547C;&#x53EB;&#x51FD;&#x6578;&#x7684;&#x4E09;&#x7A2E;&#x8A9E;&#x6CD5;&#xFF1A;"><a name="&#x4E3B;&#x52D5;&#x547C;&#x53EB;&#x51FD;&#x6578;&#x7684;&#x4E09;&#x7A2E;&#x8A9E;&#x6CD5;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x52D5;&#x547C;&#x53EB;&#x51FD;&#x6578;&#x7684;&#x4E09;&#x7A2E;&#x8A9E;&#x6CD5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x52D5;&#x547C;&#x53EB;&#x51FD;&#x6578;&#x7684;&#x4E09;&#x7A2E;&#x8A9E;&#x6CD5;&#xFF1A;</h4>
+<ul>
+<li>obj.myFunc();</li>
+<li>myFunc.call(obj, [arg]);</li>
+<li>myFunc.apply(obj, [arg1,arg2..]);</li>
+</ul>
+<h4 id="apply--call-&#x7684;&#x7528;&#x9014;"><a name="apply--call-&#x7684;&#x7528;&#x9014;" class="anchor-navigation-ex-anchor" href="#apply--call-&#x7684;&#x7528;&#x9014;"><i class="fa fa-link" aria-hidden="true"></i></a>apply() &amp; call() &#x7684;&#x7528;&#x9014;</h4>
+<ul>
+<li>&#x547C;&#x53EB;&#x51FD;&#x6578;&#xFF0C;&#x4E26;&#x5141;&#x8A31;&#x6307;&#x6D3E;&#x7279;&#x5B9A;&#x7684;&#x7269;&#x4EF6;&#x4F5C;&#x70BA; this &#x5C0D;&#x8C61; (&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;)</li>
+<li>&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x662F; null&#xFF0C;&#x8868;&#x793A; this &#x662F;&#x5168;&#x57DF;&#x7269;&#x4EF6;<ul>
+<li>In &quot;non-strict&quot; mode, &#x5982;&#x679C;&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x662F; null &#x6216; undefined&#xFF0C;&#x6703;&#x7528; global object &#x7576;&#x4F5C; <code>this</code></li>
+<li>In JS strict mode, &#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x653E;&#x4EC0;&#x9EBC;&#xFF0C;<code>this</code> &#x5C31;&#x662F;&#x4EC0;&#x9EBC; (&#x5982;&#x679C;&#x653E; null &#x53C8;&#x6709;&#x7528;&#x5230; <code>this</code> &#x5C31;&#x6709;&#x53EF;&#x80FD;&#x51FA;&#x932F;)</li>
+</ul>
+</li>
+<li>apply() &#x8A9E;&#x6CD5;&#x548C; call() &#x5E7E;&#x4E4E;&#x4E00;&#x6A23;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x4E0D;&#x540C;&#x662F; call() &#x63A5;&#x53D7;&#x4E00;&#x9023;&#x4E32;&#x7684;&#x53C3;&#x6578;&#xFF0C;&#x800C; apply() &#x63A5;&#x53D7;&#x4E00;&#x7D44;&#x9663;&#x5217;&#x5F62;&#x5F0F;&#x7684;&#x53C3;&#x6578;</li>
+</ul>
+<h4 id="example-1"><a name="example-1" class="anchor-navigation-ex-anchor" href="#example-1"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> person = {
+    firstName:<span class="hljs-string">&quot;John&quot;</span>,
+    lastName: <span class="hljs-string">&quot;Doe&quot;</span>,
+    fullName: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.firstName + <span class="hljs-string">&quot; &quot;</span> + <span class="hljs-keyword">this</span>.lastName;
+    }
+}
+<span class="hljs-keyword">var</span> myObject = {
+    firstName:<span class="hljs-string">&quot;Mary&quot;</span>,
+    lastName: <span class="hljs-string">&quot;Doe&quot;</span>,
+}
+<span class="hljs-keyword">var</span> x = person.fullName.call(myObject);
+<span class="hljs-keyword">var</span> x = person.fullName.apply(myObject);
+<span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// &quot;Mary Doe&quot;</span>
+</code></pre>
+<h4 id="example-2-&#x53D6;&#x9663;&#x5217;&#x6700;&#x5927;&#x503C;&#x6700;&#x5C0F;&#x503C;"><a name="example-2-&#x53D6;&#x9663;&#x5217;&#x6700;&#x5927;&#x503C;&#x6700;&#x5C0F;&#x503C;" class="anchor-navigation-ex-anchor" href="#example-2-&#x53D6;&#x9663;&#x5217;&#x6700;&#x5927;&#x503C;&#x6700;&#x5C0F;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: &#x53D6;&#x9663;&#x5217;&#x6700;&#x5927;&#x503C;&#x6700;&#x5C0F;&#x503C;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> points = [<span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>];
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.max.apply(<span class="hljs-literal">null</span>, points) ); <span class="hljs-comment">//100</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.min.apply(<span class="hljs-literal">null</span>, points) ); <span class="hljs-comment">//1</span>
+
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.max.call(<span class="hljs-literal">null</span>, <span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>) ); <span class="hljs-comment">//100</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.min.call(<span class="hljs-literal">null</span>, <span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>) ); <span class="hljs-comment">//1</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="file-api.html" class="navigation navigation-prev " aria-label="Previous page: File URI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="html-api.html" class="navigation navigation-next " aria-label="Next page: HTML URI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Function.prototype API","level":"6.9","depth":1,"next":{"title":"HTML URI","level":"6.10","depth":1,"path":"api/html-api.md","ref":"./api/html-api.md","articles":[]},"previous":{"title":"File URI","level":"6.8","depth":1,"path":"api/file-api.md","ref":"./api/file-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/function-prototype-api.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

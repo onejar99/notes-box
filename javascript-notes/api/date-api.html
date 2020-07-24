@@ -1,0 +1,1070 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Date API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="encode-uri-api.html" />
+    
+    
+    <link rel="prev" href="boolean-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../notes/introduction.html">
+            
+                <a href="../notes/introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../notes/version.html">
+            
+                <a href="../notes/version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../notes/script-location.html">
+            
+                <a href="../notes/script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../notes/output.html">
+            
+                <a href="../notes/output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../notes/syntax.html">
+            
+                <a href="../notes/syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../notes/variables.html">
+            
+                <a href="../notes/variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../notes/functions.html">
+            
+                <a href="../notes/functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../notes/data-types.html">
+            
+                <a href="../notes/data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../notes/operators.html">
+            
+                <a href="../notes/operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../notes/conditional-statements.html">
+            
+                <a href="../notes/conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../notes/loop.html">
+            
+                <a href="../notes/loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../notes/scope.html">
+            
+                <a href="../notes/scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../notes/this.html">
+            
+                <a href="../notes/this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../notes/closures.html">
+            
+                <a href="../notes/closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../notes/errors.html">
+            
+                <a href="../notes/errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../notes/hoisting.html">
+            
+                <a href="../notes/hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../notes/events.html">
+            
+                <a href="../notes/events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../notes/regular-expressions.html">
+            
+                <a href="../notes/regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../notes/strict-mode.html">
+            
+                <a href="../notes/strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../notes/oop.html">
+            
+                <a href="../notes/oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../notes/json.html">
+            
+                <a href="../notes/json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../notes/ajax.html">
+            
+                <a href="../notes/ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../notes/others.html">
+            
+                <a href="../notes/others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../notes/bom.html">
+            
+                <a href="../notes/bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../notes/dom.html">
+            
+                <a href="../notes/dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../notes/magic-js.html">
+            
+                <a href="../notes/magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../notes/best-practices.html">
+            
+                <a href="../notes/best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../notes/performance.html">
+            
+                <a href="../notes/performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../notes/coding-conventions.html">
+            
+                <a href="../notes/coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="ajax-api.html">
+            
+                <a href="ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="array-api.html">
+            
+                <a href="array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="base64-api.html">
+            
+                <a href="base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="boolean-api.html">
+            
+                <a href="boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.6" data-path="date-api.html">
+            
+                <a href="date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="encode-uri-api.html">
+            
+                <a href="encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="file-api.html">
+            
+                <a href="file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+            
+                <a href="function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="html-api.html">
+            
+                <a href="html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="json-api.html">
+            
+                <a href="json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="math-api.html">
+            
+                <a href="math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="number-api.html">
+            
+                <a href="number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="object-api.html">
+            
+                <a href="object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="string-api.html">
+            
+                <a href="string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Date API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#date-api"><b></b>Date API</a></li><ul><li><span class="title-icon "></span><a href="#create-date-object"><b></b>Create Date Object</a></li><li><span class="title-icon "></span><a href="#parsing-dates"><b></b>Parsing Dates</a></li><li><span class="title-icon "></span><a href="#is-date"><b></b>Is Date</a></li><li><span class="title-icon "></span><a href="#to-string"><b></b>To String</a></li><li><span class="title-icon "></span><a href="#getting-a-part-of-a-date"><b></b>Getting (a part of a Date)</a></li><li><span class="title-icon "></span><a href="#setting-a-part-of-a-date"><b></b>Setting (a part of a Date)</a></li><li><span class="title-icon "></span><a href="#utc-getting"><b></b>UTC Getting</a></li><li><span class="title-icon "></span><a href="#add-days"><b></b>Add Days</a></li><li><span class="title-icon "></span><a href="#compare-dates"><b></b>Compare Dates</a></li><li><span class="title-icon "></span><a href="#format"><b></b>Format</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="date-api"><a name="date-api" class="anchor-navigation-ex-anchor" href="#date-api"><i class="fa fa-link" aria-hidden="true"></i></a>Date API</h2>
+<p>[TOC]</p>
+<hr>
+<h3 id="create-date-object"><a name="create-date-object" class="anchor-navigation-ex-anchor" href="#create-date-object"><i class="fa fa-link" aria-hidden="true"></i></a>Create Date Object</h3>
+<h4 id="date"><a name="date" class="anchor-navigation-ex-anchor" href="#date"><i class="fa fa-link" aria-hidden="true"></i></a>Date()</h4>
+<p><code>new Date()</code></p>
+<p><code>new Date(milliseconds)</code></p>
+<p><code>new Date(dateString)</code></p>
+<p><code>new Date(year, month, day, hours, minutes, seconds, milliseconds)</code></p>
+<blockquote>
+<p>JS counts months from 0 to 11. January is 0. December is 11.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-comment">// Way 1: new Date()</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+
+<span class="hljs-comment">// Way 2: new Date(milliseconds)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">86400000</span>); <span class="hljs-comment">//Fri Jan 02 1970 08:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+
+<span class="hljs-comment">// Way 3: new Date(dateString)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;March 25, 2015 11:13:00&quot;</span>);  <span class="hljs-comment">//Wed Mar 25 2015 11:13:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25&quot;</span>); <span class="hljs-comment">//(ISO Date, The International Standard)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015/03/25&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;03/25/2015&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;Mar 25 2015&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;25 Mar 2015&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;Wednesday March 25 2015&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015&quot;</span>);
+<span class="hljs-comment">//.....etc.</span>
+
+<span class="hljs-comment">//Omitting T or Z in a date-time string can give different result in different browser.</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25T12:00:00Z&quot;</span>); <span class="hljs-comment">// T: separating Date and time; Z: UTC time</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25T12:00:00-06:30&quot;</span>); <span class="hljs-comment">//relative to UTC (+HH:MM or -HH:MM)</span>
+
+<span class="hljs-comment">//Some browsers will error</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-3-25&quot;</span>); <span class="hljs-comment">//with no leading zeroes</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015/03/25&quot;</span>); <span class="hljs-comment">//YYYY/MM/DD</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;25-03-2015&quot;</span>); <span class="hljs-comment">//DD-MM-YYYY</span>
+
+
+<span class="hljs-comment">// Way 4: new Date(year, month, day, hours, minutes, seconds, milliseconds)</span>
+<span class="hljs-comment">//counts months from 0 to 11. January is 0. December is 11.</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>, <span class="hljs-number">30</span>, <span class="hljs-number">500</span>); <span class="hljs-comment">//Thu Jun 24 1999 11:33:30 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>, <span class="hljs-number">30</span>);    <span class="hljs-comment">//Thu Jun 24 1999 11:33:30 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>);        <span class="hljs-comment">//Thu Jun 24 1999 11:33:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>);            <span class="hljs-comment">//Thu Jun 24 1999 11:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>);                <span class="hljs-comment">//Thu Jun 24 1999 00:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>);                    <span class="hljs-comment">//Tue Jun 01 1999 00:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>);            <span class="hljs-comment">//Thu Jan 01 1970 08:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;) (incorrect)</span>
+</code></pre>
+<hr>
+<h3 id="parsing-dates"><a name="parsing-dates" class="anchor-navigation-ex-anchor" href="#parsing-dates"><i class="fa fa-link" aria-hidden="true"></i></a>Parsing Dates</h3>
+<h4 id="dateparse"><a name="dateparse" class="anchor-navigation-ex-anchor" href="#dateparse"><i class="fa fa-link" aria-hidden="true"></i></a>Date.parse()</h4>
+<blockquote>
+<p>convert a valid date string to milliseconds</p>
+<p>mynote:
+&#x89BA;&#x5F97;&#x548C; new Date(string) &#x7684;&#x7528;&#x9014;&#x6975;&#x985E;&#x4F3C;&#xFF0C;&#x8F49;&#x6210; millisecond &#x53CD;&#x800C;&#x591A;&#x4E00;&#x5C64;&#x5DE5;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> msec = <span class="hljs-built_in">Date</span>.parse(<span class="hljs-string">&quot;March 21, 2012&quot;</span>);
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(msec);
+</code></pre>
+<hr>
+<h3 id="is-date"><a name="is-date" class="anchor-navigation-ex-anchor" href="#is-date"><i class="fa fa-link" aria-hidden="true"></i></a>Is Date</h3>
+<p>Refer to: Array API - Self-Defined isArray() via constructor</p>
+<hr>
+<h3 id="to-string"><a name="to-string" class="anchor-navigation-ex-anchor" href="#to-string"><i class="fa fa-link" aria-hidden="true"></i></a>To String</h3>
+<h4 id="directly-stringify-object"><a name="directly-stringify-object" class="anchor-navigation-ex-anchor" href="#directly-stringify-object"><i class="fa fa-link" aria-hidden="true"></i></a>(directly stringify object)</h4>
+<h4 id="tostring"><a name="tostring" class="anchor-navigation-ex-anchor" href="#tostring"><i class="fa fa-link" aria-hidden="true"></i></a>toString()</h4>
+<h4 id="toutcstring"><a name="toutcstring" class="anchor-navigation-ex-anchor" href="#toutcstring"><i class="fa fa-link" aria-hidden="true"></i></a>toUTCString()</h4>
+<h4 id="todatestring"><a name="todatestring" class="anchor-navigation-ex-anchor" href="#todatestring"><i class="fa fa-link" aria-hidden="true"></i></a>toDateString()</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+
+<span class="hljs-built_in">console</span>.log( d );                        <span class="hljs-comment">//Tue Dec 05 2017 19:29:54 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-built_in">console</span>.log( d.toString() );        <span class="hljs-comment">//Tue Dec 05 2017 19:29:54 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+
+<span class="hljs-comment">//The toUTCString() method converts a date to a UTC string (a date display standard).</span>
+<span class="hljs-built_in">console</span>.log( d.toUTCString() );        <span class="hljs-comment">//Tue, 05 Dec 2017 11:29:54 GMT</span>
+
+<span class="hljs-built_in">console</span>.log( d.toDateString() );    <span class="hljs-comment">//Tue Dec 05 2017</span>
+</code></pre>
+<hr>
+<h3 id="getting-a-part-of-a-date"><a name="getting-a-part-of-a-date" class="anchor-navigation-ex-anchor" href="#getting-a-part-of-a-date"><i class="fa fa-link" aria-hidden="true"></i></a>Getting (a part of a Date)</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;March 25, 2015 11:13:05.800&quot;</span>);
+
+<span class="hljs-comment">//Getting a part of a Date</span>
+<span class="hljs-built_in">console</span>.log( d.getFullYear() );            <span class="hljs-comment">//2015 (the four digit year) (yyyy)</span>
+<span class="hljs-built_in">console</span>.log( d.getMonth() );            <span class="hljs-comment">//2 (0-11)</span>
+<span class="hljs-built_in">console</span>.log( d.getDate() );                <span class="hljs-comment">//25 (day) (1-31)</span>
+<span class="hljs-built_in">console</span>.log( d.getDay() );                <span class="hljs-comment">//3 (weekday) (0-6) 0=Sunday</span>
+<span class="hljs-built_in">console</span>.log( d.getHours() );            <span class="hljs-comment">//11 (0-23)</span>
+<span class="hljs-built_in">console</span>.log( d.getMinutes() );            <span class="hljs-comment">//13 (0-59)</span>
+<span class="hljs-built_in">console</span>.log( d.getSeconds() );            <span class="hljs-comment">//5 (0-59)</span>
+<span class="hljs-built_in">console</span>.log( d.getMilliseconds() );        <span class="hljs-comment">//800 (0-999)</span>
+<span class="hljs-built_in">console</span>.log( d.getTime() );                <span class="hljs-comment">//1427253180000 (milliseconds since January 1, 1970)</span>
+</code></pre>
+<hr>
+<h3 id="setting-a-part-of-a-date"><a name="setting-a-part-of-a-date" class="anchor-navigation-ex-anchor" href="#setting-a-part-of-a-date"><i class="fa fa-link" aria-hidden="true"></i></a>Setting (a part of a Date)</h3>
+<blockquote>
+<p>mynote:</p>
+<ol>
+<li>Setting methods just <strong>like void setter</strong>. The object will be changed.</li>
+<li>There is still returned value. Note that will <strong>return timestamp(number), not a Date object</strong>.</li>
+</ol>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2015-03-25T12:30:05.800&apos;</span>);
+<span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">typeof</span> d );                            <span class="hljs-comment">//&quot;object&quot;</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">typeof</span> d.setFullYear(<span class="hljs-number">20201</span>, <span class="hljs-number">0</span>, <span class="hljs-number">14</span>) );    <span class="hljs-comment">//&quot;number&quot;</span>
+</code></pre>
+<p>Setting Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2015-03-25T12:30:05.800&apos;</span>);
+d.setFullYear(<span class="hljs-number">2020</span>);        <span class="hljs-comment">//Set the year (optionally month and day)</span>
+d.setFullYear(<span class="hljs-number">2020</span>, <span class="hljs-number">5</span>);
+d.setFullYear(<span class="hljs-number">2020</span>, <span class="hljs-number">5</span>, <span class="hljs-number">15</span>);
+d.setDate(<span class="hljs-number">1</span>);                 <span class="hljs-comment">//Set the day as a number (1-31)</span>
+d.setHours(<span class="hljs-number">23</span>);                <span class="hljs-comment">//Set the hour (0-23)</span>
+d.setMilliseconds(<span class="hljs-number">440</span>);        <span class="hljs-comment">//Set the milliseconds (0-999)</span>
+d.setMinutes(<span class="hljs-number">33</span>);            <span class="hljs-comment">//Set the minutes (0-59)</span>
+d.setMonth(<span class="hljs-number">1</span>);                <span class="hljs-comment">//Set the month (0-11)</span>
+d.setSeconds(<span class="hljs-number">33</span>);            <span class="hljs-comment">//Set the seconds (0-59)</span>
+d.setTime(<span class="hljs-number">1580571213440</span>);    <span class="hljs-comment">//Set the time (milliseconds since January 1, 1970)</span>
+<span class="hljs-built_in">console</span>.log(d);    <span class="hljs-comment">// &quot;Sat Feb 01 2020 23:33:33 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+</code></pre>
+<hr>
+<h3 id="utc-getting"><a name="utc-getting" class="anchor-navigation-ex-anchor" href="#utc-getting"><i class="fa fa-link" aria-hidden="true"></i></a>UTC Getting</h3>
+<blockquote>
+<p>Same as Getting Methods, , but returns the UTC date</p>
+</blockquote>
+<pre><code class="lang-js">getUTCDate()    <span class="hljs-comment">//Same as getDate(), but returns the UTC date</span>
+getUTCDay()    <span class="hljs-comment">//Same as getDay(), but returns the UTC day</span>
+getUTCFullYear()    <span class="hljs-comment">//Same as getFullYear(), but returns the UTC year</span>
+getUTCHours()    <span class="hljs-comment">//Same as getHours(), but returns the UTC hour</span>
+getUTCMilliseconds()    <span class="hljs-comment">//Same as getMilliseconds(), but returns the UTC milliseconds</span>
+getUTCMinutes()    <span class="hljs-comment">//Same as getMinutes(), but returns the UTC minutes</span>
+getUTCMonth()    <span class="hljs-comment">//Same as getMonth(), but returns the UTC month</span>
+getUTCSeconds()    <span class="hljs-comment">//Same as getSeconds(), but returns the UTC seconds</span>
+</code></pre>
+<hr>
+<h3 id="add-days"><a name="add-days" class="anchor-navigation-ex-anchor" href="#add-days"><i class="fa fa-link" aria-hidden="true"></i></a>Add Days</h3>
+<blockquote>
+<p>The <code>setDate()</code> method can also be used to add days to a date:</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2015-01-10T12:30:05.800&apos;</span>);
+<span class="hljs-built_in">console</span>.log(d);                        <span class="hljs-comment">// &quot;Sat Jan 10 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+d.setDate( <span class="hljs-number">50</span> );    <span class="hljs-comment">//&#x5C07;&#x65E5;&#x671F;&#x90E8;&#x5206;&#x8A2D;50&#xFF0C;&#x8D85;&#x904E;&#x7576;&#x6708;&#x5929;&#x6578;&#x7684;&#x90E8;&#x5206;&#x81EA;&#x52D5;&#x9032;&#x4F4D;&#x5230;&#x4E0B;&#x500B;&#x6708;</span>
+<span class="hljs-built_in">console</span>.log(d);                        <span class="hljs-comment">// &quot;Thu Feb 19 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+d.setDate( d.getDate() + <span class="hljs-number">50</span> ); <span class="hljs-comment">//&#x5F9E;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x5F80;&#x4E0A;&#x52A0;50&#x5929;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x904E;&#x7576;&#x6708;&#x5929;&#x6578;&#xFF0C;&#x4E00;&#x6A23;&#x81EA;&#x52D5;&#x9032;&#x4F4D;</span>
+<span class="hljs-built_in">console</span>.log(d);                        <span class="hljs-comment">// &quot;Fri Apr 10 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+</code></pre>
+<hr>
+<h3 id="compare-dates"><a name="compare-dates" class="anchor-navigation-ex-anchor" href="#compare-dates"><i class="fa fa-link" aria-hidden="true"></i></a>Compare Dates</h3>
+<blockquote>
+<p>Directly comparing</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> today = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+<span class="hljs-keyword">var</span> someday = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+someday.setFullYear(<span class="hljs-number">2100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">14</span>);
+
+<span class="hljs-keyword">if</span> (someday &gt; today) {
+    text = <span class="hljs-string">&quot;Today is before January 14, 2100.&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+    text = <span class="hljs-string">&quot;Today is after January 14, 2100.&quot;</span>;
+}
+</code></pre>
+<hr>
+<h3 id="format"><a name="format" class="anchor-navigation-ex-anchor" href="#format"><i class="fa fa-link" aria-hidden="true"></i></a>Format</h3>
+<p>EX:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(value);
+<span class="hljs-keyword">return</span> date.getFullYear() + <span class="hljs-string">&apos;/&apos;</span> + (date.getMonth() + <span class="hljs-number">1</span>) + <span class="hljs-string">&apos;/&apos;</span> + date.getDate();
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="boolean-api.html" class="navigation navigation-prev " aria-label="Previous page: Boolean API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="encode-uri-api.html" class="navigation navigation-next " aria-label="Next page: Encode URI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Date API","level":"6.6","depth":1,"next":{"title":"Encode URI","level":"6.7","depth":1,"path":"api/encode-uri-api.md","ref":"./api/encode-uri-api.md","articles":[]},"previous":{"title":"Boolean API","level":"6.5","depth":1,"path":"api/boolean-api.md","ref":"./api/boolean-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/date-api.md","mtime":"2020-07-24T05:04:28.812Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

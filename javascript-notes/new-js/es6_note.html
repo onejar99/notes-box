@@ -1,0 +1,1551 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ES6 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="es7_note.html" />
+    
+    
+    <link rel="prev" href="../notes/coding-conventions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../notes/introduction.html">
+            
+                <a href="../notes/introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../notes/version.html">
+            
+                <a href="../notes/version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../notes/script-location.html">
+            
+                <a href="../notes/script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../notes/output.html">
+            
+                <a href="../notes/output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../notes/syntax.html">
+            
+                <a href="../notes/syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../notes/variables.html">
+            
+                <a href="../notes/variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../notes/functions.html">
+            
+                <a href="../notes/functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../notes/data-types.html">
+            
+                <a href="../notes/data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../notes/operators.html">
+            
+                <a href="../notes/operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../notes/conditional-statements.html">
+            
+                <a href="../notes/conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../notes/loop.html">
+            
+                <a href="../notes/loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../notes/scope.html">
+            
+                <a href="../notes/scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../notes/this.html">
+            
+                <a href="../notes/this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../notes/closures.html">
+            
+                <a href="../notes/closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../notes/errors.html">
+            
+                <a href="../notes/errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../notes/hoisting.html">
+            
+                <a href="../notes/hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../notes/events.html">
+            
+                <a href="../notes/events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../notes/regular-expressions.html">
+            
+                <a href="../notes/regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../notes/strict-mode.html">
+            
+                <a href="../notes/strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../notes/oop.html">
+            
+                <a href="../notes/oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../notes/json.html">
+            
+                <a href="../notes/json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../notes/ajax.html">
+            
+                <a href="../notes/ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../notes/others.html">
+            
+                <a href="../notes/others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../notes/bom.html">
+            
+                <a href="../notes/bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../notes/dom.html">
+            
+                <a href="../notes/dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../notes/magic-js.html">
+            
+                <a href="../notes/magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../notes/best-practices.html">
+            
+                <a href="../notes/best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../notes/performance.html">
+            
+                <a href="../notes/performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../notes/coding-conventions.html">
+            
+                <a href="../notes/coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="es6_note.html">
+            
+                <a href="es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="es7_note.html">
+            
+                <a href="es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="es8_note.html">
+            
+                <a href="es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../api/intro.html">
+            
+                <a href="../api/intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../api/ajax-api.html">
+            
+                <a href="../api/ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../api/array-api.html">
+            
+                <a href="../api/array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../api/base64-api.html">
+            
+                <a href="../api/base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../api/boolean-api.html">
+            
+                <a href="../api/boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../api/date-api.html">
+            
+                <a href="../api/date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../api/encode-uri-api.html">
+            
+                <a href="../api/encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../api/file-api.html">
+            
+                <a href="../api/file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+            
+                <a href="../api/function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../api/html-api.html">
+            
+                <a href="../api/html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../api/json-api.html">
+            
+                <a href="../api/json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../api/math-api.html">
+            
+                <a href="../api/math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../api/number-api.html">
+            
+                <a href="../api/number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../api/object-api.html">
+            
+                <a href="../api/object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../api/string-api.html">
+            
+                <a href="../api/string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ES6</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#es6"><b></b>ES6</a></li><ul><li><span class="title-icon "></span><a href="#online-test-tools"><b></b>Online Test Tools</a></li><li><span class="title-icon "></span><a href="#notes"><b></b>Notes</a></li><ul><li><span class="title-icon "></span><a href="#1-function-parameters-default-values"><b></b>1. Function parameters&apos; default values</a></li><li><span class="title-icon "></span><a href="#2-template-literals"><b></b>2. Template Literals</a></li><li><span class="title-icon "></span><a href="#3-multi-line-strings"><b></b>3. Multi-line Strings</a></li><li><span class="title-icon "></span><a href="#4-destructuring-assignment"><b></b>4. Destructuring Assignment</a></li><li><span class="title-icon "></span><a href="#5-object-literals"><b></b>5. Object Literals</a></li><li><span class="title-icon "></span><a href="#6-arrow-functions"><b></b>6. Arrow Functions</a></li><li><span class="title-icon "></span><a href="#7-promises"><b></b>7. Promises</a></li><li><span class="title-icon "></span><a href="#8-let--const-block-scoped"><b></b>8. Let &amp; Const, Block-Scoped</a></li><li><span class="title-icon "></span><a href="#9-classes"><b></b>9. Classes</a></li><li><span class="title-icon "></span><a href="#10-module"><b></b>10. Module</a></li><li><span class="title-icon "></span><a href="#11-spread-syntax-&#x5C55;&#x958B;&#x904B;&#x7B97;&#x5B50;"><b></b>11. spread syntax (&#x5C55;&#x958B;&#x904B;&#x7B97;&#x5B50;)</a></li><li><span class="title-icon "></span><a href="#12-generator"><b></b>12. Generator</a></li></ul><li><span class="title-icon "></span><a href="#reference"><b></b>Reference</a></li></ul></ul></div><a href="#es6" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="es6"><a name="es6" class="anchor-navigation-ex-anchor" href="#es6"><i class="fa fa-link" aria-hidden="true"></i></a>ES6</h1>
+<h2 id="online-test-tools"><a name="online-test-tools" class="anchor-navigation-ex-anchor" href="#online-test-tools"><i class="fa fa-link" aria-hidden="true"></i></a>Online Test Tools</h2>
+<ul>
+<li><a href="https://es6console.com/" target="_blank">ES6 Console - try JavaScript compilers</a></li>
+<li><a href="https://babeljs.io/repl/" target="_blank">REPL - Babel &#xB7; The compiler for next generation JavaScript</a></li>
+</ul>
+<h2 id="notes"><a name="notes" class="anchor-navigation-ex-anchor" href="#notes"><i class="fa fa-link" aria-hidden="true"></i></a>Notes</h2>
+<h3 id="1-function-parameters-default-values"><a name="1-function-parameters-default-values" class="anchor-navigation-ex-anchor" href="#1-function-parameters-default-values"><i class="fa fa-link" aria-hidden="true"></i></a>1. Function parameters&apos; default values</h3>
+<p>&#x907F;&#x514D;&#x6C92;&#x6709;&#x50B3;&#x53C3;&#x6578;&#x7D66; function &#x5C0E;&#x81F4; expection &#x7684;&#x65B9;&#x6CD5;&#x662F;&#x8A2D;&#x5B9A;&#x53C3;&#x6578;&#x9810;&#x8A2D;&#x503C;&#x3002;</p>
+<p>ES5:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// primitive paramters</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc1</span>(<span class="hljs-params">n</span>) </span>{
+  n = n === <span class="hljs-literal">undefined</span> ? <span class="hljs-number">123</span> : n;
+
+  <span class="hljs-built_in">console</span>.log(n);
+}
+myFunc1();
+
+<span class="hljs-comment">// object paramters</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc2</span>(<span class="hljs-params">person</span>) </span>{
+  person = person === <span class="hljs-literal">undefined</span> ? {} : person;
+  <span class="hljs-keyword">var</span> name = person.name === <span class="hljs-literal">undefined</span> ? <span class="hljs-string">&apos;John&apos;</span> : person.name;
+  <span class="hljs-keyword">var</span> age = person.age === <span class="hljs-literal">undefined</span> ? <span class="hljs-number">20</span> : person.age;
+  <span class="hljs-keyword">var</span> weapon = person.weapon === <span class="hljs-literal">undefined</span> ? {name: <span class="hljs-string">&apos;sword&apos;</span>, attack: <span class="hljs-number">99</span>} : person.weapon;
+
+  <span class="hljs-built_in">console</span>.log(name, age, weapon); <span class="hljs-comment">//Rubio 20 {name: &quot;sword&quot;, attack: 99}</span>
+}
+myFunc2({name: <span class="hljs-string">&apos;Rubio&apos;</span>});
+</code></pre>
+<p>ES6:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// primitive paramters</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc1</span>(<span class="hljs-params">n = 123</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(n);
+}
+myFunc1();
+
+<span class="hljs-comment">// object paramters</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc2</span>(<span class="hljs-params">{name=&apos;John&apos;, age=20, weapon={name: &apos;sword&apos;, attack: 99}}</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(name, age, weapon); <span class="hljs-comment">//Rubio 20 {name: &quot;sword&quot;, attack: 99}</span>
+}
+myFunc2({name: <span class="hljs-string">&apos;Rubio&apos;</span>});
+</code></pre>
+<blockquote>
+<p>Note:
+ES6 &#x7684;&#x53C3;&#x6578;&#x9810;&#x8A2D;&#x503C;&#x53EA;&#x6703;&#x5224;&#x65B7;&#x662F;&#x4E0D;&#x662F; undefined&#x3002;
+&#x5982;&#x679C;&#x662F; null &#x6216;&#x5176;&#x4ED6;&#x60F3;&#x6AA2;&#x67E5;&#x7684;&#x60C5;&#x5883;&#xFF0C;&#x4ECD;&#x9700;&#x81EA;&#x5DF1;&#x5224;&#x65B7;&#x3002;</p>
+</blockquote>
+<hr>
+<h3 id="2-template-literals"><a name="2-template-literals" class="anchor-navigation-ex-anchor" href="#2-template-literals"><i class="fa fa-link" aria-hidden="true"></i></a>2. Template Literals</h3>
+<p>&#x5141;&#x8A31;&#x5C07;&#x5B57;&#x4E32;&#x5BE6;&#x5B57;&#x6A21;&#x677F;&#x5316;&#xFF0C;&#x5D4C;&#x5165; JS &#x8B8A;&#x6578;&#x6216;&#x8A9E;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-string">&quot;hello&quot;</span>;
+
+<span class="hljs-comment">// ES5</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;x=[&quot;</span> + x + <span class="hljs-string">&quot;]&quot;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;x=[&quot;</span> + (<span class="hljs-number">123</span>+<span class="hljs-number">456</span>) + <span class="hljs-string">&quot;]&quot;</span>);
+
+<span class="hljs-comment">// ES6</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`x=[<span class="hljs-subst">${x}</span>]`</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`x=[<span class="hljs-subst">${(123+456)}</span>]`</span>);
+</code></pre>
+<hr>
+<h3 id="3-multi-line-strings"><a name="3-multi-line-strings" class="anchor-navigation-ex-anchor" href="#3-multi-line-strings"><i class="fa fa-link" aria-hidden="true"></i></a>3. Multi-line Strings</h3>
+<pre><code class="lang-js"><span class="hljs-comment">//ES5</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&apos;line1&apos;</span>
+   +<span class="hljs-string">&apos;line2&apos;</span>;
+
+<span class="hljs-comment">//ES6</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">`line1
+   line2`</span>;
+</code></pre>
+<blockquote>
+<p>mynote:
+&#x504F;&#x5411;&#x9084;&#x662F;&#x7528; ES5 &#x7684;&#x5BEB;&#x6CD5;&#xFF0C;&#x907F;&#x514D;&#x9810;&#x671F;&#x5916;&#x7684;&#x5947;&#x602A;&#x554F;&#x984C;&#x3002;
+&#x56E0;&#x70BA;&#x6839;&#x64DA;&#x591A;&#x500B; online tool &#x6E2C;&#x8A66;&#x8F49;&#x8B6F;&#x7D50;&#x679C;&#xFF0C;&#x4F3C;&#x4E4E;&#x63DB;&#x884C;&#x6703;&#x591A;&#x51FA; <code>\n</code> &#x7B26;&#x865F;&#xFF0C;&#x800C;&#x4E14;&#x6703;&#x88AB;&#x53D7;&#x7E2E;&#x6392;&#x7684;&#x7A7A;&#x767D;&#x5F71;&#x97FF;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-comment">// ES6</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">`line1
+   line2`</span>;
+
+<span class="hljs-comment">// Convet to ES5</span>
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">&apos;line1\n   line2&apos;</span>;
+</code></pre>
+<hr>
+<h3 id="4-destructuring-assignment"><a name="4-destructuring-assignment" class="anchor-navigation-ex-anchor" href="#4-destructuring-assignment"><i class="fa fa-link" aria-hidden="true"></i></a>4. Destructuring Assignment</h3>
+<p>&#x89E3;&#x69CB;&#x8CE6;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x7528;&#x7C21;&#x4FBF;&#x7684;&#x8A9E;&#x6CD5;&#xFF0C;&#x53D6;&#x51FA;&#x9663;&#x5217;&#x6216; object &#x88E1;<strong>&#x5C0D;&#x61C9;&#x4F4D;&#x7F6E;</strong>&#x7684;&#x503C;&#x3002;</p>
+<h4 id="array-destructuring"><a name="array-destructuring" class="anchor-navigation-ex-anchor" href="#array-destructuring"><i class="fa fa-link" aria-hidden="true"></i></a>Array destructuring</h4>
+<h5 id="1-basic-assignment-and-assigning-the-rest"><a name="1-basic-assignment-and-assigning-the-rest" class="anchor-navigation-ex-anchor" href="#1-basic-assignment-and-assigning-the-rest"><i class="fa fa-link" aria-hidden="true"></i></a>1. Basic assignment and assigning the rest</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> [a, b] = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 10</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 20</span>
+
+<span class="hljs-keyword">var</span> [a, b, ...rest] = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">50</span>];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 10</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 20</span>
+<span class="hljs-built_in">console</span>.log(rest); <span class="hljs-comment">// [30, 40, 50]</span>
+
+<span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;banana&apos;</span>, <span class="hljs-string">&apos;car&apos;</span>, <span class="hljs-string">&apos;dog&apos;</span>];
+[a, b, ...rest] = ary;
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// &apos;apple&apos;</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// &apos;banana&apos;</span>
+<span class="hljs-built_in">console</span>.log(rest); <span class="hljs-comment">// [&apos;car&apos;, &apos;dog&apos;]</span>
+</code></pre>
+<h5 id="2-ignoring-some-values"><a name="2-ignoring-some-values" class="anchor-navigation-ex-anchor" href="#2-ignoring-some-values"><i class="fa fa-link" aria-hidden="true"></i></a>2. Ignoring some values</h5>
+<p>&#x53EF;&#x9078;&#x64C7;&#x6027;&#x64F7;&#x53D6;&#x6216;&#x8DF3;&#x904E;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> [a, b] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 2</span>
+
+<span class="hljs-keyword">var</span> [a, , b] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 3</span>
+
+<span class="hljs-keyword">var</span> [a, , , b] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 4</span>
+
+<span class="hljs-keyword">var</span> [, , , , ,] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]; <span class="hljs-comment">// ignore all</span>
+</code></pre>
+<h5 id="3-default-values"><a name="3-default-values" class="anchor-navigation-ex-anchor" href="#3-default-values"><i class="fa fa-link" aria-hidden="true"></i></a>3. Default values</h5>
+<p>&#x7576;&#x5C0D;&#x61C9;&#x7684;&#x5143;&#x7D20;&#x662F; undefined &#x6642;&#x6703;&#x4F7F;&#x7528;&#x9810;&#x8A2D;&#x503C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> [a=<span class="hljs-number">5</span>, b=<span class="hljs-number">7</span>] = [<span class="hljs-number">1</span>];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 7</span>
+</code></pre>
+<h5 id="4-swapping-variables"><a name="4-swapping-variables" class="anchor-navigation-ex-anchor" href="#4-swapping-variables"><i class="fa fa-link" aria-hidden="true"></i></a>4. Swapping variables</h5>
+<p>&#x4E0D;&#x7528;&#x518D;&#x8A2D;&#x984D;&#x5916;&#x8B8A;&#x6578;&#x53BB;&#x66AB;&#x5B58;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">3</span>;
+
+[a, b] = [b, a];
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 3</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 1</span>
+</code></pre>
+<h5 id="5-parsing-an-array-returned-from-a-function"><a name="5-parsing-an-array-returned-from-a-function" class="anchor-navigation-ex-anchor" href="#5-parsing-an-array-returned-from-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>5. Parsing an array returned from a function</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+}
+
+<span class="hljs-keyword">var</span> [a, b] = f();
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 2</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> url = <span class="hljs-string">&apos;https://developer.mozilla.org/en-US/Web/JavaScript&apos;</span>;
+
+<span class="hljs-keyword">var</span> parsedURL = <span class="hljs-regexp">/^(\w+)\:\/\/([^\/]+)\/(.*)$/</span>.exec(url);
+<span class="hljs-built_in">console</span>.log(parsedURL); <span class="hljs-comment">// [&quot;https://developer.mozilla.org/en-US/Web/JavaScript&quot;, &quot;https&quot;, &quot;developer.mozilla.org&quot;, &quot;en-US/Web/JavaScript&quot;]</span>
+
+<span class="hljs-keyword">var</span> [, protocol, fullhost, fullpath] = parsedURL;
+
+<span class="hljs-built_in">console</span>.log(protocol); <span class="hljs-comment">// &quot;https&quot;</span>
+</code></pre>
+<h4 id="object-destructuring"><a name="object-destructuring" class="anchor-navigation-ex-anchor" href="#object-destructuring"><i class="fa fa-link" aria-hidden="true"></i></a>Object destructuring</h4>
+<h5 id="1-basic-assignment-and-assigning-to-new-variable-names"><a name="1-basic-assignment-and-assigning-to-new-variable-names" class="anchor-navigation-ex-anchor" href="#1-basic-assignment-and-assigning-to-new-variable-names"><i class="fa fa-link" aria-hidden="true"></i></a>1. Basic assignment and Assigning to new variable names</h5>
+<p>&#x5192;&#x865F;&#x524D;&#x9762;&#x662F;&#x539F; key &#x503C;&#xFF0C;&#x5F8C;&#x9762;&#x662F;&#x65B0;&#x5BA3;&#x544A;&#x7684;&#x8B8A;&#x6578;&#x540D;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> { name: n, age: a } = { name: <span class="hljs-string">&apos;John&apos;</span>, age: <span class="hljs-number">20</span> };
+<span class="hljs-built_in">console</span>.log(n); <span class="hljs-comment">// &apos;John&apos;</span>
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 20</span>
+
+<span class="hljs-keyword">var</span> { name: name, age: age } = { name: <span class="hljs-string">&apos;John&apos;</span>, age: <span class="hljs-number">20</span> };
+<span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// &apos;John&apos;</span>
+<span class="hljs-built_in">console</span>.log(age); <span class="hljs-comment">// 20</span>
+
+<span class="hljs-keyword">var</span> { name, age } = { name: <span class="hljs-string">&apos;John&apos;</span>, age: <span class="hljs-number">20</span> };
+<span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// &apos;John&apos;</span>
+<span class="hljs-built_in">console</span>.log(age); <span class="hljs-comment">// 20</span>
+
+({ name, age } = { name: <span class="hljs-string">&apos;Rubio&apos;</span>, age: <span class="hljs-number">18</span> }); <span class="hljs-comment">// Note: For this syntax `(` and `)` is necessary, or SyntaxError</span>
+<span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// &apos;Rubio&apos;</span>
+<span class="hljs-built_in">console</span>.log(age); <span class="hljs-comment">// 18</span>
+
+<span class="hljs-keyword">let</span> {a, b, ...rest} = {a: <span class="hljs-number">10</span>, b: <span class="hljs-number">20</span>, c: <span class="hljs-number">30</span>, d: <span class="hljs-number">40</span>}
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 10</span>
+<span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 20</span>
+<span class="hljs-built_in">console</span>.log(rest); <span class="hljs-comment">// { c: 30, d: 40 }</span>
+</code></pre>
+<h5 id="2-default-values"><a name="2-default-values" class="anchor-navigation-ex-anchor" href="#2-default-values"><i class="fa fa-link" aria-hidden="true"></i></a>2. Default values</h5>
+<p>&#x7576;&#x5C0D;&#x61C9;&#x7684;&#x5143;&#x7D20;&#x662F; undefined &#x6642;&#x6703;&#x4F7F;&#x7528;&#x9810;&#x8A2D;&#x503C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> { name=<span class="hljs-string">&apos;John&apos;</span>, age=<span class="hljs-number">20</span> } = { name: <span class="hljs-string">&apos;Rubio&apos;</span> };
+<span class="hljs-built_in">console</span>.log(name); <span class="hljs-comment">// &apos;Rubio&apos;</span>
+<span class="hljs-built_in">console</span>.log(age); <span class="hljs-comment">// 20</span>
+
+<span class="hljs-keyword">var</span> { name: n = <span class="hljs-string">&apos;John&apos;</span>, age: a = <span class="hljs-number">20</span> } = { name: <span class="hljs-string">&apos;Rubio&apos;</span> };
+<span class="hljs-built_in">console</span>.log(n); <span class="hljs-comment">// &apos;Rubio&apos;</span>
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 20</span>
+</code></pre>
+<h5 id="3-nested-object-and-array-destructuring"><a name="3-nested-object-and-array-destructuring" class="anchor-navigation-ex-anchor" href="#3-nested-object-and-array-destructuring"><i class="fa fa-link" aria-hidden="true"></i></a>3. Nested object and array destructuring</h5>
+<p>&#x5DE2;&#x72C0;&#x7269;&#x4EF6;&#x6216;&#x9663;&#x5217;&#x7684;&#x89E3;&#x69CB;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> person = {
+    name: <span class="hljs-string">&apos;John&apos;</span>,
+    weapon: {
+        name: <span class="hljs-string">&apos;Sword&apos;</span>,
+        attack: <span class="hljs-number">99</span>
+    },
+    items:[
+        { name: <span class="hljs-string">&apos;Herb&apos;</span>, price: <span class="hljs-number">5</span>},
+        { name: <span class="hljs-string">&apos;Ruby&apos;</span>, price: <span class="hljs-number">20000</span>},
+    ]
+};
+<span class="hljs-keyword">var</span> {name: hero, weapon: { attack: atk }, items: [, {name: present}]  } = person;
+<span class="hljs-built_in">console</span>.log(hero); <span class="hljs-comment">// &apos;John&apos;</span>
+<span class="hljs-built_in">console</span>.log(atk); <span class="hljs-comment">// 99</span>
+<span class="hljs-built_in">console</span>.log(present); <span class="hljs-comment">// &apos;Ruby&apos;</span>
+</code></pre>
+<h5 id="4-for-of-iteration-and-destructuring"><a name="4-for-of-iteration-and-destructuring" class="anchor-navigation-ex-anchor" href="#4-for-of-iteration-and-destructuring"><i class="fa fa-link" aria-hidden="true"></i></a>4. For of iteration and destructuring</h5>
+<p>&#x5FAA;&#x74B0;&#x89E3;&#x69CB;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> heroes = [
+{
+    name: <span class="hljs-string">&apos;John&apos;</span>,
+    weapon: {
+        name: <span class="hljs-string">&apos;Sword&apos;</span>,
+        attack: <span class="hljs-number">99</span>
+    },
+},
+{
+    name: <span class="hljs-string">&apos;Arthur&apos;</span>,
+    weapon: {
+        name: <span class="hljs-string">&apos;Bow&apos;</span>,
+        attack: <span class="hljs-number">70</span>
+    },
+}
+];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> {name: n, weapon: {attack: atk}} <span class="hljs-keyword">of</span> heroes) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Name: &apos;</span> + n + <span class="hljs-string">&apos;, Attack: &apos;</span> + atk);
+}
+
+<span class="hljs-comment">// =========== Result:</span>
+<span class="hljs-comment">// Name: John, Attack: 99</span>
+<span class="hljs-comment">// Name: Arthur, Attack: 70</span>
+</code></pre>
+<h5 id="5-&#x61C9;&#x7528;-&#x5F9E;&#x51FD;&#x5F0F;&#x53C3;&#x6578;&#x7684;&#x7269;&#x4EF6;&#x4E2D;&#x5FEB;&#x901F;&#x63D0;&#x51FA;&#x67D0;&#x5C6C;&#x6027;&#x7684;&#x503C;"><a name="5-&#x61C9;&#x7528;-&#x5F9E;&#x51FD;&#x5F0F;&#x53C3;&#x6578;&#x7684;&#x7269;&#x4EF6;&#x4E2D;&#x5FEB;&#x901F;&#x63D0;&#x51FA;&#x67D0;&#x5C6C;&#x6027;&#x7684;&#x503C;" class="anchor-navigation-ex-anchor" href="#5-&#x61C9;&#x7528;-&#x5F9E;&#x51FD;&#x5F0F;&#x53C3;&#x6578;&#x7684;&#x7269;&#x4EF6;&#x4E2D;&#x5FEB;&#x901F;&#x63D0;&#x51FA;&#x67D0;&#x5C6C;&#x6027;&#x7684;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x61C9;&#x7528;: &#x5F9E;&#x51FD;&#x5F0F;&#x53C3;&#x6578;&#x7684;&#x7269;&#x4EF6;&#x4E2D;&#x5FEB;&#x901F;&#x63D0;&#x51FA;&#x67D0;&#x5C6C;&#x6027;&#x7684;&#x503C;</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">atkValue</span>(<span class="hljs-params">{weapon: {attack: atk}}</span>) </span>{
+  <span class="hljs-keyword">return</span> atk;
+}
+
+<span class="hljs-keyword">var</span> person = {
+    name: <span class="hljs-string">&apos;John&apos;</span>,
+    weapon: {
+        name: <span class="hljs-string">&apos;Sword&apos;</span>,
+        attack: <span class="hljs-number">99</span>
+    },
+};
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Attack Value:: &apos;</span> + atkValue(person)); <span class="hljs-comment">// &quot;Attack Value:: 99&quot;</span>
+</code></pre>
+<h5 id="6-computed-object-property-names-and-destructuring"><a name="6-computed-object-property-names-and-destructuring" class="anchor-navigation-ex-anchor" href="#6-computed-object-property-names-and-destructuring"><i class="fa fa-link" aria-hidden="true"></i></a>6. Computed object property names and destructuring</h5>
+<p>&#x4EE5;&#x7269;&#x4EF6;&#x6F14;&#x7B97;&#x5C6C;&#x6027;&#x540D;&#x7A31;&#x89E3;&#x69CB;
+(<strong>&#x7269;&#x4EF6;&#x6F14;&#x7B97;&#x5C6C;&#x6027;&#x540D;&#x7A31;</strong>&#x6307;&#x2014;&#x2014;&#x6BCD;&#x7269;&#x4EF6;[&quot;&#x5B50;&#x7269;&#x4EF6;&#x540D;&#x7A31;&quot;]&#x2014;&#x2014;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> key = <span class="hljs-string">&apos;name&apos;</span>;
+<span class="hljs-keyword">var</span> {[key]: n} = { name: <span class="hljs-string">&apos;John&apos;</span> };
+<span class="hljs-built_in">console</span>.log(n); <span class="hljs-comment">// &apos;John&apos;</span>
+</code></pre>
+<h5 id="7-invalid-javascript-identifier-as-a-property-name"><a name="7-invalid-javascript-identifier-as-a-property-name" class="anchor-navigation-ex-anchor" href="#7-invalid-javascript-identifier-as-a-property-name"><i class="fa fa-link" aria-hidden="true"></i></a>7. Invalid JavaScript identifier as a property name</h5>
+<p>&#x5229;&#x7528;&#x89E3;&#x69CB;&#x7684;&#x5BEB;&#x6CD5;&#x53D6;&#x5F97;&#x4E0D;&#x5408;&#x683C;&#x7684; JS &#x8B58;&#x5225;&#x540D;&#x7A31;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> foo = { <span class="hljs-string">&apos;fizz-buzz&apos;</span>: <span class="hljs-literal">true</span> };
+<span class="hljs-keyword">const</span> { <span class="hljs-string">&apos;fizz-buzz&apos;</span>: fizzBuzz } = foo;
+<span class="hljs-built_in">console</span>.log(fizzBuzz); <span class="hljs-comment">// &quot;true&quot;</span>
+</code></pre>
+<h3 id="5-object-literals"><a name="5-object-literals" class="anchor-navigation-ex-anchor" href="#5-object-literals"><i class="fa fa-link" aria-hidden="true"></i></a>5. Object Literals</h3>
+<p>&#x63D0;&#x4F9B; Object &#x5B9A;&#x7FA9;&#x7684;&#x7E2E;&#x5BEB;&#x8A9E;&#x6CD5;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getHero</span>(<span class="hljs-params">name, weapon, career</span>) </span>{
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-comment">// property value shorthand syntax</span>
+    name, <span class="hljs-comment">// same as name: name</span>
+      weapon,
+
+    <span class="hljs-comment">// computed values now work with object literals</span>
+    [<span class="hljs-string">&apos;be&apos;</span> + career]: <span class="hljs-literal">true</span>,
+
+    <span class="hljs-comment">// Method definition shorthand syntax omits `function` keyword &amp; colon</span>
+    <span class="hljs-comment">// Note: &#x9019;&#x6A23;&#x5BEB;&#x7684;&#x6548;&#x679C;&#x6703;&#x662F; regular function&#xFF0C;&#x800C;&#x975E; arrow function</span>
+    doAttack() {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Use <span class="hljs-subst">${weapon.name}</span>! HP -<span class="hljs-subst">${weapon.attack}</span>`</span>);
+    }
+ };
+}
+<span class="hljs-keyword">let</span> hero = getHero(<span class="hljs-string">&apos;John&apos;</span>, {name: <span class="hljs-string">&apos;Sword&apos;</span>, attack: <span class="hljs-number">99</span>}, <span class="hljs-string">&quot;Warrior&quot;</span>);
+<span class="hljs-built_in">console</span>.log(hero);
+hero.doAttack(); <span class="hljs-comment">// &quot;Use Sword! HP -99&quot;</span>
+</code></pre>
+<h3 id="6-arrow-functions"><a name="6-arrow-functions" class="anchor-navigation-ex-anchor" href="#6-arrow-functions"><i class="fa fa-link" aria-hidden="true"></i></a>6. Arrow Functions</h3>
+<h4 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>Intro:</h4>
+<ul>
+<li>Arrow function expression&#xFF0C;&#x6216;&#x7A31; fat arrow function&#xFF0C;&#x6700;&#x521D;&#x5728; coffeescript &#x7684;&#x8A9E;&#x6CD5;&#x4E2D;&#x6D41;&#x884C;&#x3002;</li>
+<li>Arrow function &#x4E0D;&#x662F;&#x55AE;&#x7D14;&#x8A9E;&#x6CD5;&#x7C21;&#x5316;&#x800C;&#x5DF2;&#xFF0C;&#x4E5F;&#x6703;&#x5C0D; function &#x5BE6;&#x969B;&#x904B;&#x4F5C;&#x591A;&#x4E86;&#x4E9B;&#x9650;&#x5236;&#x6216;&#x6539;&#x8B8A;&#x3002;</li>
+</ul>
+<p>Usage Note:</p>
+<ol>
+<li>Arrow functions must be defined before they are used.</li>
+<li>Using <code>const</code> is safer than using <code>var</code>, because a function expression is a constant value.</li>
+<li>&#x539F;&#x5247;&#x4E0A;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x4F7F;&#x7528; <code>function</code> &#x95DC;&#x9375;&#x5B57;&#x53BB;&#x5BA3;&#x544A;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x7269;&#x4EF6;&#x88E1;&#x9700;&#x8981;&#x7528;&#x5230; Regular function &#x7684;&#x6548;&#x679C;&#xFF0C;&#x53EF;&#x7528;  Object literals &#x5BEB;&#x6CD5; (&#x4F46;&#x9084;&#x662F;&#x8981;&#x8996;&#x4E4E;&#x4F7F;&#x7528;&#x60C5;&#x5883;)</li>
+</ol>
+<h4 id="syxtax-examples"><a name="syxtax-examples" class="anchor-navigation-ex-anchor" href="#syxtax-examples"><i class="fa fa-link" aria-hidden="true"></i></a>Syxtax Examples:</h4>
+<pre><code class="lang-js"><span class="hljs-comment">// basic arrow function expression</span>
+<span class="hljs-keyword">var</span> myFunc = (n1 ,n2) =&gt; {
+  <span class="hljs-keyword">return</span> n1 + n2;
+};
+
+<span class="hljs-comment">// if only a return statement, omit return and {}</span>
+<span class="hljs-keyword">var</span> myFunc = (n1, n2) =&gt; n1 + n2;
+
+<span class="hljs-comment">// if only one parameter, () can be omitted</span>
+<span class="hljs-keyword">var</span> myFunc = x =&gt; { <span class="hljs-built_in">console</span>.log(x) };
+
+<span class="hljs-comment">// if no parameter, () is necessary</span>
+<span class="hljs-keyword">var</span> myFunc = () =&gt; { <span class="hljs-built_in">console</span>.log(<span class="hljs-number">123</span>) };
+</code></pre>
+<h4 id="about-arguments"><a name="about-arguments" class="anchor-navigation-ex-anchor" href="#about-arguments"><i class="fa fa-link" aria-hidden="true"></i></a>About <code>arguments</code></h4>
+<p><code>arguments</code> object - no longer bound with arrow function
+&#x4E0D;&#x80FD;&#x4F7F;&#x7528; arguments&#xFF0C;&#x8B93; function &#x4F7F;&#x7528;&#x4E0A;&#x66F4;&#x56B4;&#x8B39;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> getSum = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">n1, n2, n3</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">arguments</span>); <span class="hljs-comment">// [100, 200, 300]</span>
+    <span class="hljs-keyword">return</span> n1 + n2 + n3;
+};
+<span class="hljs-built_in">console</span>.log( getSum(<span class="hljs-number">100</span>, <span class="hljs-number">200</span>, <span class="hljs-number">300</span>) ); <span class="hljs-comment">//600</span>
+
+<span class="hljs-keyword">const</span> getSumArrow = (n1, n2, n3) =&gt; {
+    <span class="hljs-comment">//console.log(arguments); // it will occur ReferenceError: arguments is not defined</span>
+    <span class="hljs-keyword">return</span> n1 + n2 + n3;
+};
+<span class="hljs-built_in">console</span>.log( getSumArrow(<span class="hljs-number">100</span>, <span class="hljs-number">200</span>, <span class="hljs-number">300</span>) ); <span class="hljs-comment">//600</span>
+</code></pre>
+<h4 id="about-this"><a name="about-this" class="anchor-navigation-ex-anchor" href="#about-this"><i class="fa fa-link" aria-hidden="true"></i></a>About <code>this</code></h4>
+<p><code>this</code> keyword - no longer bound
+&#x5C0D; <code>this</code> &#x7684;&#x6548;&#x679C;&#x6703;&#x6709;&#x5F71;&#x97FF;&#xFF0C;&#x6839;&#x64DA; <code>obj.method()</code> &#x5224;&#x65B7;&#x7576;&#x524D; <code>this</code> &#x662F;&#x8AB0;&#x7684;&#x516C;&#x5F0F;&#x5728; arrow function &#x4E0D;&#x9069;&#x7528;&#x3002;
+&#x5982;&#x679C;&#x7528;&#x7684;&#x662F; arrow function&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x7522;&#x751F;&#x4E00;&#x500B; <code>this</code> &#x5F15;&#x7528;&#x7269;&#x4EF6;&#xFF0C;&#x7576;&#x524D; <code>this</code> &#x6703;&#x662F;&#x4E0A;&#x4E00;&#x500B; <code>this</code> &#x7269;&#x4EF6;&#x3002;</p>
+<p>Example 1: With Regular function</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> hero = {
+    name: <span class="hljs-string">&apos;Soar&apos;</span>,
+    weapons: [<span class="hljs-string">&apos;Sword&apos;</span>, <span class="hljs-string">&apos;Bow&apos;</span>, <span class="hljs-string">&apos;Axe&apos;</span>],
+    printArmedWeapon: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">const</span> me = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">this</span>.weapons.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">el</span>)</span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hero <span class="hljs-subst">${me.name}</span> got weapon <span class="hljs-subst">${el}</span>`</span>); <span class="hljs-comment">// here, `this` means `hero.weapons`, instead of `hero`</span>
+        });
+    }
+};
+hero.printArmedWeapon();
+
+<span class="hljs-comment">// Result:</span>
+<span class="hljs-comment">// Hero Soar got weapon Sword</span>
+<span class="hljs-comment">// Hero Soar got weapon Bow</span>
+<span class="hljs-comment">// Hero Soar got weapon Axe</span>
+</code></pre>
+<p>Example 2: With Arrow function</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> hero = {
+    name: <span class="hljs-string">&apos;Soar&apos;</span>,
+    weapons: [<span class="hljs-string">&apos;Sword&apos;</span>, <span class="hljs-string">&apos;Bow&apos;</span>, <span class="hljs-string">&apos;Axe&apos;</span>],
+    printArmedWeapon: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{   <span class="hljs-comment">// arrow function</span>
+        <span class="hljs-keyword">this</span>.weapons.forEach((el) =&gt; {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hero <span class="hljs-subst">${this.name}</span> got weapon <span class="hljs-subst">${el}</span>`</span>); <span class="hljs-comment">// `this` not bound the `forEach()`</span>
+        });
+    }
+};
+hero.printArmedWeapon();
+
+<span class="hljs-comment">// Result:</span>
+<span class="hljs-comment">// Hero Soar got weapon Sword</span>
+<span class="hljs-comment">// Hero Soar got weapon Bow</span>
+<span class="hljs-comment">// Hero Soar got weapon Axe</span>
+</code></pre>
+<p>Example 3: With Arrow function further</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> hero = {
+    name: <span class="hljs-string">&apos;Soar&apos;</span>,
+    weapons: [<span class="hljs-string">&apos;Sword&apos;</span>, <span class="hljs-string">&apos;Bow&apos;</span>, <span class="hljs-string">&apos;Axe&apos;</span>],
+    printArmedWeapon: () =&gt; {  <span class="hljs-comment">// arrow function</span>
+        <span class="hljs-keyword">this</span>.weapons.forEach((el) =&gt; {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hero <span class="hljs-subst">${this.name}</span> got weapon <span class="hljs-subst">${el}</span>`</span>);
+        });
+    }
+};
+hero.printArmedWeapon();
+
+<span class="hljs-comment">// TypeError: Cannot read property &apos;forEach&apos; of undefined</span>
+</code></pre>
+<p>Example 4: With Object literals</p>
+<p>&#x662F; regaular function &#x7684;&#x6548;&#x679C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> hero = {
+    name: <span class="hljs-string">&apos;Soar&apos;</span>,
+    weapons: [<span class="hljs-string">&apos;Sword&apos;</span>, <span class="hljs-string">&apos;Bow&apos;</span>, <span class="hljs-string">&apos;Axe&apos;</span>],
+    printArmedWeapon() { <span class="hljs-comment">// Object literals</span>
+        <span class="hljs-keyword">this</span>.weapons.forEach((el) =&gt; {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hero <span class="hljs-subst">${this.name}</span> got weapon <span class="hljs-subst">${el}</span>`</span>);
+        });
+    }
+};
+hero.printArmedWeapon();
+
+<span class="hljs-comment">// Result:</span>
+<span class="hljs-comment">// Hero Soar got weapon Sword</span>
+<span class="hljs-comment">// Hero Soar got weapon Bow</span>
+<span class="hljs-comment">// Hero Soar got weapon Axe</span>
+</code></pre>
+<p>Example 5: Another Example</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> multyplier = {
+    numbers: [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>],
+    <span class="hljs-comment">//multiplyBy(){ return 2},</span>
+    multiplyBy: () =&gt; <span class="hljs-number">2</span>,
+    multiply(){
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.numbers.map(x =&gt; x * <span class="hljs-keyword">this</span>.multiplyBy());
+    }
+}
+<span class="hljs-built_in">console</span>.log( multyplier.multiply() ); <span class="hljs-comment">//[4,6,8]</span>
+</code></pre>
+<h3 id="7-promises"><a name="7-promises" class="anchor-navigation-ex-anchor" href="#7-promises"><i class="fa fa-link" aria-hidden="true"></i></a>7. Promises</h3>
+<h4 id="promiseall"><a name="promiseall" class="anchor-navigation-ex-anchor" href="#promiseall"><i class="fa fa-link" aria-hidden="true"></i></a>Promise.all</h4>
+<p>&#x628A;&#x8A31;&#x591A;promise&#x7684;&#x51FD;&#x5F0F;&#x7D44;&#x6210;&#x4E00;&#x500B;Array&#x653E;&#x5165;Promise.all&#x5167;&#xFF0C;&#x7576;&#x88E1;&#x9762;&#x6BCF;&#x500B;&#x90FD;resolve&#x6216;&#x5176;&#x4E2D;&#x4E00;&#x500B;&#x88AB;reject&#x6642;&#x624D;&#x6703;&#x57F7;&#x884C;&#x5F8C;&#x9762;&#x7684;then&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">Promise</span>.all([promises...])
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">posts</span>) </span>{
+  <span class="hljs-comment">// ...</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reason</span>)</span>{
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h3 id="8-let--const-block-scoped"><a name="8-let--const-block-scoped" class="anchor-navigation-ex-anchor" href="#8-let--const-block-scoped"><i class="fa fa-link" aria-hidden="true"></i></a>8. Let &amp; Const, Block-Scoped</h3>
+<h4 id="intro_1"><a name="intro_1" class="anchor-navigation-ex-anchor" href="#intro_1"><i class="fa fa-link" aria-hidden="true"></i></a>Intro</h4>
+<ul>
+<li><p><code>let</code> &#x53EA;&#x6703;&#x5728;&#x76EE;&#x524D;&#x7684; { } &#x5167;&#x6709;&#x6548;&#xFF0C;&#x800C;&#x4E14;<strong>&#x540C;&#x4E00;&#x500B;</strong> block &#x5167;&#x4E0D;&#x80FD;&#x91CD;&#x8986;&#x5B9A;&#x7FA9;(&#x5373;&#x4F7F;&#x53E6;&#x4E00;&#x500B;&#x662F;&#x7528;<code>var</code>)&#xFF0C;&#x6703; throw Error &#x63D0;&#x793A;</p>
+<ul>
+<li>&#x4F46;&#x4E00;&#x500B; block &#x5167;&#x7684;&#x5C0F; block &#x5141;&#x8A31;&#x518D;&#x5B9A;&#x7FA9;&#x540C;&#x540D;&#x7684;&#x8B8A;&#x6578;</li>
+</ul>
+</li>
+<li><p><code>const</code> &#x540C; <code>let</code> &#x4E00;&#x6A23; (&#x53EA;&#x6703;&#x5728;&#x76EE;&#x524D;&#x7684; { } &#x5167;&#x6709;&#x6548; + &#x4E0D;&#x80FD;&#x91CD;&#x8907;&#x5B9A;&#x7FA9;)&#xFF0C;&#x53E6;&#x5916;&#x591A;&#x4E86;:</p>
+<ol>
+<li>&#x5B9A;&#x7FA9;&#x6642;&#x5FC5;&#x9808; initialize</li>
+<li>&#x5F8C;&#x7E8C;&#x4E0D;&#x80FD;&#x66F4;&#x6539; </li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>&#x61C9;&#x907F;&#x514D;&#x4F7F;&#x7528; <code>var</code>&#xFF0C;&#x6539;&#x7528; <code>const</code> &#x548C; <code>let</code></li>
+</ul>
+<h4 id="let"><a name="let" class="anchor-navigation-ex-anchor" href="#let"><i class="fa fa-link" aria-hidden="true"></i></a>let</h4>
+<pre><code class="lang-js">{
+   <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+   <span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>;
+}
+<span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// 2</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+{
+   <span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span>;
+}
+<span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// 10</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+{
+   <span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span>;
+}
+<span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// 10</span>
+</code></pre>
+<pre><code class="lang-js">{
+   <span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+}
+<span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// ReferenceError: x is not defined</span>
+</code></pre>
+<pre><code class="lang-js">{
+   <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+   <span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span>; <span class="hljs-comment">// SyntaxError: Identifier &apos;x&apos; has already been declared</span>
+}
+<span class="hljs-built_in">console</span>.log(x);
+</code></pre>
+<h4 id="const"><a name="const" class="anchor-navigation-ex-anchor" href="#const"><i class="fa fa-link" aria-hidden="true"></i></a>const</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x; <span class="hljs-comment">// SyntaxError: Missing initializer in const declaration</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>; <span class="hljs-comment">// SyntaxError: Identifier &apos;x&apos; has already been declared</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+x = <span class="hljs-number">20</span>; <span class="hljs-comment">// TypeError: Assignment to constant variable.</span>
+</code></pre>
+<pre><code class="lang-js">{
+    <span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+}
+<span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// ReferenceError: x is not defined</span>
+</code></pre>
+<h4 id="block-level-scope"><a name="block-level-scope" class="anchor-navigation-ex-anchor" href="#block-level-scope"><i class="fa fa-link" aria-hidden="true"></i></a>Block Level Scope</h4>
+<ul>
+<li>Function scope &#x4E5F;&#x662F;&#x4E00;&#x7A2E;&#x6BD4;&#x8F03;&#x5927;&#x7684; Block scope</li>
+<li>&#x4E00;&#x4EFD;&#x6A94;&#x6848;&#x7B97;&#x4E00;&#x7A2E;&#x66F4;&#x5927;&#x7684; Block scope&#xFF0C;&#x4F46;&#x4E0D;&#x7B49;&#x65BC; Global scope (In HTML, the global scope is the window object)</li>
+<li><code>var</code> vs <code>let</code> vs <code>const</code><ol>
+<li><code>var</code> &#x53EF;&#x4EE5;&#x7576; function scope/global scope </li>
+<li><code>let</code> &amp; <code>const</code> &#x53EF;&#x4EE5;&#x662F; block scope/function scope&#xFF0C;&#x7121;&#x6CD5;&#x7528;&#x4F5C; global scope  (&#x7121;&#x6CD5;&#x5728; function &#x5167;&#x7528; <code>this</code> &#x6216; <code>window</code> &#x547C;&#x53EB;)</li>
+</ol>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> n4 = <span class="hljs-string">&quot;Soar&quot;</span>;
+myFunc3();
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc3</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;myFunc3(): typeof n4=&quot;</span>, <span class="hljs-keyword">typeof</span> n4, <span class="hljs-string">&quot; value=&quot;</span>, n4);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;myFunc3(): typeof this.n4=&quot;</span>, <span class="hljs-keyword">typeof</span> <span class="hljs-keyword">this</span>.n4, <span class="hljs-string">&quot; value=&quot;</span>, <span class="hljs-keyword">this</span>.n4);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;myFunc3(): typeof window.n4=&quot;</span>, <span class="hljs-keyword">typeof</span> <span class="hljs-built_in">window</span>.n4, <span class="hljs-string">&quot; value=&quot;</span>, <span class="hljs-built_in">window</span>.n4);
+}
+
+<span class="hljs-comment">// Result:</span>
+<span class="hljs-comment">// myFunc3(): typeof n4= string  value= Soar</span>
+<span class="hljs-comment">// myFunc3(): typeof this.n4= undefined  value= undefined</span>
+<span class="hljs-comment">// myFunc3(): typeof window.n4= undefined  value= undefined</span>
+</code></pre>
+<h3 id="9-classes"><a name="9-classes" class="anchor-navigation-ex-anchor" href="#9-classes"><i class="fa fa-link" aria-hidden="true"></i></a>9. Classes</h3>
+<h4 id="intro_2"><a name="intro_2" class="anchor-navigation-ex-anchor" href="#intro_2"><i class="fa fa-link" aria-hidden="true"></i></a>Intro</h4>
+<p>&#x904B;&#x7528; prototype &#x548C; function &#x5BE6;&#x7528;&#x51FA;&#x985E;&#x4F3C;&#x5177;&#x6709; inheritance &#x7D50;&#x69CB;&#x7684;&#x7684;&#x985E;&#x5225;(&#x548C;&#x50B3;&#x7D71; java, python &#x7684;&#x985E;&#x5225;&#x6709;&#x5DEE;&#x5225;)</p>
+<h4 id="simple-example"><a name="simple-example" class="anchor-navigation-ex-anchor" href="#simple-example"><i class="fa fa-link" aria-hidden="true"></i></a>Simple Example:</h4>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Drink</span> </span>{
+    <span class="hljs-keyword">constructor</span>(name = &apos;water&apos;, price = 1) {
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.price = price;
+    }
+    generateTag() {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.toString());
+    }
+    toString(){
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${this.name}</span>, Price is <span class="hljs-subst">${this.price}</span>`</span>;
+    }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RedTea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Drink</span> </span>{
+    <span class="hljs-keyword">constructor</span>(){
+        <span class="hljs-keyword">super</span>(<span class="hljs-string">&apos;RedTea&apos;</span>, <span class="hljs-number">35</span>);
+    }
+    generateTag() {
+        <span class="hljs-keyword">super</span>.generateTag();
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Thank you!&apos;</span>);
+    }
+}
+
+<span class="hljs-keyword">let</span> drink1 = <span class="hljs-keyword">new</span> RedTea();
+drink1.generateTag();
+<span class="hljs-built_in">console</span>.log(drink1); <span class="hljs-comment">// will print with object format, instead of calling toString()</span>
+<span class="hljs-built_in">console</span>.log(drink1.toString());
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&apos;</span> + drink1); <span class="hljs-comment">// // will call toString()</span>
+
+<span class="hljs-keyword">let</span> drink2 = <span class="hljs-keyword">new</span> Drink();
+drink2.generateTag();
+<span class="hljs-built_in">console</span>.log(drink2);
+
+
+<span class="hljs-comment">// &quot;RedTea, Price is 35&quot;</span>
+<span class="hljs-comment">// &quot;Thank you!&quot;</span>
+<span class="hljs-comment">// RedTea {name: &quot;RedTea&quot;, price: 35}</span>
+<span class="hljs-comment">// &quot;RedTea, Price is 35&quot;</span>
+<span class="hljs-comment">// &quot;RedTea, Price is 35&quot;</span>
+
+<span class="hljs-comment">// &quot;water, Price is 1&quot;</span>
+<span class="hljs-comment">// Drink {name: &quot;water&quot;, price: 1}</span>
+</code></pre>
+<h3 id="10-module"><a name="10-module" class="anchor-navigation-ex-anchor" href="#10-module"><i class="fa fa-link" aria-hidden="true"></i></a>10. Module</h3>
+<ul>
+<li><p>&#x6A21;&#x7D44;&#x5316;&#x662F; Node.js &#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x89C0;&#x5FF5;&#x4E4B;&#x4E00;&#xFF0C;&#x9019;&#x500B;&#x89C0;&#x5FF5;&#x8B93;&#x5927;&#x898F;&#x6A21;&#x7684; JavaScript &#x7CFB;&#x7D71;&#x6210;&#x70BA;&#x53EF;&#x80FD;&#xFF0C;&#x6A21;&#x7D44;&#x5316;&#x7A0B;&#x8A2D;&#x5728; JS &#x6D41;&#x884C;&#x4E5F;&#x662F;&#x57FA;&#x65BC;&#x6B64;&#x3002;</p>
+</li>
+<li><p>Node.js &#x4F7F;&#x7528;&#x7684; <code>require()</code> &#x662F;&#x5C6C;&#x65BC; CommonJS &#x9AD4;&#x7CFB;&#xFF0C;&#x4F46;&#x5728; ES6 &#x4E0D;&#x7528; <code>require</code> &#xFF0C;&#x800C;&#x4F7F;&#x7528; <code>import</code> (&#x5169;&#x8005;&#x4EA6;&#x53EF;&#x6DF7;&#x5408;&#x4F7F;&#x7528;)&#x3002;</p>
+</li>
+<li><p>&#x5728; ES6 &#x51FA;&#x4F86;&#x524D;&#xFF0C;Node.js &#x6216;&#x700F;&#x89BD;&#x5668;&#x7AEF;&#x6709;&#x5404;&#x5BB6;&#x5957;&#x4EF6;&#xFF0C;&#x9075;&#x5FAA;&#x5404;&#x81EA;&#x7684; module &#x5BE6;&#x4F5C;&#x898F;&#x7BC4;</p>
+<ul>
+<li>Node &#x9075;&#x5FAA; CommonJS (<code>require</code> &#x53EA;&#x662F; Node.js &#x7684;&#x4E00;&#x500B; private global function&#xFF1B;<code>module.exports</code> &#x4E5F;&#x53EA;&#x662F; Node.js &#x7684;&#x4E00;&#x500B; private global variable)</li>
+<li>requirejs &#x9075;&#x5FAA; AMD</li>
+<li>seajs &#x9075;&#x5FAA; CMD</li>
+</ul>
+</li>
+<li><p>Node.js &#x73FE;&#x968E;&#x6BB5;&#x4E0D;&#x652F;&#x63F4; <code>import</code> &amp; <code>export</code>&#xFF0C;&#x9700;&#x8981;&#x901A;&#x904E; babel &#x9032;&#x884C;&#x8F49;&#x8B6F;&#x6210; Node.js &#x7684;&#x6A21;&#x7D44;&#x5316;&#x8A9E;&#x6CD5;&#x3002;</p>
+<ul>
+<li>Test with Node.js v10.6.0 -&gt; SyntaxError: Unexpected token export</li>
+</ul>
+</li>
+</ul>
+<h4 id="export"><a name="export" class="anchor-navigation-ex-anchor" href="#export"><i class="fa fa-link" aria-hidden="true"></i></a>Export</h4>
+<blockquote>
+<p><code>export</code> &#x8981;&#x653E;&#x5728; function &#x5916;&#x4E0D;&#x7136;&#x6703;&#x51FA;&#x932F;</p>
+</blockquote>
+<p>Syntax 1: &#x57FA;&#x672C;&#x5BEB;&#x6CD5;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> port = <span class="hljs-number">3000</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> person = <span class="hljs-string">&apos;John&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">n1, n2</span>) </span>{
+    <span class="hljs-keyword">return</span> n1+n2;
+}
+</code></pre>
+<p>Syntax 2: &#x53EF;&#x6700;&#x5F8C;&#x4E00;&#x6B21; export (&#x5EFA;&#x8B70;)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> port = <span class="hljs-number">3000</span>
+<span class="hljs-keyword">var</span> person = <span class="hljs-string">&apos;John&apos;</span>;
+
+<span class="hljs-keyword">export</span> {port, person};
+</code></pre>
+<p>Syntax 3: &#x53EF;&#x7528; `as &#x6539;&#x8B8A; import &#x6642;&#x7684;&#x540D;&#x7A31;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> {port <span class="hljs-keyword">as</span> p, person <span class="hljs-keyword">as</span> heor};
+</code></pre>
+<h4 id="import"><a name="import" class="anchor-navigation-ex-anchor" href="#import"><i class="fa fa-link" aria-hidden="true"></i></a>Import</h4>
+<p>&#x4E5F;&#x53EF;&#x4E00;&#x6B21;&#x8F09;&#x5165;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {port, person} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./config.js&apos;</span>
+<span class="hljs-built_in">console</span>.log(port) <span class="hljs-comment">// 3000</span>
+</code></pre>
+<p>Syntax 2: &#x53EF;&#x4E00;&#x6B21; import</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> config <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./config.js&apos;</span>
+</code></pre>
+<p>Syntax 3: &#x53EF;&#x7528; <code>as</code> &#x6539;&#x8B8A; import &#x5F8C;&#x7684;&#x540D;&#x7A31;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {port <span class="hljs-keyword">as</span> p, person <span class="hljs-keyword">as</span> hero} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./config.js&apos;</span>
+</code></pre>
+<h4 id="export-default"><a name="export-default" class="anchor-navigation-ex-anchor" href="#export-default"><i class="fa fa-link" aria-hidden="true"></i></a>Export Default</h4>
+<p>&#x524D;&#x9762;&#x7684; export &#x5BEB;&#x6CD5;&#x5728; import &#x6642;&#xFF0C;&#x9700;&#x8981;&#x77E5;&#x9053;&#x8A72;&#x8B8A;&#x6578;&#x540D;&#x7A31;&#x624D;&#x53EF;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x70BA;&#x4E86;&#x89E3;&#x6C7A;&#x6B64;&#x554F;&#x984C;&#xFF0C;&#x53EF;&#x4F7F;&#x7528; export default</p>
+<p>a.js</p>
+<pre><code class="lang-js">export default function () {
+  console.log(&apos;I&apos;m banana&apos;);
+}
+</code></pre>
+<p>b.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> customName <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./a.js&apos;</span>;<span class="hljs-comment">//&#x53EF;&#x81EA;&#x884C;&#x6307;&#x5B9A;&#x540D;&#x7A31;</span>
+customName(); <span class="hljs-comment">// &apos;I&apos;m banana&apos;</span>
+</code></pre>
+<p>&#x5728; React &#x901A;&#x5E38;&#x6703;&#x5982;&#x4E0B;&#x904B;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Component1.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> </span>{ ... }
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> Component1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Component1.js&apos;</span>
+</code></pre>
+<h3 id="11-spread-syntax-&#x5C55;&#x958B;&#x904B;&#x7B97;&#x5B50;"><a name="11-spread-syntax-&#x5C55;&#x958B;&#x904B;&#x7B97;&#x5B50;" class="anchor-navigation-ex-anchor" href="#11-spread-syntax-&#x5C55;&#x958B;&#x904B;&#x7B97;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>11. spread syntax (&#x5C55;&#x958B;&#x904B;&#x7B97;&#x5B50;)</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-built_in">Math</span>.max(...numbers) <span class="hljs-comment">// 4</span>
+<span class="hljs-built_in">Math</span>.min(...numbers) <span class="hljs-comment">// 1</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunc</span>(<span class="hljs-params">x, y, z</span>) </span>{ <span class="hljs-built_in">console</span>.log(y) }
+<span class="hljs-keyword">var</span> args = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+myFunc(...args); <span class="hljs-comment">// same as myFunc(0,1,2)</span>
+
+<span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-number">123</span>, ...args, <span class="hljs-string">&quot;go&quot;</span>];
+<span class="hljs-built_in">console</span>.log(ary); <span class="hljs-comment">// [&quot;hello&quot;, 123, 0, 1, 2, &quot;go&quot;]</span>
+</code></pre>
+<h3 id="12-generator"><a name="12-generator" class="anchor-navigation-ex-anchor" href="#12-generator"><i class="fa fa-link" aria-hidden="true"></i></a>12. Generator</h3>
+<p>&#x529F;&#x80FD;:&#x4E5F;&#x662F;&#x7528;&#x4F86;&#x8655;&#x7406;&#x7570;&#x6B65;&#x51FD;&#x5F0F;&#xFF0C;&#x8B93;&#x4ED6;&#x9806;&#x5E8F;&#x57F7;&#x884C; &#x4E0D;&#x4E00;&#x6A23;&#x7684;&#x5730;&#x65B9;&#x5728;&#x65BC;function&#x5F8C;&#x7684;&#x661F;&#x865F;&#xFF0C;&#x548C;yield</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">Fruit</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">yield</span> <span class="hljs-string">&apos;apple&apos;</span>;
+  <span class="hljs-keyword">yield</span> <span class="hljs-string">&apos;banana&apos;</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;ending&apos;</span>;
+}
+
+<span class="hljs-keyword">var</span> a = Fruit();
+</code></pre>
+<p>&#x4E4B;&#x5F8C;&#x8F38;&#x5165;a.next();</p>
+<h2 id="reference"><a name="reference" class="anchor-navigation-ex-anchor" href="#reference"><i class="fa fa-link" aria-hidden="true"></i></a>Reference</h2>
+<ul>
+<li><a href="https://medium.com/@peterchang_82818/es6-10-features-javascript-developer-must-know-98b9782bef44" target="_blank">[ES6] Javascript &#x958B;&#x767C;&#x8005;&#x5FC5;&#x9808;&#x77E5;&#x9053;&#x7684; 10 &#x500B;&#x65B0;&#x529F;&#x80FD;</a><ul>
+<li>&#x7FFB;&#x8B6F;&#x6709;&#x8AA4;?? &#x5B83;&#x6C92;&#x6709;&#x81EA;&#x5DF1;&#x7684; this</li>
+<li>Arrow functions do not have their own this. (<a href="https://www.w3schools.com/js/js_es6.asp" target="_blank">https://www.w3schools.com/js/js_es6.asp</a>)</li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">&#x89E3;&#x69CB;&#x8CE6;&#x503C;- JavaScript | MDN</a></li>
+<li><a href="https://www.w3schools.com/js/js_es6.asp" target="_blank">ECMAScript 6 - JavaScript 6 - W3Schools</a></li>
+<li><a href="https://easonwang01.gitbooks.io/class/es6es7.html" target="_blank">ES6,ES7,ES8 &#xB7; class - easonwang01 - GitBook</a></li>
+<li><a href="http://imweb.io/topic/582293894067ce9726778be9" target="_blank">Node&#x4E2D;&#x6CA1;&#x641E;&#x660E;&#x767D;require&#x548C;import&#xFF0C;&#x4F60;&#x4F1A;&#x88AB;&#x5751;&#x7684;&#x5F88;&#x60E8;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../notes/coding-conventions.html" class="navigation navigation-prev " aria-label="Previous page: JS Coding Conventions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="es7_note.html" class="navigation navigation-next " aria-label="Next page: ES7">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ES6","level":"5.1","depth":1,"next":{"title":"ES7","level":"5.2","depth":1,"path":"new-js/es7_note.md","ref":"./new-js/es7_note.md","articles":[]},"previous":{"title":"JS Coding Conventions","level":"4.3","depth":1,"path":"notes/coding-conventions.md","ref":"./notes/coding-conventions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"new-js/es6_note.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

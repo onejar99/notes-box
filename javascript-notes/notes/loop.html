@@ -1,0 +1,1252 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS Loop (Iterative) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="scope.html" />
+    
+    
+    <link rel="prev" href="conditional-statements.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Basic Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    JS Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    JS Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="script-location.html">
+            
+                <a href="script-location.html">
+            
+                    
+                    JS 語法的放置位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="output.html">
+            
+                <a href="output.html">
+            
+                    
+                    JS Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="syntax.html">
+            
+                <a href="syntax.html">
+            
+                    
+                    JS Syntax & Statements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    JS Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    JS Functions (Code Blocks)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="data-types.html">
+            
+                <a href="data-types.html">
+            
+                    
+                    JS Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="operators.html">
+            
+                <a href="operators.html">
+            
+                    
+                    JS Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="conditional-statements.html">
+            
+                <a href="conditional-statements.html">
+            
+                    
+                    JS Conditional Statements (if-else, switch)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="loop.html">
+            
+                <a href="loop.html">
+            
+                    
+                    JS Loop (Iterative)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    JS Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="this.html">
+            
+                <a href="this.html">
+            
+                    
+                    JS This
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="closures.html">
+            
+                <a href="closures.html">
+            
+                    
+                    JS Closures (閉包)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    JS Errors - Throw and Try to Catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    JS Hoisting (宣告置頂效果)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    JS Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="regular-expressions.html">
+            
+                <a href="regular-expressions.html">
+            
+                    
+                    JS Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="strict-mode.html">
+            
+                <a href="strict-mode.html">
+            
+                    
+                    JS Strict Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    JS OOP (Prototype-based)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Miscellaneous</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JS JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    JS Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="others.html">
+            
+                <a href="others.html">
+            
+                    
+                    JS Others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="bom.html">
+            
+                <a href="bom.html">
+            
+                    
+                    JS BOM (Browser Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="dom.html">
+            
+                <a href="dom.html">
+            
+                    
+                    JS DOM (Document Object Model)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="magic-js.html">
+            
+                <a href="magic-js.html">
+            
+                    
+                    JS Magic JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="best-practices.html">
+            
+                <a href="best-practices.html">
+            
+                    
+                    JS Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    JS Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="coding-conventions.html">
+            
+                <a href="coding-conventions.html">
+            
+                    
+                    JS Coding Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">New JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../new-js/es6_note.html">
+            
+                <a href="../new-js/es6_note.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../new-js/es7_note.html">
+            
+                <a href="../new-js/es7_note.html">
+            
+                    
+                    ES7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../new-js/es8_note.html">
+            
+                <a href="../new-js/es8_note.html">
+            
+                    
+                    ES8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript APIs</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../api/intro.html">
+            
+                <a href="../api/intro.html">
+            
+                    
+                    API Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../api/ajax-api.html">
+            
+                <a href="../api/ajax-api.html">
+            
+                    
+                    Ajax API (XMLHttpRequest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../api/array-api.html">
+            
+                <a href="../api/array-api.html">
+            
+                    
+                    Array API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../api/base64-api.html">
+            
+                <a href="../api/base64-api.html">
+            
+                    
+                    Base64 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../api/boolean-api.html">
+            
+                <a href="../api/boolean-api.html">
+            
+                    
+                    Boolean API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../api/date-api.html">
+            
+                <a href="../api/date-api.html">
+            
+                    
+                    Date API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../api/encode-uri-api.html">
+            
+                <a href="../api/encode-uri-api.html">
+            
+                    
+                    Encode URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../api/file-api.html">
+            
+                <a href="../api/file-api.html">
+            
+                    
+                    File URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+            
+                <a href="../api/function-prototype-api.html">
+            
+                    
+                    Function.prototype API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../api/html-api.html">
+            
+                <a href="../api/html-api.html">
+            
+                    
+                    HTML URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../api/json-api.html">
+            
+                <a href="../api/json-api.html">
+            
+                    
+                    JSON API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../api/math-api.html">
+            
+                <a href="../api/math-api.html">
+            
+                    
+                    Math API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../api/number-api.html">
+            
+                <a href="../api/number-api.html">
+            
+                    
+                    Number API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../api/object-api.html">
+            
+                <a href="../api/object-api.html">
+            
+                    
+                    Object API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../api/string-api.html">
+            
+                <a href="../api/string-api.html">
+            
+                    
+                    String API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JS Loop (Iterative)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-loop-iterative"><b></b>JS Loop (Iterative)</a></li><ul><li><span class="title-icon "></span><a href="#for"><b></b>for</a></li><li><span class="title-icon "></span><a href="#for-in"><b></b>for-in</a></li><li><span class="title-icon "></span><a href="#for-of-es6"><b></b>for-of (ES6)</a></li><li><span class="title-icon "></span><a href="#while"><b></b>while</a></li><li><span class="title-icon "></span><a href="#do-while"><b></b>do-while</a></li><li><span class="title-icon "></span><a href="#breakcontinue"><b></b>Break/Continue</a></li><li><span class="title-icon "></span><a href="#labels"><b></b>Labels</a></li></ul></ul></div><a href="#js-loop-iterative" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-loop-iterative"><a name="js-loop-iterative" class="anchor-navigation-ex-anchor" href="#js-loop-iterative"><i class="fa fa-link" aria-hidden="true"></i></a>JS Loop (Iterative)</h1>
+<p>[TOC]</p>
+<hr>
+<h2 id="for"><a name="for" class="anchor-navigation-ex-anchor" href="#for"><i class="fa fa-link" aria-hidden="true"></i></a>for</h2>
+<p>Basic Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> itemAry = [<span class="hljs-string">&apos;item1&apos;</span>, <span class="hljs-string">&apos;item2&apos;</span>, <span class="hljs-string">&apos;item3&apos;</span>, <span class="hljs-string">&apos;item4&apos;</span>];
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span> ; i &lt; itemAry.length ; i++) {
+    <span class="hljs-built_in">console</span>.log(itemAry[i]);
+}
+</code></pre>
+<p>Syntax:</p>
+<pre><code>for (`statement-start`; `statement-condition`; `statement-each-time-end`) {
+    //code block to be executed
+}
+</code></pre><blockquote>
+<p>mynote:</p>
+<ul>
+<li>3 &#x500B; statements &#x90FD;&#x662F; optional&#xFF0C;&#x4F46;&#x5206;&#x865F;[;]&#x4E0D;&#x53EF;&#x7701;&#x7565;<ul>
+<li><em>statement-condition</em> &#x5982;&#x679C;&#x7701;&#x7565;&#xFF0C;&#x8996;&#x540C;true</li>
+<li><em>statement-start</em> &#x548C; <em>statement-each-time-end</em> &#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x591A;&#x500B;&#x8A9E;&#x6CD5;&#xFF0C;&#x4EE5;&#x9017;&#x865F; [,] &#x5206;&#x9694;</li>
+</ul>
+</li>
+<li>3 &#x500B; statements &#x57F7;&#x884C;&#x6642;&#x6A5F;&#xFF1A;<ul>
+<li>statement-start*: &#x6574;&#x500B; for-loop &#x958B;&#x59CB;&#x524D;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;</li>
+<li><em>statement-condition</em>: &#x6BCF;&#x4E00; round (or &quot;one iteration&quot;) &#x8981;<strong>&#x958B;&#x59CB;&#x524D;</strong>&#x90FD;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;<ul>
+<li>&#x904B;&#x4F5C;&#x539F;&#x7406;&#x57FA;&#x672C;&#x4E0A;&#x540C; Boolean(...)&#xFF0C;&#x5982;&#x679C;&#x662F; true &#x624D;&#x958B;&#x59CB;&#x57F7;&#x884C;&#x8A72; round</li>
+<li>&#x4F8B;&#x5916;&#x72C0;&#x6CC1;: (1) &#x7701;&#x7565;&#xFF0C;&#x8996;&#x540C; true (2) &#x591A;&#x500B; expression &#x4EE5;&#x9017;&#x865F;&#x5206;&#x9694;&#xFF0C;&#x4EE5;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x7D50;&#x679C;&#x70BA;&#x6E96;</li>
+</ul>
+</li>
+<li><em>statement-each-time-end</em>: &#x6BCF;&#x4E00; round <strong>&#x7D50;&#x675F;&#x5F8C;</strong>&#x90FD;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Example 1: when statement-condition is a value, Boolean() is false</p>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span> ; <span class="hljs-literal">null</span> ; i++){
+  <span class="hljs-built_in">console</span>.log(i);
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<p>Example 2: when statement-condition is a value, Boolean() is true</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span> ; <span class="hljs-string">&apos;john&apos;</span> ; i++){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`i=<span class="hljs-subst">${i}</span>`</span>);
+    exeCnt++;
+    <span class="hljs-comment">// fuse</span>
+    <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//i=0</span>
+<span class="hljs-comment">//i=1</span>
+<span class="hljs-comment">//i=2</span>
+<span class="hljs-comment">//i=3</span>
+<span class="hljs-comment">//i=4</span>
+<span class="hljs-comment">//i=5</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<p>Example 3: when statement-condition is an expression, need to avoid <strong>infinite loop</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> startNum = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> limitNum = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getLimitNum</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">return</span> limitNum++;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getStartNum</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">return</span> startNum++;
+}
+
+<span class="hljs-keyword">for</span>(i = getStartNum() ; i &lt; getLimitNum() ; i++){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`i=<span class="hljs-subst">${i}</span>, exeCnt=<span class="hljs-subst">${exeCnt}</span>, startNum=<span class="hljs-subst">${startNum}</span>, limitNum=<span class="hljs-subst">${limitNum}</span>`</span>);
+    exeCnt++;
+    <span class="hljs-comment">// fuse</span>
+    <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">10</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Final: exeCnt=<span class="hljs-subst">${exeCnt}</span>, startNum=<span class="hljs-subst">${startNum}</span>, limitNum=<span class="hljs-subst">${limitNum}</span>`</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//i=1, exeCnt=0, startNum=2, limitNum=6</span>
+<span class="hljs-comment">//i=2, exeCnt=1, startNum=2, limitNum=7</span>
+<span class="hljs-comment">//i=3, exeCnt=2, startNum=2, limitNum=8</span>
+<span class="hljs-comment">//i=4, exeCnt=3, startNum=2, limitNum=9</span>
+<span class="hljs-comment">//i=5, exeCnt=4, startNum=2, limitNum=10</span>
+<span class="hljs-comment">//i=6, exeCnt=5, startNum=2, limitNum=11</span>
+<span class="hljs-comment">//i=7, exeCnt=6, startNum=2, limitNum=12</span>
+<span class="hljs-comment">//i=8, exeCnt=7, startNum=2, limitNum=13</span>
+<span class="hljs-comment">//i=9, exeCnt=8, startNum=2, limitNum=14</span>
+<span class="hljs-comment">//i=10, exeCnt=9, startNum=2, limitNum=15</span>
+<span class="hljs-comment">//i=11, exeCnt=10, startNum=2, limitNum=16</span>
+<span class="hljs-comment">//Final: exeCnt=11, startNum=2, limitNum=16</span>
+</code></pre>
+<p>Example 4: <em>statement-start</em> &#x548C; <em>statement-each-time-end</em> &#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x591A;&#x500B;&#x8A9E;&#x6CD5;&#xFF0C;&#x4EE5;&#x9017;&#x865F; [,] &#x5206;&#x9694;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>, j=<span class="hljs-number">1</span>  ;  ;  i++, j*=<span class="hljs-number">2</span>){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`i=<span class="hljs-subst">${i}</span>, j=<span class="hljs-subst">${j}</span>`</span>);
+    exeCnt++;
+    <span class="hljs-comment">// fuse</span>
+    <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//i=0, j=1</span>
+<span class="hljs-comment">//i=1, j=2</span>
+<span class="hljs-comment">//i=2, j=4</span>
+<span class="hljs-comment">//i=3, j=8</span>
+<span class="hljs-comment">//i=4, j=16</span>
+<span class="hljs-comment">//i=5, j=32</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<p>Example 5: <em>statement-condition</em> &#x4E5F;&#x53EF;&#x4EE5;&#x591A;&#x500B;&#xFF0C;&#x4F46;&#x53EA;&#x4EE5;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x7D50;&#x679C;&#x70BA;&#x6E96;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// result is true</span>
+<span class="hljs-keyword">for</span>(; <span class="hljs-number">1</span>&gt;<span class="hljs-number">2</span>, <span class="hljs-number">10</span>&gt;<span class="hljs-number">9</span> ;){...}
+<span class="hljs-keyword">for</span>(; <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span> ;){...}
+
+<span class="hljs-comment">// result is false</span>
+<span class="hljs-keyword">for</span>(; <span class="hljs-literal">true</span>, <span class="hljs-literal">false</span> ;){...}
+<span class="hljs-keyword">for</span>(; <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span> ;){...}
+<span class="hljs-keyword">for</span>(; <span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-literal">true</span> ;){...}
+<span class="hljs-keyword">for</span>(; <span class="hljs-literal">false</span> || <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span> &amp;&amp; <span class="hljs-literal">false</span> ;){...}
+</code></pre>
+<p>Example 6:  3&#x500B; statement &#x7686;&#x53EF;&#x7701;&#x7565;&#xFF0C;&#x4F46;&#x5206;&#x865F;[;]&#x4E0D;&#x53EF;&#x7701;&#x7565;&#xFF0C;statement-condition&#x82E5;&#x7701;&#x7565;&#x8996;&#x70BA; true</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, j = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span>(;;){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`i=<span class="hljs-subst">${i}</span>, j=<span class="hljs-subst">${j}</span>`</span>);
+    exeCnt++;
+    <span class="hljs-comment">// fuse</span>
+    <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//i=0, j=0</span>
+<span class="hljs-comment">//i=0, j=0</span>
+<span class="hljs-comment">//i=0, j=0</span>
+<span class="hljs-comment">//i=0, j=0</span>
+<span class="hljs-comment">//i=0, j=0</span>
+<span class="hljs-comment">//i=0, j=0</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<hr>
+<h2 id="for-in"><a name="for-in" class="anchor-navigation-ex-anchor" href="#for-in"><i class="fa fa-link" aria-hidden="true"></i></a>for-in</h2>
+<p>The JavaScript for/in statement loops through the properties of an object:</p>
+<blockquote>
+<p>NOTE:</p>
+<ul>
+<li>for-in &#x88E1;&#x5BA3;&#x544A;&#x7684;&#x8B8A;&#x6578;&#x4EE3;&#x8868; key&#xFF0C;&#x800C;&#x975E;&#x6574;&#x500B;&#x5143;&#x7D20;</li>
+<li>&#x6240;&#x4EE5;&#x7528;&#x5728;&#x9663;&#x5217;&#xFF0C;r &#x662F; index&#xFF1B;&#x7528;&#x5728; Object&#xFF0C;r &#x662F; property &#x540D;&#x7A31;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-JS"><span class="hljs-keyword">var</span> people = [
+  {name: <span class="hljs-string">&apos;John&apos;</span>, age: <span class="hljs-number">18</span>},
+  {name: <span class="hljs-string">&apos;Rubio&apos;</span>, age: <span class="hljs-number">26</span>},
+  {name: <span class="hljs-string">&apos;Lin&apos;</span>, age: <span class="hljs-number">28</span>},
+];
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> r <span class="hljs-keyword">in</span> people){
+    <span class="hljs-built_in">console</span>.log(people[r]);
+}
+
+<span class="hljs-comment">//******* Result *********</span>
+<span class="hljs-comment">//{name: &quot;John&quot;, age: 18}</span>
+<span class="hljs-comment">//{name: &quot;Rubio&quot;, age: 26}</span>
+<span class="hljs-comment">//{name: &quot;Lin&quot;, age: 28}</span>
+</code></pre>
+<p>for-in &#x5F8C;&#x9762;&#x7684; condition &#x53EA;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-built_in">console</span>.log(ary);
+
+<span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span>( <span class="hljs-keyword">var</span> i <span class="hljs-keyword">in</span> getAry() ){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`i=[<span class="hljs-subst">${i}</span>] ary[i]=<span class="hljs-subst">${ary[i]}</span>`</span>);
+    <span class="hljs-comment">// fuse</span>
+    <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">10</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAry</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;go getAry()&apos;</span>);
+  ary.push(<span class="hljs-number">99</span>);
+  <span class="hljs-keyword">return</span> ary;
+}
+
+<span class="hljs-comment">/******result*********
+(4) [1, 2, 3, 4]
+go getAry()
+i=[0] ary[i]=1
+i=[1] ary[i]=2
+i=[2] ary[i]=3
+i=[3] ary[i]=4
+i=[4] ary[i]=99
+end
+********************/</span>
+</code></pre>
+<h2 id="for-of-es6"><a name="for-of-es6" class="anchor-navigation-ex-anchor" href="#for-of-es6"><i class="fa fa-link" aria-hidden="true"></i></a>for-of (ES6)</h2>
+<blockquote>
+<p>NOTE:</p>
+<ul>
+<li>&#x548C; for-in &#x985E;&#x4F3C;&#xFF0C;&#x5DEE;&#x5225;&#x5728;&#x65BC; for-in &#x53D6;&#x7684;&#x503C;&#x662F; key&#xFF0C;for-of &#x53D6;&#x7684;&#x503C;&#x662F; value</li>
+<li>&#x5F8C;&#x9762;&#x7684; condition &#x4E00;&#x6A23;&#x53EA;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;</li>
+<li>for-of &#x7121;&#x6CD5;&#x7528;&#x65BC; Object&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x65BC;&#x9663;&#x5217; (&#x5FC5;&#x9808;&#x662F; iterable)</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];
+<span class="hljs-built_in">console</span>.log(ary);
+
+<span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> getAry() ) {
+    value += <span class="hljs-number">1</span>;
+    <span class="hljs-built_in">console</span>.log(value);
+
+    <span class="hljs-comment">// fuse</span>
+    <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">10</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+<span class="hljs-built_in">console</span>.log(ary);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAry</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;go getAry()&apos;</span>);
+  ary.push(<span class="hljs-number">99</span>);
+  <span class="hljs-keyword">return</span> ary;
+}
+
+<span class="hljs-comment">/******result*********
+(4) [1, 2, 3, 4]
+go getAry()
+2
+3
+4
+5
+100
+end
+(5) [1, 2, 3, 4, 99]
+*********************/</span>
+</code></pre>
+<hr>
+<h2 id="while"><a name="while" class="anchor-navigation-ex-anchor" href="#while"><i class="fa fa-link" aria-hidden="true"></i></a>while</h2>
+<p>Syntax Template:</p>
+<pre><code>while (**condition**) {
+    // code block to be executed
+}
+</code></pre><p>mynote:</p>
+<blockquote>
+<p>condition: &#x6BCF;&#x4E00; round &#x8981;&#x958B;&#x59CB;&#x524D;&#x90FD;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;</p>
+<ul>
+<li>&#x548C; for-loop &#x7684; statement-condition &#x985E;&#x4F3C;&#xFF0C;&#x53EA;&#x5DEE;&#x5728;&#x4E0D;&#x80FD;&#x7701;&#x7565;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x500B; expression</li>
+<li>&#x904B;&#x4F5C;&#x539F;&#x7406;&#x57FA;&#x672C;&#x4E0A;&#x540C; Boolean(...)&#xFF0C;&#x5982;&#x679C;&#x662F; true &#x624D;&#x958B;&#x59CB;&#x57F7;&#x884C;&#x8A72; round</li>
+<li>&#x591A;&#x500B; expression &#x4EE5;&#x9017;&#x865F;&#x5206;&#x9694;&#xFF0C;&#x4EE5;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x7D50;&#x679C;&#x70BA;&#x6E96;</li>
+</ul>
+</blockquote>
+<p>Example 1: condition &#x6BCF;&#x6B21;&#x90FD;&#x6703;&#x57F7;&#x884C;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> startNum = <span class="hljs-number">1</span>; <span class="hljs-comment">// PS: &#x5982;&#x679C;&#x521D;&#x59CB;&#x503C;&#x662F; 0&#xFF0C;&#x56E0;&#x70BA; return 0 &#x56DE;&#x53BB;&#xFF0C;while-loop &#x6703;&#x9032;&#x4E0D;&#x53BB;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getStartNum</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">return</span> startNum++;
+}
+
+<span class="hljs-keyword">while</span>( getStartNum() ){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`exeCnt=<span class="hljs-subst">${exeCnt}</span> startNum=<span class="hljs-subst">${startNum}</span>`</span>);
+  exeCnt++;
+  <span class="hljs-comment">// fuse</span>
+  <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//exeCnt=0 startNum=2</span>
+<span class="hljs-comment">//exeCnt=1 startNum=3</span>
+<span class="hljs-comment">//exeCnt=2 startNum=4</span>
+<span class="hljs-comment">//exeCnt=3 startNum=5</span>
+<span class="hljs-comment">//exeCnt=4 startNum=6</span>
+<span class="hljs-comment">//exeCnt=5 startNum=7</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<p>Example 2: condition &#x53EF;&#x4EE5;&#x653E;&#x591A;&#x500B;&#xFF0C;&#x4EE5;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x7684;&#x7D50;&#x679C;&#x70BA;&#x6E96;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span>( <span class="hljs-literal">false</span>, <span class="hljs-string">&quot;john&quot;</span> ){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`exeCnt=<span class="hljs-subst">${exeCnt}</span>`</span>);
+  exeCnt++;
+  <span class="hljs-comment">// fuse</span>
+  <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//exeCnt=0</span>
+<span class="hljs-comment">//exeCnt=1</span>
+<span class="hljs-comment">//exeCnt=2</span>
+<span class="hljs-comment">//exeCnt=3</span>
+<span class="hljs-comment">//exeCnt=4</span>
+<span class="hljs-comment">//exeCnt=5</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> exeCnt = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span>( <span class="hljs-string">&quot;john&quot;</span>, <span class="hljs-literal">false</span> ){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`exeCnt=<span class="hljs-subst">${exeCnt}</span>`</span>);
+  exeCnt++;
+  <span class="hljs-comment">// fuse</span>
+  <span class="hljs-keyword">if</span>(exeCnt &gt; <span class="hljs-number">5</span>) <span class="hljs-keyword">break</span>;
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;end&apos;</span>);
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//end</span>
+</code></pre>
+<hr>
+<h2 id="do-while"><a name="do-while" class="anchor-navigation-ex-anchor" href="#do-while"><i class="fa fa-link" aria-hidden="true"></i></a>do-while</h2>
+<p>As general.</p>
+<hr>
+<h2 id="breakcontinue"><a name="breakcontinue" class="anchor-navigation-ex-anchor" href="#breakcontinue"><i class="fa fa-link" aria-hidden="true"></i></a>Break/Continue</h2>
+<ul>
+<li>The break statement &quot;jumps out&quot; of a loop.</li>
+<li>The continue statement &quot;jumps over&quot; one iteration in the loop.</li>
+</ul>
+<hr>
+<h2 id="labels"><a name="labels" class="anchor-navigation-ex-anchor" href="#labels"><i class="fa fa-link" aria-hidden="true"></i></a>Labels</h2>
+<ul>
+<li>mynote:<ul>
+<li>&#x5E6B;&#x4E00;&#x6BB5; code-block &#x6A19;&#x7C64;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; <code>break &lt;labelname&gt;</code> &#x8DF3;&#x904E;&#x4E0D;&#x8981;&#x57F7;&#x884C;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x505A;&#x5230; <code>do-while(false){break;}</code> &#x7684;&#x6548;&#x679C;</li>
+<li>&#x4E0D;&#x77E5;&#x9053; <code>continue labelname;</code> &#x7684;&#x61C9;&#x7528;&#x5834;&#x5408;</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>The <code>continue</code> statement (with or without a label reference) can only be used to <strong>skip one loop iteration</strong>.</li>
+<li>The <code>break</code> statement, without a label reference, can only be used to <strong>jump out of a loop or a switch</strong>.</li>
+<li>With a label reference, the break statement can be used to <strong>jump out of any code block</strong>:</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> cars = [<span class="hljs-string">&quot;BMW&quot;</span>, <span class="hljs-string">&quot;Volvo&quot;</span>, <span class="hljs-string">&quot;Saab&quot;</span>, <span class="hljs-string">&quot;Ford&quot;</span>];
+list: {
+  <span class="hljs-built_in">console</span>.log(cars[<span class="hljs-number">0</span>]);
+  <span class="hljs-built_in">console</span>.log(cars[<span class="hljs-number">1</span>]);
+  <span class="hljs-keyword">break</span> list;
+  <span class="hljs-built_in">console</span>.log(cars[<span class="hljs-number">2</span>]);
+  <span class="hljs-built_in">console</span>.log(cars[<span class="hljs-number">3</span>]);
+}
+
+<span class="hljs-comment">//***** result: *****</span>
+<span class="hljs-comment">//BMW</span>
+<span class="hljs-comment">//Volvo</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="conditional-statements.html" class="navigation navigation-prev " aria-label="Previous page: JS Conditional Statements (if-else, switch)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="scope.html" class="navigation navigation-next " aria-label="Next page: JS Scope">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS Loop (Iterative)","level":"1.12","depth":1,"next":{"title":"JS Scope","level":"2.1","depth":1,"path":"notes/scope.md","ref":"./notes/scope.md","articles":[]},"previous":{"title":"JS Conditional Statements (if-else, switch)","level":"1.11","depth":1,"path":"notes/conditional-statements.md","ref":"./notes/conditional-statements.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/loop.md","mtime":"2020-07-24T05:04:28.816Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:05:18.235Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
