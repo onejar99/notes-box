@@ -26,25 +26,30 @@ export GH_PAGES_FOLDER
 echo "GH_PAGES_FOLDER=[$GH_PAGES_FOLDER]"
 ls -al
 
-#git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
+echo '[INFO] Clone repository and switch to branch gh-pages...'
+#git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER} # error if bo gh-pages branch
 git clone https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
 checkIfErr
 cd ${GH_PAGES_FOLDER}
 git checkout -b gh-pages
 checkIfErr
 cd ..
+
+echo '[INFO] Copy GitBook output pages...'
 ls -al
 rm -rf $GH_PAGES_FOLDER/$BOOK_DIR
 cp -rf $OUTPUT_DIR $GH_PAGES_FOLDER/$BOOK_DIR
 cd $GH_PAGES_FOLDER
 ls -al
 
+echo '[INFO] Add new commit for gh-pages...'
 git config --local user.name $USER_NAME
 git config --local user.email $USER_EMAIL
 git status
 git add --all
 git commit -m "Deploy to Github Pages 🥂 (from $GITHUB_SHA)"
 checkIfErr
-git push origin gh-pages -f
+echo '[INFO] Push to gh-pages...'
+git push --set-upstream origin gh-pages -f
 checkIfErr
-echo Deploy gh-pages completed! 💪💯
+echo '[INFO] Deploy gh-pages completed! 💪💯'
