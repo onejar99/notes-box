@@ -1,5 +1,14 @@
 #!/bash/bin
 
+function checkIfErr() {
+    ret=$?
+    echo "ret=[${ret}]"
+    if [ ! $ret = '0' ]; then
+        echo "Oops something wrong! exit code: ${ret}"
+        exit $ret;
+    fi
+}
+
 echo "HOME=[$HOME]"
 echo "GITHUB_WORKSPACE=[$GITHUB_WORKSPACE]"
 echo "GITHUB_RUN_ID=[$GITHUB_RUN_ID]"
@@ -17,6 +26,7 @@ echo "GH_PAGES_FOLDER=[$GH_PAGES_FOLDER]"
 ls -al
 
 git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
+checkIfErr
 ls -al
 rm -rf $GH_PAGES_FOLDER/$BOOK_DIR
 cp -rf $OUTPUT_DIR $GH_PAGES_FOLDER/$BOOK_DIR
@@ -28,5 +38,7 @@ git config --local user.email $USER_EMAIL
 git status
 git add --all
 git commit -m "Deploy to Github Pages 🥂 (from $GITHUB_SHA)"
+checkIfErr
 git push origin gh-pages -f
+checkIfErr
 echo Deploy gh-pages completed! 💪💯
