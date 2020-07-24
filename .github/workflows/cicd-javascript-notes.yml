@@ -1,6 +1,7 @@
 name: JavaScript Notes - build and deploy to gh-pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
