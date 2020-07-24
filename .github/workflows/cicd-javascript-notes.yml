@@ -29,9 +29,9 @@ jobs:
     - name: Build 🔧
       run: |
         curl -fsSL https://raw.githubusercontent.com/onejar99/notes-box/master/cicd-scripts/build.sh > build.sh
-        sh build.sh
+        bash build.sh
 
     - name: Deploy 🚀
       run: |
         curl -fsSL https://raw.githubusercontent.com/onejar99/notes-box/master/cicd-scripts/deploy.sh > deploy.sh
-        sh deploy.sh
+        bash deploy.sh
