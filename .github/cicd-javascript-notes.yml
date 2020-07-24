@@ -1,0 +1,36 @@
+name: JavaScript Notes - build and deploy to gh-pages
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'javascript-notes/*'
+      - '.github/workflows/cicd-javascript-notes.yml'
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy to gh-pages
+    runs-on: ubuntu-latest
+    env:
+      MY_SECRET   : ${{secrets.GH_ACCESS_TOKEN}}
+      USER_NAME   : onejar99
+      USER_EMAIL  : onejar99@gmail.com
+      BOOK_DIR    : javascript-notes
+      OUTPUT_DIR  : javascript-notes/_book
+
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v2.3.1
+      with:
+        persist-credentials: false
+
+    - name: Build 🔧
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/onejar99/notes-box/master/cicd-scripts/build.sh > build.sh
+        sh build.sh
+
+    - name: Deploy 🚀
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/onejar99/notes-box/master/cicd-scripts/deploy.sh > deploy.sh
+        sh deploy.sh
