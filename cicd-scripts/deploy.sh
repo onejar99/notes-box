@@ -26,8 +26,13 @@ export GH_PAGES_FOLDER
 echo "GH_PAGES_FOLDER=[$GH_PAGES_FOLDER]"
 ls -al
 
-git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
+#git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
+git clone https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
 checkIfErr
+cd ${GH_PAGES_FOLDER}
+git checkout -b gh-pages
+checkIfErr
+cd ..
 ls -al
 rm -rf $GH_PAGES_FOLDER/$BOOK_DIR
 cp -rf $OUTPUT_DIR $GH_PAGES_FOLDER/$BOOK_DIR
