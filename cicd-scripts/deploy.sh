@@ -9,6 +9,7 @@ function checkIfErr() {
     fi
 }
 
+echo "SHELL=[$SHELL]"
 echo "HOME=[$HOME]"
 echo "GITHUB_WORKSPACE=[$GITHUB_WORKSPACE]"
 echo "GITHUB_RUN_ID=[$GITHUB_RUN_ID]"
