@@ -1,6 +1,6 @@
 #!/bash/bin
 
-function checkIfErr() {
+function checkIfErr {
     ret=$?
     echo "ret=[${ret}]"
     if [ ! $ret = '0' ]; then
