@@ -27,13 +27,14 @@ echo "GH_PAGES_FOLDER=[$GH_PAGES_FOLDER]"
 ls -al
 
 echo '[INFO] Clone repository and switch to branch gh-pages...'
-#git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER} # error if bo gh-pages branch
-git clone https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
+git clone -b gh-pages --single-branch https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER} # error if no gh-pages branch
 checkIfErr
-cd ${GH_PAGES_FOLDER}
-git checkout -b gh-pages
-checkIfErr
-cd ..
+# git clone https://${MY_SECRET}@github.com/${GITHUB_REPOSITORY}.git ${GH_PAGES_FOLDER}
+# checkIfErr
+# cd ${GH_PAGES_FOLDER}
+# git checkout -b gh-pages
+# checkIfErr
+# cd ..
 
 echo '[INFO] Copy GitBook output pages...'
 ls -al
