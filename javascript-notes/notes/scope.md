@@ -1,9 +1,5 @@
 # JS Scope
 
-[TOC]
-
-
-
 ## Scope in JS
 
 1. Scope determines the accessibility (visibility) of these variables.

@@ -1,11 +1,5 @@
 # JS Operators
 
-[TOC]
-
-
-
----
-
 ## Arithmetic Operators (算數運算子)
 
 ### Overview
@@ -90,7 +84,7 @@ Assign values to JavaScript variables. (和一般語言用法一樣)
 | *=                 |                     |
 | /=                 |                     |
 | %=                 | same as "x = x % y" |
-| <<=, &=, **=, etc. |                     |
+| <<=, &=, **=, etc. | ---                 |
 
 
 > The **= operator is an experimental part of the ECMAScript 2016 proposal (ES7). It is not stable across browsers. Do not use it.
@@ -202,10 +196,9 @@ console.log(x);		// 'Good'
 
 | Operator | Description |
 | -------- | ----------- |
-| &&       | and         |
-| \|\|     | or          |
-| !        | not         |
-
+| &&     | and         |
+| &#124;&#124;     | or          |
+| !      | not         |
 
 ### Comparison Operators VS. Logical Operators
 
@@ -342,13 +335,13 @@ console.log( ary instanceof Array );  // true
 
 | Operator | Description           | Example | Same as         | Result       | Decimal |
 | -------- | --------------------- | ------- | --------------- | ------------ | ------- |
-| &        | AND (兩方皆1才1)          | 5 & 1   | 0101 & 0001     | 0001         | 1       |
-| \|       | OR (兩方有1就1)           | 5 \| 1  | 0101 \| 0001    | 0101         | 5       |
-| ~        | NOT (01相反)            | ~ 5     | ~ 0000.....0101 | 1111....1010 |         |
-| ^        | XOR (兩方一1一0才1)        | 5 ^ 1   | 0101 ^ 0001     | 0100         | 4       |
-| <<       | Zero fill left shift  | 5 << 1  | 0101 << 1       | 01010        | 10      |
-| >>       | Signed right shift    | 5 >> 1  | 0101 >> 1       | 0010         | 2       |
-| >>>      | Zero fill right shift | 5 >>> 1 | 0101 >>> 1      |              |         |
+| `&`        | AND (兩方皆1才1)          | `5 & 1`   | `0101 & 0001`     | 0001         | 1       |
+| &#124;       | OR (兩方有1就1)           | 5 &#124; 1  | 0101 &#124; 0001    | 0101         | 5       |
+| `~`        | NOT (01相反)            | `~ 5`     | `~ 0000.....0101` | 1111....1010 |         |
+| `^`        | XOR (兩方一1一0才1)        | `5 ^ 1`   | `0101 ^ 0001`     | 0100         | 4       |
+| `<<`       | Zero fill left shift  | `5 << 1`  | `0101 << 1`       | 01010        | 10      |
+| `>>`       | Signed right shift    | `5 >> 1`  | `0101 >> 1`       | 0010         | 2       |
+| `>>>`      | Zero fill right shift | `5 >>> 1` | `0101 >>> 1`      |              |         |
 
 ----
 

@@ -1,8 +1,4 @@
-# DOM
-
-> Document Object Model (DOM)
-
-[TOC]
+# DOM (Document Object Model)
 
 ## What is the DOM?
 

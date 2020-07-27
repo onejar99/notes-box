@@ -1,4 +1,6 @@
-## Base64 API
+# Base64 API
+
+## Usage Example
 
 ````js
 testBase64('Hello, world', btoa, atob); //SGVsbG8sIHdvcmxk

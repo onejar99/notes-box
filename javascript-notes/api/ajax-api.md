@@ -1,9 +1,9 @@
-## Ajax API (XMLHttpRequest)
+# Ajax API (XMLHttpRequest)
 
 Ref: [XMLHttpRequest Object Methods & Properties](https://www.w3schools.com/js/js_ajax_http.asp)
 
 
-### Examples:
+## Examples:
 
 > Basic Example for sending request to a Server:
 > When readyState is 4 and status is 200, the response is ready:
@@ -57,9 +57,9 @@ document.getElementById("demo").innerHTML = xhttp.responseText;
 
 ----
 
-### Request Methods
+## Request Methods
 
-#### open()
+### open()
 
 `open(method, url, async)`
 
@@ -71,7 +71,7 @@ document.getElementById("demo").innerHTML = xhttp.responseText;
 
 ----
 
-#### send()
+### send()
 
 `send()`
 
@@ -105,9 +105,9 @@ xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
 ----
 
-### Request Properties
+## Request Properties
 
-#### readyState
+### readyState
 
 holds the status of the XMLHttpRequest
 
@@ -118,14 +118,14 @@ holds the status of the XMLHttpRequest
 * 4: request finished and response is ready
 
 
-#### onreadystatechange
+### onreadystatechange
 
 callback function to be executed when the `readyState` changes
 
 * The onreadystatechange function is called every time the readyState changes.
 * The onreadystatechange event is triggered four times (1-4)
 
-#### status & statusText
+### status & statusText
 
 holds the status of the XMLHttpRequest object(Http Status)
 
@@ -138,14 +138,14 @@ E.g.
 | 404    | "Page not found"     |
 
 
-### Response Properties
+## Response Properties
 
-#### responseText
+### responseText
 
 get the response data as a string
 
 
-#### responseXML
+### responseXML
 
 get the response data as XML data
 
@@ -219,9 +219,9 @@ cd_catalog.xml:
 
 
 
-### Response Methods
+## Response Methods
 
-#### getResponseHeader()
+### getResponseHeader()
 
 `getResponseHeader(headerName)`
 
@@ -234,7 +234,7 @@ this.getResponseHeader("Last-Modified");
 ````
 
 
-#### getAllResponseHeaders()
+### getAllResponseHeaders()
 
 Returns all the header information from the server resource
 

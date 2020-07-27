@@ -1,9 +1,5 @@
 # JS Others
 
-[TOC]
-
-----
-
 ## Ending Definitions with a Comma
 
 * Trailing commas in object and array definition are legal in ECMAScript 5. (but IE 8 will crash?)

@@ -1,24 +1,18 @@
-## String API
-
-[TOC]
-
-
-
-----
+# String API
 
 [Complete JavaScript String Reference](https://www.w3schools.com/jsref/jsref_obj_string.asp)
 
-> Note:
-> 基本上 method 的回傳結果都是一個新的字串，不會影響到原字串 (即使是 `replace()` )
->
+## Note
+
+* 基本上 method 的回傳結果都是一個新的字串，不會影響到原字串 (即使是 `replace()` )
 > All string methods return a new string. They don't modify the original string.
 > Formally said: Strings are immutable: Strings cannot be changed, only replaced.
 
 ---
 
-### Basic
+## Basic
 
-#### length
+### length
 
 ````
 var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -27,12 +21,12 @@ console.log(txt.length); //26
 
 ----
 
-#### String() (Global)
+### String() (Global)
 
 convert to string
 
 
-#### trim()
+### trim()
 
 ````js
 var str = "   Hello  World ";
@@ -43,13 +37,13 @@ console.log(`str=[${str.trim()}]`); // "str=[Hello  World]"
 
 ---
 
-### Search string position
+## Search string position
 
-#### indexOf()
+### indexOf()
 
-#### lastIndexOf()
+### lastIndexOf()
 
-​````js
+```js
 var str = "Please locate where 'locate' occurs!";
 console.log( str.indexOf("locate") ); //7
 console.log( str.lastIndexOf("locate") ); //21
@@ -61,23 +55,23 @@ console.log( str.lastIndexOf("abc") ); //-1
 //Both methods accept a second parameter as the starting position for the search:
 console.log( str.indexOf("locate", 10) ); //21 (start at [10] and forward)
 console.log( str.lastIndexOf("locate", 10) ); //7 (start at [10] and backward)
-````
+```
 
 
 
-#### search()
+### search()
 
 > search() 和 indexOf() 很像，差別在於 search() 不能設起始位置的參數，但可以支援正規表示式
 
-​````js
+```js
 console.log( str.search("locate") ); //7
-````
+```
 
 ---
 
-### Extract string
+## Extract string
 
-#### slice()
+### slice()
 
 `slice(startIndex, endIndex)`
 
@@ -105,7 +99,7 @@ console.log( str.slice(-1, 1) ); //""
 
 
 
-#### substring()
+### substring()
 
 `substring(startIndex, endIndex)`
 
@@ -132,7 +126,7 @@ console.log( str.substring(12, 1) ); //"pple,Banana"
 
 
 
-#### substr()
+### substr()
 
 `substr(startIndex, length)`
 
@@ -155,7 +149,7 @@ console.log( str.substring(7, -3) ); //"Apple,B"
 
 ---
 
-### Extract characters
+## Extract characters
 
 * __Safe__ methods for extracting string characters: `charAt()`, `charCodeAt()`
 * Accessing a String as an Array is __Unsafe__ and __Unpredictable__
@@ -173,9 +167,9 @@ console.log( str ); //"HELLO WORLD"
 
 
 
-#### charAt()
+### charAt()
 
-#### charCodeAt()
+### charCodeAt()
 
 ````js
 var str = "HELLO WORLD";
@@ -196,9 +190,9 @@ console.log( str.charCodeAt(100) );  //NaN
 
 ---
 
-### Replace string
+## Replace string
 
-#### replace()
+### replace()
 
 `replace(searchStr, newStr)`
 
@@ -225,11 +219,11 @@ console.log( str.replace(/bOnD/ig, "Hunt") ); //"I'm Hunt. James Hunt."
 
 ---
 
-### Upper and Lower Case
+## Upper and Lower Case
 
-#### toUpperCase()
+### toUpperCase()
 
-#### toLowerCase()
+### toLowerCase()
 
 ````js
 var txt = "Hello World!";
@@ -239,9 +233,9 @@ console.log( txt.toLowerCase() ); //"hello world!"
 
 ---
 
-### Concat string
+## Concat string
 
-#### concat()
+### concat()
 
 > The same function as plus the operator(+).
 
@@ -252,9 +246,9 @@ console.log( "Hello".concat(" ", "World!") ); //"Hello World!"
 
 ---
 
-### String to Array
+## String to Array
 
-#### split()
+### split()
 
 ````js
 var txt = "a,b,c,d,e";
@@ -267,7 +261,9 @@ console.log( txt.split("") );  // => ["a", ",", "b", ",", "c", ",", "d", ",", "e
 
 ----
 
-### Format String
+## Format String
+
+### Example for 特定長度補 0 
 
 Ref: [ [JavaScript] 替數字、文字在特定長度中補0 ](https://dotblogs.com.tw/aquarius6913/2011/05/10/24655)
 

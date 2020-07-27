@@ -1,13 +1,12 @@
-## Math API
+# Math API
 
-* Math Constructor
-  * Unlike other global objects, the Math object has no constructor. Methods and properties are __static__.
+## Note
 
+### Math Constructor
 
+* Unlike other global objects, the Math object has no constructor. Methods and properties are __static__.
 
-
-
-### Math Properties
+## Math Properties (內建常數)
 
 ````js
 console.log(Math.PI);	// 3.141592653589793
@@ -26,13 +25,13 @@ Math.LOG10E   // returns base 10 logarithm of E
 
 ----
 
-### Round
+## Round
 
-#### round()
+### round()
 
-#### ceil()
+### ceil()
 
-#### floor()
+### floor()
 
 > 四捨五入、無條件進位、無條件捨去
 
@@ -49,11 +48,11 @@ Math.floor(4.7);    // returns 4
 
 ----
 
-### Mix & Max
+## Mix & Max
 
-#### min()
+### min()
 
-#### max()
+### max()
 
 ````js
 console.log( Math.min(0, 150, 30, 20, -8, -200) );	// -200
@@ -64,11 +63,11 @@ console.log( Math.max(0, 150, 30, 20, -8, -200) );	// 150
 
 ----
 
-### Other Basis
+## Other Basis
 
 
 
-#### pow()
+### pow()
 
 > 次方
 
@@ -78,7 +77,7 @@ Math.pow(8, 2);		// returns 64
 
 
 
-#### sqrt()
+### sqrt()
 
 > 平方
 
@@ -88,7 +87,7 @@ Math.sqrt(64);      // returns 8
 
 
 
-#### abs()
+### abs()
 
 > 絕對值
 
@@ -100,9 +99,9 @@ Math.abs(-4.7);     // returns 4.7
 
 ----
 
-### Random
+## Random
 
-#### random()
+### random()
 
 > returns a random __float__ number between 0 (inclusive),  and 1 (exclusive):
 >
@@ -116,7 +115,7 @@ for (i = 0; i < 10; i++) {
 
 
 
-#### Random Integers
+### Example: Random Integers
 
 > `Math.random()` used with `Math.floor()` can be used to return random integers.
 
@@ -131,7 +130,7 @@ console.log( Math.floor(Math.random() * 100) +1 ); // 1~100
 
 
 
-#### Random in Range
+### Example: Random in Range
 
 ````js
 // between min (included) and max (excluded):
@@ -149,11 +148,11 @@ function getRndInteger(min, max) {
 
 ----
 
-### 三角函數
+## 三角函數
 
-#### sin()
+### sin()
 
-#### cos()
+### cos()
 
 ````js
 Math.sin(90 * Math.PI / 180);     // returns 1 (the sine of 90 degrees)

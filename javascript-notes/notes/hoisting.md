@@ -1,9 +1,5 @@
 # JS Hoisting (宣告置頂效果)
 
-[TOC]
-
-
-
 ## JS JavaScript Declarations are Hoisted
 
 1. 為什麼 JS 變數可以在宣告(指有宣告動作，如`var`)之前就使用，而不會拋錯？ => **Hoisting**

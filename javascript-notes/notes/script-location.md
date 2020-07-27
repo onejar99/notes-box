@@ -1,9 +1,5 @@
 # JS 語法的放置位置
 
-[TOC]
-
-
-
 ## Intro
 
 In HTML, JavaScript statements are "instructions" to be "executed" by the web browser.
@@ -47,5 +43,3 @@ function myFunc() {
   3. Cached JavaScript files can speed up page loads
 
 > 簡單來說就是：更易維護+有助於JS快取來加強頁面讀取速度
-
------

@@ -9,7 +9,7 @@
         "showLevel": false
       },
       "anchor-navigation-ex": {
-          "showLevel": false,
+          "showLevel": true,
           "associatedWithSummary": false,
           "printLog": false,
           "multipleH1": false,

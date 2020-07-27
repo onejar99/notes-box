@@ -1,10 +1,5 @@
 # JS This
 
-[TOC]
-
-----
-
-
 ## The `this` Keyword
 
 - JS 裡的 `this` 代表：**在執行當下**誰擁有這段 code (the object that **"owns"** the current code)

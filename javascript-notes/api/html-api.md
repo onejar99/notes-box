@@ -1,8 +1,8 @@
-## JavaScript HTML methods
+# JavaScript HTML methods
 
-### document.XXXX
+## document.XXXX
 
-#### 取得 HTML 元素 By ID：getElementById()
+### 取得 HTML 元素 By ID：getElementById()
 
 EX: "find" an HTML element (with id="demo")
 
@@ -12,7 +12,7 @@ document.getElementById('demo')
 
 
 
-#### 改變 HTML 元素內容：getElementById().innerHTML
+### 改變 HTML 元素內容：getElementById().innerHTML
 
 The `innerHTML` property defines the HTML content
 
@@ -25,7 +25,7 @@ EX:
 
 
 
-#### 改變 HTML 元素屬性：getElementById().xxx
+### 改變 HTML 元素屬性：getElementById().xxx
 
 Change HTML Attributes
 
@@ -39,7 +39,7 @@ EX: changes the src (source) attribute of an image. (達到開關燈泡的視覺
 
 
 
-#### 改變 HTML 元素 Style (CSS)：getElementById().style.xxx
+### 改變 HTML 元素 Style (CSS)：getElementById().style.xxx
 
 EX:  改變字型大小：getElementById().style.fontSize
 

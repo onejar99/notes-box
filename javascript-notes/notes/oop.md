@@ -1,9 +1,4 @@
-# JS OOP (Prototype-based)
-
-[TOC]
-
-----
-
+# JS OOP (Prototype-based) / FP
 
 > * ES6 後支援 class 語法
 > * 本篇 JS OO 概念不涉及 ES6 新語法

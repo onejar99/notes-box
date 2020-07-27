@@ -1,11 +1,5 @@
 # Closures (閉包)
 
-[TOC]
-
-
-
-----
-
 ## Intro
 
 * JS 變數可以屬於 local 或 global scope

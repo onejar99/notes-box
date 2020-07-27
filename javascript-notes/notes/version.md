@@ -1,9 +1,5 @@
 # JS Versions
 
-[TOC]
-
-
-
 ## JavaScript
 
 * was invented by Brendan Eich in 1995
@@ -38,6 +34,3 @@
 * ES8 (2017): Added string padding / new Object properies/Async functions / Shared Memory.
 * ES9 (2018): Added rest/spread properties / Asynchronous iteration / Promise.finally() / Additions to RegExp.
 * More: [JS Versions](https://www.w3schools.com/js/js_versions.asp)
-
-
-----

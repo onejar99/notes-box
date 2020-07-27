@@ -1,9 +1,5 @@
 # JS Syntax & Statements
 
-[TOC]
-
-
-
 ## JavaScript is a programming language
 
 * A __computer program__ is a list of "instructions" to be "executed" by the computer.

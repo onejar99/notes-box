@@ -1,10 +1,6 @@
-# JavaScript Browser BOM
-
-[TOC]
+# BOM (Browser Object Model)
 
 ## BOM Intro
-
-> Browser Object Model (BOM)
 
 BOM allows JavaScript to "talk to" the browser.
 

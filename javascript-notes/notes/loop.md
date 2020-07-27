@@ -1,9 +1,5 @@
 # JS Loop (Iterative)
 
-[TOC]
-
----
-
 ## for
 
 

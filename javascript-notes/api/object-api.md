@@ -1,6 +1,6 @@
-## Object API
+# Object API
 
-### defineProperty()
+## defineProperty()
 
 ````js
 var person = {};
@@ -14,7 +14,9 @@ console.log(person);  // {name: "John", age: 40}
 
 ---
 
-### get-only properties
+## get-only properties
 
+```js
 var obj = {get x() {return 0} };
 obj.x = 3.14;            // This will cause an error
+```

@@ -1,11 +1,5 @@
 # JS Conditional Statements (if-else, switch)
 
-[TOC]
-
-
-
----
-
 ## if-else
 
 As general.

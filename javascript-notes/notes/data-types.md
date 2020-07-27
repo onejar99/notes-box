@@ -1,10 +1,5 @@
 # JS Data Types
 
-[TOC]
-
-
-
-
 
 ## JS Data Types are Dynamic
 

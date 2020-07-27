@@ -1,8 +1,8 @@
-## JSON API
+# JSON API
 
-### Convert JSON Text and Object
+## Convert JSON Text and Object
 
-#### JSON.parse()
+### JSON.parse()
 
 `JSON.parse(text [, reviverFunc])`
 
@@ -26,7 +26,7 @@ console.log(ret3.constructor);  //ƒ String() { [native code] }
 ````
 
 
-The reviver parameter is a function that checks each property, before returning the value.
+The **reviver parameter is a function** that checks each property, before returning the value.
 
 ````js
 var text = '{ "name":"Soar", "package":"FireSword,ChainArmor,Herb", "occupation":"Hero", "birth":"2018-01-30T08:09:26.066Z"}';
@@ -58,7 +58,7 @@ console.log(obj);
 
 
 
-#### JSON.stringify()
+### JSON.stringify()
 
 
 ````js

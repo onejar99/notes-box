@@ -2,9 +2,7 @@
 
 ## Notes
 
-### 1. Rest parameters destructuring
-
-解構參數
+### Rest parameters destructuring (解構參數)
 
 ````js
 function myFunc(...hero) {

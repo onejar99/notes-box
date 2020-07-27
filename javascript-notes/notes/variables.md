@@ -1,9 +1,5 @@
 # JS  Variables
 
-[TOC]
-
-
-
 ## Intro
 
 * All JavaScript variables must be identified with unique names. These unique names are called __identifiers__.
@@ -31,17 +27,16 @@
 
 
 * JavaScript and Camel Case(駝峰式)
-    * Historically, programmers have used different ways of joining multiple words into one variable name:
-
-    | Way                            | Example    |
-    | ------------------------------ | ---------- |
-    | Hyphens                        | first-name |
-    | Underscore                     | first_name |
-    | Upper Camel Case (Pascal Case) | FirstName  |
-    | Lower Camel Case               | firstName  |
-
     * __JavaScript programmers tend to use camel case that starts with a lowercase letter__:
       > EX: firstName
+    * Historically, programmers have used different ways of joining multiple words into one variable name:
+
+| Way                            | Example    |
+| ------------------------------ | ---------- |
+| Hyphens                        | first-name |
+| Underscore                     | first_name |
+| Upper Camel Case (Pascal Case) | FirstName  |
+| Lower Camel Case               | firstName  |
 
 
 

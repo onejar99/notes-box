@@ -1,12 +1,5 @@
 # JS Functions (Code Blocks)
 
-[TOC]
-
-
-
-
-
-
 
 ## Function Basic Examples
 

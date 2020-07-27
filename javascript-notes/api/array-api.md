@@ -1,8 +1,8 @@
-## Array API
+# Array API
 
-### Array Properties
+## Array Properties
 
-#### length
+### length
 
 ````js
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -13,11 +13,11 @@ console.log(fruits.length); //4
 
 ----
 
-### Is Array
+## Is Array
 
 > There are 3 solutions:
 
-#### Built-in isArray()
+### Built-in isArray()
 
 > NOTE: Supported with ECMAScript 5 or newer
 
@@ -31,7 +31,7 @@ console.log( Array.isArray(ary) );  // true
 
 
 
-#### Self-Defined isArray() via constructor
+### Self-Defined isArray() via constructor
 
 ````js
 var x = 1;
@@ -57,7 +57,7 @@ function isArray(myArray) {
 
 
 
-#### instanceof Array
+### instanceof Array
 
 ````js
 var ary = ['Apple', 'Banana', 'Cake'];
@@ -68,9 +68,9 @@ console.log( ary instanceof Array );  // true
 
 ----
 
-### To String
+## To String
 
-#### toString()
+### toString()
 
 ````js
 var ary = ['Apple', 'Banana', 'Cake'];
@@ -80,7 +80,7 @@ console.log( ary.toString() );    // "Apple,Banana,Cake"
 
 
 
-#### join()
+### join()
 
 `join(sign)`
 
@@ -95,9 +95,9 @@ console.log( ary.join('-*-') );   // "Apple-*-Banana-*-Cake"
 
 ----
 
-### Add Elements
+## Add Elements
 
-#### push()
+### push()
 
 `push(item)`
 
@@ -113,7 +113,7 @@ console.log(x);			//5
 
 
 
-#### unshift()
+### unshift()
 
 `unshift(item)`
 
@@ -129,7 +129,7 @@ console.log(x);			//5
 
 
 
-#### directly assign/append via index
+### directly assign/append via index
 
 > WARNING: 如果指定的 index 有跳號，會造成中間出現 undefined
 > (Adding elements with high indexes can create undefined "holes" in an array)
@@ -151,9 +151,9 @@ console.log(fruits[8]);		//undefined
 
 ----
 
-### Remove Elements
+## Remove Elements
 
-#### pop()
+### pop()
 
 > Remove **the last** element, and return the removed element.
 
@@ -167,7 +167,7 @@ console.log(item);		// "Mango"
 
 
 
-#### shift()
+### shift()
 
 > Remove **the first** element, and return the removed element.
 
@@ -181,7 +181,7 @@ console.log(item);		// "Banana"
 
 
 
-#### using delete
+### using delete
 
 > Using delete may leave undefined holes in the array.
 > Use pop() or shift() instead.
@@ -196,9 +196,9 @@ console.log(fruits[2]);	// undefined
 
 ----
 
-### Splice (Add & Remove Elements Once)
+## Splice (Add & Remove Elements Once)
 
-#### splice()
+### splice()
 
 `splice(insertPosition, removedCount, [addedItem1, addedItem2, ...])`
 
@@ -230,9 +230,9 @@ console.log(x);     // ["Item3"]
 
 ----
 
-### Merge Arrays
+## Merge Arrays
 
-#### concat()
+### concat()
 
 > `concat()` **does not change the existing arrays**. It always **returns a new array**.
 
@@ -249,9 +249,9 @@ console.log(ary3);    //["Robin", "Morgan"]
 
 ----
 
-### Fetch Sub-Array
+## Fetch Sub-Array
 
-#### slice()
+### slice()
 
 `slice(startIndex, [endIndexExcluded])`
 
@@ -269,13 +269,13 @@ console.log( fruits );        //["Item0", "Item1", "Item2", "Item3", "Item4"]
 
 ----
 
-### Find Max and Min
+## Find Max and Min
 > *  There are **no built-in functions** for finding the highest or lowest value in a JavaScript array.
 > *  但可以用其他技巧做到
 
 
 
-#### 1. using sort()
+### 1. using sort()
 > * Cons: inefficient
 >   * Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value.
 
@@ -288,7 +288,7 @@ console.log(points[points.length-1]); //100 (the highest value)
 
 
 
-#### 2. using Math.max().apply()
+### 2. using Math.max().apply()
 
 ````js
 var points = [40, 100, 1, 5, 25, 10];
@@ -298,7 +298,7 @@ console.log( Math.min.apply(null, points) ); //1
 
 
 
-#### 3. using Array.prototype.reduce()
+### 3. using Array.prototype.reduce()
 
 ````js
 var maxCbk = ( max, cur ) => Math.max( max, cur );
@@ -311,7 +311,7 @@ console.log( points.reduce(minCbk) ); //1
 
 
 
-#### 4. using "home made" method
+### 4. using "home made" method
 
 > The fastest solution?
 
@@ -343,9 +343,9 @@ function myArrayMin(arr) {
 
 ----
 
-### Search
+## Search
 
-#### indexOf()
+### indexOf()
 
 ````js
 var fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
@@ -353,7 +353,7 @@ console.log( fruits.indexOf("Apple") ); //2
 console.log( fruits.indexOf("Car") ); //-1
 ````
 
-#### lastIndexOf()
+### lastIndexOf()
 
 ````js
 var fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
@@ -361,7 +361,7 @@ console.log( fruits.lastIndexOf("Apple") ); //4
 console.log( fruits.lastIndexOf("Car") ); //-1
 ````
 
-#### includes()
+### includes()
 
 ````js
 var a = [1, 2, 3];
@@ -372,9 +372,9 @@ console.log(a.includes(4)) // false
 
 ----
 
-### Sort
+## Sort
 
-#### reverse()
+### reverse()
 
 > * 純反轉，不針對內容排序
 
@@ -386,7 +386,7 @@ console.log( fruits );  // ["Mango", "Apple", "Orange", "Banana"]
 
 
 
-#### sort() for strings (ascent)
+### sort() for strings (ascent)
 
 > * 針對內容排序
 > * numerically vs. alphabetically sorting: sort() sorts values as **strings**. (alphabetically)
@@ -403,7 +403,7 @@ console.log( x );       // ["Apple", "Banana", "Mango", "Orange"]
 
 
 
-#### sorting strings (descend)
+### sorting strings (descend)
 
 > `sort()` + `reverse()`
 
@@ -418,7 +418,7 @@ console.log( fruits );  // ["Orange", "Mango", "Banana", "Apple"]
 
 
 
-#### sorting numbers
+### sorting numbers
 
 > sort numbers using default sort() will get incorrect result
 
@@ -451,7 +451,7 @@ numAry.sort(function(a, b){return 0.5 - Math.random()});
 
 
 
-#### sorting Object Arrays
+### sorting Object Arrays
 
 >  using **compare function**
 
@@ -480,7 +480,7 @@ console.log(cars);  //[0]BMW 2010, [1] Saab 2001, [2]Volvo 2016
 
 
 
-#### Compare Function
+### Compare Function
 
 > - **Purpose**: define an alternative sort order
 > - **Return**: should return a **negative**, **zero**, or **positive** value, depending on the arguments
@@ -504,11 +504,11 @@ console.log(numAry); //  [3, 4, 5, 9, 11]
 
 ----
 
-### Each Process
+## Array Prototype API
 
 
 
-#### Array.prototype.forEach()
+### Array.prototype.forEach()
 
 
 ref: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
@@ -531,7 +531,7 @@ array1.forEach(function(el) {
 
 
 
-#### Array.prototype.map()
+### Array.prototype.map()
 
 ref: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
@@ -581,7 +581,7 @@ console.log(newAry);  // [2, 10, 20, 30]
 
 
 
-#### Array.prototype.filter()
+### Array.prototype.filter()
 
 ref: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
@@ -606,7 +606,7 @@ console.log(newAry);  //["12345", "1234"]
 
 
 
-#### Array.prototype.reduce()
+### Array.prototype.reduce()
 
 ref: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
@@ -693,7 +693,7 @@ console.log(rlt); //42
 
 
 
-#### Array.prototype.every()
+### Array.prototype.every()
 
 ref: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 
@@ -733,9 +733,3 @@ ES6 syntax:
 ````js
 var allPass = [24, 19, 16, 25, 29].every(val => val > 18);
 ````
-
-
-
-
-
-

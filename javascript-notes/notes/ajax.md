@@ -1,9 +1,5 @@
 # Ajax
 
-[TOC]
-
-
-
 ## What is Ajax
 
 > AJAX stands for **A**synchronous **J**avaScript **A**nd **X**ML.

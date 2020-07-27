@@ -1,9 +1,5 @@
 # JS Introduction
 
-[TOC]
-
-
-
 ## Intro
 
 * WHAT: JavaScript is the __programming language__ of HTML and the Web.
@@ -19,7 +15,6 @@
 > * They are completely different languages, both in concept and design.
 > * JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997. ECMA-262 is the official name (a.k.a. **ECMAScript**).
 
------
 
 ## A Simple Example
 
@@ -38,6 +33,3 @@
 alert('Welcome!');
 </script>
 ````
-
-----
-

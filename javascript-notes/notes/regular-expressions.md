@@ -105,7 +105,7 @@ Modifiers can be used to perform case-insensitive more global searches:
 | ---------- | ----------------------------------------------- |
 | [abc]      | Find any of the characters between the brackets |
 | [0-9]      | Find any of the digits between the brackets     |
-| (x|y)      | Find any of the alternatives separated with `|` |
+| (x&#124;y)      | Find any of the alternatives separated with &#124; |
 
 
 

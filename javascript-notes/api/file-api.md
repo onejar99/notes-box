@@ -1,6 +1,6 @@
-## File API
+# File API
 
-### Reference
+## Reference
 
 * [通过 File API 使用 JavaScript 读取文件](https://www.html5rocks.com/zh/tutorials/file/dndfiles/) (**recommended**)
 * [康廷數位: JavaScript 利用FileReader 讀取文字檔](http://www.kangting.tw/2012/09/html5-filereader.html)
@@ -10,7 +10,7 @@
 
 
 
-### Note
+## Note
 
 Excerpts from [通过 File API 使用 JavaScript 读取文件](https://www.html5rocks.com/zh/tutorials/file/dndfiles/)
 
@@ -31,9 +31,9 @@ Excerpts from [通过 File API 使用 JavaScript 读取文件](https://www.html5
   * 對您的 FileReader 對像調用其中某一種讀取方法後，可使用 onloadstart、onprogress、onload、onabort、onerror 和 onloadend 跟蹤其進度。
 
 
-### Examples
+## Examples
 
-#### Example 1: 讀取單一文字檔，顯示在畫面上
+### Example 1: 讀取單一文字檔，顯示在畫面上
 
 ````html
 <body>
@@ -56,7 +56,7 @@ function readFile() {
 ````
 
 
-#### Example 2: 讀取複數檔，在畫面上顯示檔案的meta資訊
+### Example 2: 讀取複數檔，在畫面上顯示檔案的meta資訊
 
 ````html
 <input type="file" id="files" name="files[]" multiple />
@@ -97,7 +97,7 @@ function handleFileSelect(evt) {
 </script>
 ````
 
-#### Example 3: 支援拖曳方式
+### Example 3: 支援拖曳方式
 
 ````html
 <div id="drop_zone">Drop files here</div>
