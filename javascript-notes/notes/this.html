@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,17 +803,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-this"><b></b>JS This</a></li><ul><li><span class="title-icon "></span><a href="#the-this-keyword"><b></b>The this Keyword</a></li><li><span class="title-icon "></span><a href="#tips-for-this"><b></b>Tips for this</a></li><li><span class="title-icon "></span><a href="#examples"><b></b>Examples</a></li><ul><li><span class="title-icon "></span><a href="#example-1-basic"><b></b>Example 1: Basic</a></li><li><span class="title-icon "></span><a href="#example-2-inner-function"><b></b>Example 2: Inner Function</a></li><li><span class="title-icon "></span><a href="#example-3-&#x501F;&#x7528;&#x51FD;&#x6578;"><b></b>Example 3: &#x501F;&#x7528;&#x51FD;&#x6578;</a></li><li><span class="title-icon "></span><a href="#example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;"><b></b>Example 4: call()&#x3001;apply() &#x6307;&#x6D3E; this &#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;"><b></b>Example 5: &#x6307;&#x5411; new &#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#example-6-callback"><b></b>Example 6: Callback</a></li></ul><li><span class="title-icon "></span><a href="#references"><b></b>References</a></li></ul></ul></div><a href="#js-this" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-this"><a name="js-this" class="anchor-navigation-ex-anchor" href="#js-this"><i class="fa fa-link" aria-hidden="true"></i></a>JS This</h1>
-<p>[TOC]</p>
-<hr>
-<h2 id="the-this-keyword"><a name="the-this-keyword" class="anchor-navigation-ex-anchor" href="#the-this-keyword"><i class="fa fa-link" aria-hidden="true"></i></a>The <code>this</code> Keyword</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-this"><b> </b>JS This</a></li><ul><li><span class="title-icon "></span><a href="#the-this-keyword"><b>1. </b>The this Keyword</a></li><li><span class="title-icon "></span><a href="#tips-for-this"><b>2. </b>Tips for this</a></li><li><span class="title-icon "></span><a href="#examples"><b>3. </b>Examples</a></li><ul><li><span class="title-icon "></span><a href="#example-1-basic"><b>3.1. </b>Example 1: Basic</a></li><li><span class="title-icon "></span><a href="#example-2-inner-function"><b>3.2. </b>Example 2: Inner Function</a></li><li><span class="title-icon "></span><a href="#example-3-&#x501F;&#x7528;&#x51FD;&#x6578;"><b>3.3. </b>Example 3: &#x501F;&#x7528;&#x51FD;&#x6578;</a></li><li><span class="title-icon "></span><a href="#example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;"><b>3.4. </b>Example 4: call()&#x3001;apply() &#x6307;&#x6D3E; this &#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;"><b>3.5. </b>Example 5: &#x6307;&#x5411; new &#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#example-6-callback"><b>3.6. </b>Example 6: Callback</a></li></ul><li><span class="title-icon "></span><a href="#references"><b>4. </b>References</a></li></ul></ul></div><a href="#js-this" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-this"><a name="js-this" class="anchor-navigation-ex-anchor" href="#js-this"><i class="fa fa-link" aria-hidden="true"></i></a> JS This</h1>
+<h2 id="the-this-keyword"><a name="the-this-keyword" class="anchor-navigation-ex-anchor" href="#the-this-keyword"><i class="fa fa-link" aria-hidden="true"></i></a>1. The this Keyword</h2>
 <ul>
 <li>JS &#x88E1;&#x7684; <code>this</code> &#x4EE3;&#x8868;&#xFF1A;<strong>&#x5728;&#x57F7;&#x884C;&#x7576;&#x4E0B;</strong>&#x8AB0;&#x64C1;&#x6709;&#x9019;&#x6BB5; code (the object that <strong>&quot;owns&quot;</strong> the current code)</li>
 <li>&#x76F4;&#x767D;&#x4F86;&#x8AAA;&#xFF0C;JavaScript &#x88E1;&#x7684; this &#x548C; Java &#x4E0D;&#x4E00;&#x6A23;&#xFF0C;&#x770B;&#x7684;&#x662F;<strong>&#x8AB0;&#x8ABF;&#x7528;&#x8A72;&#x51FD;&#x5F0F;</strong>&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x770B;&#x8A72;&#x51FD;&#x5F0F;&#x88AB;&#x5B9A;&#x7FA9;&#x5728;&#x54EA;&#x500B;&#x7269;&#x4EF6;&#x5167;</li>
 <li><code>this</code> &#x4E0D;&#x662F;&#x8B8A;&#x6578;&#xFF0C;&#x662F;&#x4E00;&#x500B; keyword&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x6539;&#x8B8A; <code>this</code> &#x7684;&#x503C;</li>
 </ul>
 <hr>
-<h2 id="tips-for-this"><a name="tips-for-this" class="anchor-navigation-ex-anchor" href="#tips-for-this"><i class="fa fa-link" aria-hidden="true"></i></a>Tips for <code>this</code></h2>
+<h2 id="tips-for-this"><a name="tips-for-this" class="anchor-navigation-ex-anchor" href="#tips-for-this"><i class="fa fa-link" aria-hidden="true"></i></a>2. Tips for this</h2>
 <p>&#x516C;&#x5F0F;&#xFF1A;</p>
 <ol>
 <li><code>object.method();</code>=&gt; &#x51FD;&#x5F0F;&#x5167;&#x7684; <code>this</code> &#x6307;&#x5411;&#x8A72;&#x7269;&#x4EF6;</li>
@@ -832,8 +830,8 @@
 <li>&#x5229;&#x7528; <code>call()</code> &#x8207; <code>apply()</code> &#x53EF;&#x4EE5;&#x6307;&#x6D3E; this &#x6307;&#x5411;&#x7684;&#x7269;&#x4EF6;</li>
 </ul>
 <hr>
-<h2 id="examples"><a name="examples" class="anchor-navigation-ex-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>Examples</h2>
-<h3 id="example-1-basic"><a name="example-1-basic" class="anchor-navigation-ex-anchor" href="#example-1-basic"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1: Basic</h3>
+<h2 id="examples"><a name="examples" class="anchor-navigation-ex-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>3. Examples</h2>
+<h3 id="example-1-basic"><a name="example-1-basic" class="anchor-navigation-ex-anchor" href="#example-1-basic"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Example 1: Basic</h3>
 <ul>
 <li>1-A: object.method()</li>
 </ul>
@@ -867,7 +865,7 @@ f();
 <span class="hljs-comment">// 10</span>
 </code></pre>
 <hr>
-<h3 id="example-2-inner-function"><a name="example-2-inner-function" class="anchor-navigation-ex-anchor" href="#example-2-inner-function"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: Inner Function</h3>
+<h3 id="example-2-inner-function"><a name="example-2-inner-function" class="anchor-navigation-ex-anchor" href="#example-2-inner-function"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Example 2: Inner Function</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">var</span> obj = {
     x: <span class="hljs-number">20</span>,
@@ -903,7 +901,7 @@ obj.f();
 <span class="hljs-comment">// Output 2:  20</span>
 </code></pre>
 <hr>
-<h3 id="example-3-&#x501F;&#x7528;&#x51FD;&#x6578;"><a name="example-3-&#x501F;&#x7528;&#x51FD;&#x6578;" class="anchor-navigation-ex-anchor" href="#example-3-&#x501F;&#x7528;&#x51FD;&#x6578;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 3: &#x501F;&#x7528;&#x51FD;&#x6578;</h3>
+<h3 id="example-3-&#x501F;&#x7528;&#x51FD;&#x6578;"><a name="example-3-&#x501F;&#x7528;&#x51FD;&#x6578;" class="anchor-navigation-ex-anchor" href="#example-3-&#x501F;&#x7528;&#x51FD;&#x6578;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Example 3: &#x501F;&#x7528;&#x51FD;&#x6578;</h3>
 <p>&#x539F;&#x5247;&#x4E0A;&#x90FD;&#x4E00;&#x6A23;&#x770B;&#x547C;&#x53EB;&#x8005;&#x662F;&#x8AB0;&#x70BA;&#x6E96;</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">var</span> obj = {
@@ -927,7 +925,7 @@ obj2.f(); <span class="hljs-comment">//Output#3</span>
 <span class="hljs-comment">// 30</span>
 </code></pre>
 <hr>
-<h3 id="example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;"><a name="example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 4: call()&#x3001;apply() &#x6307;&#x6D3E; this &#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;</h3>
+<h3 id="example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;"><a name="example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#example-4-call&#x3001;apply-&#x6307;&#x6D3E;-this-&#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. Example 4: call()&#x3001;apply() &#x6307;&#x6D3E; this &#x4EE3;&#x8868;&#x7684;&#x7269;&#x4EF6;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> obj1 = {
     x: <span class="hljs-number">20</span>,
     f: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.x); }
@@ -942,7 +940,7 @@ obj1.f.call(obj2);
 <span class="hljs-comment">// 30</span>
 </code></pre>
 <hr>
-<h3 id="example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;"><a name="example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 5: &#x6307;&#x5411; new &#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;</h3>
+<h3 id="example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;"><a name="example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#example-5-&#x6307;&#x5411;-new-&#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. Example 5: &#x6307;&#x5411; new &#x6240;&#x7522;&#x751F;&#x7684;&#x65B0;&#x7269;&#x4EF6;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> exp = <span class="hljs-number">999</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Hero</span>(<span class="hljs-params">n</span>)</span>{
     <span class="hljs-keyword">this</span>.exp = n;
@@ -957,7 +955,7 @@ Hero(<span class="hljs-number">50</span>);
 <span class="hljs-comment">// Hero {exp: 100}</span>
 </code></pre>
 <hr>
-<h3 id="example-6-callback"><a name="example-6-callback" class="anchor-navigation-ex-anchor" href="#example-6-callback"><i class="fa fa-link" aria-hidden="true"></i></a>Example 6: Callback</h3>
+<h3 id="example-6-callback"><a name="example-6-callback" class="anchor-navigation-ex-anchor" href="#example-6-callback"><i class="fa fa-link" aria-hidden="true"></i></a>3.6. Example 6: Callback</h3>
 <p>&#x5982;&#x679C;&#x60F3;&#x628A;&#x7269;&#x4EF6;&#x672C;&#x8EAB;&#x5E36;&#x5165; callback function &#x88E1;&#x7684; this&#xFF0C;&#x8981;&#x7528; <code>call()</code></p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-string">&quot;Global Hi&quot;</span>;
 
@@ -980,7 +978,7 @@ Hero(<span class="hljs-number">50</span>);
 <span class="hljs-built_in">console</span>.log( hero.act2(sayHi) );  <span class="hljs-comment">// Hero Hi</span>
 </code></pre>
 <hr>
-<h2 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>References</h2>
+<h2 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>4. References</h2>
 <ul>
 <li><a href="https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this" target="_blank">#Javascript&#xFF1A;this&#x7528;&#x6CD5;&#x6574;&#x7406; | &#x82F1;&#x7279;&#x5C14;&#xAE; &#x8F6F;&#x4EF6;</a></li>
 <li><a href="http://www.codedata.com.tw/javascript/essential-javascript-11-what-is-this/" target="_blank">JavaScript &#x8A9E;&#x8A00;&#x6838;&#x5FC3;&#xFF08;11&#xFF09;this &#x662F;&#x4EC0;&#x9EBC;&#xFF1F; by caterpillar | CodeData</a></li>
@@ -1028,7 +1026,7 @@ Hero(<span class="hljs-number">50</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS This","level":"2.2","depth":1,"next":{"title":"JS Closures (閉包)","level":"2.3","depth":1,"path":"notes/closures.md","ref":"./notes/closures.md","articles":[]},"previous":{"title":"JS Scope","level":"2.1","depth":1,"path":"notes/scope.md","ref":"./notes/scope.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/this.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS This","level":"2.2","depth":1,"next":{"title":"JS Closures (閉包)","level":"2.3","depth":1,"path":"notes/closures.md","ref":"./notes/closures.md","articles":[]},"previous":{"title":"JS Scope","level":"2.1","depth":1,"path":"notes/scope.md","ref":"./notes/scope.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/this.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,9 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-output"><b></b>JS Output</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b></b>Intro</a></li><li><span class="title-icon "></span><a href="#alert"><b></b>alert()</a></li><li><span class="title-icon "></span><a href="#documentwrite"><b></b>document.write()</a></li><li><span class="title-icon "></span><a href="#innerhtml"><b></b>innerHTML</a></li><li><span class="title-icon "></span><a href="#consolelog"><b></b>console.log()</a></li></ul></ul></div><a href="#js-output" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-output"><a name="js-output" class="anchor-navigation-ex-anchor" href="#js-output"><i class="fa fa-link" aria-hidden="true"></i></a>JS Output</h1>
-<p>[TOC]</p>
-<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>Intro</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-output"><b> </b>JS Output</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b>1. </b>Intro</a></li><ul><li><span class="title-icon "></span><a href="#alert--windowalert"><b>1.1. </b>alert() / window.alert()</a></li><li><span class="title-icon "></span><a href="#documentwrite"><b>1.2. </b>document.write()</a></li><li><span class="title-icon "></span><a href="#innerhtml"><b>1.3. </b>innerHTML</a></li><li><span class="title-icon "></span><a href="#consolelog"><b>1.4. </b>console.log()</a></li></ul></ul></ul></div><a href="#js-output" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-output"><a name="js-output" class="anchor-navigation-ex-anchor" href="#js-output"><i class="fa fa-link" aria-hidden="true"></i></a> JS Output</h1>
+<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>1. Intro</h2>
 <ul>
 <li>JavaScript does NOT have any built-in print or display functions. -&gt; <strong>??</strong></li>
 <li>JavaScript can &quot;display&quot; data in different ways:</li>
@@ -820,37 +819,38 @@
 </thead>
 <tbody>
 <tr>
-<td>window.alert()</td>
+<td><code>window.alert()</code></td>
 <td>Writing into an alert box</td>
-<td>mynote: alert() &#x548C; window.alert() &#x4F3C;&#x4E4E;&#x6C92;&#x5DEE;</td>
+<td>alert() &#x548C; window.alert() &#x4F3C;&#x4E4E;&#x6C92;&#x5DEE;</td>
 </tr>
 <tr>
-<td>document.write()</td>
+<td><code>document.write()</code></td>
 <td>Writing into the HTML output</td>
 <td>should only be used for testing</td>
 </tr>
 <tr>
-<td>innerHTML</td>
+<td><code>innerHTML</code></td>
 <td>Writing into an HTML element</td>
-<td></td>
+<td>---</td>
 </tr>
 <tr>
-<td>console.log()</td>
+<td><code>console.log()</code></td>
 <td>Writing into the browser console</td>
+<td>---</td>
 </tr>
 </tbody>
 </table>
-<h2 id="alert"><a name="alert" class="anchor-navigation-ex-anchor" href="#alert"><i class="fa fa-link" aria-hidden="true"></i></a>alert()</h2>
+<h3 id="alert--windowalert"><a name="alert--windowalert" class="anchor-navigation-ex-anchor" href="#alert--windowalert"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. alert() / window.alert()</h3>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
 <span class="hljs-built_in">window</span>.alert(<span class="hljs-number">5</span> + <span class="hljs-number">6</span>);
 alert(<span class="hljs-string">&quot;hi&quot;</span>);
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<h2 id="documentwrite"><a name="documentwrite" class="anchor-navigation-ex-anchor" href="#documentwrite"><i class="fa fa-link" aria-hidden="true"></i></a>document.write()</h2>
+<h3 id="documentwrite"><a name="documentwrite" class="anchor-navigation-ex-anchor" href="#documentwrite"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. document.write()</h3>
 <ul>
 <li>The document.write() method <strong>should only be used for testing</strong>.</li>
 <li>Using document.write() after an HTML document is fully loaded, will delete all existing HTML:</li>
-<li>EX: (&#x6309;&#x4E86;button&#x4E4B;&#x5F8C;&#xFF0C;&#x756B;&#x9762;&#x539F;&#x672C;&#x7684;&#x5167;&#x5BB9;&#x90FD;&#x6703;&#x88AB;&#x53D6;&#x4EE3;&#xFF0C;&quot;My First Web....&quot;&#x6587;&#x5B57;&#x90FD;&#x6703;&#x4E0D;&#x898B; PS: &#x4F46;&#x56E0;&#x70BA;&#x662F;&#x52D5;&#x614B;&#x6539;&#x8B8A;&#xFF0C;&#x6AA2;&#x8996;&#x539F;&#x59CB;&#x78BC;&#x7684;&#x5167;&#x5BB9;&#x4ECD;&#x4E0D;&#x8B8A;)</li>
+<li>EX: &#x6309;&#x4E86;button&#x4E4B;&#x5F8C;&#xFF0C;&#x756B;&#x9762;&#x539F;&#x672C;&#x7684;&#x5167;&#x5BB9;&#x90FD;&#x6703;&#x88AB;&#x53D6;&#x4EE3;&#xFF0C;&quot;My First Web....&quot;&#x6587;&#x5B57;&#x90FD;&#x6703;&#x4E0D;&#x898B; (PS: &#x4F46;&#x56E0;&#x70BA;&#x662F;&#x52D5;&#x614B;&#x6539;&#x8B8A;&#xFF0C;&#x6AA2;&#x8996;&#x539F;&#x59CB;&#x78BC;&#x7684;&#x5167;&#x5BB9;&#x4ECD;&#x4E0D;&#x8B8A;)</li>
 </ul>
 <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
@@ -864,7 +864,7 @@ alert(<span class="hljs-string">&quot;hi&quot;</span>);
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="innerhtml"><a name="innerhtml" class="anchor-navigation-ex-anchor" href="#innerhtml"><i class="fa fa-link" aria-hidden="true"></i></a>innerHTML</h2>
+<h3 id="innerhtml"><a name="innerhtml" class="anchor-navigation-ex-anchor" href="#innerhtml"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. innerHTML</h3>
 <ul>
 <li>The <code>id</code> attribute defines the <strong>HTML element</strong>.</li>
 <li>The <code>innerHTML</code> property defines the <strong>HTML content</strong>:</li>
@@ -875,7 +875,7 @@ alert(<span class="hljs-string">&quot;hi&quot;</span>);
 <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = <span class="hljs-number">5</span> + <span class="hljs-number">6</span>;
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<h2 id="consolelog"><a name="consolelog" class="anchor-navigation-ex-anchor" href="#consolelog"><i class="fa fa-link" aria-hidden="true"></i></a>console.log()</h2>
+<h3 id="consolelog"><a name="consolelog" class="anchor-navigation-ex-anchor" href="#consolelog"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. console.log()</h3>
 <ul>
 <li>Activate the browser console with F12, and select &quot;Console&quot; in the menu.</li>
 <li>EX:</li>
@@ -884,7 +884,6 @@ alert(<span class="hljs-string">&quot;hi&quot;</span>);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-number">5</span> + <span class="hljs-number">6</span>);
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<hr>
 
                                 
                                 </section>
@@ -928,7 +927,7 @@ alert(<span class="hljs-string">&quot;hi&quot;</span>);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Output","level":"1.5","depth":1,"next":{"title":"JS Syntax & Statements","level":"1.6","depth":1,"path":"notes/syntax.md","ref":"./notes/syntax.md","articles":[]},"previous":{"title":"JS 語法的放置位置","level":"1.4","depth":1,"path":"notes/script-location.md","ref":"./notes/script-location.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/output.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Output","level":"1.5","depth":1,"next":{"title":"JS Syntax & Statements","level":"1.6","depth":1,"path":"notes/syntax.md","ref":"./notes/syntax.md","articles":[]},"previous":{"title":"JS 語法的放置位置","level":"1.4","depth":1,"path":"notes/script-location.md","ref":"./notes/script-location.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/output.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

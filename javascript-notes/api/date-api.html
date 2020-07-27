@@ -371,7 +371,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,11 +803,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#date-api"><b></b>Date API</a></li><ul><li><span class="title-icon "></span><a href="#create-date-object"><b></b>Create Date Object</a></li><li><span class="title-icon "></span><a href="#parsing-dates"><b></b>Parsing Dates</a></li><li><span class="title-icon "></span><a href="#is-date"><b></b>Is Date</a></li><li><span class="title-icon "></span><a href="#to-string"><b></b>To String</a></li><li><span class="title-icon "></span><a href="#getting-a-part-of-a-date"><b></b>Getting (a part of a Date)</a></li><li><span class="title-icon "></span><a href="#setting-a-part-of-a-date"><b></b>Setting (a part of a Date)</a></li><li><span class="title-icon "></span><a href="#utc-getting"><b></b>UTC Getting</a></li><li><span class="title-icon "></span><a href="#add-days"><b></b>Add Days</a></li><li><span class="title-icon "></span><a href="#compare-dates"><b></b>Compare Dates</a></li><li><span class="title-icon "></span><a href="#format"><b></b>Format</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="date-api"><a name="date-api" class="anchor-navigation-ex-anchor" href="#date-api"><i class="fa fa-link" aria-hidden="true"></i></a>Date API</h2>
-<p>[TOC]</p>
-<hr>
-<h3 id="create-date-object"><a name="create-date-object" class="anchor-navigation-ex-anchor" href="#create-date-object"><i class="fa fa-link" aria-hidden="true"></i></a>Create Date Object</h3>
-<h4 id="date"><a name="date" class="anchor-navigation-ex-anchor" href="#date"><i class="fa fa-link" aria-hidden="true"></i></a>Date()</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#date-api"><b> </b>Date API</a></li><ul><li><span class="title-icon "></span><a href="#create-date-object"><b>1. </b>Create Date Object</a></li><ul><li><span class="title-icon "></span><a href="#date"><b>1.1. </b>Date()</a></li></ul><li><span class="title-icon "></span><a href="#parsing-dates"><b>2. </b>Parsing Dates</a></li><ul><li><span class="title-icon "></span><a href="#dateparse"><b>2.1. </b>Date.parse()</a></li></ul><li><span class="title-icon "></span><a href="#is-date"><b>3. </b>Is Date</a></li><li><span class="title-icon "></span><a href="#to-string"><b>4. </b>To String</a></li><ul><li><span class="title-icon "></span><a href="#directly-stringify-object"><b>4.1. </b>(directly stringify object)</a></li><li><span class="title-icon "></span><a href="#tostring"><b>4.2. </b>toString()</a></li><li><span class="title-icon "></span><a href="#toutcstring"><b>4.3. </b>toUTCString()</a></li><li><span class="title-icon "></span><a href="#todatestring"><b>4.4. </b>toDateString()</a></li></ul><li><span class="title-icon "></span><a href="#getting-a-part-of-a-date"><b>5. </b>Getting (a part of a Date)</a></li><li><span class="title-icon "></span><a href="#setting-a-part-of-a-date"><b>6. </b>Setting (a part of a Date)</a></li><li><span class="title-icon "></span><a href="#utc-getting"><b>7. </b>UTC Getting</a></li><li><span class="title-icon "></span><a href="#add-days"><b>8. </b>Add Days</a></li><li><span class="title-icon "></span><a href="#compare-dates"><b>9. </b>Compare Dates</a></li><li><span class="title-icon "></span><a href="#format"><b>10. </b>Format</a></li></ul></ul></div><a href="#date-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="date-api"><a name="date-api" class="anchor-navigation-ex-anchor" href="#date-api"><i class="fa fa-link" aria-hidden="true"></i></a> Date API</h1>
+<h2 id="create-date-object"><a name="create-date-object" class="anchor-navigation-ex-anchor" href="#create-date-object"><i class="fa fa-link" aria-hidden="true"></i></a>1. Create Date Object</h2>
+<h3 id="date"><a name="date" class="anchor-navigation-ex-anchor" href="#date"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Date()</h3>
 <p><code>new Date()</code></p>
 <p><code>new Date(milliseconds)</code></p>
 <p><code>new Date(dateString)</code></p>
@@ -834,28 +832,28 @@
 <span class="hljs-comment">//.....etc.</span>
 
 <span class="hljs-comment">//Omitting T or Z in a date-time string can give different result in different browser.</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25T12:00:00Z&quot;</span>); <span class="hljs-comment">// T: separating Date and time; Z: UTC time</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25T12:00:00-06:30&quot;</span>); <span class="hljs-comment">//relative to UTC (+HH:MM or -HH:MM)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25T12:00:00Z&quot;</span>);       <span class="hljs-comment">// T: separating Date and time; Z: UTC time</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-03-25T12:00:00-06:30&quot;</span>);  <span class="hljs-comment">//relative to UTC (+HH:MM or -HH:MM)</span>
 
 <span class="hljs-comment">//Some browsers will error</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-3-25&quot;</span>); <span class="hljs-comment">//with no leading zeroes</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015-3-25&quot;</span>);  <span class="hljs-comment">//with no leading zeroes</span>
 <span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;2015/03/25&quot;</span>); <span class="hljs-comment">//YYYY/MM/DD</span>
 <span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;25-03-2015&quot;</span>); <span class="hljs-comment">//DD-MM-YYYY</span>
 
 
 <span class="hljs-comment">// Way 4: new Date(year, month, day, hours, minutes, seconds, milliseconds)</span>
 <span class="hljs-comment">//counts months from 0 to 11. January is 0. December is 11.</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>, <span class="hljs-number">30</span>, <span class="hljs-number">500</span>); <span class="hljs-comment">//Thu Jun 24 1999 11:33:30 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>, <span class="hljs-number">30</span>);    <span class="hljs-comment">//Thu Jun 24 1999 11:33:30 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>);        <span class="hljs-comment">//Thu Jun 24 1999 11:33:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>);            <span class="hljs-comment">//Thu Jun 24 1999 11:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>);                <span class="hljs-comment">//Thu Jun 24 1999 00:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>);                    <span class="hljs-comment">//Tue Jun 01 1999 00:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
-<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>);            <span class="hljs-comment">//Thu Jan 01 1970 08:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;) (incorrect)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>, <span class="hljs-number">30</span>, <span class="hljs-number">500</span>);   <span class="hljs-comment">//Thu Jun 24 1999 11:33:30 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>, <span class="hljs-number">30</span>);        <span class="hljs-comment">//Thu Jun 24 1999 11:33:30 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>, <span class="hljs-number">33</span>);            <span class="hljs-comment">//Thu Jun 24 1999 11:33:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>, <span class="hljs-number">11</span>);                <span class="hljs-comment">//Thu Jun 24 1999 11:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>, <span class="hljs-number">24</span>);                    <span class="hljs-comment">//Thu Jun 24 1999 00:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>, <span class="hljs-number">5</span>);                        <span class="hljs-comment">//Tue Jun 01 1999 00:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">99</span>);                           <span class="hljs-comment">//Thu Jan 01 1970 08:00:00 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;) (incorrect)</span>
 </code></pre>
 <hr>
-<h3 id="parsing-dates"><a name="parsing-dates" class="anchor-navigation-ex-anchor" href="#parsing-dates"><i class="fa fa-link" aria-hidden="true"></i></a>Parsing Dates</h3>
-<h4 id="dateparse"><a name="dateparse" class="anchor-navigation-ex-anchor" href="#dateparse"><i class="fa fa-link" aria-hidden="true"></i></a>Date.parse()</h4>
+<h2 id="parsing-dates"><a name="parsing-dates" class="anchor-navigation-ex-anchor" href="#parsing-dates"><i class="fa fa-link" aria-hidden="true"></i></a>2. Parsing Dates</h2>
+<h3 id="dateparse"><a name="dateparse" class="anchor-navigation-ex-anchor" href="#dateparse"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Date.parse()</h3>
 <blockquote>
 <p>convert a valid date string to milliseconds</p>
 <p>mynote:
@@ -865,41 +863,41 @@
 <span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(msec);
 </code></pre>
 <hr>
-<h3 id="is-date"><a name="is-date" class="anchor-navigation-ex-anchor" href="#is-date"><i class="fa fa-link" aria-hidden="true"></i></a>Is Date</h3>
+<h2 id="is-date"><a name="is-date" class="anchor-navigation-ex-anchor" href="#is-date"><i class="fa fa-link" aria-hidden="true"></i></a>3. Is Date</h2>
 <p>Refer to: Array API - Self-Defined isArray() via constructor</p>
 <hr>
-<h3 id="to-string"><a name="to-string" class="anchor-navigation-ex-anchor" href="#to-string"><i class="fa fa-link" aria-hidden="true"></i></a>To String</h3>
-<h4 id="directly-stringify-object"><a name="directly-stringify-object" class="anchor-navigation-ex-anchor" href="#directly-stringify-object"><i class="fa fa-link" aria-hidden="true"></i></a>(directly stringify object)</h4>
-<h4 id="tostring"><a name="tostring" class="anchor-navigation-ex-anchor" href="#tostring"><i class="fa fa-link" aria-hidden="true"></i></a>toString()</h4>
-<h4 id="toutcstring"><a name="toutcstring" class="anchor-navigation-ex-anchor" href="#toutcstring"><i class="fa fa-link" aria-hidden="true"></i></a>toUTCString()</h4>
-<h4 id="todatestring"><a name="todatestring" class="anchor-navigation-ex-anchor" href="#todatestring"><i class="fa fa-link" aria-hidden="true"></i></a>toDateString()</h4>
+<h2 id="to-string"><a name="to-string" class="anchor-navigation-ex-anchor" href="#to-string"><i class="fa fa-link" aria-hidden="true"></i></a>4. To String</h2>
+<h3 id="directly-stringify-object"><a name="directly-stringify-object" class="anchor-navigation-ex-anchor" href="#directly-stringify-object"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. (directly stringify object)</h3>
+<h3 id="tostring"><a name="tostring" class="anchor-navigation-ex-anchor" href="#tostring"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. toString()</h3>
+<h3 id="toutcstring"><a name="toutcstring" class="anchor-navigation-ex-anchor" href="#toutcstring"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. toUTCString()</h3>
+<h3 id="todatestring"><a name="todatestring" class="anchor-navigation-ex-anchor" href="#todatestring"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. toDateString()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
 
-<span class="hljs-built_in">console</span>.log( d );                        <span class="hljs-comment">//Tue Dec 05 2017 19:29:54 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
+<span class="hljs-built_in">console</span>.log( d );                   <span class="hljs-comment">//Tue Dec 05 2017 19:29:54 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
 <span class="hljs-built_in">console</span>.log( d.toString() );        <span class="hljs-comment">//Tue Dec 05 2017 19:29:54 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)</span>
 
 <span class="hljs-comment">//The toUTCString() method converts a date to a UTC string (a date display standard).</span>
-<span class="hljs-built_in">console</span>.log( d.toUTCString() );        <span class="hljs-comment">//Tue, 05 Dec 2017 11:29:54 GMT</span>
+<span class="hljs-built_in">console</span>.log( d.toUTCString() );     <span class="hljs-comment">//Tue, 05 Dec 2017 11:29:54 GMT</span>
 
 <span class="hljs-built_in">console</span>.log( d.toDateString() );    <span class="hljs-comment">//Tue Dec 05 2017</span>
 </code></pre>
 <hr>
-<h3 id="getting-a-part-of-a-date"><a name="getting-a-part-of-a-date" class="anchor-navigation-ex-anchor" href="#getting-a-part-of-a-date"><i class="fa fa-link" aria-hidden="true"></i></a>Getting (a part of a Date)</h3>
+<h2 id="getting-a-part-of-a-date"><a name="getting-a-part-of-a-date" class="anchor-navigation-ex-anchor" href="#getting-a-part-of-a-date"><i class="fa fa-link" aria-hidden="true"></i></a>5. Getting (a part of a Date)</h2>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;March 25, 2015 11:13:05.800&quot;</span>);
 
 <span class="hljs-comment">//Getting a part of a Date</span>
-<span class="hljs-built_in">console</span>.log( d.getFullYear() );            <span class="hljs-comment">//2015 (the four digit year) (yyyy)</span>
+<span class="hljs-built_in">console</span>.log( d.getFullYear() );         <span class="hljs-comment">//2015 (the four digit year) (yyyy)</span>
 <span class="hljs-built_in">console</span>.log( d.getMonth() );            <span class="hljs-comment">//2 (0-11)</span>
-<span class="hljs-built_in">console</span>.log( d.getDate() );                <span class="hljs-comment">//25 (day) (1-31)</span>
-<span class="hljs-built_in">console</span>.log( d.getDay() );                <span class="hljs-comment">//3 (weekday) (0-6) 0=Sunday</span>
+<span class="hljs-built_in">console</span>.log( d.getDate() );             <span class="hljs-comment">//25 (day) (1-31)</span>
+<span class="hljs-built_in">console</span>.log( d.getDay() );              <span class="hljs-comment">//3 (weekday) (0-6) 0=Sunday</span>
 <span class="hljs-built_in">console</span>.log( d.getHours() );            <span class="hljs-comment">//11 (0-23)</span>
-<span class="hljs-built_in">console</span>.log( d.getMinutes() );            <span class="hljs-comment">//13 (0-59)</span>
-<span class="hljs-built_in">console</span>.log( d.getSeconds() );            <span class="hljs-comment">//5 (0-59)</span>
-<span class="hljs-built_in">console</span>.log( d.getMilliseconds() );        <span class="hljs-comment">//800 (0-999)</span>
-<span class="hljs-built_in">console</span>.log( d.getTime() );                <span class="hljs-comment">//1427253180000 (milliseconds since January 1, 1970)</span>
+<span class="hljs-built_in">console</span>.log( d.getMinutes() );          <span class="hljs-comment">//13 (0-59)</span>
+<span class="hljs-built_in">console</span>.log( d.getSeconds() );          <span class="hljs-comment">//5 (0-59)</span>
+<span class="hljs-built_in">console</span>.log( d.getMilliseconds() );     <span class="hljs-comment">//800 (0-999)</span>
+<span class="hljs-built_in">console</span>.log( d.getTime() );             <span class="hljs-comment">//1427253180000 (milliseconds since January 1, 1970)</span>
 </code></pre>
 <hr>
-<h3 id="setting-a-part-of-a-date"><a name="setting-a-part-of-a-date" class="anchor-navigation-ex-anchor" href="#setting-a-part-of-a-date"><i class="fa fa-link" aria-hidden="true"></i></a>Setting (a part of a Date)</h3>
+<h2 id="setting-a-part-of-a-date"><a name="setting-a-part-of-a-date" class="anchor-navigation-ex-anchor" href="#setting-a-part-of-a-date"><i class="fa fa-link" aria-hidden="true"></i></a>6. Setting (a part of a Date)</h2>
 <blockquote>
 <p>mynote:</p>
 <ol>
@@ -909,50 +907,50 @@
 </blockquote>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2015-03-25T12:30:05.800&apos;</span>);
 <span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">typeof</span> d );                            <span class="hljs-comment">//&quot;object&quot;</span>
-<span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">typeof</span> d.setFullYear(<span class="hljs-number">20201</span>, <span class="hljs-number">0</span>, <span class="hljs-number">14</span>) );    <span class="hljs-comment">//&quot;number&quot;</span>
+<span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">typeof</span> d.setFullYear(<span class="hljs-number">20201</span>, <span class="hljs-number">0</span>, <span class="hljs-number">14</span>) );  <span class="hljs-comment">//&quot;number&quot;</span>
 </code></pre>
 <p>Setting Example:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2015-03-25T12:30:05.800&apos;</span>);
 d.setFullYear(<span class="hljs-number">2020</span>);        <span class="hljs-comment">//Set the year (optionally month and day)</span>
 d.setFullYear(<span class="hljs-number">2020</span>, <span class="hljs-number">5</span>);
 d.setFullYear(<span class="hljs-number">2020</span>, <span class="hljs-number">5</span>, <span class="hljs-number">15</span>);
-d.setDate(<span class="hljs-number">1</span>);                 <span class="hljs-comment">//Set the day as a number (1-31)</span>
-d.setHours(<span class="hljs-number">23</span>);                <span class="hljs-comment">//Set the hour (0-23)</span>
-d.setMilliseconds(<span class="hljs-number">440</span>);        <span class="hljs-comment">//Set the milliseconds (0-999)</span>
-d.setMinutes(<span class="hljs-number">33</span>);            <span class="hljs-comment">//Set the minutes (0-59)</span>
-d.setMonth(<span class="hljs-number">1</span>);                <span class="hljs-comment">//Set the month (0-11)</span>
-d.setSeconds(<span class="hljs-number">33</span>);            <span class="hljs-comment">//Set the seconds (0-59)</span>
-d.setTime(<span class="hljs-number">1580571213440</span>);    <span class="hljs-comment">//Set the time (milliseconds since January 1, 1970)</span>
-<span class="hljs-built_in">console</span>.log(d);    <span class="hljs-comment">// &quot;Sat Feb 01 2020 23:33:33 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+d.setDate(<span class="hljs-number">1</span>);               <span class="hljs-comment">//Set the day as a number (1-31)</span>
+d.setHours(<span class="hljs-number">23</span>);             <span class="hljs-comment">//Set the hour (0-23)</span>
+d.setMilliseconds(<span class="hljs-number">440</span>);     <span class="hljs-comment">//Set the milliseconds (0-999)</span>
+d.setMinutes(<span class="hljs-number">33</span>);           <span class="hljs-comment">//Set the minutes (0-59)</span>
+d.setMonth(<span class="hljs-number">1</span>);              <span class="hljs-comment">//Set the month (0-11)</span>
+d.setSeconds(<span class="hljs-number">33</span>);           <span class="hljs-comment">//Set the seconds (0-59)</span>
+d.setTime(<span class="hljs-number">1580571213440</span>);   <span class="hljs-comment">//Set the time (milliseconds since January 1, 1970)</span>
+<span class="hljs-built_in">console</span>.log(d);             <span class="hljs-comment">// &quot;Sat Feb 01 2020 23:33:33 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
 </code></pre>
 <hr>
-<h3 id="utc-getting"><a name="utc-getting" class="anchor-navigation-ex-anchor" href="#utc-getting"><i class="fa fa-link" aria-hidden="true"></i></a>UTC Getting</h3>
+<h2 id="utc-getting"><a name="utc-getting" class="anchor-navigation-ex-anchor" href="#utc-getting"><i class="fa fa-link" aria-hidden="true"></i></a>7. UTC Getting</h2>
 <blockquote>
 <p>Same as Getting Methods, , but returns the UTC date</p>
 </blockquote>
-<pre><code class="lang-js">getUTCDate()    <span class="hljs-comment">//Same as getDate(), but returns the UTC date</span>
-getUTCDay()    <span class="hljs-comment">//Same as getDay(), but returns the UTC day</span>
-getUTCFullYear()    <span class="hljs-comment">//Same as getFullYear(), but returns the UTC year</span>
-getUTCHours()    <span class="hljs-comment">//Same as getHours(), but returns the UTC hour</span>
+<pre><code class="lang-js">getUTCDate()            <span class="hljs-comment">//Same as getDate(), but returns the UTC date</span>
+getUTCDay()             <span class="hljs-comment">//Same as getDay(), but returns the UTC day</span>
+getUTCFullYear()        <span class="hljs-comment">//Same as getFullYear(), but returns the UTC year</span>
+getUTCHours()           <span class="hljs-comment">//Same as getHours(), but returns the UTC hour</span>
 getUTCMilliseconds()    <span class="hljs-comment">//Same as getMilliseconds(), but returns the UTC milliseconds</span>
-getUTCMinutes()    <span class="hljs-comment">//Same as getMinutes(), but returns the UTC minutes</span>
-getUTCMonth()    <span class="hljs-comment">//Same as getMonth(), but returns the UTC month</span>
-getUTCSeconds()    <span class="hljs-comment">//Same as getSeconds(), but returns the UTC seconds</span>
+getUTCMinutes()         <span class="hljs-comment">//Same as getMinutes(), but returns the UTC minutes</span>
+getUTCMonth()           <span class="hljs-comment">//Same as getMonth(), but returns the UTC month</span>
+getUTCSeconds()         <span class="hljs-comment">//Same as getSeconds(), but returns the UTC seconds</span>
 </code></pre>
 <hr>
-<h3 id="add-days"><a name="add-days" class="anchor-navigation-ex-anchor" href="#add-days"><i class="fa fa-link" aria-hidden="true"></i></a>Add Days</h3>
+<h2 id="add-days"><a name="add-days" class="anchor-navigation-ex-anchor" href="#add-days"><i class="fa fa-link" aria-hidden="true"></i></a>8. Add Days</h2>
 <blockquote>
 <p>The <code>setDate()</code> method can also be used to add days to a date:</p>
 </blockquote>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> d = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&apos;2015-01-10T12:30:05.800&apos;</span>);
-<span class="hljs-built_in">console</span>.log(d);                        <span class="hljs-comment">// &quot;Sat Jan 10 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
-d.setDate( <span class="hljs-number">50</span> );    <span class="hljs-comment">//&#x5C07;&#x65E5;&#x671F;&#x90E8;&#x5206;&#x8A2D;50&#xFF0C;&#x8D85;&#x904E;&#x7576;&#x6708;&#x5929;&#x6578;&#x7684;&#x90E8;&#x5206;&#x81EA;&#x52D5;&#x9032;&#x4F4D;&#x5230;&#x4E0B;&#x500B;&#x6708;</span>
-<span class="hljs-built_in">console</span>.log(d);                        <span class="hljs-comment">// &quot;Thu Feb 19 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
-d.setDate( d.getDate() + <span class="hljs-number">50</span> ); <span class="hljs-comment">//&#x5F9E;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x5F80;&#x4E0A;&#x52A0;50&#x5929;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x904E;&#x7576;&#x6708;&#x5929;&#x6578;&#xFF0C;&#x4E00;&#x6A23;&#x81EA;&#x52D5;&#x9032;&#x4F4D;</span>
-<span class="hljs-built_in">console</span>.log(d);                        <span class="hljs-comment">// &quot;Fri Apr 10 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+<span class="hljs-built_in">console</span>.log(d);                 <span class="hljs-comment">// &quot;Sat Jan 10 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+d.setDate( <span class="hljs-number">50</span> );                <span class="hljs-comment">//&#x5C07;&#x65E5;&#x671F;&#x90E8;&#x5206;&#x8A2D;50&#xFF0C;&#x8D85;&#x904E;&#x7576;&#x6708;&#x5929;&#x6578;&#x7684;&#x90E8;&#x5206;&#x81EA;&#x52D5;&#x9032;&#x4F4D;&#x5230;&#x4E0B;&#x500B;&#x6708;</span>
+<span class="hljs-built_in">console</span>.log(d);                 <span class="hljs-comment">// &quot;Thu Feb 19 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
+d.setDate( d.getDate() + <span class="hljs-number">50</span> );  <span class="hljs-comment">//&#x5F9E;&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x5F80;&#x4E0A;&#x52A0;50&#x5929;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x904E;&#x7576;&#x6708;&#x5929;&#x6578;&#xFF0C;&#x4E00;&#x6A23;&#x81EA;&#x52D5;&#x9032;&#x4F4D;</span>
+<span class="hljs-built_in">console</span>.log(d);                 <span class="hljs-comment">// &quot;Fri Apr 10 2015 12:30:05 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;)&quot;</span>
 </code></pre>
 <hr>
-<h3 id="compare-dates"><a name="compare-dates" class="anchor-navigation-ex-anchor" href="#compare-dates"><i class="fa fa-link" aria-hidden="true"></i></a>Compare Dates</h3>
+<h2 id="compare-dates"><a name="compare-dates" class="anchor-navigation-ex-anchor" href="#compare-dates"><i class="fa fa-link" aria-hidden="true"></i></a>9. Compare Dates</h2>
 <blockquote>
 <p>Directly comparing</p>
 </blockquote>
@@ -967,7 +965,7 @@ someday.setFullYear(<span class="hljs-number">2100</span>, <span class="hljs-num
 }
 </code></pre>
 <hr>
-<h3 id="format"><a name="format" class="anchor-navigation-ex-anchor" href="#format"><i class="fa fa-link" aria-hidden="true"></i></a>Format</h3>
+<h2 id="format"><a name="format" class="anchor-navigation-ex-anchor" href="#format"><i class="fa fa-link" aria-hidden="true"></i></a>10. Format</h2>
 <p>EX:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(value);
 <span class="hljs-keyword">return</span> date.getFullYear() + <span class="hljs-string">&apos;/&apos;</span> + (date.getMonth() + <span class="hljs-number">1</span>) + <span class="hljs-string">&apos;/&apos;</span> + date.getDate();
@@ -1004,7 +1002,7 @@ someday.setFullYear(<span class="hljs-number">2100</span>, <span class="hljs-num
                 </a>
                 
                 
-                <a href="encode-uri-api.html" class="navigation navigation-next " aria-label="Next page: Encode URI">
+                <a href="encode-uri-api.html" class="navigation navigation-next " aria-label="Next page: Encode URI API">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1015,7 +1013,7 @@ someday.setFullYear(<span class="hljs-number">2100</span>, <span class="hljs-num
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Date API","level":"6.6","depth":1,"next":{"title":"Encode URI","level":"6.7","depth":1,"path":"api/encode-uri-api.md","ref":"./api/encode-uri-api.md","articles":[]},"previous":{"title":"Boolean API","level":"6.5","depth":1,"path":"api/boolean-api.md","ref":"./api/boolean-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/date-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Date API","level":"6.6","depth":1,"next":{"title":"Encode URI API","level":"6.7","depth":1,"path":"api/encode-uri-api.md","ref":"./api/encode-uri-api.md","articles":[]},"previous":{"title":"Boolean API","level":"6.5","depth":1,"path":"api/boolean-api.md","ref":"./api/boolean-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/date-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,8 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-json"><b></b>JS JSON</a></li><ul><li><span class="title-icon "></span><a href="#what-is-json"><b></b>What is JSON</a></li><li><span class="title-icon "></span><a href="#json-vs-js-object"><b></b>JSON vs. JS Object</a></li><ul><li><span class="title-icon "></span><a href="#example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;"><b></b>Example 1: JS Object &#x8F49;&#x63DB; JSON &#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</a></li><li><span class="title-icon "></span><a href="#example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;"><b></b>Example 2: &#x5F9E; JSON &#x50B3; function &#x7D66; JS Object &#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#json-files"><b></b>JSON Files</a></li><li><span class="title-icon "></span><a href="#why-json-is-better-than-xml"><b></b>Why JSON is Better Than XML</a></li><li><span class="title-icon "></span><a href="#jsonp"><b></b>JSONP</a></li><ul><li><span class="title-icon "></span><a href="#whats-jsonp"><b></b>What&apos;s JSONP</a></li><li><span class="title-icon "></span><a href="#example-basic-usage"><b></b>Example: Basic Usage</a></li><li><span class="title-icon "></span><a href="#example-creating-a-dynamic-script-tag"><b></b>Example: Creating a Dynamic Script Tag</a></li></ul></ul></ul></div><a href="#js-json" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-json"><a name="js-json" class="anchor-navigation-ex-anchor" href="#js-json"><i class="fa fa-link" aria-hidden="true"></i></a>JS JSON</h1>
-<h2 id="what-is-json"><a name="what-is-json" class="anchor-navigation-ex-anchor" href="#what-is-json"><i class="fa fa-link" aria-hidden="true"></i></a>What is JSON</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-json"><b> </b>JS JSON</a></li><ul><li><span class="title-icon "></span><a href="#what-is-json"><b>1. </b>What is JSON</a></li><li><span class="title-icon "></span><a href="#json-vs-js-object"><b>2. </b>JSON vs. JS Object</a></li><ul><li><span class="title-icon "></span><a href="#example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;"><b>2.1. </b>Example 1: JS Object &#x8F49;&#x63DB; JSON &#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</a></li><li><span class="title-icon "></span><a href="#example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;"><b>2.2. </b>Example 2: &#x5F9E; JSON &#x50B3; function &#x7D66; JS Object &#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#json-files"><b>3. </b>JSON Files</a></li><li><span class="title-icon "></span><a href="#why-json-is-better-than-xml"><b>4. </b>Why JSON is Better Than XML</a></li><li><span class="title-icon "></span><a href="#jsonp"><b>5. </b>JSONP</a></li><ul><li><span class="title-icon "></span><a href="#whats-jsonp"><b>5.1. </b>What&apos;s JSONP</a></li><li><span class="title-icon "></span><a href="#example-basic-usage"><b>5.2. </b>Example: Basic Usage</a></li><li><span class="title-icon "></span><a href="#example-creating-a-dynamic-script-tag"><b>5.3. </b>Example: Creating a Dynamic Script Tag</a></li></ul></ul></ul></div><a href="#js-json" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-json"><a name="js-json" class="anchor-navigation-ex-anchor" href="#js-json"><i class="fa fa-link" aria-hidden="true"></i></a> JS JSON</h1>
+<h2 id="what-is-json"><a name="what-is-json" class="anchor-navigation-ex-anchor" href="#what-is-json"><i class="fa fa-link" aria-hidden="true"></i></a>1. What is JSON</h2>
 <blockquote>
 <p><strong>JSON</strong> stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation</p>
 </blockquote>
@@ -818,7 +818,7 @@
 <li>JSON is &quot;self-describing&quot; and easy to understand</li>
 </ul>
 <hr>
-<h2 id="json-vs-js-object"><a name="json-vs-js-object" class="anchor-navigation-ex-anchor" href="#json-vs-js-object"><i class="fa fa-link" aria-hidden="true"></i></a>JSON vs. JS Object</h2>
+<h2 id="json-vs-js-object"><a name="json-vs-js-object" class="anchor-navigation-ex-anchor" href="#json-vs-js-object"><i class="fa fa-link" aria-hidden="true"></i></a>2. JSON vs. JS Object</h2>
 <ul>
 <li>JSON &#x662F;&#x7531; Native JS Object &#x8A9E;&#x6CD5;&#x884D;&#x751F;&#x800C;&#x4F86;&#xFF0C;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x56E0;&#x6B64;&#x5169;&#x8005;&#x53EF;&#x4EE5;&#x8F15;&#x6613;&#x8F49;&#x63DB;</li>
 <li>there is any different?  --&gt; yes, with detail syntax, but still similar</li>
@@ -852,7 +852,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;"><a name="example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;" class="anchor-navigation-ex-anchor" href="#example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1: JS Object &#x8F49;&#x63DB; JSON &#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</h3>
+<h3 id="example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;"><a name="example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;" class="anchor-navigation-ex-anchor" href="#example-1-js-object-&#x8F49;&#x63DB;-json-&#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Example 1: JS Object &#x8F49;&#x63DB; JSON &#x6703;&#x5FFD;&#x7565;&#x4E0D;&#x652F;&#x63F4;&#x7684;&#x8CC7;&#x6599;&#x578B;&#x614B;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> myFunc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hi&apos;</span>);};
 <span class="hljs-keyword">var</span> lv = <span class="hljs-string">&quot;level&quot;</span>;
 <span class="hljs-keyword">var</span> myName = <span class="hljs-string">&quot;john&quot;</span>;
@@ -864,7 +864,7 @@
 <span class="hljs-comment">// {name: &quot;john&quot;, age: 18, lv: 2, addr: &quot;mars&quot;, birth: Tue Jan 30 2018 11:33:20 GMT+0800 (&#x53F0;&#x5317;&#x6A19;&#x6E96;&#x6642;&#x9593;), armor: null, weapon: undefined, spell: &#x192;}</span>
 <span class="hljs-comment">// {&quot;name&quot;:&quot;john&quot;,&quot;age&quot;:18,&quot;lv&quot;:2,&quot;addr&quot;:&quot;mars&quot;,&quot;birth&quot;:&quot;2018-01-30T03:33:20.615Z&quot;, &quot;armor&quot;:null}</span>
 </code></pre>
-<h3 id="example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;"><a name="example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: &#x5F9E; JSON &#x50B3; function &#x7D66; JS Object &#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;</h3>
+<h3 id="example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;"><a name="example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#example-2-&#x5F9E;-json-&#x50B3;-function-&#x7D66;-js-object-&#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Example 2: &#x5F9E; JSON &#x50B3; function &#x7D66; JS Object &#x57F7;&#x884C;&#x7684;&#x8FC2;&#x8FF4;&#x4F5C;&#x6CD5;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> text = <span class="hljs-string">&apos;{ &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:&quot;function () {return 30;}&quot;, &quot;city&quot;:&quot;New York&quot;}&apos;</span>;
 <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">JSON</span>.parse(text);
 <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> obj.age);         <span class="hljs-comment">//&quot;string&quot;</span>
@@ -873,13 +873,13 @@
 <span class="hljs-built_in">console</span>.log(x);                      <span class="hljs-comment">//&#x192; () {return 30;}</span>
 </code></pre>
 <hr>
-<h2 id="json-files"><a name="json-files" class="anchor-navigation-ex-anchor" href="#json-files"><i class="fa fa-link" aria-hidden="true"></i></a>JSON Files</h2>
+<h2 id="json-files"><a name="json-files" class="anchor-navigation-ex-anchor" href="#json-files"><i class="fa fa-link" aria-hidden="true"></i></a>3. JSON Files</h2>
 <ul>
 <li>The file type for JSON files is <code>.json</code></li>
 <li>The MIME type for JSON text is <code>application/json</code></li>
 </ul>
 <hr>
-<h2 id="why-json-is-better-than-xml"><a name="why-json-is-better-than-xml" class="anchor-navigation-ex-anchor" href="#why-json-is-better-than-xml"><i class="fa fa-link" aria-hidden="true"></i></a>Why JSON is Better Than XML</h2>
+<h2 id="why-json-is-better-than-xml"><a name="why-json-is-better-than-xml" class="anchor-navigation-ex-anchor" href="#why-json-is-better-than-xml"><i class="fa fa-link" aria-hidden="true"></i></a>4. Why JSON is Better Than XML</h2>
 <ul>
 <li>JSON is shorter</li>
 <li>JSON can use arrays</li>
@@ -887,11 +887,11 @@
 (mynote: &#x4E3B;&#x6D41; browser &#x5176;&#x5BE6;&#x90FD;&#x6709;&#x5167;&#x5EFA; XML parser &#x53EF;&#x4EE5;&#x8F49;&#x63DB; XML text &#x6210; XML DOM Object&#xFF0C;&#x4E0D;&#x904E;&#x6BD4;&#x8D77;&#x539F;&#x751F; JS Object &#x7684;&#x64CD;&#x4F5C;&#xFF0C;XML DOM Object &#x76F8;&#x5C0D;&#x4E0D;&#x90A3;&#x9EBC;&#x7C21;&#x4FBF;&#x76F4;&#x89C0;)</li>
 </ul>
 <hr>
-<h2 id="jsonp"><a name="jsonp" class="anchor-navigation-ex-anchor" href="#jsonp"><i class="fa fa-link" aria-hidden="true"></i></a>JSONP</h2>
+<h2 id="jsonp"><a name="jsonp" class="anchor-navigation-ex-anchor" href="#jsonp"><i class="fa fa-link" aria-hidden="true"></i></a>5. JSONP</h2>
 <blockquote>
 <p>JSONP stands for JSON with Padding.</p>
 </blockquote>
-<h3 id="whats-jsonp"><a name="whats-jsonp" class="anchor-navigation-ex-anchor" href="#whats-jsonp"><i class="fa fa-link" aria-hidden="true"></i></a>What&apos;s JSONP</h3>
+<h3 id="whats-jsonp"><a name="whats-jsonp" class="anchor-navigation-ex-anchor" href="#whats-jsonp"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. What&apos;s JSONP</h3>
 <ul>
 <li>JSONP is a method for sending JSON data without worrying about <strong>cross-domain issues</strong>.</li>
 <li>JSONP does <strong>not</strong> use the <code>XMLHttpRequest</code> object.</li>
@@ -903,7 +903,7 @@
 <blockquote>
 <p>Also refer to: <a href="ajax.html#access-across-domains">JS AJAX - Access Across Domains</a></p>
 </blockquote>
-<h3 id="example-basic-usage"><a name="example-basic-usage" class="anchor-navigation-ex-anchor" href="#example-basic-usage"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Basic Usage</h3>
+<h3 id="example-basic-usage"><a name="example-basic-usage" class="anchor-navigation-ex-anchor" href="#example-basic-usage"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. Example: Basic Usage</h3>
 <p>test.html (client-side):</p>
 <pre><code class="lang-js">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
 &lt;script&gt;
@@ -918,7 +918,7 @@ function myFunc(myObj) {
 <pre><code>myFunc({ &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;city&quot;:&quot;New York&quot; });
 </code></pre><p>HTML Page Result:</p>
 <pre><code>John
-</code></pre><h3 id="example-creating-a-dynamic-script-tag"><a name="example-creating-a-dynamic-script-tag" class="anchor-navigation-ex-anchor" href="#example-creating-a-dynamic-script-tag"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Creating a Dynamic Script Tag</h3>
+</code></pre><h3 id="example-creating-a-dynamic-script-tag"><a name="example-creating-a-dynamic-script-tag" class="anchor-navigation-ex-anchor" href="#example-creating-a-dynamic-script-tag"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. Example: Creating a Dynamic Script Tag</h3>
 <p>The script tag should only be created when needed:</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clickButton</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">var</span> s = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;script&quot;</span>);
@@ -953,12 +953,12 @@ function myFunc(myObj) {
 
             
                 
-                <a href="oop.html" class="navigation navigation-prev " aria-label="Previous page: JS OOP (Prototype-based)">
+                <a href="oop.html" class="navigation navigation-prev " aria-label="Previous page: JS OOP (Prototype-based) / FP">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ajax.html" class="navigation navigation-next " aria-label="Next page: JS Ajax">
+                <a href="ajax.html" class="navigation navigation-next " aria-label="Next page: JS Ajax / CORS">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -969,7 +969,7 @@ function myFunc(myObj) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS JSON","level":"3.1","depth":1,"next":{"title":"JS Ajax","level":"3.2","depth":1,"path":"notes/ajax.md","ref":"./notes/ajax.md","articles":[]},"previous":{"title":"JS OOP (Prototype-based)","level":"2.9","depth":1,"path":"notes/oop.md","ref":"./notes/oop.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/json.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS JSON","level":"3.1","depth":1,"next":{"title":"JS Ajax / CORS","level":"3.2","depth":1,"path":"notes/ajax.md","ref":"./notes/ajax.md","articles":[]},"previous":{"title":"JS OOP (Prototype-based) / FP","level":"2.9","depth":1,"path":"notes/oop.md","ref":"./notes/oop.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/json.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

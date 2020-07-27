@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>JS OOP (Prototype-based) · GitBook</title>
+        <title>JS OOP (Prototype-based) / FP · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -788,7 +788,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >JS OOP (Prototype-based)</a>
+        <a href=".." >JS OOP (Prototype-based) / FP</a>
     </h1>
 </div>
 
@@ -803,16 +803,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-oop-prototype-based"><b></b>JS OOP (Prototype-based)</a></li><ul><li><span class="title-icon "></span><a href="#oop-&#x61F6;&#x4EBA;&#x5305;"><b></b>OOP &#x61F6;&#x4EBA;&#x5305;</a></li><li><span class="title-icon "></span><a href="#js-oop-prototype-based_1"><b></b>JS OOP (Prototype-based)</a></li><li><span class="title-icon "></span><a href="#examples"><b></b>Examples</a></li><ul><li><span class="title-icon "></span><a href="#example-1-new-function-&#x5BEB;&#x6CD5;"><b></b>Example 1: new Function &#x5BEB;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#example-2-functionprototype-&#x5BEB;&#x6CD5;"><b></b>Example 2: function.prototype &#x5BEB;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><b></b>Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</a></li></ul><li><span class="title-icon "></span><a href="#fp-functional-programming"><b></b>FP (Functional Programming)</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x9EBC;&#x662F;-functional-programming"><b></b>&#x4EC0;&#x9EBC;&#x662F; Functional Programming</a></li><li><span class="title-icon "></span><a href="#why-functional-programming"><b></b>Why Functional Programming</a></li><li><span class="title-icon "></span><a href="#fp-basic-functions"><b></b>FP Basic Functions</a></li></ul><li><span class="title-icon "></span><a href="#references"><b></b>References</a></li></ul></ul></div><a href="#js-oop-prototype-based" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-oop-prototype-based"><a name="js-oop-prototype-based" class="anchor-navigation-ex-anchor" href="#js-oop-prototype-based"><i class="fa fa-link" aria-hidden="true"></i></a>JS OOP (Prototype-based)</h1>
-<p>[TOC]</p>
-<hr>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-oop-prototype-based--fp"><b> </b>JS OOP (Prototype-based) / FP</a></li><ul><li><span class="title-icon "></span><a href="#oop-&#x61F6;&#x4EBA;&#x5305;"><b>1. </b>OOP &#x61F6;&#x4EBA;&#x5305;</a></li><li><span class="title-icon "></span><a href="#js-oop-prototype-based"><b>2. </b>JS OOP (Prototype-based)</a></li><li><span class="title-icon "></span><a href="#examples"><b>3. </b>Examples</a></li><ul><li><span class="title-icon "></span><a href="#example-1-new-function-&#x5BEB;&#x6CD5;"><b>3.1. </b>Example 1: new Function &#x5BEB;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#example-2-functionprototype-&#x5BEB;&#x6CD5;"><b>3.2. </b>Example 2: function.prototype &#x5BEB;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><b>3.3. </b>Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</a></li></ul><li><span class="title-icon "></span><a href="#fp-functional-programming"><b>4. </b>FP (Functional Programming)</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x9EBC;&#x662F;-functional-programming"><b>4.1. </b>&#x4EC0;&#x9EBC;&#x662F; Functional Programming</a></li><li><span class="title-icon "></span><a href="#why-functional-programming"><b>4.2. </b>Why Functional Programming</a></li><li><span class="title-icon "></span><a href="#fp-basic-functions"><b>4.3. </b>FP Basic Functions</a></li></ul><li><span class="title-icon "></span><a href="#references"><b>5. </b>References</a></li></ul></ul></div><a href="#js-oop-prototype-based--fp" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-oop-prototype-based--fp"><a name="js-oop-prototype-based--fp" class="anchor-navigation-ex-anchor" href="#js-oop-prototype-based--fp"><i class="fa fa-link" aria-hidden="true"></i></a> JS OOP (Prototype-based) / FP</h1>
 <blockquote>
 <ul>
 <li>ES6 &#x5F8C;&#x652F;&#x63F4; class &#x8A9E;&#x6CD5;</li>
 <li>&#x672C;&#x7BC7; JS OO &#x6982;&#x5FF5;&#x4E0D;&#x6D89;&#x53CA; ES6 &#x65B0;&#x8A9E;&#x6CD5;</li>
 </ul>
 </blockquote>
-<h2 id="oop-&#x61F6;&#x4EBA;&#x5305;"><a name="oop-&#x61F6;&#x4EBA;&#x5305;" class="anchor-navigation-ex-anchor" href="#oop-&#x61F6;&#x4EBA;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>OOP &#x61F6;&#x4EBA;&#x5305;</h2>
+<h2 id="oop-&#x61F6;&#x4EBA;&#x5305;"><a name="oop-&#x61F6;&#x4EBA;&#x5305;" class="anchor-navigation-ex-anchor" href="#oop-&#x61F6;&#x4EBA;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>1. OOP &#x61F6;&#x4EBA;&#x5305;</h2>
 <ul>
 <li>&#x7269;&#x4EF6;&#x5C0E;&#x5411;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08; (Object-oriented programming, OOP)</li>
 <li>&#x672C;&#x8CEA;&#xFF1A;<ul>
@@ -828,7 +826,7 @@
 </li>
 </ul>
 <hr>
-<h2 id="js-oop-prototype-based_1"><a name="js-oop-prototype-based_1" class="anchor-navigation-ex-anchor" href="#js-oop-prototype-based_1"><i class="fa fa-link" aria-hidden="true"></i></a>JS OOP (Prototype-based)</h2>
+<h2 id="js-oop-prototype-based"><a name="js-oop-prototype-based" class="anchor-navigation-ex-anchor" href="#js-oop-prototype-based"><i class="fa fa-link" aria-hidden="true"></i></a>2. JS OOP (Prototype-based)</h2>
 <ul>
 <li>JavaScript &#x662F;&#x4E00;&#x500B; <strong>&#x4EE5;&#x539F;&#x578B;&#x70BA;&#x57FA;&#x790E; (Prototype-based)</strong> &#x7684;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x8A9E;&#x8A00; (&#x6216;&#x66F4;&#x6E96;&#x78BA;&#x7684;&#x8AAA;&#x662F;&#x4EE5;&#x539F;&#x578B;&#x70BA;&#x57FA;&#x790E;&#x7684;&#x8173;&#x672C;&#x8A9E;&#x8A00;)<ul>
 <li>&#x662F;&#x4E00;&#x7A2E;&#x4E0D;&#x4F7F;&#x7528;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;&#x5C0E;&#x5411;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x6A21;&#x5F0F;</li>
@@ -839,8 +837,8 @@
 </li>
 </ul>
 <hr>
-<h2 id="examples"><a name="examples" class="anchor-navigation-ex-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>Examples</h2>
-<h3 id="example-1-new-function-&#x5BEB;&#x6CD5;"><a name="example-1-new-function-&#x5BEB;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#example-1-new-function-&#x5BEB;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1: new Function &#x5BEB;&#x6CD5;</h3>
+<h2 id="examples"><a name="examples" class="anchor-navigation-ex-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>3. Examples</h2>
+<h3 id="example-1-new-function-&#x5BEB;&#x6CD5;"><a name="example-1-new-function-&#x5BEB;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#example-1-new-function-&#x5BEB;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Example 1: new Function &#x5BEB;&#x6CD5;</h3>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Car</span>(<span class="hljs-params">_color</span>)</span>{
   <span class="hljs-keyword">this</span>.color = _color;
 }
@@ -858,7 +856,7 @@
 console.log(c2);             // Car {<span class="hljs-keyword">constructor</span>: &#x192;, color: &quot;Red&quot;}
 console.log(typeof c2);      // &quot;object&quot;
 </code></pre>
-<h3 id="example-2-functionprototype-&#x5BEB;&#x6CD5;"><a name="example-2-functionprototype-&#x5BEB;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#example-2-functionprototype-&#x5BEB;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: function.prototype &#x5BEB;&#x6CD5;</h3>
+<h3 id="example-2-functionprototype-&#x5BEB;&#x6CD5;"><a name="example-2-functionprototype-&#x5BEB;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#example-2-functionprototype-&#x5BEB;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Example 2: function.prototype &#x5BEB;&#x6CD5;</h3>
 <p>Ref:<a href="https://www.zhihu.com/question/20289071" target="_blank">&#x5982;&#x4F55;&#x7406;&#x89E3;&#x548C;&#x719F;&#x7EC3;&#x8FD0;&#x7528;js&#x4E2D;&#x7684;call&#x53CA;apply&#xFF1F;</a></p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cat</span>(<span class="hljs-params"></span>)</span>{}
 cat.prototype = {
@@ -871,25 +869,25 @@ cat.prototype = {
 <span class="hljs-keyword">var</span> blackCat = <span class="hljs-keyword">new</span> cat;    <span class="hljs-comment">// `new cat()` work too</span>
 blackCat.say();            <span class="hljs-comment">// &quot;I love fish&quot;</span>
 </code></pre>
-<h3 id="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><a name="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</h3>
+<h3 id="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><a name="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</h3>
 <p>Refer to: <a href="closures.html">Closures (&#x9589;&#x5305;)</a> - &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</p>
 <hr>
-<h2 id="fp-functional-programming"><a name="fp-functional-programming" class="anchor-navigation-ex-anchor" href="#fp-functional-programming"><i class="fa fa-link" aria-hidden="true"></i></a>FP (Functional Programming)</h2>
+<h2 id="fp-functional-programming"><a name="fp-functional-programming" class="anchor-navigation-ex-anchor" href="#fp-functional-programming"><i class="fa fa-link" aria-hidden="true"></i></a>4. FP (Functional Programming)</h2>
 <p>ref: <a href="http://www.codedata.com.tw/social-coding/paradigm-shift-to-functional-programming/" target="_blank">&#x7576; &#x5168;&#x4E16;&#x754C;&#x7684;&#x8A9E;&#x8A00; &#x90FD;&#x5F80; Functional Programming &#x767C;&#x5C55; by Appletone | CodeData</a></p>
-<h3 id="&#x4EC0;&#x9EBC;&#x662F;-functional-programming"><a name="&#x4EC0;&#x9EBC;&#x662F;-functional-programming" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x9EBC;&#x662F;-functional-programming"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EC0;&#x9EBC;&#x662F; Functional Programming</h3>
+<h3 id="&#x4EC0;&#x9EBC;&#x662F;-functional-programming"><a name="&#x4EC0;&#x9EBC;&#x662F;-functional-programming" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x9EBC;&#x662F;-functional-programming"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x4EC0;&#x9EBC;&#x662F; Functional Programming</h3>
 <ul>
 <li>&#x4E00;&#x7A2E;&#x958B;&#x767C;&#x5178;&#x7BC4;&#xFF1A;&#x53EA;&#x9700;&#x8981;&#x7D66;&#x6211;&#x8655;&#x7406;&#x5F8C;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x904E;&#x554F;&#x7D50;&#x679C;&#x5982;&#x4F55;&#x800C;&#x4F86;</li>
 <li>&#x4F8B;&#x5982;&#xFF1A;&#x6578;&#x5B78;&#x51FD;&#x5F0F;&#x7684; <code>abs()</code> &#xFF0C;&#x56DE;&#x50B3;&#x7D55;&#x5C0D;&#x503C;</li>
 <li>&#x4EE5;&#x524D;&#x662F;&#x8655;&#x7406;&#x6578;&#x5B78;&#x51FD;&#x6578;&#x8A08;&#x7B97;&#xFF0C;&#x53C8;&#x4EE5; &#x3BB; &#x6F14;&#x7B97; (&#x3BB; calculus) &#x70BA;&#x57FA;&#x790E;</li>
 <li>&#x5982;&#x679C;&#x4E4B;&#x524D;&#x6C92;&#x63A5;&#x89F8;&#x904E; FP &#x4E0D;&#x9700;&#x592A;&#x5728;&#x610F;&#xFF0C;&#x6709;&#x6642;&#x5019;&#x5DF2;&#x7D93;&#x9ED8;&#x9ED8;&#x5728;&#x7528; FP &#x5E36;&#x4F86;&#x7684;&#x4E00;&#x4E9B;&#x529F;&#x80FD;</li>
 </ul>
-<h3 id="why-functional-programming"><a name="why-functional-programming" class="anchor-navigation-ex-anchor" href="#why-functional-programming"><i class="fa fa-link" aria-hidden="true"></i></a>Why Functional Programming</h3>
+<h3 id="why-functional-programming"><a name="why-functional-programming" class="anchor-navigation-ex-anchor" href="#why-functional-programming"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. Why Functional Programming</h3>
 <ul>
 <li>&#x5E73;&#x884C;&#x5316;&#x8207;&#x975E;&#x540C;&#x6B65;&#x4E0D;&#x8AD6;&#x5728;&#x4EFB;&#x4F55;&#x958B;&#x767C;&#x4E0A;&#x9762;&#xFF0C;&#x90FD;&#x662F;&#x6BD4;&#x8F03;&#x96E3;&#x8655;&#x7406;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x8907;&#x96DC;&#x5EA6;&#x9AD8;&#x7684;&#x908F;&#x8F2F;&#xFF0C;&#x82E5;&#x52A0;&#x4E0A; FP &#x7684;&#x7279;&#x6027;&#x4F86;&#x8655;&#x7406;&#x9019;&#x985E;&#x8907;&#x96DC;&#x7684;&#x554F;&#x984C;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x908F;&#x8F2F;&#x8868;&#x9054;&#x7684;&#x8F03;&#x70BA;&#x6613;&#x61C2;&#x3002;</li>
 <li>OOP (Object-oriented programming) &#x6559;&#x6211;&#x5011;&#x57FA;&#x672C;&#x7684;&#x55AE;&#x4F4D;&#x5C31;&#x662F; Class&#xFF08;&#x985E;&#x5225;&#xFF09;&#xFF0C;&#x4F7F;&#x7528; Real World&#xFF08;&#x771F;&#x5BE6;&#x4E16;&#x754C;&#xFF09;&#x7684;&#x89D2;&#x5EA6;&#x53BB;&#x601D;&#x8003;&#x5C0D;&#x61C9;&#x7269;&#x4EF6;&#x8207;&#x65B9;&#x6CD5;&#xFF0C;&#x8207; FP &#x6240;&#x63CF;&#x8FF0;&#x7684;&#x65B9;&#x5F0F;&#x5927;&#x4E0D;&#x76F8;&#x540C;&#x3002;</li>
 <li>&#x5982;&#x679C;&#x8F49;&#x63DB;&#x5230; FP&#xFF0C;OOP &#x4E0A;&#x9762;&#x8A31;&#x591A;&#x7684; Design Patterns &#x4E0D;&#x662F;&#x7279;&#x5225;&#x7684;&#x91CD;&#x8981;&#xFF0C;&#x91CD;&#x9EDE;&#x653E;&#x5728;&#x65BC;&#x8655;&#x7406;&#x8CC7;&#x6599;&#x6D41;&#x4E0A;&#x9762;&#xFF0C;&#x4F7F;&#x5F97;&#x958B;&#x767C;&#x8005;&#x66F4;&#x80FD;&#x5C08;&#x6CE8;&#x554F;&#x984C;&#x6240;&#x5728;&#x3002;</li>
 </ul>
-<h3 id="fp-basic-functions"><a name="fp-basic-functions" class="anchor-navigation-ex-anchor" href="#fp-basic-functions"><i class="fa fa-link" aria-hidden="true"></i></a>FP Basic Functions</h3>
+<h3 id="fp-basic-functions"><a name="fp-basic-functions" class="anchor-navigation-ex-anchor" href="#fp-basic-functions"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. FP Basic Functions</h3>
 <ul>
 <li>FP &#x6709;&#x4E9B;&#x7279;&#x6027;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x719F;&#x6089;&#xFF0C;&#x4EE5;&#x53CA;&#x6709;&#x4E00;&#x4E9B;&#x597D;&#x7528;&#x7684;&#x57FA;&#x790E;&#x51FD;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;&#x9AD8;&#x968E;&#x6392;&#x5E8F;&#x51FD;&#x5F0F; (Higher-Order Functions)&#xFF0C;&#x5E95;&#x4E0B;&#x6211;&#x5011;&#x8209;&#x4E09;&#x500B;&#x57FA;&#x672C;&#x5E38;&#x7528;&#x7684;&#x51FD;&#x5F0F;&#xFF1A;<ul>
 <li><code>Array.prototype.map()</code>: &#x5C0B;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x52A0;&#x4EE5;&#x8655;&#x7406;&#xFF0C;&#x4E26;&#x4E14;&#x56DE;&#x50B3;&#x8655;&#x7406;&#x5F8C;&#x7684;&#x5143;&#x7D20;&#x3002;</li>
@@ -898,7 +896,7 @@ blackCat.say();            <span class="hljs-comment">// &quot;I love fish&quot;
 </ul>
 </li>
 </ul>
-<h2 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>References</h2>
+<h2 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>5. References</h2>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="_blank">JavaScript &#x7269;&#x4EF6;&#x5C0E;&#x5411;&#x4ECB;&#x7D39;</a></li>
 <li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Details_of_the_Object_Model" target="_blank">&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x7269;&#x4EF6;&#x6A21;&#x578B;</a></li>
@@ -946,7 +944,7 @@ blackCat.say();            <span class="hljs-comment">// &quot;I love fish&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS OOP (Prototype-based)","level":"2.9","depth":1,"next":{"title":"JS JSON","level":"3.1","depth":1,"path":"notes/json.md","ref":"./notes/json.md","articles":[]},"previous":{"title":"JS Strict Mode","level":"2.8","depth":1,"path":"notes/strict-mode.md","ref":"./notes/strict-mode.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/oop.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS OOP (Prototype-based) / FP","level":"2.9","depth":1,"next":{"title":"JS JSON","level":"3.1","depth":1,"path":"notes/json.md","ref":"./notes/json.md","articles":[]},"previous":{"title":"JS Strict Mode","level":"2.8","depth":1,"path":"notes/strict-mode.md","ref":"./notes/strict-mode.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/oop.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

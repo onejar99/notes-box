@@ -371,7 +371,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,8 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#object-api"><b></b>Object API</a></li><ul><li><span class="title-icon "></span><a href="#defineproperty"><b></b>defineProperty()</a></li><li><span class="title-icon "></span><a href="#get-only-properties"><b></b>get-only properties</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="object-api"><a name="object-api" class="anchor-navigation-ex-anchor" href="#object-api"><i class="fa fa-link" aria-hidden="true"></i></a>Object API</h2>
-<h3 id="defineproperty"><a name="defineproperty" class="anchor-navigation-ex-anchor" href="#defineproperty"><i class="fa fa-link" aria-hidden="true"></i></a>defineProperty()</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#object-api"><b> </b>Object API</a></li><ul><li><span class="title-icon "></span><a href="#defineproperty"><b>1. </b>defineProperty()</a></li><li><span class="title-icon "></span><a href="#get-only-properties"><b>2. </b>get-only properties</a></li></ul></ul></div><a href="#object-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="object-api"><a name="object-api" class="anchor-navigation-ex-anchor" href="#object-api"><i class="fa fa-link" aria-hidden="true"></i></a> Object API</h1>
+<h2 id="defineproperty"><a name="defineproperty" class="anchor-navigation-ex-anchor" href="#defineproperty"><i class="fa fa-link" aria-hidden="true"></i></a>1. defineProperty()</h2>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> person = {};
 <span class="hljs-built_in">Object</span>.defineProperty(person, <span class="hljs-string">&quot;name&quot;</span>, {value:<span class="hljs-string">&apos;John&apos;</span>, writable:<span class="hljs-literal">false</span>});
 <span class="hljs-built_in">Object</span>.defineProperty(person, <span class="hljs-string">&quot;age&quot;</span>, {value:<span class="hljs-number">18</span>, writable:<span class="hljs-literal">true</span>});
@@ -814,9 +814,10 @@ person.age = <span class="hljs-number">40</span>;
 <span class="hljs-built_in">console</span>.log(person);  <span class="hljs-comment">// {name: &quot;John&quot;, age: 40}</span>
 </code></pre>
 <hr>
-<h3 id="get-only-properties"><a name="get-only-properties" class="anchor-navigation-ex-anchor" href="#get-only-properties"><i class="fa fa-link" aria-hidden="true"></i></a>get-only properties</h3>
-<p>var obj = {get x() {return 0} };
-obj.x = 3.14;            // This will cause an error</p>
+<h2 id="get-only-properties"><a name="get-only-properties" class="anchor-navigation-ex-anchor" href="#get-only-properties"><i class="fa fa-link" aria-hidden="true"></i></a>2. get-only properties</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = {get x() {<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>} };
+obj.x = <span class="hljs-number">3.14</span>;            <span class="hljs-comment">// This will cause an error</span>
+</code></pre>
 
                                 
                                 </section>
@@ -860,7 +861,7 @@ obj.x = 3.14;            // This will cause an error</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Object API","level":"6.14","depth":1,"next":{"title":"String API","level":"6.15","depth":1,"path":"api/string-api.md","ref":"./api/string-api.md","articles":[]},"previous":{"title":"Number API","level":"6.13","depth":1,"path":"api/number-api.md","ref":"./api/number-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/object-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Object API","level":"6.14","depth":1,"next":{"title":"String API","level":"6.15","depth":1,"path":"api/string-api.md","ref":"./api/string-api.md","articles":[]},"previous":{"title":"Number API","level":"6.13","depth":1,"path":"api/number-api.md","ref":"./api/number-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/object-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

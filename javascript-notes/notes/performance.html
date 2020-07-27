@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,10 +803,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-performance"><b></b>JS Performance</a></li><ul><li><span class="title-icon "></span><a href="#with-js-syntax"><b></b>With JS Syntax</a></li><ul><li><span class="title-icon "></span><a href="#1-reduce-activity-in-loops"><b></b>1. Reduce Activity in Loops</a></li><li><span class="title-icon "></span><a href="#2-avoid-using-with"><b></b>2. Avoid Using with</a></li></ul><li><span class="title-icon "></span><a href="#with-dom"><b></b>With DOM</a></li><ul><li><span class="title-icon "></span><a href="#1-reduce-dom-access"><b></b>1. Reduce DOM Access</a></li><li><span class="title-icon "></span><a href="#2-reduce-dom-size"><b></b>2. Reduce DOM Size</a></li></ul><li><span class="title-icon "></span><a href="#delay-js-code-loading"><b></b>Delay JS Code Loading</a></li></ul></ul></div><a href="#js-performance" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-performance"><a name="js-performance" class="anchor-navigation-ex-anchor" href="#js-performance"><i class="fa fa-link" aria-hidden="true"></i></a>JS Performance</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-performance"><b> </b>JS Performance</a></li><ul><li><span class="title-icon "></span><a href="#with-js-syntax"><b>1. </b>With JS Syntax</a></li><ul><li><span class="title-icon "></span><a href="#1-reduce-activity-in-loops"><b>1.1. </b>1. Reduce Activity in Loops</a></li><li><span class="title-icon "></span><a href="#2-avoid-using-with"><b>1.2. </b>2. Avoid Using with</a></li></ul><li><span class="title-icon "></span><a href="#with-dom"><b>2. </b>With DOM</a></li><ul><li><span class="title-icon "></span><a href="#1-reduce-dom-access"><b>2.1. </b>1. Reduce DOM Access</a></li><li><span class="title-icon "></span><a href="#2-reduce-dom-size"><b>2.2. </b>2. Reduce DOM Size</a></li></ul><li><span class="title-icon "></span><a href="#delay-js-code-loading"><b>3. </b>Delay JS Code Loading</a></li></ul></ul></div><a href="#js-performance" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-performance"><a name="js-performance" class="anchor-navigation-ex-anchor" href="#js-performance"><i class="fa fa-link" aria-hidden="true"></i></a> JS Performance</h1>
 <p>Speed up JS code.</p>
-<h2 id="with-js-syntax"><a name="with-js-syntax" class="anchor-navigation-ex-anchor" href="#with-js-syntax"><i class="fa fa-link" aria-hidden="true"></i></a>With JS Syntax</h2>
-<h3 id="1-reduce-activity-in-loops"><a name="1-reduce-activity-in-loops" class="anchor-navigation-ex-anchor" href="#1-reduce-activity-in-loops"><i class="fa fa-link" aria-hidden="true"></i></a>1. Reduce Activity in Loops</h3>
+<h2 id="with-js-syntax"><a name="with-js-syntax" class="anchor-navigation-ex-anchor" href="#with-js-syntax"><i class="fa fa-link" aria-hidden="true"></i></a>1. With JS Syntax</h2>
+<h3 id="1-reduce-activity-in-loops"><a name="1-reduce-activity-in-loops" class="anchor-navigation-ex-anchor" href="#1-reduce-activity-in-loops"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 1. Reduce Activity in Loops</h3>
 <p>for-loop &#x7684; condition-statement &#x6BCF;&#x4E00;&#x6B21; iteration &#x90FD;&#x6703;&#x57F7;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x9700;&#x8981;&#x904B;&#x7B97;&#x3001;&#x5B58;&#x53D6;&#x7684;&#x90E8;&#x5206;&#x62C9;&#x51FA;&#x4F86;&#x6703;&#x66F4;&#x5FEB;</p>
 <p>Bad:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> i;
@@ -817,15 +817,15 @@
 <span class="hljs-keyword">var</span> l = arr.length;
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; l; i++) {
 </code></pre>
-<h3 id="2-avoid-using-with"><a name="2-avoid-using-with" class="anchor-navigation-ex-anchor" href="#2-avoid-using-with"><i class="fa fa-link" aria-hidden="true"></i></a>2. Avoid Using <code>with</code></h3>
+<h3 id="2-avoid-using-with"><a name="2-avoid-using-with" class="anchor-navigation-ex-anchor" href="#2-avoid-using-with"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 2. Avoid Using with</h3>
 <ul>
 <li>Avoid using the <code>with</code> keyword.</li>
 <li>It has a negative effect on speed. It also clutters up JavaScript scopes.</li>
 <li>The <code>with</code> keyword is not allowed in strict mode.</li>
 </ul>
 <hr>
-<h2 id="with-dom"><a name="with-dom" class="anchor-navigation-ex-anchor" href="#with-dom"><i class="fa fa-link" aria-hidden="true"></i></a>With DOM</h2>
-<h3 id="1-reduce-dom-access"><a name="1-reduce-dom-access" class="anchor-navigation-ex-anchor" href="#1-reduce-dom-access"><i class="fa fa-link" aria-hidden="true"></i></a>1. Reduce DOM Access</h3>
+<h2 id="with-dom"><a name="with-dom" class="anchor-navigation-ex-anchor" href="#with-dom"><i class="fa fa-link" aria-hidden="true"></i></a>2. With DOM</h2>
+<h3 id="1-reduce-dom-access"><a name="1-reduce-dom-access" class="anchor-navigation-ex-anchor" href="#1-reduce-dom-access"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. 1. Reduce DOM Access</h3>
 <ul>
 <li>&#x8DDF;&#x666E;&#x901A;JS&#x8A9E;&#x6CD5;&#x76F8;&#x6BD4;&#xFF0C;Accessing the HTML DOM is very slow</li>
 <li>&#x5982;&#x679C;&#x9700;&#x8981;&#x5B58;&#x53D6;&#x591A;&#x6B21;&#xFF0C;&#x6700;&#x597D;&#x5B58;&#x5230; local variables</li>
@@ -833,12 +833,12 @@
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>);
 obj.innerHTML = <span class="hljs-string">&quot;Hello&quot;</span>;
 </code></pre>
-<h3 id="2-reduce-dom-size"><a name="2-reduce-dom-size" class="anchor-navigation-ex-anchor" href="#2-reduce-dom-size"><i class="fa fa-link" aria-hidden="true"></i></a>2. Reduce DOM Size</h3>
+<h3 id="2-reduce-dom-size"><a name="2-reduce-dom-size" class="anchor-navigation-ex-anchor" href="#2-reduce-dom-size"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. 2. Reduce DOM Size</h3>
 <p>Keep the number of elements in the HTML DOM small.</p>
 <p>This will always improve page loading, and speed up rendering (page display), especially on smaller devices.</p>
 <p>Every attempt to search the DOM (like getElementsByTagName) will benefit from a smaller DOM.</p>
 <hr>
-<h2 id="delay-js-code-loading"><a name="delay-js-code-loading" class="anchor-navigation-ex-anchor" href="#delay-js-code-loading"><i class="fa fa-link" aria-hidden="true"></i></a>Delay JS Code Loading</h2>
+<h2 id="delay-js-code-loading"><a name="delay-js-code-loading" class="anchor-navigation-ex-anchor" href="#delay-js-code-loading"><i class="fa fa-link" aria-hidden="true"></i></a>3. Delay JS Code Loading</h2>
 <p>Putting your scripts at the bottom of the page body lets the browser load the page first.</p>
 <p>While a script is downloading, the browser will not start any other downloads. In addition all parsing and rendering activity might be blocked.</p>
 <blockquote>
@@ -897,7 +897,7 @@ obj.innerHTML = <span class="hljs-string">&quot;Hello&quot;</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Performance","level":"4.2","depth":1,"next":{"title":"JS Coding Conventions","level":"4.3","depth":1,"path":"notes/coding-conventions.md","ref":"./notes/coding-conventions.md","articles":[]},"previous":{"title":"JS Best Practices","level":"4.1","depth":1,"path":"notes/best-practices.md","ref":"./notes/best-practices.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/performance.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Performance","level":"4.2","depth":1,"next":{"title":"JS Coding Conventions","level":"4.3","depth":1,"path":"notes/coding-conventions.md","ref":"./notes/coding-conventions.md","articles":[]},"previous":{"title":"JS Best Practices","level":"4.1","depth":1,"path":"notes/best-practices.md","ref":"./notes/best-practices.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/performance.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

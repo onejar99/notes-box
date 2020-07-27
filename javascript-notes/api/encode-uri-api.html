@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Encode URI · GitBook</title>
+        <title>Encode URI API · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -371,7 +371,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -788,7 +788,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Encode URI</a>
+        <a href=".." >Encode URI API</a>
     </h1>
 </div>
 
@@ -803,19 +803,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#encode-uri"><b></b>Encode URI</a></li><ul><li><span class="title-icon "></span><a href="#escape"><b></b>escape()</a></li><li><span class="title-icon "></span><a href="#encodeuri"><b></b>encodeURI()</a></li><li><span class="title-icon "></span><a href="#decodeuri"><b></b>decodeURI()</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="encode-uri"><a name="encode-uri" class="anchor-navigation-ex-anchor" href="#encode-uri"><i class="fa fa-link" aria-hidden="true"></i></a>Encode URI</h2>
-<h3 id="escape"><a name="escape" class="anchor-navigation-ex-anchor" href="#escape"><i class="fa fa-link" aria-hidden="true"></i></a>escape()</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#encode-uri-api"><b> </b>Encode URI API</a></li><ul><li><span class="title-icon "></span><a href="#escape"><b>1. </b>escape()</a></li><li><span class="title-icon "></span><a href="#encodeuri"><b>2. </b>encodeURI()</a></li><li><span class="title-icon "></span><a href="#decodeuri"><b>3. </b>decodeURI()</a></li></ul></ul></div><a href="#encode-uri-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="encode-uri-api"><a name="encode-uri-api" class="anchor-navigation-ex-anchor" href="#encode-uri-api"><i class="fa fa-link" aria-hidden="true"></i></a> Encode URI API</h1>
+<h2 id="escape"><a name="escape" class="anchor-navigation-ex-anchor" href="#escape"><i class="fa fa-link" aria-hidden="true"></i></a>1. escape()</h2>
 <blockquote>
 <p>The escape() function was deprecated in JavaScript version 1.5. </p>
 <p>Use encodeURI() or encodeURIComponent() instead.</p>
 </blockquote>
 <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Need tips? Visit W3Schools!&quot;</span>); <span class="hljs-comment">//&quot;Need%20tips%3F%20Visit%20W3Schools%21&quot;</span>
 </code></pre>
-<h3 id="encodeuri"><a name="encodeuri" class="anchor-navigation-ex-anchor" href="#encodeuri"><i class="fa fa-link" aria-hidden="true"></i></a>encodeURI()</h3>
+<h2 id="encodeuri"><a name="encodeuri" class="anchor-navigation-ex-anchor" href="#encodeuri"><i class="fa fa-link" aria-hidden="true"></i></a>2. encodeURI()</h2>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> uri = <span class="hljs-string">&quot;my test.asp?name=st&#xE5;le&amp;car=saab&quot;</span>;
 <span class="hljs-keyword">var</span> res = <span class="hljs-built_in">encodeURI</span>(uri); <span class="hljs-comment">//&quot;my%20test.asp?name=st%C3%A5le&amp;car=saab&quot;</span>
 </code></pre>
-<h3 id="decodeuri"><a name="decodeuri" class="anchor-navigation-ex-anchor" href="#decodeuri"><i class="fa fa-link" aria-hidden="true"></i></a>decodeURI()</h3>
+<h2 id="decodeuri"><a name="decodeuri" class="anchor-navigation-ex-anchor" href="#decodeuri"><i class="fa fa-link" aria-hidden="true"></i></a>3. decodeURI()</h2>
 
                                 
                                 </section>
@@ -848,7 +848,7 @@
                 </a>
                 
                 
-                <a href="file-api.html" class="navigation navigation-next " aria-label="Next page: File URI">
+                <a href="file-api.html" class="navigation navigation-next " aria-label="Next page: File API">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -859,7 +859,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Encode URI","level":"6.7","depth":1,"next":{"title":"File URI","level":"6.8","depth":1,"path":"api/file-api.md","ref":"./api/file-api.md","articles":[]},"previous":{"title":"Date API","level":"6.6","depth":1,"path":"api/date-api.md","ref":"./api/date-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/encode-uri-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Encode URI API","level":"6.7","depth":1,"next":{"title":"File API","level":"6.8","depth":1,"path":"api/file-api.md","ref":"./api/file-api.md","articles":[]},"previous":{"title":"Date API","level":"6.6","depth":1,"path":"api/date-api.md","ref":"./api/date-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/encode-uri-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

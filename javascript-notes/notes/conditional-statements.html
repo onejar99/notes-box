@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,10 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-conditional-statements-if-else-switch"><b></b>JS Conditional Statements (if-else, switch)</a></li><ul><li><span class="title-icon "></span><a href="#if-else"><b></b>if-else</a></li><li><span class="title-icon "></span><a href="#swtich"><b></b>Swtich</a></li><ul><li><span class="title-icon "></span><a href="#overview"><b></b>Overview</a></li><li><span class="title-icon "></span><a href="#usage-example"><b></b>Usage Example:</a></li><li><span class="title-icon "></span><a href="#example-expression&#x662F;--&#x6BD4;&#x8F03;"><b></b>Example: expression&#x662F; === &#x6BD4;&#x8F03;</a></li><li><span class="title-icon "></span><a href="#example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><b></b>Example: &#x5373;&#x4F7F; default &#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;"><b></b>Example: &#x4E00;&#x65E6; default &#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;</a></li><li><span class="title-icon "></span><a href="#example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><b></b>Example: break &#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;</a></li></ul></ul></ul></div><a href="#js-conditional-statements-if-else-switch" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-conditional-statements-if-else-switch"><a name="js-conditional-statements-if-else-switch" class="anchor-navigation-ex-anchor" href="#js-conditional-statements-if-else-switch"><i class="fa fa-link" aria-hidden="true"></i></a>JS Conditional Statements (if-else, switch)</h1>
-<p>[TOC]</p>
-<hr>
-<h2 id="if-else"><a name="if-else" class="anchor-navigation-ex-anchor" href="#if-else"><i class="fa fa-link" aria-hidden="true"></i></a>if-else</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-conditional-statements-if-else-switch"><b> </b>JS Conditional Statements (if-else, switch)</a></li><ul><li><span class="title-icon "></span><a href="#if-else"><b>1. </b>if-else</a></li><li><span class="title-icon "></span><a href="#swtich"><b>2. </b>Swtich</a></li><ul><li><span class="title-icon "></span><a href="#overview"><b>2.1. </b>Overview</a></li><li><span class="title-icon "></span><a href="#usage-example"><b>2.2. </b>Usage Example:</a></li><li><span class="title-icon "></span><a href="#example-expression&#x662F;--&#x6BD4;&#x8F03;"><b>2.3. </b>Example: expression&#x662F; === &#x6BD4;&#x8F03;</a></li><li><span class="title-icon "></span><a href="#example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><b>2.4. </b>Example: &#x5373;&#x4F7F; default &#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;"><b>2.5. </b>Example: &#x4E00;&#x65E6; default &#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;</a></li><li><span class="title-icon "></span><a href="#example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><b>2.6. </b>Example: break &#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;</a></li></ul></ul></ul></div><a href="#js-conditional-statements-if-else-switch" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-conditional-statements-if-else-switch"><a name="js-conditional-statements-if-else-switch" class="anchor-navigation-ex-anchor" href="#js-conditional-statements-if-else-switch"><i class="fa fa-link" aria-hidden="true"></i></a> JS Conditional Statements (if-else, switch)</h1>
+<h2 id="if-else"><a name="if-else" class="anchor-navigation-ex-anchor" href="#if-else"><i class="fa fa-link" aria-hidden="true"></i></a>1. if-else</h2>
 <p>As general.</p>
 <blockquote>
 <ul>
@@ -815,8 +813,8 @@
 </ul>
 </blockquote>
 <hr>
-<h2 id="swtich"><a name="swtich" class="anchor-navigation-ex-anchor" href="#swtich"><i class="fa fa-link" aria-hidden="true"></i></a>Swtich</h2>
-<h3 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>Overview</h3>
+<h2 id="swtich"><a name="swtich" class="anchor-navigation-ex-anchor" href="#swtich"><i class="fa fa-link" aria-hidden="true"></i></a>2. Swtich</h2>
+<h3 id="overview"><a name="overview" class="anchor-navigation-ex-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Overview</h3>
 <p><strong>Note:</strong></p>
 <ul>
 <li>The switch expression is evaluated <strong>once</strong>.</li>
@@ -852,7 +850,7 @@
     default:
         //code block
 }
-</code></pre><h3 id="usage-example"><a name="usage-example" class="anchor-navigation-ex-anchor" href="#usage-example"><i class="fa fa-link" aria-hidden="true"></i></a>Usage Example:</h3>
+</code></pre><h3 id="usage-example"><a name="usage-example" class="anchor-navigation-ex-anchor" href="#usage-example"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Usage Example:</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">switch</span> (<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getDay()) {
     <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Monday&quot;</span>);
@@ -881,7 +879,7 @@
 <span class="hljs-comment">//&quot;Friday&quot;</span>
 <span class="hljs-comment">//&quot;Yes! Weekend!&quot;</span>
 </code></pre>
-<h3 id="example-expression&#x662F;--&#x6BD4;&#x8F03;"><a name="example-expression&#x662F;--&#x6BD4;&#x8F03;" class="anchor-navigation-ex-anchor" href="#example-expression&#x662F;--&#x6BD4;&#x8F03;"><i class="fa fa-link" aria-hidden="true"></i></a>Example: expression&#x662F; === &#x6BD4;&#x8F03;</h3>
+<h3 id="example-expression&#x662F;--&#x6BD4;&#x8F03;"><a name="example-expression&#x662F;--&#x6BD4;&#x8F03;" class="anchor-navigation-ex-anchor" href="#example-expression&#x662F;--&#x6BD4;&#x8F03;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. Example: expression&#x662F; === &#x6BD4;&#x8F03;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">switch</span> (<span class="hljs-string">&quot;1&quot;</span>) {
     <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Monday&quot;</span>);
@@ -895,7 +893,7 @@
 <span class="hljs-comment">// ***** result: *******</span>
 <span class="hljs-comment">//&quot;WTF&quot;</span>
 </code></pre>
-<h3 id="example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><a name="example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;" class="anchor-navigation-ex-anchor" href="#example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>Example: &#x5373;&#x4F7F; default &#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;</h3>
+<h3 id="example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><a name="example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;" class="anchor-navigation-ex-anchor" href="#example-&#x5373;&#x4F7F;-default-&#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. Example: &#x5373;&#x4F7F; default &#x653E;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4E5F;&#x6703;&#x5148;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x5165;&#x53E3;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">switch</span> (<span class="hljs-string">&quot;1&quot;</span>) {
     <span class="hljs-keyword">default</span>:
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;WTF&quot;</span>);
@@ -912,7 +910,7 @@
 <span class="hljs-comment">// ***** result: *******</span>
 <span class="hljs-comment">//&quot;Monday&quot;</span>
 </code></pre>
-<h3 id="example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;"><a name="example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;" class="anchor-navigation-ex-anchor" href="#example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;"><i class="fa fa-link" aria-hidden="true"></i></a>Example: &#x4E00;&#x65E6; default &#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;</h3>
+<h3 id="example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;"><a name="example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;" class="anchor-navigation-ex-anchor" href="#example-&#x4E00;&#x65E6;-default-&#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. Example: &#x4E00;&#x65E6; default &#x9032;&#x53BB;&#x4E86;&#xFF0C;&#x5C31;&#x50CF;&#x96A7;&#x9053;&#x7684;&#x904B;&#x4F5C;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x5340;&#x6BB5;&#x8CAB;&#x901A;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">switch</span> (<span class="hljs-string">&quot;1&quot;</span>) {
     <span class="hljs-keyword">default</span>:
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;WTF&quot;</span>);
@@ -930,7 +928,7 @@
 <span class="hljs-comment">//&quot;WTF&quot;</span>
 <span class="hljs-comment">//&quot;Monday&quot;</span>
 </code></pre>
-<h3 id="example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><a name="example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;" class="anchor-navigation-ex-anchor" href="#example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>Example: break &#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;</h3>
+<h3 id="example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><a name="example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;" class="anchor-navigation-ex-anchor" href="#example-break-&#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. Example: break &#x51FA;&#x4F86;&#xFF0C;&#x4E0D;&#x6703;&#x518D;&#x9032;&#x5176;&#x4ED6;&#x5165;&#x53E3;</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">switch</span> (<span class="hljs-string">&quot;1&quot;</span>) {
     <span class="hljs-keyword">default</span>:
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;WTF&quot;</span>);
@@ -990,7 +988,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Conditional Statements (if-else, switch)","level":"1.11","depth":1,"next":{"title":"JS Loop (Iterative)","level":"1.12","depth":1,"path":"notes/loop.md","ref":"./notes/loop.md","articles":[]},"previous":{"title":"JS Operators","level":"1.10","depth":1,"path":"notes/operators.md","ref":"./notes/operators.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/conditional-statements.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Conditional Statements (if-else, switch)","level":"1.11","depth":1,"next":{"title":"JS Loop (Iterative)","level":"1.12","depth":1,"path":"notes/loop.md","ref":"./notes/loop.md","articles":[]},"previous":{"title":"JS Operators","level":"1.10","depth":1,"path":"notes/operators.md","ref":"./notes/operators.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/conditional-statements.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

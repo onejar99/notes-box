@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,8 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-regular-expressions"><b></b>JS Regular Expressions</a></li><ul><li><span class="title-icon "></span><a href="#regular-expression-intro"><b></b>Regular Expression Intro</a></li><li><span class="title-icon "></span><a href="#search"><b></b>search()</a></li><ul><li><span class="title-icon "></span><a href="#1-using-string-search-with-a-regular-expression"><b></b>1. Using String search() With a Regular Expression</a></li><li><span class="title-icon "></span><a href="#2-using-string-search-with-string"><b></b>2. Using String search() With String</a></li></ul><li><span class="title-icon "></span><a href="#replace"><b></b>replace()</a></li><li><span class="title-icon "></span><a href="#regular-expression-modifiers"><b></b>Regular Expression Modifiers</a></li><li><span class="title-icon "></span><a href="#regular-expression-patterns"><b></b>Regular Expression Patterns</a></li><ul><li><span class="title-icon "></span><a href="#brackets-"><b></b>Brackets []</a></li><li><span class="title-icon "></span><a href="#metacharacters-d-s-uxxx"><b></b>Metacharacters \d, \s, \uxxx</a></li><li><span class="title-icon "></span><a href="#quantifiers"><b></b>Quantifiers</a></li></ul><li><span class="title-icon "></span><a href="#regexp-object"><b></b>RegExp Object</a></li><li><span class="title-icon "></span><a href="#test"><b></b>test()</a></li><li><span class="title-icon "></span><a href="#exec"><b></b>exec()</a></li></ul></ul></div><a href="#js-regular-expressions" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-regular-expressions"><a name="js-regular-expressions" class="anchor-navigation-ex-anchor" href="#js-regular-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>JS Regular Expressions</h1>
-<h2 id="regular-expression-intro"><a name="regular-expression-intro" class="anchor-navigation-ex-anchor" href="#regular-expression-intro"><i class="fa fa-link" aria-hidden="true"></i></a>Regular Expression Intro</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-regular-expressions"><b> </b>JS Regular Expressions</a></li><ul><li><span class="title-icon "></span><a href="#regular-expression-intro"><b>1. </b>Regular Expression Intro</a></li><li><span class="title-icon "></span><a href="#search"><b>2. </b>search()</a></li><ul><li><span class="title-icon "></span><a href="#1-using-string-search-with-a-regular-expression"><b>2.1. </b>1. Using String search() With a Regular Expression</a></li><li><span class="title-icon "></span><a href="#2-using-string-search-with-string"><b>2.2. </b>2. Using String search() With String</a></li></ul><li><span class="title-icon "></span><a href="#replace"><b>3. </b>replace()</a></li><li><span class="title-icon "></span><a href="#regular-expression-modifiers"><b>4. </b>Regular Expression Modifiers</a></li><li><span class="title-icon "></span><a href="#regular-expression-patterns"><b>5. </b>Regular Expression Patterns</a></li><ul><li><span class="title-icon "></span><a href="#brackets-"><b>5.1. </b>Brackets []</a></li><li><span class="title-icon "></span><a href="#metacharacters-d-s-uxxx"><b>5.2. </b>Metacharacters \d, \s, \uxxx</a></li><li><span class="title-icon "></span><a href="#quantifiers"><b>5.3. </b>Quantifiers</a></li></ul><li><span class="title-icon "></span><a href="#regexp-object"><b>6. </b>RegExp Object</a></li><li><span class="title-icon "></span><a href="#test"><b>7. </b>test()</a></li><li><span class="title-icon "></span><a href="#exec"><b>8. </b>exec()</a></li></ul></ul></div><a href="#js-regular-expressions" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-regular-expressions"><a name="js-regular-expressions" class="anchor-navigation-ex-anchor" href="#js-regular-expressions"><i class="fa fa-link" aria-hidden="true"></i></a> JS Regular Expressions</h1>
+<h2 id="regular-expression-intro"><a name="regular-expression-intro" class="anchor-navigation-ex-anchor" href="#regular-expression-intro"><i class="fa fa-link" aria-hidden="true"></i></a>1. Regular Expression Intro</h2>
 <ul>
 <li>What is: A regular expression is a sequence of characters that forms a <em>search pattern</em>.</li>
 <li>For what: The search pattern can be used for <em>text search</em> and <em>text replace</em> operations.</li>
@@ -829,15 +829,15 @@
 </li>
 </ul>
 <hr>
-<h2 id="search"><a name="search" class="anchor-navigation-ex-anchor" href="#search"><i class="fa fa-link" aria-hidden="true"></i></a>search()</h2>
-<h3 id="1-using-string-search-with-a-regular-expression"><a name="1-using-string-search-with-a-regular-expression" class="anchor-navigation-ex-anchor" href="#1-using-string-search-with-a-regular-expression"><i class="fa fa-link" aria-hidden="true"></i></a>1. Using String search() With a Regular Expression</h3>
+<h2 id="search"><a name="search" class="anchor-navigation-ex-anchor" href="#search"><i class="fa fa-link" aria-hidden="true"></i></a>2. search()</h2>
+<h3 id="1-using-string-search-with-a-regular-expression"><a name="1-using-string-search-with-a-regular-expression" class="anchor-navigation-ex-anchor" href="#1-using-string-search-with-a-regular-expression"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. 1. Using String search() With a Regular Expression</h3>
 <p>Example:</p>
 <p>Use a regular expression to do a case-insensitive search for &quot;w3schools&quot; in a string:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Visit W3Schools w3Schools&quot;</span>;
 <span class="hljs-keyword">var</span> n = str.search(<span class="hljs-regexp">/w3schools/i</span>);
 <span class="hljs-built_in">console</span>.log( n ); <span class="hljs-comment">//6</span>
 </code></pre>
-<h3 id="2-using-string-search-with-string"><a name="2-using-string-search-with-string" class="anchor-navigation-ex-anchor" href="#2-using-string-search-with-string"><i class="fa fa-link" aria-hidden="true"></i></a>2. Using String search() With String</h3>
+<h3 id="2-using-string-search-with-string"><a name="2-using-string-search-with-string" class="anchor-navigation-ex-anchor" href="#2-using-string-search-with-string"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. 2. Using String search() With String</h3>
 <p>The search method will also accept a string as search argument.
 The string argument will be converted to a regular expression:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Visit W3Schools w3Schools&quot;</span>;
@@ -845,7 +845,7 @@ The string argument will be converted to a regular expression:</p>
 <span class="hljs-built_in">console</span>.log( n ); <span class="hljs-comment">//16</span>
 </code></pre>
 <hr>
-<h2 id="replace"><a name="replace" class="anchor-navigation-ex-anchor" href="#replace"><i class="fa fa-link" aria-hidden="true"></i></a>replace()</h2>
+<h2 id="replace"><a name="replace" class="anchor-navigation-ex-anchor" href="#replace"><i class="fa fa-link" aria-hidden="true"></i></a>3. replace()</h2>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Visit Orig Orig!&quot;</span>;
 
 <span class="hljs-comment">// Use String replace() With a Regular Expression</span>
@@ -860,7 +860,7 @@ The string argument will be converted to a regular expression:</p>
 <span class="hljs-built_in">console</span>.log( str.search(<span class="hljs-string">&quot;orig&quot;</span>) );            <span class="hljs-comment">//-1</span>
 </code></pre>
 <hr>
-<h2 id="regular-expression-modifiers"><a name="regular-expression-modifiers" class="anchor-navigation-ex-anchor" href="#regular-expression-modifiers"><i class="fa fa-link" aria-hidden="true"></i></a>Regular Expression Modifiers</h2>
+<h2 id="regular-expression-modifiers"><a name="regular-expression-modifiers" class="anchor-navigation-ex-anchor" href="#regular-expression-modifiers"><i class="fa fa-link" aria-hidden="true"></i></a>4. Regular Expression Modifiers</h2>
 <p>Modifiers can be used to perform case-insensitive more global searches:</p>
 <table>
 <thead>
@@ -885,8 +885,8 @@ The string argument will be converted to a regular expression:</p>
 </tbody>
 </table>
 <hr>
-<h2 id="regular-expression-patterns"><a name="regular-expression-patterns" class="anchor-navigation-ex-anchor" href="#regular-expression-patterns"><i class="fa fa-link" aria-hidden="true"></i></a>Regular Expression Patterns</h2>
-<h3 id="brackets-"><a name="brackets-" class="anchor-navigation-ex-anchor" href="#brackets-"><i class="fa fa-link" aria-hidden="true"></i></a>Brackets <code>[]</code></h3>
+<h2 id="regular-expression-patterns"><a name="regular-expression-patterns" class="anchor-navigation-ex-anchor" href="#regular-expression-patterns"><i class="fa fa-link" aria-hidden="true"></i></a>5. Regular Expression Patterns</h2>
+<h3 id="brackets-"><a name="brackets-" class="anchor-navigation-ex-anchor" href="#brackets-"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. Brackets []</h3>
 <blockquote>
 <p>are used to find a range of characters:</p>
 </blockquote>
@@ -907,14 +907,12 @@ The string argument will be converted to a regular expression:</p>
 <td>Find any of the digits between the brackets</td>
 </tr>
 <tr>
-<td>(x</td>
-<td>y)</td>
-<td>Find any of the alternatives separated with `</td>
-<td>`</td>
+<td>(x|y)</td>
+<td>Find any of the alternatives separated with |</td>
 </tr>
 </tbody>
 </table>
-<h3 id="metacharacters-d-s-uxxx"><a name="metacharacters-d-s-uxxx" class="anchor-navigation-ex-anchor" href="#metacharacters-d-s-uxxx"><i class="fa fa-link" aria-hidden="true"></i></a>Metacharacters <code>\d</code>, <code>\s</code>, <code>\uxxx</code></h3>
+<h3 id="metacharacters-d-s-uxxx"><a name="metacharacters-d-s-uxxx" class="anchor-navigation-ex-anchor" href="#metacharacters-d-s-uxxx"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. Metacharacters \d, \s, \uxxx</h3>
 <blockquote>
 <p>are characters with a special meaning:</p>
 </blockquote>
@@ -944,7 +942,7 @@ The string argument will be converted to a regular expression:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="quantifiers"><a name="quantifiers" class="anchor-navigation-ex-anchor" href="#quantifiers"><i class="fa fa-link" aria-hidden="true"></i></a>Quantifiers</h3>
+<h3 id="quantifiers"><a name="quantifiers" class="anchor-navigation-ex-anchor" href="#quantifiers"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. Quantifiers</h3>
 <blockquote>
 <p>define quantities:</p>
 </blockquote>
@@ -971,7 +969,7 @@ The string argument will be converted to a regular expression:</p>
 </tbody>
 </table>
 <hr>
-<h2 id="regexp-object"><a name="regexp-object" class="anchor-navigation-ex-anchor" href="#regexp-object"><i class="fa fa-link" aria-hidden="true"></i></a>RegExp Object</h2>
+<h2 id="regexp-object"><a name="regexp-object" class="anchor-navigation-ex-anchor" href="#regexp-object"><i class="fa fa-link" aria-hidden="true"></i></a>6. RegExp Object</h2>
 <p>In JavaScript, the <strong>RegExp object</strong> is a regular expression object with predefined properties and methods.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> patt = <span class="hljs-regexp">/orig/i</span>;
 <span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">typeof</span> patt );       <span class="hljs-comment">// &quot;object&quot;</span>
@@ -980,7 +978,7 @@ The string argument will be converted to a regular expression:</p>
 <span class="hljs-built_in">console</span>.log( patt.constructor );  <span class="hljs-comment">// &#x192; RegExp() { [native code] }</span>
 </code></pre>
 <hr>
-<h2 id="test"><a name="test" class="anchor-navigation-ex-anchor" href="#test"><i class="fa fa-link" aria-hidden="true"></i></a>test()</h2>
+<h2 id="test"><a name="test" class="anchor-navigation-ex-anchor" href="#test"><i class="fa fa-link" aria-hidden="true"></i></a>7. test()</h2>
 <ul>
 <li>The <code>test()</code> method is a RegExp expression method.</li>
 <li>It searches a string for a pattern, and returns <code>true</code> or <code>false</code>, depending on the result.</li>
@@ -993,7 +991,7 @@ The string argument will be converted to a regular expression:</p>
 <span class="hljs-built_in">console</span>.log( patt.test(<span class="hljs-string">&apos;new&apos;</span>) );    <span class="hljs-comment">// false</span>
 </code></pre>
 <hr>
-<h2 id="exec"><a name="exec" class="anchor-navigation-ex-anchor" href="#exec"><i class="fa fa-link" aria-hidden="true"></i></a>exec()</h2>
+<h2 id="exec"><a name="exec" class="anchor-navigation-ex-anchor" href="#exec"><i class="fa fa-link" aria-hidden="true"></i></a>8. exec()</h2>
 <ul>
 <li>The <code>exec()</code> method is a RegExp expression method.</li>
 <li>It searches a string for a specified pattern, and returns the found text.</li>
@@ -1053,7 +1051,7 @@ The string argument will be converted to a regular expression:</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Regular Expressions","level":"2.7","depth":1,"next":{"title":"JS Strict Mode","level":"2.8","depth":1,"path":"notes/strict-mode.md","ref":"./notes/strict-mode.md","articles":[]},"previous":{"title":"JS Events","level":"2.6","depth":1,"path":"notes/events.md","ref":"./notes/events.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/regular-expressions.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Regular Expressions","level":"2.7","depth":1,"next":{"title":"JS Strict Mode","level":"2.8","depth":1,"path":"notes/strict-mode.md","ref":"./notes/strict-mode.md","articles":[]},"previous":{"title":"JS Events","level":"2.6","depth":1,"path":"notes/events.md","ref":"./notes/events.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/regular-expressions.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

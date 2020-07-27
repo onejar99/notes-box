@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,14 +803,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js--variables"><b></b>JS  Variables</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b></b>Intro</a></li><li><span class="title-icon "></span><a href="#identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;"><b></b>Identifiers &#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;</a></li><li><span class="title-icon "></span><a href="#declaring-javascript-variables"><b></b>Declaring JavaScript Variables</a></li><li><span class="title-icon "></span><a href="#re-declaring-javascript-variables"><b></b>Re-Declaring JavaScript Variables</a></li></ul></ul></div><a href="#js--variables" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js--variables"><a name="js--variables" class="anchor-navigation-ex-anchor" href="#js--variables"><i class="fa fa-link" aria-hidden="true"></i></a>JS  Variables</h1>
-<p>[TOC]</p>
-<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>Intro</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js--variables"><b> </b>JS  Variables</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b>1. </b>Intro</a></li><li><span class="title-icon "></span><a href="#identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;"><b>2. </b>Identifiers &#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;</a></li><li><span class="title-icon "></span><a href="#declaring-javascript-variables"><b>3. </b>Declaring JavaScript Variables</a></li><li><span class="title-icon "></span><a href="#re-declaring-javascript-variables"><b>4. </b>Re-Declaring JavaScript Variables</a></li></ul></ul></div><a href="#js--variables" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js--variables"><a name="js--variables" class="anchor-navigation-ex-anchor" href="#js--variables"><i class="fa fa-link" aria-hidden="true"></i></a> JS  Variables</h1>
+<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>1. Intro</h2>
 <ul>
 <li>All JavaScript variables must be identified with unique names. These unique names are called <strong>identifiers</strong>.</li>
 <li>In JavaScript, <strong>objects and functions are also variables</strong>.</li>
 </ul>
-<h2 id="identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;"><a name="identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;" class="anchor-navigation-ex-anchor" href="#identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;"><i class="fa fa-link" aria-hidden="true"></i></a>Identifiers &#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;</h2>
+<h2 id="identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;"><a name="identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;" class="anchor-navigation-ex-anchor" href="#identifiers-&#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Identifiers &#x8B8A;&#x6578;&#x547D;&#x540D;&#x898F;&#x5247;</h2>
 <ul>
 <li><p>The first character must be:</p>
 <ul>
@@ -833,25 +832,42 @@
 <p><strong>Do not start names with a $ sign.</strong><br>It will put you in conflict with many JavaScript library names.</p>
 </blockquote>
 <ul>
-<li><p>JavaScript and Camel Case(&#x99DD;&#x5CF0;&#x5F0F;)</p>
-<ul>
-<li><p>Historically, programmers have used different ways of joining multiple words into one variable name:</p>
-<p>| Way                            | Example    |
-| ------------------------------ | ---------- |
-| Hyphens                        | first-name |
-| Underscore                     | first_name |
-| Upper Camel Case (Pascal Case) | FirstName  |
-| Lower Camel Case               | firstName  |</p>
-</li>
-<li><p><strong>JavaScript programmers tend to use camel case that starts with a lowercase letter</strong>:</p>
-<blockquote>
+<li>JavaScript and Camel Case(&#x99DD;&#x5CF0;&#x5F0F;)<ul>
+<li><strong>JavaScript programmers tend to use camel case that starts with a lowercase letter</strong>:<blockquote>
 <p>EX: firstName</p>
 </blockquote>
 </li>
+<li>Historically, programmers have used different ways of joining multiple words into one variable name:</li>
 </ul>
 </li>
 </ul>
-<h2 id="declaring-javascript-variables"><a name="declaring-javascript-variables" class="anchor-navigation-ex-anchor" href="#declaring-javascript-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Declaring JavaScript Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Way</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hyphens</td>
+<td>first-name</td>
+</tr>
+<tr>
+<td>Underscore</td>
+<td>first_name</td>
+</tr>
+<tr>
+<td>Upper Camel Case (Pascal Case)</td>
+<td>FirstName</td>
+</tr>
+<tr>
+<td>Lower Camel Case</td>
+<td>firstName</td>
+</tr>
+</tbody>
+</table>
+<h2 id="declaring-javascript-variables"><a name="declaring-javascript-variables" class="anchor-navigation-ex-anchor" href="#declaring-javascript-variables"><i class="fa fa-link" aria-hidden="true"></i></a>3. Declaring JavaScript Variables</h2>
 <ul>
 <li>You declare a JavaScript variable with the <code>var</code> keyword:</li>
 <li>It&apos;s a good programming practice to declare all variables at the beginning of a script.</li>
@@ -860,7 +876,7 @@
 <span class="hljs-keyword">var</span> carName2 = <span class="hljs-string">&quot;Volvo&quot;</span>;
 <span class="hljs-keyword">var</span> person = <span class="hljs-string">&quot;John Doe&quot;</span>, carName3 = <span class="hljs-string">&quot;Volvo&quot;</span>, price = <span class="hljs-number">200</span>;
 </code></pre>
-<h2 id="re-declaring-javascript-variables"><a name="re-declaring-javascript-variables" class="anchor-navigation-ex-anchor" href="#re-declaring-javascript-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Re-Declaring JavaScript Variables</h2>
+<h2 id="re-declaring-javascript-variables"><a name="re-declaring-javascript-variables" class="anchor-navigation-ex-anchor" href="#re-declaring-javascript-variables"><i class="fa fa-link" aria-hidden="true"></i></a>4. Re-Declaring JavaScript Variables</h2>
 <p>If you re-declare a JavaScript variable, <strong>it will not lose its value</strong>.</p>
 <p>Example:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x;
@@ -917,7 +933,7 @@ x = <span class="hljs-string">&quot;123&quot;</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Variables","level":"1.7","depth":1,"next":{"title":"JS Functions (Code Blocks)","level":"1.8","depth":1,"path":"notes/functions.md","ref":"./notes/functions.md","articles":[]},"previous":{"title":"JS Syntax & Statements","level":"1.6","depth":1,"path":"notes/syntax.md","ref":"./notes/syntax.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/variables.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Variables","level":"1.7","depth":1,"next":{"title":"JS Functions (Code Blocks)","level":"1.8","depth":1,"path":"notes/functions.md","ref":"./notes/functions.md","articles":[]},"previous":{"title":"JS Syntax & Statements","level":"1.6","depth":1,"path":"notes/syntax.md","ref":"./notes/syntax.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/variables.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

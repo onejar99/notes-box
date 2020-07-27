@@ -369,7 +369,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -402,7 +402,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -644,7 +644,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -657,7 +657,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -665,12 +665,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -683,7 +683,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -801,55 +801,54 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#string-api"><b></b>String API</a></li><ul><li><span class="title-icon "></span><a href="#basic"><b></b>Basic</a></li><li><span class="title-icon "></span><a href="#search-string-position"><b></b>Search string position</a></li><li><span class="title-icon "></span><a href="#extract-string"><b></b>Extract string</a></li><li><span class="title-icon "></span><a href="#extract-characters"><b></b>Extract characters</a></li><li><span class="title-icon "></span><a href="#replace-string"><b></b>Replace string</a></li><li><span class="title-icon "></span><a href="#upper-and-lower-case"><b></b>Upper and Lower Case</a></li><li><span class="title-icon "></span><a href="#concat-string"><b></b>Concat string</a></li><li><span class="title-icon "></span><a href="#string-to-array"><b></b>String to Array</a></li><li><span class="title-icon "></span><a href="#format-string"><b></b>Format String</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="string-api"><a name="string-api" class="anchor-navigation-ex-anchor" href="#string-api"><i class="fa fa-link" aria-hidden="true"></i></a>String API</h2>
-<p>[TOC]</p>
-<hr>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#string-api"><b> </b>String API</a></li><ul><li><span class="title-icon "></span><a href="#note"><b>1. </b>Note</a></li><li><span class="title-icon "></span><a href="#basic"><b>2. </b>Basic</a></li><ul><li><span class="title-icon "></span><a href="#length"><b>2.1. </b>length</a></li><li><span class="title-icon "></span><a href="#string-global"><b>2.2. </b>String() (Global)</a></li><li><span class="title-icon "></span><a href="#trim"><b>2.3. </b>trim()</a></li></ul><li><span class="title-icon "></span><a href="#search-string-position"><b>3. </b>Search string position</a></li><ul><li><span class="title-icon "></span><a href="#indexof"><b>3.1. </b>indexOf()</a></li><li><span class="title-icon "></span><a href="#lastindexof"><b>3.2. </b>lastIndexOf()</a></li><li><span class="title-icon "></span><a href="#search"><b>3.3. </b>search()</a></li></ul><li><span class="title-icon "></span><a href="#extract-string"><b>4. </b>Extract string</a></li><ul><li><span class="title-icon "></span><a href="#slice"><b>4.1. </b>slice()</a></li><li><span class="title-icon "></span><a href="#substring"><b>4.2. </b>substring()</a></li><li><span class="title-icon "></span><a href="#substr"><b>4.3. </b>substr()</a></li></ul><li><span class="title-icon "></span><a href="#extract-characters"><b>5. </b>Extract characters</a></li><ul><li><span class="title-icon "></span><a href="#charat"><b>5.1. </b>charAt()</a></li><li><span class="title-icon "></span><a href="#charcodeat"><b>5.2. </b>charCodeAt()</a></li></ul><li><span class="title-icon "></span><a href="#replace-string"><b>6. </b>Replace string</a></li><ul><li><span class="title-icon "></span><a href="#replace"><b>6.1. </b>replace()</a></li></ul><li><span class="title-icon "></span><a href="#upper-and-lower-case"><b>7. </b>Upper and Lower Case</a></li><ul><li><span class="title-icon "></span><a href="#touppercase"><b>7.1. </b>toUpperCase()</a></li><li><span class="title-icon "></span><a href="#tolowercase"><b>7.2. </b>toLowerCase()</a></li></ul><li><span class="title-icon "></span><a href="#concat-string"><b>8. </b>Concat string</a></li><ul><li><span class="title-icon "></span><a href="#concat"><b>8.1. </b>concat()</a></li></ul><li><span class="title-icon "></span><a href="#string-to-array"><b>9. </b>String to Array</a></li><ul><li><span class="title-icon "></span><a href="#split"><b>9.1. </b>split()</a></li></ul><li><span class="title-icon "></span><a href="#format-string"><b>10. </b>Format String</a></li><ul><li><span class="title-icon "></span><a href="#example-for-&#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x88DC;-0"><b>10.1. </b>Example for &#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x88DC; 0</a></li></ul></ul></ul></div><a href="#string-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="string-api"><a name="string-api" class="anchor-navigation-ex-anchor" href="#string-api"><i class="fa fa-link" aria-hidden="true"></i></a> String API</h1>
 <p><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank">Complete JavaScript String Reference</a></p>
-<blockquote>
-<p>Note:
-&#x57FA;&#x672C;&#x4E0A; method &#x7684;&#x56DE;&#x50B3;&#x7D50;&#x679C;&#x90FD;&#x662F;&#x4E00;&#x500B;&#x65B0;&#x7684;&#x5B57;&#x4E32;&#xFF0C;&#x4E0D;&#x6703;&#x5F71;&#x97FF;&#x5230;&#x539F;&#x5B57;&#x4E32; (&#x5373;&#x4F7F;&#x662F; <code>replace()</code> )</p>
+<h2 id="note"><a name="note" class="anchor-navigation-ex-anchor" href="#note"><i class="fa fa-link" aria-hidden="true"></i></a>1. Note</h2>
+<ul>
+<li>&#x57FA;&#x672C;&#x4E0A; method &#x7684;&#x56DE;&#x50B3;&#x7D50;&#x679C;&#x90FD;&#x662F;&#x4E00;&#x500B;&#x65B0;&#x7684;&#x5B57;&#x4E32;&#xFF0C;&#x4E0D;&#x6703;&#x5F71;&#x97FF;&#x5230;&#x539F;&#x5B57;&#x4E32; (&#x5373;&#x4F7F;&#x662F; <code>replace()</code> )<blockquote>
 <p>All string methods return a new string. They don&apos;t modify the original string.
 Formally said: Strings are immutable: Strings cannot be changed, only replaced.</p>
 </blockquote>
+</li>
+</ul>
 <hr>
-<h3 id="basic"><a name="basic" class="anchor-navigation-ex-anchor" href="#basic"><i class="fa fa-link" aria-hidden="true"></i></a>Basic</h3>
-<h4 id="length"><a name="length" class="anchor-navigation-ex-anchor" href="#length"><i class="fa fa-link" aria-hidden="true"></i></a>length</h4>
+<h2 id="basic"><a name="basic" class="anchor-navigation-ex-anchor" href="#basic"><i class="fa fa-link" aria-hidden="true"></i></a>2. Basic</h2>
+<h3 id="length"><a name="length" class="anchor-navigation-ex-anchor" href="#length"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. length</h3>
 <pre><code>var txt = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;
 console.log(txt.length); //26
 </code></pre><hr>
-<h4 id="string-global"><a name="string-global" class="anchor-navigation-ex-anchor" href="#string-global"><i class="fa fa-link" aria-hidden="true"></i></a>String() (Global)</h4>
+<h3 id="string-global"><a name="string-global" class="anchor-navigation-ex-anchor" href="#string-global"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. String() (Global)</h3>
 <p>convert to string</p>
-<h4 id="trim"><a name="trim" class="anchor-navigation-ex-anchor" href="#trim"><i class="fa fa-link" aria-hidden="true"></i></a>trim()</h4>
+<h3 id="trim"><a name="trim" class="anchor-navigation-ex-anchor" href="#trim"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. trim()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;   Hello  World &quot;</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`str=[<span class="hljs-subst">${str}</span>]`</span>);  <span class="hljs-comment">// &quot;str=[   Hello  World ]&quot;</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`str=[<span class="hljs-subst">${str.trim()}</span>]`</span>); <span class="hljs-comment">// &quot;str=[Hello  World]&quot;</span>
 </code></pre>
 <hr>
-<h3 id="search-string-position"><a name="search-string-position" class="anchor-navigation-ex-anchor" href="#search-string-position"><i class="fa fa-link" aria-hidden="true"></i></a>Search string position</h3>
-<h4 id="indexof"><a name="indexof" class="anchor-navigation-ex-anchor" href="#indexof"><i class="fa fa-link" aria-hidden="true"></i></a>indexOf()</h4>
-<h4 id="lastindexof"><a name="lastindexof" class="anchor-navigation-ex-anchor" href="#lastindexof"><i class="fa fa-link" aria-hidden="true"></i></a>lastIndexOf()</h4>
-<p>&#x200B;````js
-var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;
-console.log( str.indexOf(&quot;locate&quot;) ); //7
-console.log( str.lastIndexOf(&quot;locate&quot;) ); //21</p>
-<p>//return -1 if the text is not found.
-console.log( str.indexOf(&quot;abc&quot;) ); //-1
-console.log( str.lastIndexOf(&quot;abc&quot;) ); //-1</p>
-<p>//Both methods accept a second parameter as the starting position for the search:
-console.log( str.indexOf(&quot;locate&quot;, 10) ); //21 (start at [10] and forward)
-console.log( str.lastIndexOf(&quot;locate&quot;, 10) ); //7 (start at [10] and backward)</p>
-<pre><code>
+<h2 id="search-string-position"><a name="search-string-position" class="anchor-navigation-ex-anchor" href="#search-string-position"><i class="fa fa-link" aria-hidden="true"></i></a>3. Search string position</h2>
+<h3 id="indexof"><a name="indexof" class="anchor-navigation-ex-anchor" href="#indexof"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. indexOf()</h3>
+<h3 id="lastindexof"><a name="lastindexof" class="anchor-navigation-ex-anchor" href="#lastindexof"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. lastIndexOf()</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;Please locate where &apos;locate&apos; occurs!&quot;</span>;
+<span class="hljs-built_in">console</span>.log( str.indexOf(<span class="hljs-string">&quot;locate&quot;</span>) ); <span class="hljs-comment">//7</span>
+<span class="hljs-built_in">console</span>.log( str.lastIndexOf(<span class="hljs-string">&quot;locate&quot;</span>) ); <span class="hljs-comment">//21</span>
 
+<span class="hljs-comment">//return -1 if the text is not found.</span>
+<span class="hljs-built_in">console</span>.log( str.indexOf(<span class="hljs-string">&quot;abc&quot;</span>) ); <span class="hljs-comment">//-1</span>
+<span class="hljs-built_in">console</span>.log( str.lastIndexOf(<span class="hljs-string">&quot;abc&quot;</span>) ); <span class="hljs-comment">//-1</span>
 
-#### search()
-
-&gt; search() &#x548C; indexOf() &#x5F88;&#x50CF;&#xFF0C;&#x5DEE;&#x5225;&#x5728;&#x65BC; search() &#x4E0D;&#x80FD;&#x8A2D;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x53C3;&#x6578;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x652F;&#x63F4;&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F;
-
-&#x200B;````js
-console.log( str.search(&quot;locate&quot;) ); //7
-</code></pre><hr>
-<h3 id="extract-string"><a name="extract-string" class="anchor-navigation-ex-anchor" href="#extract-string"><i class="fa fa-link" aria-hidden="true"></i></a>Extract string</h3>
-<h4 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>slice()</h4>
+<span class="hljs-comment">//Both methods accept a second parameter as the starting position for the search:</span>
+<span class="hljs-built_in">console</span>.log( str.indexOf(<span class="hljs-string">&quot;locate&quot;</span>, <span class="hljs-number">10</span>) ); <span class="hljs-comment">//21 (start at [10] and forward)</span>
+<span class="hljs-built_in">console</span>.log( str.lastIndexOf(<span class="hljs-string">&quot;locate&quot;</span>, <span class="hljs-number">10</span>) ); <span class="hljs-comment">//7 (start at [10] and backward)</span>
+</code></pre>
+<h3 id="search"><a name="search" class="anchor-navigation-ex-anchor" href="#search"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. search()</h3>
+<blockquote>
+<p>search() &#x548C; indexOf() &#x5F88;&#x50CF;&#xFF0C;&#x5DEE;&#x5225;&#x5728;&#x65BC; search() &#x4E0D;&#x80FD;&#x8A2D;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x53C3;&#x6578;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x652F;&#x63F4;&#x6B63;&#x898F;&#x8868;&#x793A;&#x5F0F;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log( str.search(<span class="hljs-string">&quot;locate&quot;</span>) ); <span class="hljs-comment">//7</span>
+</code></pre>
+<hr>
+<h2 id="extract-string"><a name="extract-string" class="anchor-navigation-ex-anchor" href="#extract-string"><i class="fa fa-link" aria-hidden="true"></i></a>4. Extract string</h2>
+<h3 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. slice()</h3>
 <p><code>slice(startIndex, endIndex)</code></p>
 <blockquote>
 <ol>
@@ -874,7 +873,7 @@ console.log( str.search(&quot;locate&quot;) ); //7
 <span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-1</span>, <span class="hljs-number">-10</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
 <span class="hljs-built_in">console</span>.log( str.slice(<span class="hljs-number">-1</span>, <span class="hljs-number">1</span>) ); <span class="hljs-comment">//&quot;&quot;</span>
 </code></pre>
-<h4 id="substring"><a name="substring" class="anchor-navigation-ex-anchor" href="#substring"><i class="fa fa-link" aria-hidden="true"></i></a>substring()</h4>
+<h3 id="substring"><a name="substring" class="anchor-navigation-ex-anchor" href="#substring"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. substring()</h3>
 <p><code>substring(startIndex, endIndex)</code></p>
 <p>endIndex &#x4E0D;&#x542B;</p>
 <blockquote>
@@ -896,7 +895,7 @@ console.log( str.search(&quot;locate&quot;) ); //7
 
 <span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">12</span>, <span class="hljs-number">1</span>) ); <span class="hljs-comment">//&quot;pple,Banana&quot;</span>
 </code></pre>
-<h4 id="substr"><a name="substr" class="anchor-navigation-ex-anchor" href="#substr"><i class="fa fa-link" aria-hidden="true"></i></a>substr()</h4>
+<h3 id="substr"><a name="substr" class="anchor-navigation-ex-anchor" href="#substr"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. substr()</h3>
 <p><code>substr(startIndex, length)</code></p>
 <blockquote>
 <p>length &#x4E0D;&#x80FD;&#x8655;&#x7406;&#x8CA0;&#x6578;</p>
@@ -915,7 +914,7 @@ console.log( str.search(&quot;locate&quot;) ); //7
 <span class="hljs-built_in">console</span>.log( str.substring(<span class="hljs-number">7</span>, <span class="hljs-number">-3</span>) ); <span class="hljs-comment">//&quot;Apple,B&quot;</span>
 </code></pre>
 <hr>
-<h3 id="extract-characters"><a name="extract-characters" class="anchor-navigation-ex-anchor" href="#extract-characters"><i class="fa fa-link" aria-hidden="true"></i></a>Extract characters</h3>
+<h2 id="extract-characters"><a name="extract-characters" class="anchor-navigation-ex-anchor" href="#extract-characters"><i class="fa fa-link" aria-hidden="true"></i></a>5. Extract characters</h2>
 <ul>
 <li><strong>Safe</strong> methods for extracting string characters: <code>charAt()</code>, <code>charCodeAt()</code></li>
 <li>Accessing a String as an Array is <strong>Unsafe</strong> and <strong>Unpredictable</strong><ul>
@@ -940,8 +939,8 @@ console.log( str.search(&quot;locate&quot;) ); //7
 str[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;C&quot;</span>; <span class="hljs-comment">// not work</span>
 <span class="hljs-built_in">console</span>.log( str ); <span class="hljs-comment">//&quot;HELLO WORLD&quot;</span>
 </code></pre>
-<h4 id="charat"><a name="charat" class="anchor-navigation-ex-anchor" href="#charat"><i class="fa fa-link" aria-hidden="true"></i></a>charAt()</h4>
-<h4 id="charcodeat"><a name="charcodeat" class="anchor-navigation-ex-anchor" href="#charcodeat"><i class="fa fa-link" aria-hidden="true"></i></a>charCodeAt()</h4>
+<h3 id="charat"><a name="charat" class="anchor-navigation-ex-anchor" href="#charat"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. charAt()</h3>
+<h3 id="charcodeat"><a name="charcodeat" class="anchor-navigation-ex-anchor" href="#charcodeat"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. charCodeAt()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> str = <span class="hljs-string">&quot;HELLO WORLD&quot;</span>;
 <span class="hljs-built_in">console</span>.log( str.charAt(<span class="hljs-number">0</span>) ); <span class="hljs-comment">// &quot;H&quot;</span>
 <span class="hljs-built_in">console</span>.log( str.charAt(<span class="hljs-number">-1</span>) );  <span class="hljs-comment">// &quot;&quot;</span>
@@ -952,8 +951,8 @@ str[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;C&quot
 <span class="hljs-built_in">console</span>.log( str.charCodeAt(<span class="hljs-number">100</span>) );  <span class="hljs-comment">//NaN</span>
 </code></pre>
 <hr>
-<h3 id="replace-string"><a name="replace-string" class="anchor-navigation-ex-anchor" href="#replace-string"><i class="fa fa-link" aria-hidden="true"></i></a>Replace string</h3>
-<h4 id="replace"><a name="replace" class="anchor-navigation-ex-anchor" href="#replace"><i class="fa fa-link" aria-hidden="true"></i></a>replace()</h4>
+<h2 id="replace-string"><a name="replace-string" class="anchor-navigation-ex-anchor" href="#replace-string"><i class="fa fa-link" aria-hidden="true"></i></a>6. Replace string</h2>
+<h3 id="replace"><a name="replace" class="anchor-navigation-ex-anchor" href="#replace"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. replace()</h3>
 <p><code>replace(searchStr, newStr)</code></p>
 <blockquote>
 <p>By default:</p>
@@ -977,16 +976,16 @@ str[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;C&quot
 <span class="hljs-built_in">console</span>.log( str.replace(<span class="hljs-regexp">/bOnD/ig</span>, <span class="hljs-string">&quot;Hunt&quot;</span>) ); <span class="hljs-comment">//&quot;I&apos;m Hunt. James Hunt.&quot;</span>
 </code></pre>
 <hr>
-<h3 id="upper-and-lower-case"><a name="upper-and-lower-case" class="anchor-navigation-ex-anchor" href="#upper-and-lower-case"><i class="fa fa-link" aria-hidden="true"></i></a>Upper and Lower Case</h3>
-<h4 id="touppercase"><a name="touppercase" class="anchor-navigation-ex-anchor" href="#touppercase"><i class="fa fa-link" aria-hidden="true"></i></a>toUpperCase()</h4>
-<h4 id="tolowercase"><a name="tolowercase" class="anchor-navigation-ex-anchor" href="#tolowercase"><i class="fa fa-link" aria-hidden="true"></i></a>toLowerCase()</h4>
+<h2 id="upper-and-lower-case"><a name="upper-and-lower-case" class="anchor-navigation-ex-anchor" href="#upper-and-lower-case"><i class="fa fa-link" aria-hidden="true"></i></a>7. Upper and Lower Case</h2>
+<h3 id="touppercase"><a name="touppercase" class="anchor-navigation-ex-anchor" href="#touppercase"><i class="fa fa-link" aria-hidden="true"></i></a>7.1. toUpperCase()</h3>
+<h3 id="tolowercase"><a name="tolowercase" class="anchor-navigation-ex-anchor" href="#tolowercase"><i class="fa fa-link" aria-hidden="true"></i></a>7.2. toLowerCase()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> txt = <span class="hljs-string">&quot;Hello World!&quot;</span>;
 <span class="hljs-built_in">console</span>.log( txt.toUpperCase() ); <span class="hljs-comment">//&quot;HELLO WORLD!&quot;</span>
 <span class="hljs-built_in">console</span>.log( txt.toLowerCase() ); <span class="hljs-comment">//&quot;hello world!&quot;</span>
 </code></pre>
 <hr>
-<h3 id="concat-string"><a name="concat-string" class="anchor-navigation-ex-anchor" href="#concat-string"><i class="fa fa-link" aria-hidden="true"></i></a>Concat string</h3>
-<h4 id="concat"><a name="concat" class="anchor-navigation-ex-anchor" href="#concat"><i class="fa fa-link" aria-hidden="true"></i></a>concat()</h4>
+<h2 id="concat-string"><a name="concat-string" class="anchor-navigation-ex-anchor" href="#concat-string"><i class="fa fa-link" aria-hidden="true"></i></a>8. Concat string</h2>
+<h3 id="concat"><a name="concat" class="anchor-navigation-ex-anchor" href="#concat"><i class="fa fa-link" aria-hidden="true"></i></a>8.1. concat()</h3>
 <blockquote>
 <p>The same function as plus the operator(+).</p>
 </blockquote>
@@ -994,15 +993,16 @@ str[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;C&quot
 <span class="hljs-built_in">console</span>.log( <span class="hljs-string">&quot;Hello&quot;</span>.concat(<span class="hljs-string">&quot; &quot;</span>, <span class="hljs-string">&quot;World!&quot;</span>) ); <span class="hljs-comment">//&quot;Hello World!&quot;</span>
 </code></pre>
 <hr>
-<h3 id="string-to-array"><a name="string-to-array" class="anchor-navigation-ex-anchor" href="#string-to-array"><i class="fa fa-link" aria-hidden="true"></i></a>String to Array</h3>
-<h4 id="split"><a name="split" class="anchor-navigation-ex-anchor" href="#split"><i class="fa fa-link" aria-hidden="true"></i></a>split()</h4>
+<h2 id="string-to-array"><a name="string-to-array" class="anchor-navigation-ex-anchor" href="#string-to-array"><i class="fa fa-link" aria-hidden="true"></i></a>9. String to Array</h2>
+<h3 id="split"><a name="split" class="anchor-navigation-ex-anchor" href="#split"><i class="fa fa-link" aria-hidden="true"></i></a>9.1. split()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> txt = <span class="hljs-string">&quot;a,b,c,d,e&quot;</span>;
 <span class="hljs-built_in">console</span>.log( txt.split(<span class="hljs-string">&quot;,&quot;</span>) ); <span class="hljs-comment">// =&gt; [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;] (Array, length=5)</span>
 <span class="hljs-built_in">console</span>.log( txt.split(<span class="hljs-string">&quot; &quot;</span>) ); <span class="hljs-comment">// =&gt; [&quot;a,b,c,d,e&quot;] (Array, length=1)</span>
 <span class="hljs-built_in">console</span>.log( txt.split(<span class="hljs-string">&quot;&quot;</span>) );  <span class="hljs-comment">// =&gt; [&quot;a&quot;, &quot;,&quot;, &quot;b&quot;, &quot;,&quot;, &quot;c&quot;, &quot;,&quot;, &quot;d&quot;, &quot;,&quot;, &quot;e&quot;] (Array, length=9)</span>
 </code></pre>
 <hr>
-<h3 id="format-string"><a name="format-string" class="anchor-navigation-ex-anchor" href="#format-string"><i class="fa fa-link" aria-hidden="true"></i></a>Format String</h3>
+<h2 id="format-string"><a name="format-string" class="anchor-navigation-ex-anchor" href="#format-string"><i class="fa fa-link" aria-hidden="true"></i></a>10. Format String</h2>
+<h3 id="example-for-&#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x88DC;-0"><a name="example-for-&#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x88DC;-0" class="anchor-navigation-ex-anchor" href="#example-for-&#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x88DC;-0"><i class="fa fa-link" aria-hidden="true"></i></a>10.1. Example for &#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x88DC; 0</h3>
 <p>Ref: <a href="https://dotblogs.com.tw/aquarius6913/2011/05/10/24655" target="_blank"> [JavaScript] &#x66FF;&#x6578;&#x5B57;&#x3001;&#x6587;&#x5B57;&#x5728;&#x7279;&#x5B9A;&#x9577;&#x5EA6;&#x4E2D;&#x88DC;0 </a></p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">paddingLeft</span>(<span class="hljs-params">str,lenght</span>)</span>{
   str = <span class="hljs-string">&apos;&apos;</span> + str; <span class="hljs-comment">//&#x6539;&#x826F;&#xFF0C;&#x4EE5;&#x9632;&#x4E1F;&#x9032;&#x4F86;&#x7684;&#x662F;&#x6578;&#x5B57;&#x4E0D;&#x662F;&#x5B57;&#x4E32; (&#x5982;&#x679C;&#x662F;&#x6578;&#x5B57;: str.length= undefined)</span>
@@ -1059,7 +1059,7 @@ str[<span class="hljs-number">0</span>] = <span class="hljs-string">&quot;C&quot
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"String API","level":"6.15","depth":1,"previous":{"title":"Object API","level":"6.14","depth":1,"path":"api/object-api.md","ref":"./api/object-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/string-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"String API","level":"6.15","depth":1,"previous":{"title":"Object API","level":"6.14","depth":1,"path":"api/object-api.md","ref":"./api/object-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/string-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

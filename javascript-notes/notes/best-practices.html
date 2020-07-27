@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,8 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-best-practices"><b></b>JS Best Practices</a></li><ul><li><span class="title-icon "></span><a href="#avoid-global-variables"><b></b>Avoid global variables</a></li><li><span class="title-icon "></span><a href="#declarations-on-top"><b></b>Declarations on Top</a></li><li><span class="title-icon "></span><a href="#initialize-variables"><b></b>Initialize Variables</a></li><li><span class="title-icon "></span><a href="#avoid-new"><b></b>Avoid new</a></li><li><span class="title-icon "></span><a href="#use--comparison"><b></b>Use === Comparison</a></li><li><span class="title-icon "></span><a href="#use-parameter-defaults"><b></b>Use Parameter Defaults</a></li><li><span class="title-icon "></span><a href="#end-your-switches-with-defaults"><b></b>End Your Switches with Defaults</a></li><li><span class="title-icon "></span><a href="#avoid-using-eval"><b></b>Avoid Using eval()</a></li></ul></ul></div><a href="#js-best-practices" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-best-practices"><a name="js-best-practices" class="anchor-navigation-ex-anchor" href="#js-best-practices"><i class="fa fa-link" aria-hidden="true"></i></a>JS Best Practices</h1>
-<h2 id="avoid-global-variables"><a name="avoid-global-variables" class="anchor-navigation-ex-anchor" href="#avoid-global-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Avoid global variables</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-best-practices"><b> </b>JS Best Practices</a></li><ul><li><span class="title-icon "></span><a href="#avoid-global-variables"><b>1. </b>Avoid global variables</a></li><li><span class="title-icon "></span><a href="#declarations-on-top"><b>2. </b>Declarations on Top</a></li><li><span class="title-icon "></span><a href="#initialize-variables"><b>3. </b>Initialize Variables</a></li><li><span class="title-icon "></span><a href="#avoid-new"><b>4. </b>Avoid new</a></li><li><span class="title-icon "></span><a href="#use--comparison"><b>5. </b>Use === Comparison</a></li><li><span class="title-icon "></span><a href="#use-parameter-defaults"><b>6. </b>Use Parameter Defaults</a></li><li><span class="title-icon "></span><a href="#end-your-switches-with-defaults"><b>7. </b>End Your Switches with Defaults</a></li><li><span class="title-icon "></span><a href="#avoid-using-eval"><b>8. </b>Avoid Using eval()</a></li></ul></ul></div><a href="#js-best-practices" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-best-practices"><a name="js-best-practices" class="anchor-navigation-ex-anchor" href="#js-best-practices"><i class="fa fa-link" aria-hidden="true"></i></a> JS Best Practices</h1>
+<h2 id="avoid-global-variables"><a name="avoid-global-variables" class="anchor-navigation-ex-anchor" href="#avoid-global-variables"><i class="fa fa-link" aria-hidden="true"></i></a>1. Avoid global variables</h2>
 <ul>
 <li>Minimize the use of global variables.<ul>
 <li>(includes all data types, objects, and functions)</li>
@@ -820,7 +820,7 @@
 <li>Learn how to use <strong>closures</strong>.</li>
 </ul>
 <hr>
-<h2 id="declarations-on-top"><a name="declarations-on-top" class="anchor-navigation-ex-anchor" href="#declarations-on-top"><i class="fa fa-link" aria-hidden="true"></i></a>Declarations on Top</h2>
+<h2 id="declarations-on-top"><a name="declarations-on-top" class="anchor-navigation-ex-anchor" href="#declarations-on-top"><i class="fa fa-link" aria-hidden="true"></i></a>2. Declarations on Top</h2>
 <p>It is a good coding practice to put all declarations at the top of each script or function.</p>
 <p>This will:</p>
 <ul>
@@ -833,7 +833,7 @@
 <p>By default, JavaScript moves all declarations to the top (JavaScript Hoisting).</p>
 </blockquote>
 <hr>
-<h2 id="initialize-variables"><a name="initialize-variables" class="anchor-navigation-ex-anchor" href="#initialize-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Initialize Variables</h2>
+<h2 id="initialize-variables"><a name="initialize-variables" class="anchor-navigation-ex-anchor" href="#initialize-variables"><i class="fa fa-link" aria-hidden="true"></i></a>3. Initialize Variables</h2>
 <p>It is a good coding practice to initialize variables when you declare them.</p>
 <p>This will:</p>
 <ul>
@@ -843,7 +843,7 @@
 </ul>
 <p>Initializing variables provides an idea of the intended use (and intended data type).</p>
 <hr>
-<h2 id="avoid-new"><a name="avoid-new" class="anchor-navigation-ex-anchor" href="#avoid-new"><i class="fa fa-link" aria-hidden="true"></i></a>Avoid <code>new</code></h2>
+<h2 id="avoid-new"><a name="avoid-new" class="anchor-navigation-ex-anchor" href="#avoid-new"><i class="fa fa-link" aria-hidden="true"></i></a>4. Avoid new</h2>
 <p>Never Declare Number, String, or Boolean Objects</p>
 <p>Don&apos;t Use new Object()</p>
 <ul>
@@ -856,17 +856,17 @@
 <li>Use function (){} instead of new Function()</li>
 </ul>
 <hr>
-<h2 id="use--comparison"><a name="use--comparison" class="anchor-navigation-ex-anchor" href="#use--comparison"><i class="fa fa-link" aria-hidden="true"></i></a>Use <code>===</code> Comparison</h2>
+<h2 id="use--comparison"><a name="use--comparison" class="anchor-navigation-ex-anchor" href="#use--comparison"><i class="fa fa-link" aria-hidden="true"></i></a>5. Use === Comparison</h2>
 <p>avoid  <code>==</code></p>
 <hr>
-<h2 id="use-parameter-defaults"><a name="use-parameter-defaults" class="anchor-navigation-ex-anchor" href="#use-parameter-defaults"><i class="fa fa-link" aria-hidden="true"></i></a>Use Parameter Defaults</h2>
+<h2 id="use-parameter-defaults"><a name="use-parameter-defaults" class="anchor-navigation-ex-anchor" href="#use-parameter-defaults"><i class="fa fa-link" aria-hidden="true"></i></a>6. Use Parameter Defaults</h2>
 <p>refer to section: Function Parameter Defaults</p>
 <hr>
-<h2 id="end-your-switches-with-defaults"><a name="end-your-switches-with-defaults" class="anchor-navigation-ex-anchor" href="#end-your-switches-with-defaults"><i class="fa fa-link" aria-hidden="true"></i></a>End Your Switches with Defaults</h2>
+<h2 id="end-your-switches-with-defaults"><a name="end-your-switches-with-defaults" class="anchor-navigation-ex-anchor" href="#end-your-switches-with-defaults"><i class="fa fa-link" aria-hidden="true"></i></a>7. End Your Switches with Defaults</h2>
 <p>Always end your switch statements with a default.
 Even if you think there is no need for it.</p>
 <hr>
-<h2 id="avoid-using-eval"><a name="avoid-using-eval" class="anchor-navigation-ex-anchor" href="#avoid-using-eval"><i class="fa fa-link" aria-hidden="true"></i></a>Avoid Using eval()</h2>
+<h2 id="avoid-using-eval"><a name="avoid-using-eval" class="anchor-navigation-ex-anchor" href="#avoid-using-eval"><i class="fa fa-link" aria-hidden="true"></i></a>8. Avoid Using eval()</h2>
 <p>The eval() function is used to run text as code.
 In almost all cases, it should not be necessary to use it.
 Because it allows arbitrary code to be run, it also represents a security problem.</p>
@@ -914,7 +914,7 @@ Because it allows arbitrary code to be run, it also represents a security proble
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Best Practices","level":"4.1","depth":1,"next":{"title":"JS Performance","level":"4.2","depth":1,"path":"notes/performance.md","ref":"./notes/performance.md","articles":[]},"previous":{"title":"JS Magic JavaScript","level":"3.6","depth":1,"path":"notes/magic-js.md","ref":"./notes/magic-js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/best-practices.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Best Practices","level":"4.1","depth":1,"next":{"title":"JS Performance","level":"4.2","depth":1,"path":"notes/performance.md","ref":"./notes/performance.md","articles":[]},"previous":{"title":"JS Magic JavaScript","level":"3.6","depth":1,"path":"notes/magic-js.md","ref":"./notes/magic-js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/best-practices.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

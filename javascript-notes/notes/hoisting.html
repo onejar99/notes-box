@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,9 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;"><b></b>JS Hoisting (&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;)</a></li><ul><li><span class="title-icon "></span><a href="#js-javascript-declarations-are-hoisted"><b></b>JS JavaScript Declarations are Hoisted</a></li><li><span class="title-icon "></span><a href="#variable-examples"><b></b>Variable Examples</a></li><li><span class="title-icon "></span><a href="#function-examples"><b></b>Function Examples</a></li><li><span class="title-icon "></span><a href="#declare-your-variables-at-the-top-of-every-scope-"><b></b>Declare Your Variables At the Top of Every Scope !</a></li></ul></ul></div><a href="#js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;"><a name="js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>JS Hoisting (&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;)</h1>
-<p>[TOC]</p>
-<h2 id="js-javascript-declarations-are-hoisted"><a name="js-javascript-declarations-are-hoisted" class="anchor-navigation-ex-anchor" href="#js-javascript-declarations-are-hoisted"><i class="fa fa-link" aria-hidden="true"></i></a>JS JavaScript Declarations are Hoisted</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;"><b> </b>JS Hoisting (&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;)</a></li><ul><li><span class="title-icon "></span><a href="#js-javascript-declarations-are-hoisted"><b>1. </b>JS JavaScript Declarations are Hoisted</a></li><li><span class="title-icon "></span><a href="#variable-examples"><b>2. </b>Variable Examples</a></li><li><span class="title-icon "></span><a href="#function-examples"><b>3. </b>Function Examples</a></li><li><span class="title-icon "></span><a href="#declare-your-variables-at-the-top-of-every-scope-"><b>4. </b>Declare Your Variables At the Top of Every Scope !</a></li></ul></ul></div><a href="#js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;"><a name="js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#js-hoisting-&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a> JS Hoisting (&#x5BA3;&#x544A;&#x7F6E;&#x9802;&#x6548;&#x679C;)</h1>
+<h2 id="js-javascript-declarations-are-hoisted"><a name="js-javascript-declarations-are-hoisted" class="anchor-navigation-ex-anchor" href="#js-javascript-declarations-are-hoisted"><i class="fa fa-link" aria-hidden="true"></i></a>1. JS JavaScript Declarations are Hoisted</h2>
 <ol>
 <li>&#x70BA;&#x4EC0;&#x9EBC; JS &#x8B8A;&#x6578;&#x53EF;&#x4EE5;&#x5728;&#x5BA3;&#x544A;(&#x6307;&#x6709;&#x5BA3;&#x544A;&#x52D5;&#x4F5C;&#xFF0C;&#x5982;<code>var</code>)&#x4E4B;&#x524D;&#x5C31;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x6703;&#x62CB;&#x932F;&#xFF1F; =&gt; <strong>Hoisting</strong><ul>
 <li>&#x4F46;&#x5982;&#x679C;&#x59CB;&#x7D42;&#x6C92;&#x6709;&#x5BA3;&#x544A;&#x904E;&#xFF0C;&#x4ECD;&#x6703;&#x62CB;&#x932F;&#xFF0C;&#x5982; Variable Case 2 &#x4F8B;&#x5B50;</li>
@@ -829,7 +828,7 @@
 </li>
 </ol>
 <hr>
-<h2 id="variable-examples"><a name="variable-examples" class="anchor-navigation-ex-anchor" href="#variable-examples"><i class="fa fa-link" aria-hidden="true"></i></a>Variable Examples</h2>
+<h2 id="variable-examples"><a name="variable-examples" class="anchor-navigation-ex-anchor" href="#variable-examples"><i class="fa fa-link" aria-hidden="true"></i></a>2. Variable Examples</h2>
 <p>Variable Case 1:</p>
 <pre><code class="lang-js">x = <span class="hljs-number">10</span>;
 y = <span class="hljs-number">7</span>;
@@ -856,7 +855,7 @@ y = <span class="hljs-number">7</span>;
 <span class="hljs-comment">// &quot;10 undefined&quot;</span>
 </code></pre>
 <hr>
-<h2 id="function-examples"><a name="function-examples" class="anchor-navigation-ex-anchor" href="#function-examples"><i class="fa fa-link" aria-hidden="true"></i></a>Function Examples</h2>
+<h2 id="function-examples"><a name="function-examples" class="anchor-navigation-ex-anchor" href="#function-examples"><i class="fa fa-link" aria-hidden="true"></i></a>3. Function Examples</h2>
 <p>Function Case 1:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log( myFun1() );
 
@@ -889,7 +888,7 @@ y = <span class="hljs-number">7</span>;
 <span class="hljs-comment">//******result*******</span>
 <span class="hljs-comment">//&quot;Hi&quot;</span>
 </code></pre>
-<h2 id="declare-your-variables-at-the-top-of-every-scope-"><a name="declare-your-variables-at-the-top-of-every-scope-" class="anchor-navigation-ex-anchor" href="#declare-your-variables-at-the-top-of-every-scope-"><i class="fa fa-link" aria-hidden="true"></i></a>Declare Your Variables At the Top of Every Scope !</h2>
+<h2 id="declare-your-variables-at-the-top-of-every-scope-"><a name="declare-your-variables-at-the-top-of-every-scope-" class="anchor-navigation-ex-anchor" href="#declare-your-variables-at-the-top-of-every-scope-"><i class="fa fa-link" aria-hidden="true"></i></a>4. Declare Your Variables At the Top of Every Scope !</h2>
 <blockquote>
 <p>JavaScript in strict mode does not allow variables to be used if they are not declared.</p>
 </blockquote>
@@ -936,7 +935,7 @@ y = <span class="hljs-number">7</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Hoisting (宣告置頂效果)","level":"2.5","depth":1,"next":{"title":"JS Events","level":"2.6","depth":1,"path":"notes/events.md","ref":"./notes/events.md","articles":[]},"previous":{"title":"JS Errors - Throw and Try to Catch","level":"2.4","depth":1,"path":"notes/errors.md","ref":"./notes/errors.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/hoisting.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Hoisting (宣告置頂效果)","level":"2.5","depth":1,"next":{"title":"JS Events","level":"2.6","depth":1,"path":"notes/events.md","ref":"./notes/events.md","articles":[]},"previous":{"title":"JS Errors - Throw and Try to Catch","level":"2.4","depth":1,"path":"notes/errors.md","ref":"./notes/errors.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/hoisting.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -371,7 +371,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,9 +803,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#ajax-api-xmlhttprequest"><b></b>Ajax API (XMLHttpRequest)</a></li><ul><li><span class="title-icon "></span><a href="#examples"><b></b>Examples:</a></li><li><span class="title-icon "></span><a href="#request-methods"><b></b>Request Methods</a></li><li><span class="title-icon "></span><a href="#setrequestheader"><b></b>setRequestHeader()</a></li><li><span class="title-icon "></span><a href="#request-properties"><b></b>Request Properties</a></li><li><span class="title-icon "></span><a href="#response-properties"><b></b>Response Properties</a></li><li><span class="title-icon "></span><a href="#response-methods"><b></b>Response Methods</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="ajax-api-xmlhttprequest"><a name="ajax-api-xmlhttprequest" class="anchor-navigation-ex-anchor" href="#ajax-api-xmlhttprequest"><i class="fa fa-link" aria-hidden="true"></i></a>Ajax API (XMLHttpRequest)</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ajax-api-xmlhttprequest"><b> </b>Ajax API (XMLHttpRequest)</a></li><ul><li><span class="title-icon "></span><a href="#examples"><b>1. </b>Examples:</a></li><li><span class="title-icon "></span><a href="#request-methods"><b>2. </b>Request Methods</a></li><ul><li><span class="title-icon "></span><a href="#open"><b>2.1. </b>open()</a></li><li><span class="title-icon "></span><a href="#send"><b>2.2. </b>send()</a></li><li><span class="title-icon "></span><a href="#setrequestheader"><b>2.3. </b>setRequestHeader()</a></li></ul><li><span class="title-icon "></span><a href="#request-properties"><b>3. </b>Request Properties</a></li><ul><li><span class="title-icon "></span><a href="#readystate"><b>3.1. </b>readyState</a></li><li><span class="title-icon "></span><a href="#onreadystatechange"><b>3.2. </b>onreadystatechange</a></li><li><span class="title-icon "></span><a href="#status--statustext"><b>3.3. </b>status &amp; statusText</a></li></ul><li><span class="title-icon "></span><a href="#response-properties"><b>4. </b>Response Properties</a></li><ul><li><span class="title-icon "></span><a href="#responsetext"><b>4.1. </b>responseText</a></li><li><span class="title-icon "></span><a href="#responsexml"><b>4.2. </b>responseXML</a></li></ul><li><span class="title-icon "></span><a href="#response-methods"><b>5. </b>Response Methods</a></li><ul><li><span class="title-icon "></span><a href="#getresponseheader"><b>5.1. </b>getResponseHeader()</a></li><li><span class="title-icon "></span><a href="#getallresponseheaders"><b>5.2. </b>getAllResponseHeaders()</a></li></ul></ul></ul></div><a href="#ajax-api-xmlhttprequest" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ajax-api-xmlhttprequest"><a name="ajax-api-xmlhttprequest" class="anchor-navigation-ex-anchor" href="#ajax-api-xmlhttprequest"><i class="fa fa-link" aria-hidden="true"></i></a> Ajax API (XMLHttpRequest)</h1>
 <p>Ref: <a href="https://www.w3schools.com/js/js_ajax_http.asp" target="_blank">XMLHttpRequest Object Methods &amp; Properties</a></p>
-<h3 id="examples"><a name="examples" class="anchor-navigation-ex-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>Examples:</h3>
+<h2 id="examples"><a name="examples" class="anchor-navigation-ex-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>1. Examples:</h2>
 <blockquote>
 <p>Basic Example for sending request to a Server:
 When readyState is 4 and status is 200, the response is ready:</p>
@@ -843,8 +843,8 @@ xhttp.send();
 <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;demo&quot;</span>).innerHTML = xhttp.responseText;
 </code></pre>
 <hr>
-<h3 id="request-methods"><a name="request-methods" class="anchor-navigation-ex-anchor" href="#request-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Request Methods</h3>
-<h4 id="open"><a name="open" class="anchor-navigation-ex-anchor" href="#open"><i class="fa fa-link" aria-hidden="true"></i></a>open()</h4>
+<h2 id="request-methods"><a name="request-methods" class="anchor-navigation-ex-anchor" href="#request-methods"><i class="fa fa-link" aria-hidden="true"></i></a>2. Request Methods</h2>
+<h3 id="open"><a name="open" class="anchor-navigation-ex-anchor" href="#open"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. open()</h3>
 <p><code>open(method, url, async)</code></p>
 <blockquote>
 <p>Specifies the type of request</p>
@@ -855,7 +855,7 @@ xhttp.send();
 </ul>
 </blockquote>
 <hr>
-<h4 id="send"><a name="send" class="anchor-navigation-ex-anchor" href="#send"><i class="fa fa-link" aria-hidden="true"></i></a>send()</h4>
+<h3 id="send"><a name="send" class="anchor-navigation-ex-anchor" href="#send"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. send()</h3>
 <p><code>send()</code></p>
 <blockquote>
 <p>Sends the request to the server (used for GET)</p>
@@ -871,7 +871,7 @@ xhttp.send();
 </ul>
 </blockquote>
 <hr>
-<h3 id="setrequestheader"><a name="setrequestheader" class="anchor-navigation-ex-anchor" href="#setrequestheader"><i class="fa fa-link" aria-hidden="true"></i></a>setRequestHeader()</h3>
+<h3 id="setrequestheader"><a name="setrequestheader" class="anchor-navigation-ex-anchor" href="#setrequestheader"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. setRequestHeader()</h3>
 <p><code>setRequestHeader(header, value)</code></p>
 <blockquote>
 <p>Adds HTTP headers to the request</p>
@@ -883,8 +883,8 @@ xhttp.send();
 <pre><code class="lang-js">xhttp.setRequestHeader(<span class="hljs-string">&quot;Content-type&quot;</span>, <span class="hljs-string">&quot;application/x-www-form-urlencoded&quot;</span>);
 </code></pre>
 <hr>
-<h3 id="request-properties"><a name="request-properties" class="anchor-navigation-ex-anchor" href="#request-properties"><i class="fa fa-link" aria-hidden="true"></i></a>Request Properties</h3>
-<h4 id="readystate"><a name="readystate" class="anchor-navigation-ex-anchor" href="#readystate"><i class="fa fa-link" aria-hidden="true"></i></a>readyState</h4>
+<h2 id="request-properties"><a name="request-properties" class="anchor-navigation-ex-anchor" href="#request-properties"><i class="fa fa-link" aria-hidden="true"></i></a>3. Request Properties</h2>
+<h3 id="readystate"><a name="readystate" class="anchor-navigation-ex-anchor" href="#readystate"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. readyState</h3>
 <p>holds the status of the XMLHttpRequest</p>
 <ul>
 <li>0: request not initialized</li>
@@ -893,13 +893,13 @@ xhttp.send();
 <li>3: processing request</li>
 <li>4: request finished and response is ready</li>
 </ul>
-<h4 id="onreadystatechange"><a name="onreadystatechange" class="anchor-navigation-ex-anchor" href="#onreadystatechange"><i class="fa fa-link" aria-hidden="true"></i></a>onreadystatechange</h4>
+<h3 id="onreadystatechange"><a name="onreadystatechange" class="anchor-navigation-ex-anchor" href="#onreadystatechange"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. onreadystatechange</h3>
 <p>callback function to be executed when the <code>readyState</code> changes</p>
 <ul>
 <li>The onreadystatechange function is called every time the readyState changes.</li>
 <li>The onreadystatechange event is triggered four times (1-4)</li>
 </ul>
-<h4 id="status--statustext"><a name="status--statustext" class="anchor-navigation-ex-anchor" href="#status--statustext"><i class="fa fa-link" aria-hidden="true"></i></a>status &amp; statusText</h4>
+<h3 id="status--statustext"><a name="status--statustext" class="anchor-navigation-ex-anchor" href="#status--statustext"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. status &amp; statusText</h3>
 <p>holds the status of the XMLHttpRequest object(Http Status)</p>
 <p>E.g.</p>
 <table>
@@ -924,10 +924,10 @@ xhttp.send();
 </tr>
 </tbody>
 </table>
-<h3 id="response-properties"><a name="response-properties" class="anchor-navigation-ex-anchor" href="#response-properties"><i class="fa fa-link" aria-hidden="true"></i></a>Response Properties</h3>
-<h4 id="responsetext"><a name="responsetext" class="anchor-navigation-ex-anchor" href="#responsetext"><i class="fa fa-link" aria-hidden="true"></i></a>responseText</h4>
+<h2 id="response-properties"><a name="response-properties" class="anchor-navigation-ex-anchor" href="#response-properties"><i class="fa fa-link" aria-hidden="true"></i></a>4. Response Properties</h2>
+<h3 id="responsetext"><a name="responsetext" class="anchor-navigation-ex-anchor" href="#responsetext"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. responseText</h3>
 <p>get the response data as a string</p>
-<h4 id="responsexml"><a name="responsexml" class="anchor-navigation-ex-anchor" href="#responsexml"><i class="fa fa-link" aria-hidden="true"></i></a>responseXML</h4>
+<h3 id="responsexml"><a name="responsexml" class="anchor-navigation-ex-anchor" href="#responsexml"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. responseXML</h3>
 <p>get the response data as XML data</p>
 <ul>
 <li>The XML HttpRequest object has an in-built XML parser.</li>
@@ -991,14 +991,14 @@ xhttp.send();
 .......
 <span class="hljs-tag">&lt;/<span class="hljs-name">CATALOG</span>&gt;</span>
 </code></pre>
-<h3 id="response-methods"><a name="response-methods" class="anchor-navigation-ex-anchor" href="#response-methods"><i class="fa fa-link" aria-hidden="true"></i></a>Response Methods</h3>
-<h4 id="getresponseheader"><a name="getresponseheader" class="anchor-navigation-ex-anchor" href="#getresponseheader"><i class="fa fa-link" aria-hidden="true"></i></a>getResponseHeader()</h4>
+<h2 id="response-methods"><a name="response-methods" class="anchor-navigation-ex-anchor" href="#response-methods"><i class="fa fa-link" aria-hidden="true"></i></a>5. Response Methods</h2>
+<h3 id="getresponseheader"><a name="getresponseheader" class="anchor-navigation-ex-anchor" href="#getresponseheader"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. getResponseHeader()</h3>
 <p><code>getResponseHeader(headerName)</code></p>
 <p>Returns specific header information from the server resource</p>
 <p>E.g.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">this</span>.getResponseHeader(<span class="hljs-string">&quot;Last-Modified&quot;</span>);
 </code></pre>
-<h4 id="getallresponseheaders"><a name="getallresponseheaders" class="anchor-navigation-ex-anchor" href="#getallresponseheaders"><i class="fa fa-link" aria-hidden="true"></i></a>getAllResponseHeaders()</h4>
+<h3 id="getallresponseheaders"><a name="getallresponseheaders" class="anchor-navigation-ex-anchor" href="#getallresponseheaders"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. getAllResponseHeaders()</h3>
 <p>Returns all the header information from the server resource</p>
 <p>returned such as:</p>
 <pre><code>date: Wed, 24 Jan 2018 08:13:09 GMT content-encoding: gzip vary: Accept-Encoding last-modified: Tue, 18 Jul 2017 16:14:29 GMT server: ECS (khh/0477) age: 0 x-powered-by: ASP.NET etag: &quot;15bfdeee0ffd21:0&quot; x-frame-options: SAMEORIGIN x-cache: HIT content-type: text/plain cache-control: public,max-age=14400,public connection: Keep-Alive accept-ranges: bytes content-length: 245
@@ -1045,7 +1045,7 @@ xhttp.send();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ajax API (XMLHttpRequest)","level":"6.2","depth":1,"next":{"title":"Array API","level":"6.3","depth":1,"path":"api/array-api.md","ref":"./api/array-api.md","articles":[]},"previous":{"title":"API Intro","level":"6.1","depth":1,"path":"api/intro.md","ref":"./api/intro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/ajax-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ajax API (XMLHttpRequest)","level":"6.2","depth":1,"next":{"title":"Array API","level":"6.3","depth":1,"path":"api/array-api.md","ref":"./api/array-api.md","articles":[]},"previous":{"title":"API Intro","level":"6.1","depth":1,"path":"api/intro.md","ref":"./api/intro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/ajax-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

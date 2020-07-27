@@ -371,7 +371,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,18 +803,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#array-api"><b></b>Array API</a></li><ul><li><span class="title-icon "></span><a href="#array-properties"><b></b>Array Properties</a></li><li><span class="title-icon "></span><a href="#is-array"><b></b>Is Array</a></li><li><span class="title-icon "></span><a href="#to-string"><b></b>To String</a></li><li><span class="title-icon "></span><a href="#add-elements"><b></b>Add Elements</a></li><li><span class="title-icon "></span><a href="#remove-elements"><b></b>Remove Elements</a></li><li><span class="title-icon "></span><a href="#splice-add--remove-elements-once"><b></b>Splice (Add &amp; Remove Elements Once)</a></li><li><span class="title-icon "></span><a href="#merge-arrays"><b></b>Merge Arrays</a></li><li><span class="title-icon "></span><a href="#fetch-sub-array"><b></b>Fetch Sub-Array</a></li><li><span class="title-icon "></span><a href="#find-max-and-min"><b></b>Find Max and Min</a></li><li><span class="title-icon "></span><a href="#search"><b></b>Search</a></li><li><span class="title-icon "></span><a href="#sort"><b></b>Sort</a></li><li><span class="title-icon "></span><a href="#each-process"><b></b>Each Process</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="array-api"><a name="array-api" class="anchor-navigation-ex-anchor" href="#array-api"><i class="fa fa-link" aria-hidden="true"></i></a>Array API</h2>
-<h3 id="array-properties"><a name="array-properties" class="anchor-navigation-ex-anchor" href="#array-properties"><i class="fa fa-link" aria-hidden="true"></i></a>Array Properties</h3>
-<h4 id="length"><a name="length" class="anchor-navigation-ex-anchor" href="#length"><i class="fa fa-link" aria-hidden="true"></i></a>length</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#array-api"><b> </b>Array API</a></li><ul><li><span class="title-icon "></span><a href="#array-properties"><b>1. </b>Array Properties</a></li><ul><li><span class="title-icon "></span><a href="#length"><b>1.1. </b>length</a></li></ul><li><span class="title-icon "></span><a href="#is-array"><b>2. </b>Is Array</a></li><ul><li><span class="title-icon "></span><a href="#built-in-isarray"><b>2.1. </b>Built-in isArray()</a></li><li><span class="title-icon "></span><a href="#self-defined-isarray-via-constructor"><b>2.2. </b>Self-Defined isArray() via constructor</a></li><li><span class="title-icon "></span><a href="#instanceof-array"><b>2.3. </b>instanceof Array</a></li></ul><li><span class="title-icon "></span><a href="#to-string"><b>3. </b>To String</a></li><ul><li><span class="title-icon "></span><a href="#tostring"><b>3.1. </b>toString()</a></li><li><span class="title-icon "></span><a href="#join"><b>3.2. </b>join()</a></li></ul><li><span class="title-icon "></span><a href="#add-elements"><b>4. </b>Add Elements</a></li><ul><li><span class="title-icon "></span><a href="#push"><b>4.1. </b>push()</a></li><li><span class="title-icon "></span><a href="#unshift"><b>4.2. </b>unshift()</a></li><li><span class="title-icon "></span><a href="#directly-assignappend-via-index"><b>4.3. </b>directly assign/append via index</a></li></ul><li><span class="title-icon "></span><a href="#remove-elements"><b>5. </b>Remove Elements</a></li><ul><li><span class="title-icon "></span><a href="#pop"><b>5.1. </b>pop()</a></li><li><span class="title-icon "></span><a href="#shift"><b>5.2. </b>shift()</a></li><li><span class="title-icon "></span><a href="#using-delete"><b>5.3. </b>using delete</a></li></ul><li><span class="title-icon "></span><a href="#splice-add--remove-elements-once"><b>6. </b>Splice (Add &amp; Remove Elements Once)</a></li><ul><li><span class="title-icon "></span><a href="#splice"><b>6.1. </b>splice()</a></li></ul><li><span class="title-icon "></span><a href="#merge-arrays"><b>7. </b>Merge Arrays</a></li><ul><li><span class="title-icon "></span><a href="#concat"><b>7.1. </b>concat()</a></li></ul><li><span class="title-icon "></span><a href="#fetch-sub-array"><b>8. </b>Fetch Sub-Array</a></li><ul><li><span class="title-icon "></span><a href="#slice"><b>8.1. </b>slice()</a></li></ul><li><span class="title-icon "></span><a href="#find-max-and-min"><b>9. </b>Find Max and Min</a></li><ul><li><span class="title-icon "></span><a href="#1-using-sort"><b>9.1. </b>1. using sort()</a></li><li><span class="title-icon "></span><a href="#2-using-mathmaxapply"><b>9.2. </b>2. using Math.max().apply()</a></li><li><span class="title-icon "></span><a href="#3-using-arrayprototypereduce"><b>9.3. </b>3. using Array.prototype.reduce()</a></li><li><span class="title-icon "></span><a href="#4-using-home-made-method"><b>9.4. </b>4. using &quot;home made&quot; method</a></li></ul><li><span class="title-icon "></span><a href="#search"><b>10. </b>Search</a></li><ul><li><span class="title-icon "></span><a href="#indexof"><b>10.1. </b>indexOf()</a></li><li><span class="title-icon "></span><a href="#lastindexof"><b>10.2. </b>lastIndexOf()</a></li><li><span class="title-icon "></span><a href="#includes"><b>10.3. </b>includes()</a></li></ul><li><span class="title-icon "></span><a href="#sort"><b>11. </b>Sort</a></li><ul><li><span class="title-icon "></span><a href="#reverse"><b>11.1. </b>reverse()</a></li><li><span class="title-icon "></span><a href="#sort-for-strings-ascent"><b>11.2. </b>sort() for strings (ascent)</a></li><li><span class="title-icon "></span><a href="#sorting-strings-descend"><b>11.3. </b>sorting strings (descend)</a></li><li><span class="title-icon "></span><a href="#sorting-numbers"><b>11.4. </b>sorting numbers</a></li><li><span class="title-icon "></span><a href="#sorting-object-arrays"><b>11.5. </b>sorting Object Arrays</a></li><li><span class="title-icon "></span><a href="#compare-function"><b>11.6. </b>Compare Function</a></li></ul><li><span class="title-icon "></span><a href="#array-prototype-api"><b>12. </b>Array Prototype API</a></li><ul><li><span class="title-icon "></span><a href="#arrayprototypeforeach"><b>12.1. </b>Array.prototype.forEach()</a></li><li><span class="title-icon "></span><a href="#arrayprototypemap"><b>12.2. </b>Array.prototype.map()</a></li><li><span class="title-icon "></span><a href="#arrayprototypefilter"><b>12.3. </b>Array.prototype.filter()</a></li><li><span class="title-icon "></span><a href="#arrayprototypereduce"><b>12.4. </b>Array.prototype.reduce()</a></li><li><span class="title-icon "></span><a href="#arrayprototypeevery"><b>12.5. </b>Array.prototype.every()</a></li></ul></ul></ul></div><a href="#array-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="array-api"><a name="array-api" class="anchor-navigation-ex-anchor" href="#array-api"><i class="fa fa-link" aria-hidden="true"></i></a> Array API</h1>
+<h2 id="array-properties"><a name="array-properties" class="anchor-navigation-ex-anchor" href="#array-properties"><i class="fa fa-link" aria-hidden="true"></i></a>1. Array Properties</h2>
+<h3 id="length"><a name="length" class="anchor-navigation-ex-anchor" href="#length"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. length</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>];
 <span class="hljs-built_in">console</span>.log(fruits.length); <span class="hljs-comment">//4</span>
 </code></pre>
 <hr>
-<h3 id="is-array"><a name="is-array" class="anchor-navigation-ex-anchor" href="#is-array"><i class="fa fa-link" aria-hidden="true"></i></a>Is Array</h3>
+<h2 id="is-array"><a name="is-array" class="anchor-navigation-ex-anchor" href="#is-array"><i class="fa fa-link" aria-hidden="true"></i></a>2. Is Array</h2>
 <blockquote>
 <p>There are 3 solutions:</p>
 </blockquote>
-<h4 id="built-in-isarray"><a name="built-in-isarray" class="anchor-navigation-ex-anchor" href="#built-in-isarray"><i class="fa fa-link" aria-hidden="true"></i></a>Built-in isArray()</h4>
+<h3 id="built-in-isarray"><a name="built-in-isarray" class="anchor-navigation-ex-anchor" href="#built-in-isarray"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Built-in isArray()</h3>
 <blockquote>
 <p>NOTE: Supported with ECMAScript 5 or newer</p>
 </blockquote>
@@ -823,7 +823,7 @@
 <span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Array</span>.isArray(x) );  <span class="hljs-comment">// false</span>
 <span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Array</span>.isArray(ary) );  <span class="hljs-comment">// true</span>
 </code></pre>
-<h4 id="self-defined-isarray-via-constructor"><a name="self-defined-isarray-via-constructor" class="anchor-navigation-ex-anchor" href="#self-defined-isarray-via-constructor"><i class="fa fa-link" aria-hidden="true"></i></a>Self-Defined isArray() via constructor</h4>
+<h3 id="self-defined-isarray-via-constructor"><a name="self-defined-isarray-via-constructor" class="anchor-navigation-ex-anchor" href="#self-defined-isarray-via-constructor"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. Self-Defined isArray() via constructor</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
 <span class="hljs-built_in">console</span>.log( x.constructor ); <span class="hljs-comment">// &#x192; Number() { [native code] }</span>
 <span class="hljs-built_in">console</span>.log( isArray(x) );    <span class="hljs-comment">// false</span>
@@ -841,18 +841,18 @@
     <span class="hljs-keyword">return</span> myArray.constructor === <span class="hljs-built_in">Array</span>;
 }
 </code></pre>
-<h4 id="instanceof-array"><a name="instanceof-array" class="anchor-navigation-ex-anchor" href="#instanceof-array"><i class="fa fa-link" aria-hidden="true"></i></a>instanceof Array</h4>
+<h3 id="instanceof-array"><a name="instanceof-array" class="anchor-navigation-ex-anchor" href="#instanceof-array"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. instanceof Array</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
 <span class="hljs-built_in">console</span>.log( ary <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span> );  <span class="hljs-comment">// true</span>
 </code></pre>
 <hr>
-<h3 id="to-string"><a name="to-string" class="anchor-navigation-ex-anchor" href="#to-string"><i class="fa fa-link" aria-hidden="true"></i></a>To String</h3>
-<h4 id="tostring"><a name="tostring" class="anchor-navigation-ex-anchor" href="#tostring"><i class="fa fa-link" aria-hidden="true"></i></a>toString()</h4>
+<h2 id="to-string"><a name="to-string" class="anchor-navigation-ex-anchor" href="#to-string"><i class="fa fa-link" aria-hidden="true"></i></a>3. To String</h2>
+<h3 id="tostring"><a name="tostring" class="anchor-navigation-ex-anchor" href="#tostring"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. toString()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> ary = [<span class="hljs-string">&apos;Apple&apos;</span>, <span class="hljs-string">&apos;Banana&apos;</span>, <span class="hljs-string">&apos;Cake&apos;</span>];
 <span class="hljs-built_in">console</span>.log( ary );         <span class="hljs-comment">// [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Cake&quot;]</span>
 <span class="hljs-built_in">console</span>.log( ary.toString() );    <span class="hljs-comment">// &quot;Apple,Banana,Cake&quot;</span>
 </code></pre>
-<h4 id="join"><a name="join" class="anchor-navigation-ex-anchor" href="#join"><i class="fa fa-link" aria-hidden="true"></i></a>join()</h4>
+<h3 id="join"><a name="join" class="anchor-navigation-ex-anchor" href="#join"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. join()</h3>
 <p><code>join(sign)</code></p>
 <blockquote>
 <p>&#x985E;&#x4F3C; toString() &#xFF0C;&#x53EF;&#x6307;&#x5B9A;&#x4E32;&#x806F;&#x7B26;&#x865F;</p>
@@ -861,8 +861,8 @@
 <span class="hljs-built_in">console</span>.log( ary.join(<span class="hljs-string">&apos;-*-&apos;</span>) );   <span class="hljs-comment">// &quot;Apple-*-Banana-*-Cake&quot;</span>
 </code></pre>
 <hr>
-<h3 id="add-elements"><a name="add-elements" class="anchor-navigation-ex-anchor" href="#add-elements"><i class="fa fa-link" aria-hidden="true"></i></a>Add Elements</h3>
-<h4 id="push"><a name="push" class="anchor-navigation-ex-anchor" href="#push"><i class="fa fa-link" aria-hidden="true"></i></a>push()</h4>
+<h2 id="add-elements"><a name="add-elements" class="anchor-navigation-ex-anchor" href="#add-elements"><i class="fa fa-link" aria-hidden="true"></i></a>4. Add Elements</h2>
+<h3 id="push"><a name="push" class="anchor-navigation-ex-anchor" href="#push"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. push()</h3>
 <p><code>push(item)</code></p>
 <blockquote>
 <p>Add an element into an array <strong>at the end</strong>, and return the new array length.</p>
@@ -873,7 +873,7 @@
 <span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">//[&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;, &quot;Lemon&quot;]</span>
 <span class="hljs-built_in">console</span>.log(x);            <span class="hljs-comment">//5</span>
 </code></pre>
-<h4 id="unshift"><a name="unshift" class="anchor-navigation-ex-anchor" href="#unshift"><i class="fa fa-link" aria-hidden="true"></i></a>unshift()</h4>
+<h3 id="unshift"><a name="unshift" class="anchor-navigation-ex-anchor" href="#unshift"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. unshift()</h3>
 <p><code>unshift(item)</code></p>
 <blockquote>
 <p>Add an element into an array <strong>at the beginning</strong>, and return the new array length.</p>
@@ -884,7 +884,7 @@
 <span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">//[&quot;Lemon&quot;, &quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
 <span class="hljs-built_in">console</span>.log(x);            <span class="hljs-comment">//5</span>
 </code></pre>
-<h4 id="directly-assignappend-via-index"><a name="directly-assignappend-via-index" class="anchor-navigation-ex-anchor" href="#directly-assignappend-via-index"><i class="fa fa-link" aria-hidden="true"></i></a>directly assign/append via index</h4>
+<h3 id="directly-assignappend-via-index"><a name="directly-assignappend-via-index" class="anchor-navigation-ex-anchor" href="#directly-assignappend-via-index"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. directly assign/append via index</h3>
 <blockquote>
 <p>WARNING: &#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684; index &#x6709;&#x8DF3;&#x865F;&#xFF0C;&#x6703;&#x9020;&#x6210;&#x4E2D;&#x9593;&#x51FA;&#x73FE; undefined
 (Adding elements with high indexes can create undefined &quot;holes&quot; in an array)</p>
@@ -903,8 +903,8 @@ fruits[<span class="hljs-number">10</span>] =<span class="hljs-string">&quot;Lem
 <span class="hljs-built_in">console</span>.log(fruits[<span class="hljs-number">8</span>]);        <span class="hljs-comment">//undefined</span>
 </code></pre>
 <hr>
-<h3 id="remove-elements"><a name="remove-elements" class="anchor-navigation-ex-anchor" href="#remove-elements"><i class="fa fa-link" aria-hidden="true"></i></a>Remove Elements</h3>
-<h4 id="pop"><a name="pop" class="anchor-navigation-ex-anchor" href="#pop"><i class="fa fa-link" aria-hidden="true"></i></a>pop()</h4>
+<h2 id="remove-elements"><a name="remove-elements" class="anchor-navigation-ex-anchor" href="#remove-elements"><i class="fa fa-link" aria-hidden="true"></i></a>5. Remove Elements</h2>
+<h3 id="pop"><a name="pop" class="anchor-navigation-ex-anchor" href="#pop"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. pop()</h3>
 <blockquote>
 <p>Remove <strong>the last</strong> element, and return the removed element.</p>
 </blockquote>
@@ -914,7 +914,7 @@ fruits[<span class="hljs-number">10</span>] =<span class="hljs-string">&quot;Lem
 <span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;]</span>
 <span class="hljs-built_in">console</span>.log(item);        <span class="hljs-comment">// &quot;Mango&quot;</span>
 </code></pre>
-<h4 id="shift"><a name="shift" class="anchor-navigation-ex-anchor" href="#shift"><i class="fa fa-link" aria-hidden="true"></i></a>shift()</h4>
+<h3 id="shift"><a name="shift" class="anchor-navigation-ex-anchor" href="#shift"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. shift()</h3>
 <blockquote>
 <p>Remove <strong>the first</strong> element, and return the removed element.</p>
 </blockquote>
@@ -924,7 +924,7 @@ fruits[<span class="hljs-number">10</span>] =<span class="hljs-string">&quot;Lem
 <span class="hljs-built_in">console</span>.log(fruits);    <span class="hljs-comment">// [&quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]</span>
 <span class="hljs-built_in">console</span>.log(item);        <span class="hljs-comment">// &quot;Banana&quot;</span>
 </code></pre>
-<h4 id="using-delete"><a name="using-delete" class="anchor-navigation-ex-anchor" href="#using-delete"><i class="fa fa-link" aria-hidden="true"></i></a>using delete</h4>
+<h3 id="using-delete"><a name="using-delete" class="anchor-navigation-ex-anchor" href="#using-delete"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. using delete</h3>
 <blockquote>
 <p>Using delete may leave undefined holes in the array.
 Use pop() or shift() instead.</p>
@@ -936,8 +936,8 @@ Use pop() or shift() instead.</p>
 <span class="hljs-built_in">console</span>.log(fruits[<span class="hljs-number">2</span>]);    <span class="hljs-comment">// undefined</span>
 </code></pre>
 <hr>
-<h3 id="splice-add--remove-elements-once"><a name="splice-add--remove-elements-once" class="anchor-navigation-ex-anchor" href="#splice-add--remove-elements-once"><i class="fa fa-link" aria-hidden="true"></i></a>Splice (Add &amp; Remove Elements Once)</h3>
-<h4 id="splice"><a name="splice" class="anchor-navigation-ex-anchor" href="#splice"><i class="fa fa-link" aria-hidden="true"></i></a>splice()</h4>
+<h2 id="splice-add--remove-elements-once"><a name="splice-add--remove-elements-once" class="anchor-navigation-ex-anchor" href="#splice-add--remove-elements-once"><i class="fa fa-link" aria-hidden="true"></i></a>6. Splice (Add &amp; Remove Elements Once)</h2>
+<h3 id="splice"><a name="splice" class="anchor-navigation-ex-anchor" href="#splice"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. splice()</h3>
 <p><code>splice(insertPosition, removedCount, [addedItem1, addedItem2, ...])</code></p>
 <pre><code class="lang-js"><span class="hljs-comment">// demo 1: add</span>
 <span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Item0&quot;</span>, <span class="hljs-string">&quot;Item1&quot;</span>, <span class="hljs-string">&quot;Item2&quot;</span>, <span class="hljs-string">&quot;Item3&quot;</span>];
@@ -964,8 +964,8 @@ Use pop() or shift() instead.</p>
 <span class="hljs-built_in">console</span>.log(x);     <span class="hljs-comment">// [&quot;Item3&quot;]</span>
 </code></pre>
 <hr>
-<h3 id="merge-arrays"><a name="merge-arrays" class="anchor-navigation-ex-anchor" href="#merge-arrays"><i class="fa fa-link" aria-hidden="true"></i></a>Merge Arrays</h3>
-<h4 id="concat"><a name="concat" class="anchor-navigation-ex-anchor" href="#concat"><i class="fa fa-link" aria-hidden="true"></i></a>concat()</h4>
+<h2 id="merge-arrays"><a name="merge-arrays" class="anchor-navigation-ex-anchor" href="#merge-arrays"><i class="fa fa-link" aria-hidden="true"></i></a>7. Merge Arrays</h2>
+<h3 id="concat"><a name="concat" class="anchor-navigation-ex-anchor" href="#concat"><i class="fa fa-link" aria-hidden="true"></i></a>7.1. concat()</h3>
 <blockquote>
 <p><code>concat()</code> <strong>does not change the existing arrays</strong>. It always <strong>returns a new array</strong>.</p>
 </blockquote>
@@ -979,8 +979,8 @@ Use pop() or shift() instead.</p>
 <span class="hljs-built_in">console</span>.log(ary3);    <span class="hljs-comment">//[&quot;Robin&quot;, &quot;Morgan&quot;]</span>
 </code></pre>
 <hr>
-<h3 id="fetch-sub-array"><a name="fetch-sub-array" class="anchor-navigation-ex-anchor" href="#fetch-sub-array"><i class="fa fa-link" aria-hidden="true"></i></a>Fetch Sub-Array</h3>
-<h4 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>slice()</h4>
+<h2 id="fetch-sub-array"><a name="fetch-sub-array" class="anchor-navigation-ex-anchor" href="#fetch-sub-array"><i class="fa fa-link" aria-hidden="true"></i></a>8. Fetch Sub-Array</h2>
+<h3 id="slice"><a name="slice" class="anchor-navigation-ex-anchor" href="#slice"><i class="fa fa-link" aria-hidden="true"></i></a>8.1. slice()</h3>
 <p><code>slice(startIndex, [endIndexExcluded])</code></p>
 <blockquote>
 <ul>
@@ -994,14 +994,14 @@ Use pop() or shift() instead.</p>
 <span class="hljs-built_in">console</span>.log( fruits );        <span class="hljs-comment">//[&quot;Item0&quot;, &quot;Item1&quot;, &quot;Item2&quot;, &quot;Item3&quot;, &quot;Item4&quot;]</span>
 </code></pre>
 <hr>
-<h3 id="find-max-and-min"><a name="find-max-and-min" class="anchor-navigation-ex-anchor" href="#find-max-and-min"><i class="fa fa-link" aria-hidden="true"></i></a>Find Max and Min</h3>
+<h2 id="find-max-and-min"><a name="find-max-and-min" class="anchor-navigation-ex-anchor" href="#find-max-and-min"><i class="fa fa-link" aria-hidden="true"></i></a>9. Find Max and Min</h2>
 <blockquote>
 <ul>
 <li>There are <strong>no built-in functions</strong> for finding the highest or lowest value in a JavaScript array.</li>
 <li>&#x4F46;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x4ED6;&#x6280;&#x5DE7;&#x505A;&#x5230;</li>
 </ul>
 </blockquote>
-<h4 id="1-using-sort"><a name="1-using-sort" class="anchor-navigation-ex-anchor" href="#1-using-sort"><i class="fa fa-link" aria-hidden="true"></i></a>1. using sort()</h4>
+<h3 id="1-using-sort"><a name="1-using-sort" class="anchor-navigation-ex-anchor" href="#1-using-sort"><i class="fa fa-link" aria-hidden="true"></i></a>9.1. 1. using sort()</h3>
 <blockquote>
 <ul>
 <li>Cons: inefficient<ul>
@@ -1015,12 +1015,12 @@ points.sort(<span class="hljs-function"><span class="hljs-keyword">function</spa
 <span class="hljs-built_in">console</span>.log(points[<span class="hljs-number">0</span>]); <span class="hljs-comment">// 1 (the lowest value)</span>
 <span class="hljs-built_in">console</span>.log(points[points.length<span class="hljs-number">-1</span>]); <span class="hljs-comment">//100 (the highest value)</span>
 </code></pre>
-<h4 id="2-using-mathmaxapply"><a name="2-using-mathmaxapply" class="anchor-navigation-ex-anchor" href="#2-using-mathmaxapply"><i class="fa fa-link" aria-hidden="true"></i></a>2. using Math.max().apply()</h4>
+<h3 id="2-using-mathmaxapply"><a name="2-using-mathmaxapply" class="anchor-navigation-ex-anchor" href="#2-using-mathmaxapply"><i class="fa fa-link" aria-hidden="true"></i></a>9.2. 2. using Math.max().apply()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> points = [<span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">25</span>, <span class="hljs-number">10</span>];
 <span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.max.apply(<span class="hljs-literal">null</span>, points) ); <span class="hljs-comment">//100</span>
 <span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.min.apply(<span class="hljs-literal">null</span>, points) ); <span class="hljs-comment">//1</span>
 </code></pre>
-<h4 id="3-using-arrayprototypereduce"><a name="3-using-arrayprototypereduce" class="anchor-navigation-ex-anchor" href="#3-using-arrayprototypereduce"><i class="fa fa-link" aria-hidden="true"></i></a>3. using Array.prototype.reduce()</h4>
+<h3 id="3-using-arrayprototypereduce"><a name="3-using-arrayprototypereduce" class="anchor-navigation-ex-anchor" href="#3-using-arrayprototypereduce"><i class="fa fa-link" aria-hidden="true"></i></a>9.3. 3. using Array.prototype.reduce()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> maxCbk = ( max, cur ) =&gt; <span class="hljs-built_in">Math</span>.max( max, cur );
 <span class="hljs-keyword">var</span> minCbk = ( max, cur ) =&gt; <span class="hljs-built_in">Math</span>.min( max, cur );
 
@@ -1028,7 +1028,7 @@ points.sort(<span class="hljs-function"><span class="hljs-keyword">function</spa
 <span class="hljs-built_in">console</span>.log( points.reduce(maxCbk) ); <span class="hljs-comment">//100</span>
 <span class="hljs-built_in">console</span>.log( points.reduce(minCbk) ); <span class="hljs-comment">//1</span>
 </code></pre>
-<h4 id="4-using-home-made-method"><a name="4-using-home-made-method" class="anchor-navigation-ex-anchor" href="#4-using-home-made-method"><i class="fa fa-link" aria-hidden="true"></i></a>4. using &quot;home made&quot; method</h4>
+<h3 id="4-using-home-made-method"><a name="4-using-home-made-method" class="anchor-navigation-ex-anchor" href="#4-using-home-made-method"><i class="fa fa-link" aria-hidden="true"></i></a>9.4. 4. using &quot;home made&quot; method</h3>
 <blockquote>
 <p>The fastest solution?</p>
 </blockquote>
@@ -1055,25 +1055,25 @@ points.sort(<span class="hljs-function"><span class="hljs-keyword">function</spa
 }
 </code></pre>
 <hr>
-<h3 id="search"><a name="search" class="anchor-navigation-ex-anchor" href="#search"><i class="fa fa-link" aria-hidden="true"></i></a>Search</h3>
-<h4 id="indexof"><a name="indexof" class="anchor-navigation-ex-anchor" href="#indexof"><i class="fa fa-link" aria-hidden="true"></i></a>indexOf()</h4>
+<h2 id="search"><a name="search" class="anchor-navigation-ex-anchor" href="#search"><i class="fa fa-link" aria-hidden="true"></i></a>10. Search</h2>
+<h3 id="indexof"><a name="indexof" class="anchor-navigation-ex-anchor" href="#indexof"><i class="fa fa-link" aria-hidden="true"></i></a>10.1. indexOf()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>];
 <span class="hljs-built_in">console</span>.log( fruits.indexOf(<span class="hljs-string">&quot;Apple&quot;</span>) ); <span class="hljs-comment">//2</span>
 <span class="hljs-built_in">console</span>.log( fruits.indexOf(<span class="hljs-string">&quot;Car&quot;</span>) ); <span class="hljs-comment">//-1</span>
 </code></pre>
-<h4 id="lastindexof"><a name="lastindexof" class="anchor-navigation-ex-anchor" href="#lastindexof"><i class="fa fa-link" aria-hidden="true"></i></a>lastIndexOf()</h4>
+<h3 id="lastindexof"><a name="lastindexof" class="anchor-navigation-ex-anchor" href="#lastindexof"><i class="fa fa-link" aria-hidden="true"></i></a>10.2. lastIndexOf()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> fruits = [<span class="hljs-string">&quot;Banana&quot;</span>, <span class="hljs-string">&quot;Orange&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>, <span class="hljs-string">&quot;Mango&quot;</span>, <span class="hljs-string">&quot;Apple&quot;</span>];
 <span class="hljs-built_in">console</span>.log( fruits.lastIndexOf(<span class="hljs-string">&quot;Apple&quot;</span>) ); <span class="hljs-comment">//4</span>
 <span class="hljs-built_in">console</span>.log( fruits.lastIndexOf(<span class="hljs-string">&quot;Car&quot;</span>) ); <span class="hljs-comment">//-1</span>
 </code></pre>
-<h4 id="includes"><a name="includes" class="anchor-navigation-ex-anchor" href="#includes"><i class="fa fa-link" aria-hidden="true"></i></a>includes()</h4>
+<h3 id="includes"><a name="includes" class="anchor-navigation-ex-anchor" href="#includes"><i class="fa fa-link" aria-hidden="true"></i></a>10.3. includes()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
 <span class="hljs-built_in">console</span>.log(a.includes(<span class="hljs-number">2</span>)); <span class="hljs-comment">// true</span>
 <span class="hljs-built_in">console</span>.log(a.includes(<span class="hljs-number">4</span>)) <span class="hljs-comment">// false</span>
 </code></pre>
 <hr>
-<h3 id="sort"><a name="sort" class="anchor-navigation-ex-anchor" href="#sort"><i class="fa fa-link" aria-hidden="true"></i></a>Sort</h3>
-<h4 id="reverse"><a name="reverse" class="anchor-navigation-ex-anchor" href="#reverse"><i class="fa fa-link" aria-hidden="true"></i></a>reverse()</h4>
+<h2 id="sort"><a name="sort" class="anchor-navigation-ex-anchor" href="#sort"><i class="fa fa-link" aria-hidden="true"></i></a>11. Sort</h2>
+<h3 id="reverse"><a name="reverse" class="anchor-navigation-ex-anchor" href="#reverse"><i class="fa fa-link" aria-hidden="true"></i></a>11.1. reverse()</h3>
 <blockquote>
 <ul>
 <li>&#x7D14;&#x53CD;&#x8F49;&#xFF0C;&#x4E0D;&#x91DD;&#x5C0D;&#x5167;&#x5BB9;&#x6392;&#x5E8F;</li>
@@ -1083,7 +1083,7 @@ points.sort(<span class="hljs-function"><span class="hljs-keyword">function</spa
 fruits.reverse();
 <span class="hljs-built_in">console</span>.log( fruits );  <span class="hljs-comment">// [&quot;Mango&quot;, &quot;Apple&quot;, &quot;Orange&quot;, &quot;Banana&quot;]</span>
 </code></pre>
-<h4 id="sort-for-strings-ascent"><a name="sort-for-strings-ascent" class="anchor-navigation-ex-anchor" href="#sort-for-strings-ascent"><i class="fa fa-link" aria-hidden="true"></i></a>sort() for strings (ascent)</h4>
+<h3 id="sort-for-strings-ascent"><a name="sort-for-strings-ascent" class="anchor-navigation-ex-anchor" href="#sort-for-strings-ascent"><i class="fa fa-link" aria-hidden="true"></i></a>11.2. sort() for strings (ascent)</h3>
 <blockquote>
 <ul>
 <li>&#x91DD;&#x5C0D;&#x5167;&#x5BB9;&#x6392;&#x5E8F;</li>
@@ -1096,7 +1096,7 @@ fruits.reverse();
 <span class="hljs-built_in">console</span>.log( fruits );  <span class="hljs-comment">// [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Mango&quot;, &quot;Orange&quot;]</span>
 <span class="hljs-built_in">console</span>.log( x );       <span class="hljs-comment">// [&quot;Apple&quot;, &quot;Banana&quot;, &quot;Mango&quot;, &quot;Orange&quot;]</span>
 </code></pre>
-<h4 id="sorting-strings-descend"><a name="sorting-strings-descend" class="anchor-navigation-ex-anchor" href="#sorting-strings-descend"><i class="fa fa-link" aria-hidden="true"></i></a>sorting strings (descend)</h4>
+<h3 id="sorting-strings-descend"><a name="sorting-strings-descend" class="anchor-navigation-ex-anchor" href="#sorting-strings-descend"><i class="fa fa-link" aria-hidden="true"></i></a>11.3. sorting strings (descend)</h3>
 <blockquote>
 <p><code>sort()</code> + <code>reverse()</code></p>
 </blockquote>
@@ -1105,7 +1105,7 @@ fruits.sort();
 fruits.reverse();
 <span class="hljs-built_in">console</span>.log( fruits );  <span class="hljs-comment">// [&quot;Orange&quot;, &quot;Mango&quot;, &quot;Banana&quot;, &quot;Apple&quot;]</span>
 </code></pre>
-<h4 id="sorting-numbers"><a name="sorting-numbers" class="anchor-navigation-ex-anchor" href="#sorting-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>sorting numbers</h4>
+<h3 id="sorting-numbers"><a name="sorting-numbers" class="anchor-navigation-ex-anchor" href="#sorting-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>11.4. sorting numbers</h3>
 <blockquote>
 <p>sort numbers using default sort() will get incorrect result</p>
 </blockquote>
@@ -1130,7 +1130,7 @@ numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</spa
 <span class="hljs-keyword">var</span> numAry = [<span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">11</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>];
 numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>)</span>{<span class="hljs-keyword">return</span> <span class="hljs-number">0.5</span> - <span class="hljs-built_in">Math</span>.random()});
 </code></pre>
-<h4 id="sorting-object-arrays"><a name="sorting-object-arrays" class="anchor-navigation-ex-anchor" href="#sorting-object-arrays"><i class="fa fa-link" aria-hidden="true"></i></a>sorting Object Arrays</h4>
+<h3 id="sorting-object-arrays"><a name="sorting-object-arrays" class="anchor-navigation-ex-anchor" href="#sorting-object-arrays"><i class="fa fa-link" aria-hidden="true"></i></a>11.5. sorting Object Arrays</h3>
 <blockquote>
 <p> using <strong>compare function</strong></p>
 </blockquote>
@@ -1153,7 +1153,7 @@ cars.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>
 });
 <span class="hljs-built_in">console</span>.log(cars);  <span class="hljs-comment">//[0]BMW 2010, [1] Saab 2001, [2]Volvo 2016</span>
 </code></pre>
-<h4 id="compare-function"><a name="compare-function" class="anchor-navigation-ex-anchor" href="#compare-function"><i class="fa fa-link" aria-hidden="true"></i></a>Compare Function</h4>
+<h3 id="compare-function"><a name="compare-function" class="anchor-navigation-ex-anchor" href="#compare-function"><i class="fa fa-link" aria-hidden="true"></i></a>11.6. Compare Function</h3>
 <blockquote>
 <ul>
 <li><strong>Purpose</strong>: define an alternative sort order</li>
@@ -1175,8 +1175,8 @@ numAry.sort(<span class="hljs-function"><span class="hljs-keyword">function</spa
 </ol>
 </blockquote>
 <hr>
-<h3 id="each-process"><a name="each-process" class="anchor-navigation-ex-anchor" href="#each-process"><i class="fa fa-link" aria-hidden="true"></i></a>Each Process</h3>
-<h4 id="arrayprototypeforeach"><a name="arrayprototypeforeach" class="anchor-navigation-ex-anchor" href="#arrayprototypeforeach"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.forEach()</h4>
+<h2 id="array-prototype-api"><a name="array-prototype-api" class="anchor-navigation-ex-anchor" href="#array-prototype-api"><i class="fa fa-link" aria-hidden="true"></i></a>12. Array Prototype API</h2>
+<h3 id="arrayprototypeforeach"><a name="arrayprototypeforeach" class="anchor-navigation-ex-anchor" href="#arrayprototypeforeach"><i class="fa fa-link" aria-hidden="true"></i></a>12.1. Array.prototype.forEach()</h3>
 <p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</a></p>
 <p><code>var newArray = oldAry.forEach(callback[, thisArg])</code></p>
 <ul>
@@ -1193,7 +1193,7 @@ array1.forEach(<span class="hljs-function"><span class="hljs-keyword">function</
   <span class="hljs-built_in">console</span>.log(el);
 });
 </code></pre>
-<h4 id="arrayprototypemap"><a name="arrayprototypemap" class="anchor-navigation-ex-anchor" href="#arrayprototypemap"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.map()</h4>
+<h3 id="arrayprototypemap"><a name="arrayprototypemap" class="anchor-navigation-ex-anchor" href="#arrayprototypemap"><i class="fa fa-link" aria-hidden="true"></i></a>12.2. Array.prototype.map()</h3>
 <p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map</a></p>
 <blockquote>
 <p>&#x5DE1;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x9010;&#x4E00;&#x52A0;&#x5DE5;&#x5F8C;&#x56DE;&#x50B3;</p>
@@ -1233,7 +1233,7 @@ array1.forEach(<span class="hljs-function"><span class="hljs-keyword">function</
 <span class="hljs-built_in">console</span>.log(origAry); <span class="hljs-comment">// [1, 5, 10, 15]</span>
 <span class="hljs-built_in">console</span>.log(newAry);  <span class="hljs-comment">// [2, 10, 20, 30]</span>
 </code></pre>
-<h4 id="arrayprototypefilter"><a name="arrayprototypefilter" class="anchor-navigation-ex-anchor" href="#arrayprototypefilter"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.filter()</h4>
+<h3 id="arrayprototypefilter"><a name="arrayprototypefilter" class="anchor-navigation-ex-anchor" href="#arrayprototypefilter"><i class="fa fa-link" aria-hidden="true"></i></a>12.3. Array.prototype.filter()</h3>
 <p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a></p>
 <blockquote>
 <p>&#x904E;&#x6FFE;&#xFF0C;&#x5DE1;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x9010;&#x4E00;&#x5224;&#x65B7;&#x662F;&#x5426;&#x4FDD;&#x7559;&#xFF0C;&#x56DE;&#x50B3;&#x5E03;&#x6797;</p>
@@ -1254,7 +1254,7 @@ array1.forEach(<span class="hljs-function"><span class="hljs-keyword">function</
 <span class="hljs-built_in">console</span>.log(origAry); <span class="hljs-comment">// [&quot;12345&quot;, &quot;1&quot;, &quot;1234&quot;, &quot;123&quot;, &quot;12&quot;]</span>
 <span class="hljs-built_in">console</span>.log(newAry);  <span class="hljs-comment">//[&quot;12345&quot;, &quot;1234&quot;]</span>
 </code></pre>
-<h4 id="arrayprototypereduce"><a name="arrayprototypereduce" class="anchor-navigation-ex-anchor" href="#arrayprototypereduce"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.reduce()</h4>
+<h3 id="arrayprototypereduce"><a name="arrayprototypereduce" class="anchor-navigation-ex-anchor" href="#arrayprototypereduce"><i class="fa fa-link" aria-hidden="true"></i></a>12.4. Array.prototype.reduce()</h3>
 <p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a></p>
 <blockquote>
 <p>&#x5229;&#x7528;&#x4E00;&#x500B;&#x7D2F;&#x52A0;&#x5668;&#x53CA;&#x9663;&#x5217;&#x4E2D;&#x6BCF;&#x9805;&#x5143;&#x7D20;&#xFF0C;&#x5C07;&#x9663;&#x5217;&#x5316;&#x70BA;&#x55AE;&#x4E00;&#x503C;</p>
@@ -1321,7 +1321,7 @@ array1.forEach(<span class="hljs-function"><span class="hljs-keyword">function</
                         .reduce( maxCallback2, -<span class="hljs-literal">Infinity</span> );
 <span class="hljs-built_in">console</span>.log(rlt); <span class="hljs-comment">//42</span>
 </code></pre>
-<h4 id="arrayprototypeevery"><a name="arrayprototypeevery" class="anchor-navigation-ex-anchor" href="#arrayprototypeevery"><i class="fa fa-link" aria-hidden="true"></i></a>Array.prototype.every()</h4>
+<h3 id="arrayprototypeevery"><a name="arrayprototypeevery" class="anchor-navigation-ex-anchor" href="#arrayprototypeevery"><i class="fa fa-link" aria-hidden="true"></i></a>12.5. Array.prototype.every()</h3>
 <p>ref: <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/every" target="_blank">https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/every</a></p>
 <blockquote>
 <p>&#x5DE1;&#x8A2A;&#x6BCF;&#x500B;&#x5143;&#x7D20;&#xFF0C;&#x6E2C;&#x8A66;&#x662F;&#x5426;&#x6BCF;&#x4E00;&#x500B;&#x5143;&#x7D20;&#x90FD;&#x901A;&#x904E;&#x689D;&#x4EF6;(&#x53EA;&#x8981;&#x9047;&#x5230;&#x4E0D;&#x5408;&#x683C;&#x7684;&#x5C31;&#x6703;&#x505C;&#x4E0B;&#x4F86;&#x4E26;&#x56DE;&#x50B3; false)</p>
@@ -1397,7 +1397,7 @@ array1.forEach(<span class="hljs-function"><span class="hljs-keyword">function</
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Array API","level":"6.3","depth":1,"next":{"title":"Base64 API","level":"6.4","depth":1,"path":"api/base64-api.md","ref":"./api/base64-api.md","articles":[]},"previous":{"title":"Ajax API (XMLHttpRequest)","level":"6.2","depth":1,"path":"api/ajax-api.md","ref":"./api/ajax-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/array-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Array API","level":"6.3","depth":1,"next":{"title":"Base64 API","level":"6.4","depth":1,"path":"api/base64-api.md","ref":"./api/base64-api.md","articles":[]},"previous":{"title":"Ajax API (XMLHttpRequest)","level":"6.2","depth":1,"path":"api/ajax-api.md","ref":"./api/ajax-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/array-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

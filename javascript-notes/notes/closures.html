@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,10 +803,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#closures-&#x9589;&#x5305;"><b></b>Closures (&#x9589;&#x5305;)</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b></b>Intro</a></li><li><span class="title-icon "></span><a href="#before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios"><b></b>Before Using Closure: &#x60F3;&#x89E3;&#x6C7A;&#x7684; Scenarios</a></li><li><span class="title-icon "></span><a href="#example-1-basic-closure"><b></b>Example 1: Basic Closure</a></li><li><span class="title-icon "></span><a href="#example-2-basic-closure-ii"><b></b>Example 2: Basic Closure II</a></li><li><span class="title-icon "></span><a href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><b></b>Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</a></li><li><span class="title-icon "></span><a href="#references"><b></b>References</a></li></ul></ul></div><a href="#closures-&#x9589;&#x5305;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="closures-&#x9589;&#x5305;"><a name="closures-&#x9589;&#x5305;" class="anchor-navigation-ex-anchor" href="#closures-&#x9589;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>Closures (&#x9589;&#x5305;)</h1>
-<p>[TOC]</p>
-<hr>
-<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>Intro</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#closures-&#x9589;&#x5305;"><b> </b>Closures (&#x9589;&#x5305;)</a></li><ul><li><span class="title-icon "></span><a href="#intro"><b>1. </b>Intro</a></li><li><span class="title-icon "></span><a href="#before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios"><b>2. </b>Before Using Closure: &#x60F3;&#x89E3;&#x6C7A;&#x7684; Scenarios</a></li><li><span class="title-icon "></span><a href="#example-1-basic-closure"><b>3. </b>Example 1: Basic Closure</a></li><li><span class="title-icon "></span><a href="#example-2-basic-closure-ii"><b>4. </b>Example 2: Basic Closure II</a></li><li><span class="title-icon "></span><a href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><b>5. </b>Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</a></li><li><span class="title-icon "></span><a href="#references"><b>6. </b>References</a></li></ul></ul></div><a href="#closures-&#x9589;&#x5305;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="closures-&#x9589;&#x5305;"><a name="closures-&#x9589;&#x5305;" class="anchor-navigation-ex-anchor" href="#closures-&#x9589;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a> Closures (&#x9589;&#x5305;)</h1>
+<h2 id="intro"><a name="intro" class="anchor-navigation-ex-anchor" href="#intro"><i class="fa fa-link" aria-hidden="true"></i></a>1. Intro</h2>
 <ul>
 <li><p>JS &#x8B8A;&#x6578;&#x53EF;&#x4EE5;&#x5C6C;&#x65BC; local &#x6216; global scope</p>
 </li>
@@ -838,7 +836,7 @@
 <li>&#x5BE6;&#x73FE;&#x985E;&#x4F3C; OO &#x5C01;&#x88DD;&#x7684; private &#x6548;&#x679C;</li>
 </ol>
 <hr>
-<h2 id="before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios"><a name="before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios" class="anchor-navigation-ex-anchor" href="#before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios"><i class="fa fa-link" aria-hidden="true"></i></a>Before Using Closure: &#x60F3;&#x89E3;&#x6C7A;&#x7684; Scenarios</h2>
+<h2 id="before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios"><a name="before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios" class="anchor-navigation-ex-anchor" href="#before-using-closure-&#x60F3;&#x89E3;&#x6C7A;&#x7684;-scenarios"><i class="fa fa-link" aria-hidden="true"></i></a>2. Before Using Closure: &#x60F3;&#x89E3;&#x6C7A;&#x7684; Scenarios</h2>
 <pre><code class="lang-js"><span class="hljs-comment">// Scenario 1: Global var &#x5927;&#x5BB6;&#x90FD;&#x80FD;&#x5B58;&#x53D6;&#xFF0C;&#x7121;&#x6CD5;&#x9650;&#x5236;&#x5FC5;&#x9808;&#x900F;&#x904E; setAge()</span>
 <span class="hljs-keyword">var</span> age = <span class="hljs-number">18</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setAge</span>(<span class="hljs-params">a</span>)</span>{
@@ -852,7 +850,7 @@
 }
 </code></pre>
 <hr>
-<h2 id="example-1-basic-closure"><a name="example-1-basic-closure" class="anchor-navigation-ex-anchor" href="#example-1-basic-closure"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1: Basic Closure</h2>
+<h2 id="example-1-basic-closure"><a name="example-1-basic-closure" class="anchor-navigation-ex-anchor" href="#example-1-basic-closure"><i class="fa fa-link" aria-hidden="true"></i></a>3. Example 1: Basic Closure</h2>
 <p><strong>Example Explained:</strong></p>
 <ol>
 <li>&#x8B8A;&#x6578; <code>add</code> &#x88AB;&#x8CE6;&#x503C;&#x7684;&#x503C;&#x662F;&#x4E00;&#x500B; <em>self-invoking function</em> &#x7684;&#x56DE;&#x50B3;&#x503C;</li>
@@ -878,7 +876,7 @@
 <span class="hljs-comment">// 3</span>
 </code></pre>
 <hr>
-<h2 id="example-2-basic-closure-ii"><a name="example-2-basic-closure-ii" class="anchor-navigation-ex-anchor" href="#example-2-basic-closure-ii"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: Basic Closure II</h2>
+<h2 id="example-2-basic-closure-ii"><a name="example-2-basic-closure-ii" class="anchor-navigation-ex-anchor" href="#example-2-basic-closure-ii"><i class="fa fa-link" aria-hidden="true"></i></a>4. Example 2: Basic Closure II</h2>
 <p><strong>Example Explained:</strong></p>
 <ol>
 <li>parent function &#x662F; <code>foo()</code>&#xFF0C;&#x88AB;&#x547C;&#x53EB;&#x57F7;&#x884C;&#x5F8C;&#xFF0C;&#x7528; <code>myFunc</code> &#x53BB;&#x627F;&#x63A5;&#x56DE;&#x50B3;&#x7684; inner function&#xFF0C;&#x5C31;&#x6210;&#x4E86;&#x9589;&#x5305;</li>
@@ -894,7 +892,7 @@
 myFunc(); <span class="hljs-comment">// azole</span>
 </code></pre>
 <hr>
-<h2 id="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><a name="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</h2>
+<h2 id="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><a name="example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#example-3-&#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC;-oo-&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>5. Example 3: &#x5229;&#x7528;&#x9589;&#x5305;&#x6A21;&#x64EC; OO &#x6548;&#x679C;</h2>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">newPersonObj</span>(<span class="hljs-params"></span>)</span>{
     <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;John&quot;</span>;
     <span class="hljs-keyword">var</span> methods = {
@@ -917,7 +915,7 @@ myFunc(); <span class="hljs-comment">// azole</span>
 <span class="hljs-built_in">console</span>.log(p2.getName());            <span class="hljs-comment">// &quot;John&quot;</span>
 </code></pre>
 <hr>
-<h2 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>References</h2>
+<h2 id="references"><a name="references" class="anchor-navigation-ex-anchor" href="#references"><i class="fa fa-link" aria-hidden="true"></i></a>6. References</h2>
 <ul>
 <li><a href="https://www.fooish.com/javascript/function-closure.html" target="_blank">JavaScript Function Closure (&#x9589;&#x5305;)</a></li>
 <li><a href="https://ithelp.ithome.com.tw/articles/10130860" target="_blank">Javascript&#x4E2D;&#x7684;&#x50B3;&#x905E;&#x53C3;&#x8003;&#x8207;closure (2)</a></li>
@@ -965,7 +963,7 @@ myFunc(); <span class="hljs-comment">// azole</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS Closures (閉包)","level":"2.3","depth":1,"next":{"title":"JS Errors - Throw and Try to Catch","level":"2.4","depth":1,"path":"notes/errors.md","ref":"./notes/errors.md","articles":[]},"previous":{"title":"JS This","level":"2.2","depth":1,"path":"notes/this.md","ref":"./notes/this.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/closures.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS Closures (閉包)","level":"2.3","depth":1,"next":{"title":"JS Errors - Throw and Try to Catch","level":"2.4","depth":1,"path":"notes/errors.md","ref":"./notes/errors.md","articles":[]},"previous":{"title":"JS This","level":"2.2","depth":1,"path":"notes/this.md","ref":"./notes/this.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/closures.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

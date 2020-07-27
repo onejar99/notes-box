@@ -371,7 +371,7 @@
                 <a href="../notes/oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="../notes/ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="function-api.html">
             
-                <a href="function-prototype-api.html">
+                <a href="function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,9 +803,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#json-api"><b></b>JSON API</a></li><ul><li><span class="title-icon "></span><a href="#convert-json-text-and-object"><b></b>Convert JSON Text and Object</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="json-api"><a name="json-api" class="anchor-navigation-ex-anchor" href="#json-api"><i class="fa fa-link" aria-hidden="true"></i></a>JSON API</h2>
-<h3 id="convert-json-text-and-object"><a name="convert-json-text-and-object" class="anchor-navigation-ex-anchor" href="#convert-json-text-and-object"><i class="fa fa-link" aria-hidden="true"></i></a>Convert JSON Text and Object</h3>
-<h4 id="jsonparse"><a name="jsonparse" class="anchor-navigation-ex-anchor" href="#jsonparse"><i class="fa fa-link" aria-hidden="true"></i></a>JSON.parse()</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#json-api"><b> </b>JSON API</a></li><ul><li><span class="title-icon "></span><a href="#convert-json-text-and-object"><b>1. </b>Convert JSON Text and Object</a></li><ul><li><span class="title-icon "></span><a href="#jsonparse"><b>1.1. </b>JSON.parse()</a></li><li><span class="title-icon "></span><a href="#jsonstringify"><b>1.2. </b>JSON.stringify()</a></li></ul></ul></ul></div><a href="#json-api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="json-api"><a name="json-api" class="anchor-navigation-ex-anchor" href="#json-api"><i class="fa fa-link" aria-hidden="true"></i></a> JSON API</h1>
+<h2 id="convert-json-text-and-object"><a name="convert-json-text-and-object" class="anchor-navigation-ex-anchor" href="#convert-json-text-and-object"><i class="fa fa-link" aria-hidden="true"></i></a>1. Convert JSON Text and Object</h2>
+<h3 id="jsonparse"><a name="jsonparse" class="anchor-navigation-ex-anchor" href="#jsonparse"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. JSON.parse()</h3>
 <p><code>JSON.parse(text [, reviverFunc])</code></p>
 <p>JavaScript built-in function</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">JSON</span>.parse(text);
@@ -821,7 +821,7 @@
 <span class="hljs-built_in">console</span>.log(ret2.constructor);  <span class="hljs-comment">//&#x192; Array() { [native code] }</span>
 <span class="hljs-built_in">console</span>.log(ret3.constructor);  <span class="hljs-comment">//&#x192; String() { [native code] }</span>
 </code></pre>
-<p>The reviver parameter is a function that checks each property, before returning the value.</p>
+<p>The <strong>reviver parameter is a function</strong> that checks each property, before returning the value.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> text = <span class="hljs-string">&apos;{ &quot;name&quot;:&quot;Soar&quot;, &quot;package&quot;:&quot;FireSword,ChainArmor,Herb&quot;, &quot;occupation&quot;:&quot;Hero&quot;, &quot;birth&quot;:&quot;2018-01-30T08:09:26.066Z&quot;}&apos;</span>;
 <span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">JSON</span>.parse(text, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key, value</span>) </span>{
     <span class="hljs-keyword">if</span> (key == <span class="hljs-string">&quot;birth&quot;</span>) {
@@ -847,7 +847,7 @@
 <span class="hljs-comment">//   }</span>
 <span class="hljs-comment">// }</span>
 </code></pre>
-<h4 id="jsonstringify"><a name="jsonstringify" class="anchor-navigation-ex-anchor" href="#jsonstringify"><i class="fa fa-link" aria-hidden="true"></i></a>JSON.stringify()</h4>
+<h3 id="jsonstringify"><a name="jsonstringify" class="anchor-navigation-ex-anchor" href="#jsonstringify"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. JSON.stringify()</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> person = { name: <span class="hljs-string">&apos;John&apos;</span>, age: <span class="hljs-number">18</span> };
 <span class="hljs-keyword">var</span> x = <span class="hljs-built_in">JSON</span>.stringify(person);
 <span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">//&quot;{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:18}&quot;</span>
@@ -879,7 +879,7 @@
 
             
                 
-                <a href="html-api.html" class="navigation navigation-prev " aria-label="Previous page: HTML URI">
+                <a href="html-api.html" class="navigation navigation-prev " aria-label="Previous page: HTML API">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -895,7 +895,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JSON API","level":"6.11","depth":1,"next":{"title":"Math API","level":"6.12","depth":1,"path":"api/math-api.md","ref":"./api/math-api.md","articles":[]},"previous":{"title":"HTML URI","level":"6.10","depth":1,"path":"api/html-api.md","ref":"./api/html-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/json-api.md","mtime":"2020-07-24T05:10:11.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSON API","level":"6.11","depth":1,"next":{"title":"Math API","level":"6.12","depth":1,"path":"api/math-api.md","ref":"./api/math-api.md","articles":[]},"previous":{"title":"HTML API","level":"6.10","depth":1,"path":"api/html-api.md","ref":"./api/html-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/json-api.md","mtime":"2020-07-27T15:01:28.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

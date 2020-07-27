@@ -371,7 +371,7 @@
                 <a href="oop.html">
             
                     
-                    JS OOP (Prototype-based)
+                    JS OOP (Prototype-based) / FP
             
                 </a>
             
@@ -404,7 +404,7 @@
                 <a href="ajax.html">
             
                     
-                    JS Ajax
+                    JS Ajax / CORS
             
                 </a>
             
@@ -646,7 +646,7 @@
                 <a href="../api/encode-uri-api.html">
             
                     
-                    Encode URI
+                    Encode URI API
             
                 </a>
             
@@ -659,7 +659,7 @@
                 <a href="../api/file-api.html">
             
                     
-                    File URI
+                    File API
             
                 </a>
             
@@ -667,12 +667,12 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="../api/function-prototype-api.html">
+        <li class="chapter " data-level="6.9" data-path="../api/function-api.html">
             
-                <a href="../api/function-prototype-api.html">
+                <a href="../api/function-api.html">
             
                     
-                    Function.prototype API
+                    Function API
             
                 </a>
             
@@ -685,7 +685,7 @@
                 <a href="../api/html-api.html">
             
                     
-                    HTML URI
+                    HTML API
             
                 </a>
             
@@ -803,25 +803,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dom"><b></b>DOM</a></li><ul><li><span class="title-icon "></span><a href="#what-is-the-dom"><b></b>What is the DOM?</a></li><li><span class="title-icon "></span><a href="#xml-dom"><b></b>XML DOM</a></li><ul><li><span class="title-icon "></span><a href="#dom-parser-support"><b></b>DOM Parser Support</a></li></ul><li><span class="title-icon "></span><a href="#xml-dom-example"><b></b>XML DOM Example</a></li><ul><li><span class="title-icon "></span><a href="#example-1-xml-text-to-xml-dom-object"><b></b>Example 1: XML Text to XML DOM Object:</a></li><li><span class="title-icon "></span><a href="#example-2-generating-xml-dom-document-and-converting-to-string"><b></b>Example 2: Generating XML DOM Document and converting to string:</a></li><li><span class="title-icon "></span><a href="#example-3-creating-xml-dom"><b></b>Example 3: Creating XML DOM</a></li></ul><li><span class="title-icon "></span><a href="#xml-cdata"><b></b>XML CDATA</a></li></ul></ul></div><a href="#dom" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dom"><a name="dom" class="anchor-navigation-ex-anchor" href="#dom"><i class="fa fa-link" aria-hidden="true"></i></a>DOM</h1>
-<blockquote>
-<p>Document Object Model (DOM)</p>
-</blockquote>
-<p>[TOC]</p>
-<h2 id="what-is-the-dom"><a name="what-is-the-dom" class="anchor-navigation-ex-anchor" href="#what-is-the-dom"><i class="fa fa-link" aria-hidden="true"></i></a>What is the DOM?</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#dom-document-object-model"><b> </b>DOM (Document Object Model)</a></li><ul><li><span class="title-icon "></span><a href="#what-is-the-dom"><b>1. </b>What is the DOM?</a></li><li><span class="title-icon "></span><a href="#xml-dom"><b>2. </b>XML DOM</a></li><ul><li><span class="title-icon "></span><a href="#dom-parser-support"><b>2.1. </b>DOM Parser Support</a></li></ul><li><span class="title-icon "></span><a href="#xml-dom-example"><b>3. </b>XML DOM Example</a></li><ul><li><span class="title-icon "></span><a href="#example-1-xml-text-to-xml-dom-object"><b>3.1. </b>Example 1: XML Text to XML DOM Object:</a></li><li><span class="title-icon "></span><a href="#example-2-generating-xml-dom-document-and-converting-to-string"><b>3.2. </b>Example 2: Generating XML DOM Document and converting to string:</a></li><li><span class="title-icon "></span><a href="#example-3-creating-xml-dom"><b>3.3. </b>Example 3: Creating XML DOM</a></li></ul><li><span class="title-icon "></span><a href="#xml-cdata"><b>4. </b>XML CDATA</a></li></ul></ul></div><a href="#dom-document-object-model" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="dom-document-object-model"><a name="dom-document-object-model" class="anchor-navigation-ex-anchor" href="#dom-document-object-model"><i class="fa fa-link" aria-hidden="true"></i></a> DOM (Document Object Model)</h1>
+<h2 id="what-is-the-dom"><a name="what-is-the-dom" class="anchor-navigation-ex-anchor" href="#what-is-the-dom"><i class="fa fa-link" aria-hidden="true"></i></a>1. What is the DOM?</h2>
 <p>DOM &#x5B9A;&#x7FA9;&#x4E86;&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x6A94;&#x7684;&#x6A19;&#x6E96;
 (The DOM defines a standard for accessing and manipulating documents)</p>
 <ul>
 <li><strong>HTML DOM</strong> &#x5B9A;&#x7FA9;&#x4E86;&#x64CD;&#x4F5C;HTML&#x6587;&#x6A94;&#x7684;&#x6A19;&#x6E96;&#x65B9;&#x6CD5;&#x3002; &#x5B83;&#x5C07;HTML&#x6587;&#x6A94;&#x5448;&#x73FE;&#x70BA;&#x6A39;&#x72C0;&#x7D50;&#x69CB;&#x3002;</li>
 <li><strong>XML DOM</strong> &#x5B9A;&#x7FA9;&#x4E86;&#x64CD;&#x4F5C;XML&#x6587;&#x6A94;&#x7684;&#x6A19;&#x6E96;&#x65B9;&#x5F0F;&#x3002; &#x5B83;&#x5C07;XML&#x6587;&#x6A94;&#x5448;&#x73FE;&#x70BA;&#x6A39;&#x5F62;&#x7D50;&#x69CB;&#x3002;</li>
 </ul>
-<h2 id="xml-dom"><a name="xml-dom" class="anchor-navigation-ex-anchor" href="#xml-dom"><i class="fa fa-link" aria-hidden="true"></i></a>XML DOM</h2>
+<h2 id="xml-dom"><a name="xml-dom" class="anchor-navigation-ex-anchor" href="#xml-dom"><i class="fa fa-link" aria-hidden="true"></i></a>2. XML DOM</h2>
 <blockquote>
 <p>mynote: XML DOM &#x5728;&#x64CD;&#x4F5C;&#x6642;&#xFF0C;&#x6BCF;&#x500B;&#x6771;&#x897F;&#x8996;&#x70BA;&#x4E00;&#x500B; node&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;element&#xFF0C;element&#x88E1;&#x7684;&#x6587;&#x5B57;&#xFF0C;element&#x4E0A;&#x7684;attribute&#xFF0C;&#x90FD;&#x662F;&#x7528;&#x4E00;&#x500B;&#x500B;node&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x64CD;&#x4F5C;</p>
 </blockquote>
 <p><a href="https://www.w3schools.com/xml/nodetree.gif" target="_blank">!</a>
 (source: W3Schools)</p>
-<h3 id="dom-parser-support"><a name="dom-parser-support" class="anchor-navigation-ex-anchor" href="#dom-parser-support"><i class="fa fa-link" aria-hidden="true"></i></a>DOM Parser Support</h3>
+<h3 id="dom-parser-support"><a name="dom-parser-support" class="anchor-navigation-ex-anchor" href="#dom-parser-support"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. DOM Parser Support</h3>
 <p>All modern browsers have a built-in XML parser that can convert text into an <strong>XML DOM object</strong>.
 (Old versions of Internet Explorer (IE5, IE6, IE7, IE8) do not support the DOMParser object. They use ActiveXObject)</p>
 <pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.DOMParser) {
@@ -835,8 +831,8 @@ xmlDoc = <span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-s
   xmlDoc.loadXML(text);
 }
 </code></pre>
-<h2 id="xml-dom-example"><a name="xml-dom-example" class="anchor-navigation-ex-anchor" href="#xml-dom-example"><i class="fa fa-link" aria-hidden="true"></i></a>XML DOM Example</h2>
-<h3 id="example-1-xml-text-to-xml-dom-object"><a name="example-1-xml-text-to-xml-dom-object" class="anchor-navigation-ex-anchor" href="#example-1-xml-text-to-xml-dom-object"><i class="fa fa-link" aria-hidden="true"></i></a>Example 1: XML Text to XML DOM Object:</h3>
+<h2 id="xml-dom-example"><a name="xml-dom-example" class="anchor-navigation-ex-anchor" href="#xml-dom-example"><i class="fa fa-link" aria-hidden="true"></i></a>3. XML DOM Example</h2>
+<h3 id="example-1-xml-text-to-xml-dom-object"><a name="example-1-xml-text-to-xml-dom-object" class="anchor-navigation-ex-anchor" href="#example-1-xml-text-to-xml-dom-object"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. Example 1: XML Text to XML DOM Object:</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> parser = <span class="hljs-keyword">new</span> DOMParser();
 <span class="hljs-keyword">var</span> xmlDoc = parser.parseFromString(text,<span class="hljs-string">&quot;text/xml&quot;</span>);
 
@@ -856,7 +852,7 @@ print(xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;title&quot;</s
     <span class="hljs-keyword">return</span> cstr.substring(<span class="hljs-string">&quot;function &quot;</span>.length, endPos);
 }
 </code></pre>
-<h3 id="example-2-generating-xml-dom-document-and-converting-to-string"><a name="example-2-generating-xml-dom-document-and-converting-to-string" class="anchor-navigation-ex-anchor" href="#example-2-generating-xml-dom-document-and-converting-to-string"><i class="fa fa-link" aria-hidden="true"></i></a>Example 2: Generating XML DOM Document and converting to string:</h3>
+<h3 id="example-2-generating-xml-dom-document-and-converting-to-string"><a name="example-2-generating-xml-dom-document-and-converting-to-string" class="anchor-navigation-ex-anchor" href="#example-2-generating-xml-dom-document-and-converting-to-string"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Example 2: Generating XML DOM Document and converting to string:</h3>
 <p>(including CDATA, Attribute)</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> xmlDoc = <span class="hljs-built_in">document</span>.implementation.createDocument(<span class="hljs-literal">null</span>, <span class="hljs-string">&quot;books&quot;</span>);
 <span class="hljs-keyword">var</span> rootElement = xmlDoc.getElementsByTagName(<span class="hljs-string">&quot;books&quot;</span>)[<span class="hljs-number">0</span>];
@@ -929,7 +925,7 @@ rootElement.appendChild(genBookNode(xmlDoc, <span class="hljs-string">&quot;Test
 <span class="hljs-comment">//   &lt;/book&gt;</span>
 <span class="hljs-comment">// &lt;/books&gt;</span>
 </code></pre>
-<h3 id="example-3-creating-xml-dom"><a name="example-3-creating-xml-dom" class="anchor-navigation-ex-anchor" href="#example-3-creating-xml-dom"><i class="fa fa-link" aria-hidden="true"></i></a>Example 3: Creating XML DOM</h3>
+<h3 id="example-3-creating-xml-dom"><a name="example-3-creating-xml-dom" class="anchor-navigation-ex-anchor" href="#example-3-creating-xml-dom"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Example 3: Creating XML DOM</h3>
 <p>ref: <a href="https://stackoverflow.com/questions/14340894/create-xml-in-javascript" target="_blank">Create XML in Javascript</a></p>
 <p>JavaScript handles XML with &apos;XML DOM objects&apos;. You can obtain such an object in three ways:</p>
 <ol>
@@ -964,7 +960,7 @@ elements[<span class="hljs-number">0</span>].appendChild(node);
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> serializer = <span class="hljs-keyword">new</span> XMLSerializer();
 <span class="hljs-keyword">var</span> xmlString = serializer.serializeToString(xmlDoc);
 </code></pre>
-<h2 id="xml-cdata"><a name="xml-cdata" class="anchor-navigation-ex-anchor" href="#xml-cdata"><i class="fa fa-link" aria-hidden="true"></i></a>XML CDATA</h2>
+<h2 id="xml-cdata"><a name="xml-cdata" class="anchor-navigation-ex-anchor" href="#xml-cdata"><i class="fa fa-link" aria-hidden="true"></i></a>4. XML CDATA</h2>
 <p>ref: <a href="http://www.w3school.com.cn/xml/xml_cdata.asp" target="_blank">http://www.w3school.com.cn/xml/xml_cdata.asp</a>
 ref: <a href="https://docs.microsoft.com/zh-tw/sql/relational-databases/xml/example-specifying-the-cdata-directive" target="_blank">https://docs.microsoft.com/zh-tw/sql/relational-databases/xml/example-specifying-the-cdata-directive</a></p>
 <p>&#x6240;&#x6709; XML &#x6587;&#x6A94;&#x4E2D;&#x7684;&#x6587;&#x672C;&#x5747;&#x6703;&#x88AB;&#x89E3;&#x6790;&#x5668;&#x89E3;&#x6790;&#x3002;</p>
@@ -1026,7 +1022,7 @@ function matchwo(a,b)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JS DOM (Document Object Model)","level":"3.5","depth":1,"next":{"title":"JS Magic JavaScript","level":"3.6","depth":1,"path":"notes/magic-js.md","ref":"./notes/magic-js.md","articles":[]},"previous":{"title":"JS BOM (Browser Object Model)","level":"3.4","depth":1,"path":"notes/bom.md","ref":"./notes/bom.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/dom.md","mtime":"2020-07-24T05:10:11.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-24T05:11:05.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JS DOM (Document Object Model)","level":"3.5","depth":1,"next":{"title":"JS Magic JavaScript","level":"3.6","depth":1,"path":"notes/magic-js.md","ref":"./notes/magic-js.md","articles":[]},"previous":{"title":"JS BOM (Browser Object Model)","level":"3.4","depth":1,"path":"notes/bom.md","ref":"./notes/bom.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/onejar99/notes-box/edit/master/javascript-notes/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/dom.md","mtime":"2020-07-27T15:01:28.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-27T15:02:25.094Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
